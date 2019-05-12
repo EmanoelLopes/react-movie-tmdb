@@ -2,12 +2,12 @@
 
 exports[`<Card /> should match snapshot 1`] = `
 .c0 {
+  background-color: #fff;
   background-image: url(http://image.tmdb.org/t/p/w500);
   color: #fff;
   background-size: cover;
   background-position: top center;
   border: 5px solid #081c24;
-  box-shadow: 2px 2px 5px #ddd;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -25,12 +25,32 @@ exports[`<Card /> should match snapshot 1`] = `
 }
 
 .c0 .card-info {
-  padding: 15px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   min-height: 300px;
+  padding: 15px;
+}
+
+.c0 .card-info-wrapper {
+  background-color: rgba(0,0,0,.7);
+  padding: 15px;
 }
 
 .c0 .card-info h3 {
   font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.c0 .card-info p {
   margin-bottom: 15px;
 }
 
@@ -57,6 +77,21 @@ exports[`<Card /> should match snapshot 1`] = `
 @media (min-width:62em) {
   .c0 .card-poster img {
     display: block;
+  }
+}
+
+@media (min-width:62em) {
+  .c0 .card-info {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width:62em) {
+  .c0 .card-info-wrapper {
+    background-color: transparent;
   }
 }
 
@@ -111,6 +146,7 @@ exports[`<Card /> should match snapshot 1`] = `
                 "lastClassName": "c0",
                 "rules": Array [
                   "
+  background-color: #fff;
   background-image: url(",
                   [Function],
                   ");
@@ -138,7 +174,6 @@ exports[`<Card /> should match snapshot 1`] = `
   border: 5px solid ",
                   "#081c24",
                   ";
-  box-shadow: 2px 2px 5px #ddd;
   display: flex;
 
   .card-poster figure,
@@ -166,12 +201,52 @@ exports[`<Card /> should match snapshot 1`] = `
   }
 
   .card-info {
-    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     min-height: 300px;
+    padding: 15px;
+
+    ",
+                  "
+    @media (min-width: ",
+                  "62",
+                  "em) {
+      ",
+                  "
+      justify-content: flex-start;
+    ",
+                  "
+    }
+  ",
+                  "
+  }
+
+  .card-info-wrapper {
+    background-color: rgba(0,0,0,.7);
+    padding: 15px;
+
+    ",
+                  "
+    @media (min-width: ",
+                  "62",
+                  "em) {
+      ",
+                  "
+      background-color: transparent;
+    ",
+                  "
+    }
+  ",
+                  "
   }
 
   .card-info h3 {
     font-size: 22px;
+    margin-bottom: 15px;
+  }
+
+  .card-info p {
     margin-bottom: 15px;
   }
 
@@ -232,23 +307,27 @@ exports[`<Card /> should match snapshot 1`] = `
             <div
               className="card-info"
             >
-              <h3>
-                Some Card
-              </h3>
-              <p>
-                some description
-              </p>
-              <Link
-                replace={false}
-                to="someid"
+              <div
+                className="card-info-wrapper"
               >
-                <a
-                  href="/someid"
-                  onClick={[Function]}
+                <h3>
+                  Some Card
+                </h3>
+                <p>
+                  some description
+                </p>
+                <Link
+                  replace={false}
+                  to="someid"
                 >
-                  More info
-                </a>
-              </Link>
+                  <a
+                    href="/someid"
+                    onClick={[Function]}
+                  >
+                    More info
+                  </a>
+                </Link>
+              </div>
             </div>
           </div>
         </StyledComponent>

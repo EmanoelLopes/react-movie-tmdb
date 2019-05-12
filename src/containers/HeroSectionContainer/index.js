@@ -14,9 +14,9 @@ class HeroSectionContainer extends Component {
         title={movies[0].original_title}
         description={movies[0].overview}
       />
-    )
+    );
   }
-};
+}
 
 HeroSectionContainer.propTypes = {
   movies: array.isRequired,

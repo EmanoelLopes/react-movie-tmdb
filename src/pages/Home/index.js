@@ -1,16 +1,12 @@
 import React from 'react';
-import { connect } from 'react-redux';
 import {
   MoviesContainer,
   TVSeriesContainer,
   HeroSectionContainer,
 } from 'containers';
-import Loading from 'components/Loading';
 import { H1 } from 'utils/styled';
 
-const Home = (props) => {
-  const { loading } = props;
-
+const Home = () => {
   return (
     <React.Fragment>
       <HeroSectionContainer />
@@ -26,8 +22,4 @@ const Home = (props) => {
   );
 };
 
-const mapStateToProps = state => ({
-  loading: state.loading,
-});
-
-export default connect(mapStateToProps)(Home);
+export default Home;

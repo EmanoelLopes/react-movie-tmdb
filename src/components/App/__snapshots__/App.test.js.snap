@@ -104,22 +104,50 @@ exports[`<App /> should match snapshot 1`] = `
             <main
               className="rm-main"
             >
-              <div
-                className="container"
-              >
-                <Routes>
-                  <Switch>
-                    <Route
-                      component={[Function]}
-                      computedMatch={
+              <Routes>
+                <Switch>
+                  <Route
+                    component={[Function]}
+                    computedMatch={
+                      Object {
+                        "isExact": true,
+                        "params": Object {},
+                        "path": "/",
+                        "url": "/",
+                      }
+                    }
+                    exact={true}
+                    location={
+                      Object {
+                        "hash": "",
+                        "pathname": "/",
+                        "search": "",
+                        "state": undefined,
+                      }
+                    }
+                    path="/"
+                  >
+                    <Home
+                      history={
                         Object {
-                          "isExact": true,
-                          "params": Object {},
-                          "path": "/",
-                          "url": "/",
+                          "action": "POP",
+                          "block": [Function],
+                          "createHref": [Function],
+                          "go": [Function],
+                          "goBack": [Function],
+                          "goForward": [Function],
+                          "length": 1,
+                          "listen": [Function],
+                          "location": Object {
+                            "hash": "",
+                            "pathname": "/",
+                            "search": "",
+                            "state": undefined,
+                          },
+                          "push": [Function],
+                          "replace": [Function],
                         }
                       }
-                      exact={true}
                       location={
                         Object {
                           "hash": "",
@@ -128,104 +156,79 @@ exports[`<App /> should match snapshot 1`] = `
                           "state": undefined,
                         }
                       }
-                      path="/"
+                      match={
+                        Object {
+                          "isExact": true,
+                          "params": Object {},
+                          "path": "/",
+                          "url": "/",
+                        }
+                      }
                     >
-                      <Home
-                        history={
-                          Object {
-                            "action": "POP",
-                            "block": [Function],
-                            "createHref": [Function],
-                            "go": [Function],
-                            "goBack": [Function],
-                            "goForward": [Function],
-                            "length": 1,
-                            "listen": [Function],
-                            "location": Object {
-                              "hash": "",
-                              "pathname": "/",
-                              "search": "",
-                              "state": undefined,
-                            },
-                            "push": [Function],
-                            "replace": [Function],
-                          }
-                        }
-                        location={
-                          Object {
-                            "hash": "",
-                            "pathname": "/",
-                            "search": "",
-                            "state": undefined,
-                          }
-                        }
-                        match={
-                          Object {
-                            "isExact": true,
-                            "params": Object {},
-                            "path": "/",
-                            "url": "/",
-                          }
-                        }
+                      <Connect(HeroSectionContainer)>
+                        <HeroSectionContainer
+                          dispatch={[Function]}
+                          movies={Array []}
+                        />
+                      </Connect(HeroSectionContainer)>
+                      <div
+                        className="container"
                       >
-                        <div
-                          className="home home-popular-movies"
-                        >
-                          <styled.h1>
-                            <StyledComponent
-                              forwardedComponent={
-                                Object {
-                                  "$$typeof": Symbol(react.forward_ref),
-                                  "attrs": Array [],
-                                  "componentStyle": ComponentStyle {
-                                    "componentId": "sc-bdVaJa",
-                                    "isStatic": true,
-                                    "lastClassName": "c0",
-                                    "rules": Array [
-                                      "
+                        <styled.h1>
+                          <StyledComponent
+                            forwardedComponent={
+                              Object {
+                                "$$typeof": Symbol(react.forward_ref),
+                                "attrs": Array [],
+                                "componentStyle": ComponentStyle {
+                                  "componentId": "sc-bdVaJa",
+                                  "isStatic": true,
+                                  "lastClassName": "c0",
+                                  "rules": Array [
+                                    "
   font-size: 32px;
   margin: 15px 0;
 ",
-                                    ],
-                                  },
-                                  "displayName": "styled.h1",
-                                  "foldedComponentIds": Array [],
-                                  "render": [Function],
-                                  "styledComponentId": "sc-bdVaJa",
-                                  "target": "h1",
-                                  "toString": [Function],
-                                  "warnTooManyClasses": [Function],
-                                  "withComponent": [Function],
-                                }
+                                  ],
+                                },
+                                "displayName": "styled.h1",
+                                "foldedComponentIds": Array [],
+                                "render": [Function],
+                                "styledComponentId": "sc-bdVaJa",
+                                "target": "h1",
+                                "toString": [Function],
+                                "warnTooManyClasses": [Function],
+                                "withComponent": [Function],
                               }
-                              forwardedRef={null}
+                            }
+                            forwardedRef={null}
+                          >
+                            <h1
+                              className="c0"
                             >
-                              <h1
-                                className="c0"
-                              >
-                                Popular Movies
-                              </h1>
-                            </StyledComponent>
-                          </styled.h1>
-                          <Connect(MoviesContainer)>
-                            <MoviesContainer
-                              dispatch={[Function]}
-                              getMovies={[Function]}
-                              movies={Array []}
-                            >
-                              <Grid>
-                                <styled.div>
-                                  <StyledComponent
-                                    forwardedComponent={
-                                      Object {
-                                        "$$typeof": Symbol(react.forward_ref),
-                                        "attrs": Array [],
-                                        "componentStyle": ComponentStyle {
-                                          "componentId": "sc-htpNat",
-                                          "isStatic": true,
-                                          "lastClassName": "c1",
-                                          "rules": Array [
-                                            "
+                              Popular Movies
+                            </h1>
+                          </StyledComponent>
+                        </styled.h1>
+                        <Connect(MoviesContainer)>
+                          <MoviesContainer
+                            dispatch={[Function]}
+                            getMovies={[Function]}
+                            movies={Array []}
+                          >
+                            <Grid>
+                              <styled.div>
+                                <StyledComponent
+                                  forwardedComponent={
+                                    Object {
+                                      "$$typeof": Symbol(react.forward_ref),
+                                      "attrs": Array [],
+                                      "componentStyle": ComponentStyle {
+                                        "componentId": "sc-htpNat",
+                                        "isStatic": true,
+                                        "lastClassName": "c1",
+                                        "rules": Array [
+                                          "
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: auto; 
@@ -233,100 +236,100 @@ exports[`<App /> should match snapshot 1`] = `
   grid-row-gap: 25px;
 
   ",
-                                            "
+                                          "
     @media (min-width: ",
-                                            "62",
-                                            "em) {
+                                          "62",
+                                          "em) {
       ",
-                                            "
+                                          "
     grid-template-columns: 50% 50%
   ",
-                                            "
+                                          "
     }
   ",
-                                            "
+                                          "
 ",
-                                          ],
-                                        },
-                                        "displayName": "styled.div",
-                                        "foldedComponentIds": Array [],
-                                        "render": [Function],
-                                        "styledComponentId": "sc-htpNat",
-                                        "target": "div",
-                                        "toString": [Function],
-                                        "warnTooManyClasses": [Function],
-                                        "withComponent": [Function],
-                                      }
+                                        ],
+                                      },
+                                      "displayName": "styled.div",
+                                      "foldedComponentIds": Array [],
+                                      "render": [Function],
+                                      "styledComponentId": "sc-htpNat",
+                                      "target": "div",
+                                      "toString": [Function],
+                                      "warnTooManyClasses": [Function],
+                                      "withComponent": [Function],
                                     }
-                                    forwardedRef={null}
-                                  >
-                                    <div
-                                      className="c1"
-                                    />
-                                  </StyledComponent>
-                                </styled.div>
-                              </Grid>
-                            </MoviesContainer>
-                          </Connect(MoviesContainer)>
-                        </div>
-                        <div
-                          className="home home-popular-tv"
-                        >
-                          <styled.h1>
-                            <StyledComponent
-                              forwardedComponent={
-                                Object {
-                                  "$$typeof": Symbol(react.forward_ref),
-                                  "attrs": Array [],
-                                  "componentStyle": ComponentStyle {
-                                    "componentId": "sc-bdVaJa",
-                                    "isStatic": true,
-                                    "lastClassName": "c0",
-                                    "rules": Array [
-                                      "
+                                  }
+                                  forwardedRef={null}
+                                >
+                                  <div
+                                    className="c1"
+                                  />
+                                </StyledComponent>
+                              </styled.div>
+                            </Grid>
+                          </MoviesContainer>
+                        </Connect(MoviesContainer)>
+                      </div>
+                      <div
+                        className="container"
+                      >
+                        <styled.h1>
+                          <StyledComponent
+                            forwardedComponent={
+                              Object {
+                                "$$typeof": Symbol(react.forward_ref),
+                                "attrs": Array [],
+                                "componentStyle": ComponentStyle {
+                                  "componentId": "sc-bdVaJa",
+                                  "isStatic": true,
+                                  "lastClassName": "c0",
+                                  "rules": Array [
+                                    "
   font-size: 32px;
   margin: 15px 0;
 ",
-                                    ],
-                                  },
-                                  "displayName": "styled.h1",
-                                  "foldedComponentIds": Array [],
-                                  "render": [Function],
-                                  "styledComponentId": "sc-bdVaJa",
-                                  "target": "h1",
-                                  "toString": [Function],
-                                  "warnTooManyClasses": [Function],
-                                  "withComponent": [Function],
-                                }
+                                  ],
+                                },
+                                "displayName": "styled.h1",
+                                "foldedComponentIds": Array [],
+                                "render": [Function],
+                                "styledComponentId": "sc-bdVaJa",
+                                "target": "h1",
+                                "toString": [Function],
+                                "warnTooManyClasses": [Function],
+                                "withComponent": [Function],
                               }
-                              forwardedRef={null}
+                            }
+                            forwardedRef={null}
+                          >
+                            <h1
+                              className="c0"
                             >
-                              <h1
-                                className="c0"
-                              >
-                                Popular TV Series
-                              </h1>
-                            </StyledComponent>
-                          </styled.h1>
-                          <Connect(TVSeriesContainer)>
-                            <TVSeriesContainer
-                              dispatch={[Function]}
-                              getSeries={[Function]}
-                              tvSeries={Array []}
-                            >
-                              <Grid>
-                                <styled.div>
-                                  <StyledComponent
-                                    forwardedComponent={
-                                      Object {
-                                        "$$typeof": Symbol(react.forward_ref),
-                                        "attrs": Array [],
-                                        "componentStyle": ComponentStyle {
-                                          "componentId": "sc-htpNat",
-                                          "isStatic": true,
-                                          "lastClassName": "c1",
-                                          "rules": Array [
-                                            "
+                              Popular TV Series
+                            </h1>
+                          </StyledComponent>
+                        </styled.h1>
+                        <Connect(TVSeriesContainer)>
+                          <TVSeriesContainer
+                            dispatch={[Function]}
+                            getSeries={[Function]}
+                            tvSeries={Array []}
+                          >
+                            <Grid>
+                              <styled.div>
+                                <StyledComponent
+                                  forwardedComponent={
+                                    Object {
+                                      "$$typeof": Symbol(react.forward_ref),
+                                      "attrs": Array [],
+                                      "componentStyle": ComponentStyle {
+                                        "componentId": "sc-htpNat",
+                                        "isStatic": true,
+                                        "lastClassName": "c1",
+                                        "rules": Array [
+                                          "
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: auto; 
@@ -334,47 +337,46 @@ exports[`<App /> should match snapshot 1`] = `
   grid-row-gap: 25px;
 
   ",
-                                            "
+                                          "
     @media (min-width: ",
-                                            "62",
-                                            "em) {
+                                          "62",
+                                          "em) {
       ",
-                                            "
+                                          "
     grid-template-columns: 50% 50%
   ",
-                                            "
+                                          "
     }
   ",
-                                            "
+                                          "
 ",
-                                          ],
-                                        },
-                                        "displayName": "styled.div",
-                                        "foldedComponentIds": Array [],
-                                        "render": [Function],
-                                        "styledComponentId": "sc-htpNat",
-                                        "target": "div",
-                                        "toString": [Function],
-                                        "warnTooManyClasses": [Function],
-                                        "withComponent": [Function],
-                                      }
+                                        ],
+                                      },
+                                      "displayName": "styled.div",
+                                      "foldedComponentIds": Array [],
+                                      "render": [Function],
+                                      "styledComponentId": "sc-htpNat",
+                                      "target": "div",
+                                      "toString": [Function],
+                                      "warnTooManyClasses": [Function],
+                                      "withComponent": [Function],
                                     }
-                                    forwardedRef={null}
-                                  >
-                                    <div
-                                      className="c1"
-                                    />
-                                  </StyledComponent>
-                                </styled.div>
-                              </Grid>
-                            </TVSeriesContainer>
-                          </Connect(TVSeriesContainer)>
-                        </div>
-                      </Home>
-                    </Route>
-                  </Switch>
-                </Routes>
-              </div>
+                                  }
+                                  forwardedRef={null}
+                                >
+                                  <div
+                                    className="c1"
+                                  />
+                                </StyledComponent>
+                              </styled.div>
+                            </Grid>
+                          </TVSeriesContainer>
+                        </Connect(TVSeriesContainer)>
+                      </div>
+                    </Home>
+                  </Route>
+                </Switch>
+              </Routes>
             </main>
           </Main>
           <Footer>
