@@ -1,7 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Footer /> should match snapshot 1`] = `
-<footer>
-   Copyright © 2019 
+<footer
+  className="rm-footer"
+>
+  <div
+    className="container"
+  >
+    Copyright © 2019
+  </div>
 </footer>
 `;

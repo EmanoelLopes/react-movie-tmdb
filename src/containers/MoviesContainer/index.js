@@ -20,6 +20,7 @@ class MoviesContainer extends Component {
             description={movie.overview}
             poster={movie.poster_path}
             id={`/movie/${movie.id}`}
+            backdrop={movie.backdrop_path}
           />
         </React.Fragment>
       );

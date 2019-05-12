@@ -20,6 +20,7 @@ class TVSeriesContainer extends Component {
             description={tv.overview}
             poster={tv.poster_path}
             id={`/tv/${tv.id}`}
+            backdrop={tv.backdrop_path}
           />
         </React.Fragment>
       );

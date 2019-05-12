@@ -1,6 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<App /> should match snapshot 1`] = `
+.c0 {
+  font-size: 32px;
+  margin: 15px 0;
+}
+
+.c1 {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  grid-column-gap: 25px;
+  grid-row-gap: 25px;
+}
+
+@media (min-width:62em) {
+  .c1 {
+    grid-template-columns: 50% 50%;
+  }
+}
+
 <Root>
   <Provider
     store={
@@ -39,56 +58,68 @@ exports[`<App /> should match snapshot 1`] = `
           }
         >
           <Header>
-            <header>
-              React Movie DB
+            <header
+              className="rm-header"
+            >
+              <div
+                className="container"
+              >
+                <Link
+                  replace={false}
+                  to="/"
+                >
+                  <a
+                    href="/"
+                    onClick={[Function]}
+                  >
+                    <span>
+                      <Logo>
+                        <svg
+                          height="32px"
+                          id="Capa_1"
+                          version="1.1"
+                          viewBox="0 0 32 32"
+                          width="32px"
+                          xmlns="http://www.w3.org/2000/svg"
+                        />
+                      </Logo>
+                      React Movie DB
+                    </span>
+                  </a>
+                </Link>
+                <a
+                  href="https://www.themoviedb.org/?language=pt-BR"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <img
+                    alt="The Movie DB"
+                    src="tmdb_logo.png"
+                  />
+                </a>
+              </div>
             </header>
           </Header>
           <Main>
-            <main>
-              <Routes>
-                <Switch>
-                  <Route
-                    component={[Function]}
-                    computedMatch={
-                      Object {
-                        "isExact": true,
-                        "params": Object {},
-                        "path": "/",
-                        "url": "/",
-                      }
-                    }
-                    exact={true}
-                    location={
-                      Object {
-                        "hash": "",
-                        "pathname": "/",
-                        "search": "",
-                        "state": undefined,
-                      }
-                    }
-                    path="/"
-                  >
-                    <Home
-                      history={
+            <main
+              className="rm-main"
+            >
+              <div
+                className="container"
+              >
+                <Routes>
+                  <Switch>
+                    <Route
+                      component={[Function]}
+                      computedMatch={
                         Object {
-                          "action": "POP",
-                          "block": [Function],
-                          "createHref": [Function],
-                          "go": [Function],
-                          "goBack": [Function],
-                          "goForward": [Function],
-                          "length": 1,
-                          "listen": [Function],
-                          "location": Object {
-                            "hash": "",
-                            "pathname": "/",
-                            "search": "",
-                            "state": undefined,
-                          },
-                          "push": [Function],
-                          "replace": [Function],
+                          "isExact": true,
+                          "params": Object {},
+                          "path": "/",
+                          "url": "/",
                         }
                       }
+                      exact={true}
                       location={
                         Object {
                           "hash": "",
@@ -97,27 +128,264 @@ exports[`<App /> should match snapshot 1`] = `
                           "state": undefined,
                         }
                       }
-                      match={
-                        Object {
-                          "isExact": true,
-                          "params": Object {},
-                          "path": "/",
-                          "url": "/",
-                        }
-                      }
+                      path="/"
                     >
-                      <h1>
-                        Home
-                      </h1>
-                    </Home>
-                  </Route>
-                </Switch>
-              </Routes>
+                      <Home
+                        history={
+                          Object {
+                            "action": "POP",
+                            "block": [Function],
+                            "createHref": [Function],
+                            "go": [Function],
+                            "goBack": [Function],
+                            "goForward": [Function],
+                            "length": 1,
+                            "listen": [Function],
+                            "location": Object {
+                              "hash": "",
+                              "pathname": "/",
+                              "search": "",
+                              "state": undefined,
+                            },
+                            "push": [Function],
+                            "replace": [Function],
+                          }
+                        }
+                        location={
+                          Object {
+                            "hash": "",
+                            "pathname": "/",
+                            "search": "",
+                            "state": undefined,
+                          }
+                        }
+                        match={
+                          Object {
+                            "isExact": true,
+                            "params": Object {},
+                            "path": "/",
+                            "url": "/",
+                          }
+                        }
+                      >
+                        <div
+                          className="home home-popular-movies"
+                        >
+                          <styled.h1>
+                            <StyledComponent
+                              forwardedComponent={
+                                Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "attrs": Array [],
+                                  "componentStyle": ComponentStyle {
+                                    "componentId": "sc-bdVaJa",
+                                    "isStatic": true,
+                                    "lastClassName": "c0",
+                                    "rules": Array [
+                                      "
+  font-size: 32px;
+  margin: 15px 0;
+",
+                                    ],
+                                  },
+                                  "displayName": "styled.h1",
+                                  "foldedComponentIds": Array [],
+                                  "render": [Function],
+                                  "styledComponentId": "sc-bdVaJa",
+                                  "target": "h1",
+                                  "toString": [Function],
+                                  "warnTooManyClasses": [Function],
+                                  "withComponent": [Function],
+                                }
+                              }
+                              forwardedRef={null}
+                            >
+                              <h1
+                                className="c0"
+                              >
+                                Popular Movies
+                              </h1>
+                            </StyledComponent>
+                          </styled.h1>
+                          <Connect(MoviesContainer)>
+                            <MoviesContainer
+                              dispatch={[Function]}
+                              getMovies={[Function]}
+                              movies={Array []}
+                            >
+                              <Grid>
+                                <styled.div>
+                                  <StyledComponent
+                                    forwardedComponent={
+                                      Object {
+                                        "$$typeof": Symbol(react.forward_ref),
+                                        "attrs": Array [],
+                                        "componentStyle": ComponentStyle {
+                                          "componentId": "sc-htpNat",
+                                          "isStatic": true,
+                                          "lastClassName": "c1",
+                                          "rules": Array [
+                                            "
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto; 
+  grid-column-gap: 25px;
+  grid-row-gap: 25px;
+
+  ",
+                                            "
+    @media (min-width: ",
+                                            "62",
+                                            "em) {
+      ",
+                                            "
+    grid-template-columns: 50% 50%
+  ",
+                                            "
+    }
+  ",
+                                            "
+",
+                                          ],
+                                        },
+                                        "displayName": "styled.div",
+                                        "foldedComponentIds": Array [],
+                                        "render": [Function],
+                                        "styledComponentId": "sc-htpNat",
+                                        "target": "div",
+                                        "toString": [Function],
+                                        "warnTooManyClasses": [Function],
+                                        "withComponent": [Function],
+                                      }
+                                    }
+                                    forwardedRef={null}
+                                  >
+                                    <div
+                                      className="c1"
+                                    />
+                                  </StyledComponent>
+                                </styled.div>
+                              </Grid>
+                            </MoviesContainer>
+                          </Connect(MoviesContainer)>
+                        </div>
+                        <div
+                          className="home home-popular-tv"
+                        >
+                          <styled.h1>
+                            <StyledComponent
+                              forwardedComponent={
+                                Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "attrs": Array [],
+                                  "componentStyle": ComponentStyle {
+                                    "componentId": "sc-bdVaJa",
+                                    "isStatic": true,
+                                    "lastClassName": "c0",
+                                    "rules": Array [
+                                      "
+  font-size: 32px;
+  margin: 15px 0;
+",
+                                    ],
+                                  },
+                                  "displayName": "styled.h1",
+                                  "foldedComponentIds": Array [],
+                                  "render": [Function],
+                                  "styledComponentId": "sc-bdVaJa",
+                                  "target": "h1",
+                                  "toString": [Function],
+                                  "warnTooManyClasses": [Function],
+                                  "withComponent": [Function],
+                                }
+                              }
+                              forwardedRef={null}
+                            >
+                              <h1
+                                className="c0"
+                              >
+                                Popular TV Series
+                              </h1>
+                            </StyledComponent>
+                          </styled.h1>
+                          <Connect(TVSeriesContainer)>
+                            <TVSeriesContainer
+                              dispatch={[Function]}
+                              getSeries={[Function]}
+                              tvSeries={Array []}
+                            >
+                              <Grid>
+                                <styled.div>
+                                  <StyledComponent
+                                    forwardedComponent={
+                                      Object {
+                                        "$$typeof": Symbol(react.forward_ref),
+                                        "attrs": Array [],
+                                        "componentStyle": ComponentStyle {
+                                          "componentId": "sc-htpNat",
+                                          "isStatic": true,
+                                          "lastClassName": "c1",
+                                          "rules": Array [
+                                            "
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto; 
+  grid-column-gap: 25px;
+  grid-row-gap: 25px;
+
+  ",
+                                            "
+    @media (min-width: ",
+                                            "62",
+                                            "em) {
+      ",
+                                            "
+    grid-template-columns: 50% 50%
+  ",
+                                            "
+    }
+  ",
+                                            "
+",
+                                          ],
+                                        },
+                                        "displayName": "styled.div",
+                                        "foldedComponentIds": Array [],
+                                        "render": [Function],
+                                        "styledComponentId": "sc-htpNat",
+                                        "target": "div",
+                                        "toString": [Function],
+                                        "warnTooManyClasses": [Function],
+                                        "withComponent": [Function],
+                                      }
+                                    }
+                                    forwardedRef={null}
+                                  >
+                                    <div
+                                      className="c1"
+                                    />
+                                  </StyledComponent>
+                                </styled.div>
+                              </Grid>
+                            </TVSeriesContainer>
+                          </Connect(TVSeriesContainer)>
+                        </div>
+                      </Home>
+                    </Route>
+                  </Switch>
+                </Routes>
+              </div>
             </main>
           </Main>
           <Footer>
-            <footer>
-               Copyright © 2019 
+            <footer
+              className="rm-footer"
+            >
+              <div
+                className="container"
+              >
+                Copyright © 2019
+              </div>
             </footer>
           </Footer>
         </Router>

@@ -1,0 +1,259 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Card /> should match snapshot 1`] = `
+.c0 {
+  background-image: url(http://image.tmdb.org/t/p/w500);
+  color: #fff;
+  background-size: cover;
+  background-position: top center;
+  border: 5px solid #081c24;
+  box-shadow: 2px 2px 5px #ddd;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c0 .card-poster figure,
+.c0 .card-poster img {
+  height: 100%;
+}
+
+.c0 .card-poster img {
+  display: none;
+  width: 185px;
+}
+
+.c0 .card-info {
+  padding: 15px;
+  min-height: 300px;
+}
+
+.c0 .card-info h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.c0 .card-info a {
+  color: #fff;
+  display: block;
+  width: 100%;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0 .card-info a:hover {
+  -webkit-text-decoration: uderline;
+  text-decoration: uderline;
+}
+
+@media (min-width:62em) {
+  .c0 {
+    background-image: none;
+    color: #081c24;
+  }
+}
+
+@media (min-width:62em) {
+  .c0 .card-poster img {
+    display: block;
+  }
+}
+
+@media (min-width:62em) {
+  .c0 .card-info a {
+    color: #081c24;
+  }
+}
+
+<BrowserRouter>
+  <Router
+    history={
+      Object {
+        "action": "POP",
+        "block": [Function],
+        "createHref": [Function],
+        "go": [Function],
+        "goBack": [Function],
+        "goForward": [Function],
+        "length": 1,
+        "listen": [Function],
+        "location": Object {
+          "hash": "",
+          "pathname": "/",
+          "search": "",
+          "state": undefined,
+        },
+        "push": [Function],
+        "replace": [Function],
+      }
+    }
+  >
+    <Card
+      backdrop=""
+      description="some description"
+      id="someid"
+      poster="someposterpath.jpg"
+      title="Some Card"
+    >
+      <styled.div
+        backdrop=""
+      >
+        <StyledComponent
+          backdrop=""
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "sc-bwzfXH",
+                "isStatic": false,
+                "lastClassName": "c0",
+                "rules": Array [
+                  "
+  background-image: url(",
+                  [Function],
+                  ");
+  color: #fff;
+
+  ",
+                  "
+    @media (min-width: ",
+                  "62",
+                  "em) {
+      ",
+                  "
+    background-image: none;
+    color: ",
+                  "#081c24",
+                  ";
+  ",
+                  "
+    }
+  ",
+                  "
+
+  background-size: cover;
+  background-position: top center;
+  border: 5px solid ",
+                  "#081c24",
+                  ";
+  box-shadow: 2px 2px 5px #ddd;
+  display: flex;
+
+  .card-poster figure,
+  .card-poster img {
+    height: 100%;
+  }
+
+  .card-poster img {
+    display: none;
+    width: 185px;
+
+    ",
+                  "
+    @media (min-width: ",
+                  "62",
+                  "em) {
+      ",
+                  "
+      display: block;
+    ",
+                  "
+    }
+  ",
+                  "
+  }
+
+  .card-info {
+    padding: 15px;
+    min-height: 300px;
+  }
+
+  .card-info h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+
+  .card-info a {
+    color: #fff;
+    display: block;
+    width: 100%;
+    text-decoration: none;
+
+    ",
+                  "
+    @media (min-width: ",
+                  "62",
+                  "em) {
+      ",
+                  "
+      color: ",
+                  "#081c24",
+                  ";
+    ",
+                  "
+    }
+  ",
+                  "
+
+    &:hover {
+      text-decoration: uderline;
+    }
+  }
+",
+                ],
+              },
+              "displayName": "styled.div",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "sc-bwzfXH",
+              "target": "div",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+        >
+          <div
+            className="c0"
+          >
+            <div
+              className="card-poster"
+            >
+              <figure>
+                <img
+                  alt="Some Card"
+                  src="http://image.tmdb.org/t/p/w500someposterpath.jpg"
+                />
+              </figure>
+            </div>
+            <div
+              className="card-info"
+            >
+              <h3>
+                Some Card
+              </h3>
+              <p>
+                some description
+              </p>
+              <Link
+                replace={false}
+                to="someid"
+              >
+                <a
+                  href="/someid"
+                  onClick={[Function]}
+                >
+                  More info
+                </a>
+              </Link>
+            </div>
+          </div>
+        </StyledComponent>
+      </styled.div>
+    </Card>
+  </Router>
+</BrowserRouter>
+`;
