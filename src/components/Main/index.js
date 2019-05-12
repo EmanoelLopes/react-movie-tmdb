@@ -4,9 +4,7 @@ import { node } from 'prop-types';
 function Main ({ children }) {
   return (
     <main className="rm-main">
-      <div className="container">
-        {children}
-      </div>
+      {children}
     </main>
   );
 }

@@ -1,15 +1,24 @@
 import React from 'react';
-import { MoviesContainer, TVSeriesContainer } from 'containers';
+import { connect } from 'react-redux';
+import {
+  MoviesContainer,
+  TVSeriesContainer,
+  HeroSectionContainer,
+} from 'containers';
+import Loading from 'components/Loading';
 import { H1 } from 'utils/styled';
 
-const Home = () => {
+const Home = (props) => {
+  const { loading } = props;
+
   return (
     <React.Fragment>
-      <div className="home home-popular-movies">
+      <HeroSectionContainer />
+      <div className="container">
         <H1>Popular Movies</H1>
         <MoviesContainer />
       </div>
-      <div className="home home-popular-tv">
+      <div className="container">
         <H1>Popular TV Series</H1>
         <TVSeriesContainer />
       </div>
@@ -17,4 +26,8 @@ const Home = () => {
   );
 };
 
-export default Home;
+const mapStateToProps = state => ({
+  loading: state.loading,
+});
+
+export default connect(mapStateToProps)(Home);

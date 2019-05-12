@@ -2,15 +2,18 @@ import styled, { css, createGlobalStyle } from 'styled-components';
 import reset from 'styled-reset';
 
 export const colors = {
-  mainColor: '#081c24'
+  mainColor: '#081c24',
+  white: '#fff',
 };
 
-const fonts = {
+export const fonts = {
   sourceSans: '\'Source Sans Pro\', sans-serif',
 };
 
+export const imagesPath = 'http://image.tmdb.org/t/p/';
+
 const sizes = {
-  largeDesktop: 1200,
+  largeDesktop: 1280,
   desktop: 992,
   tablet: 768,
   phone: 576,
@@ -21,8 +24,8 @@ export const media = Object.keys(sizes).reduce((acc, label) => {
     @media (min-width: ${sizes[label] / 16}em) {
       ${css(...args)}
     }
-  `
-  return acc
+  `;
+  return acc;
 }, {});
 
 export const GlobalStyle = createGlobalStyle`
@@ -59,8 +62,11 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   .rm-main {
-    display: flex;
+    align-items: center;
+    background-color: #ddd;
     color: ${colors.mainColor};
+    display: flex;
+    flex-direction: column;
     justify-content: center;
 
     .container {
@@ -72,7 +78,6 @@ export const GlobalStyle = createGlobalStyle`
     background-color: #ddd;
     display: flex;
     justify-content: center;
-    margin-top: 25px;
     padding: 15px 0;
 
     .container {
