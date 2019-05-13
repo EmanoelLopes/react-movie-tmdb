@@ -1,14 +1,17 @@
-import React from 'react';
-import { H1 } from 'utils/styled';
+import React, { Fragment } from 'react';
+import { object } from 'prop-types';
+import { CurrentMovieContainer } from 'containers';
 
-const Movie = () => {
+const Movie = ({ match }) => {
   return (
-    <div className="movie">
-      <div className="container">
-        <H1>Movie</H1>
-      </div>
-    </div>
+    <Fragment>
+      <CurrentMovieContainer match={match} />
+    </Fragment>
   );
+};
+
+Movie.propTypes = {
+  match: object.isRequired,
 };
 
 export default Movie;

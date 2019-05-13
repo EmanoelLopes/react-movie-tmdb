@@ -12,7 +12,7 @@ class MoviesContainer extends Component {
     dispatch(fetchMovies(getMovies));
   };
 
-  renderMovies = (movies) => {
+  renderMovies = movies => {
     return (!!movies.length) && movies.map(movie => {
       return (
         <React.Fragment key={movie.id}>
