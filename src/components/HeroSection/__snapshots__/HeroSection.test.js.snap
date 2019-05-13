@@ -1,0 +1,151 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<HeroSection /> should match snapshot 1`] = `
+.c0 {
+  background-attachment: fixed;
+  background-image: url(http://image.tmdb.org/t/p/w1280http://image.tmdb.org/t/p/w1280/nmV9MdbzST4xv8WMHwhVgxkHHjM.jpg);
+  background-position: 0 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.c0 .hero-info {
+  background-color: rgba(0,0,0,.7);
+  color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 50px 0;
+}
+
+.c0 .hero-info h1 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.c0 .hero-info p {
+  font-size: 22px;
+}
+
+@media (min-width:62em) {
+  .c0 {
+    height: 700px;
+  }
+}
+
+<HeroSection
+  backdrop="http://image.tmdb.org/t/p/w1280/nmV9MdbzST4xv8WMHwhVgxkHHjM.jpg"
+  description="A boy is given the ability to become an adult superhero in times of need with a single magic word."
+  title="Shazam!"
+>
+  <styled.section
+    backdrop="http://image.tmdb.org/t/p/w1280/nmV9MdbzST4xv8WMHwhVgxkHHjM.jpg"
+  >
+    <StyledComponent
+      backdrop="http://image.tmdb.org/t/p/w1280/nmV9MdbzST4xv8WMHwhVgxkHHjM.jpg"
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bwzfXH",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  background-attachment: fixed;
+  background-image: url(",
+              [Function],
+              ");
+  background-position: 0 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+
+  ",
+              "
+    @media (min-width: ",
+              "62",
+              "em) {
+      ",
+              "
+    height: 700px;
+  ",
+              "
+    }
+  ",
+              "
+
+  .hero-info {
+    background-color: rgba(0, 0, 0, .7);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+
+    h1 {
+      font-size: 32px;
+      margin-bottom: 15px; 
+    }
+
+    p {
+      font-size: 22px;
+    }
+  }
+",
+            ],
+          },
+          "displayName": "styled.section",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bwzfXH",
+          "target": "section",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+    >
+      <section
+        className="c0"
+      >
+        <div
+          className="hero-info"
+        >
+          <div
+            className="container"
+          >
+            <h1>
+              Shazam!
+            </h1>
+            <p>
+              A boy is given the ability to become an adult superhero in times of need with a single magic word.
+            </p>
+          </div>
+        </div>
+      </section>
+    </StyledComponent>
+  </styled.section>
+</HeroSection>
+`;
