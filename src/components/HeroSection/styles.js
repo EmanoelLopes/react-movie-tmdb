@@ -21,7 +21,7 @@ export const Hero = styled.section`
     color: #fff;
     display: flex;
     justify-content: center;
-    padding: 25px;
+    padding: 50px 0;
 
     h1 {
       font-size: 32px;

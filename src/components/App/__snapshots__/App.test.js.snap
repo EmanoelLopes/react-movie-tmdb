@@ -1,12 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<App /> should match snapshot 1`] = `
-.c0 {
+.c1 {
   font-size: 32px;
   margin: 15px 0;
 }
 
-.c1 {
+.c2 {
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: auto;
@@ -14,9 +14,44 @@ exports[`<App /> should match snapshot 1`] = `
   grid-row-gap: 25px;
 }
 
+.c0 {
+  color: #01d277;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 18px;
+}
+
+.c0 a {
+  color: #01d277;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0 svg {
+  height: 3em;
+  margin-right: 10px;
+  width: 3em !important;
+}
+
 @media (min-width:62em) {
-  .c1 {
+  .c2 {
     grid-template-columns: 50% 50%;
+  }
+}
+
+@media (min-width:62em) {
+  .c0 {
+    font-size: 22px;
   }
 }
 
@@ -64,29 +99,132 @@ exports[`<App /> should match snapshot 1`] = `
               <div
                 className="container"
               >
-                <Link
-                  replace={false}
-                  to="/"
-                >
-                  <a
-                    href="/"
-                    onClick={[Function]}
-                  >
-                    <span>
-                      <Logo>
-                        <svg
-                          height="32px"
-                          id="Capa_1"
-                          version="1.1"
-                          viewBox="0 0 32 32"
-                          width="32px"
-                          xmlns="http://www.w3.org/2000/svg"
-                        />
-                      </Logo>
-                      React Movie DB
-                    </span>
-                  </a>
-                </Link>
+                <Logo>
+                  <styled.span>
+                    <StyledComponent
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "sc-ifAKCX",
+                            "isStatic": true,
+                            "lastClassName": "c0",
+                            "rules": Array [
+                              "
+  color: #01d277
+  display: flex;
+  font-size: 18px;
+
+  a {
+    color: #01d277;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  ",
+                              "
+    @media (min-width: ",
+                              "62",
+                              "em) {
+      ",
+                              "
+    font-size: 22px;
+  ",
+                              "
+    }
+  ",
+                              "
+
+  svg {
+    height: 3em;
+    margin-right: 10px;
+    width: 3em !important;
+  }
+",
+                            ],
+                          },
+                          "displayName": "styled.span",
+                          "foldedComponentIds": Array [],
+                          "render": [Function],
+                          "styledComponentId": "sc-ifAKCX",
+                          "target": "span",
+                          "toString": [Function],
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                        }
+                      }
+                      forwardedRef={null}
+                    >
+                      <span
+                        className="c0"
+                      >
+                        <Link
+                          replace={false}
+                          to="/"
+                        >
+                          <a
+                            href="/"
+                            onClick={[Function]}
+                          >
+                            <FontAwesomeIcon
+                              border={false}
+                              className=""
+                              fixedWidth={false}
+                              flip={null}
+                              icon={
+                                Object {
+                                  "icon": Array [
+                                    512,
+                                    512,
+                                    Array [],
+                                    "f008",
+                                    "M488 64h-8v20c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12V64H96v20c0 6.6-5.4 12-12 12H44c-6.6 0-12-5.4-12-12V64h-8C10.7 64 0 74.7 0 88v336c0 13.3 10.7 24 24 24h8v-20c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v20h320v-20c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v20h8c13.3 0 24-10.7 24-24V88c0-13.3-10.7-24-24-24zM96 372c0 6.6-5.4 12-12 12H44c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40zm0-96c0 6.6-5.4 12-12 12H44c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40zm0-96c0 6.6-5.4 12-12 12H44c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40zm272 208c0 6.6-5.4 12-12 12H156c-6.6 0-12-5.4-12-12v-96c0-6.6 5.4-12 12-12h200c6.6 0 12 5.4 12 12v96zm0-168c0 6.6-5.4 12-12 12H156c-6.6 0-12-5.4-12-12v-96c0-6.6 5.4-12 12-12h200c6.6 0 12 5.4 12 12v96zm112 152c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40zm0-96c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40zm0-96c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40z",
+                                  ],
+                                  "iconName": "film",
+                                  "prefix": "fas",
+                                }
+                              }
+                              inverse={false}
+                              listItem={false}
+                              mask={null}
+                              pull={null}
+                              pulse={false}
+                              rotation={null}
+                              size={null}
+                              spin={false}
+                              symbol={false}
+                              title=""
+                              transform={null}
+                            >
+                              <svg
+                                aria-hidden="true"
+                                className="svg-inline--fa fa-film fa-w-16 "
+                                data-icon="film"
+                                data-prefix="fas"
+                                focusable="false"
+                                role="img"
+                                style={Object {}}
+                                viewBox="0 0 512 512"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M488 64h-8v20c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12V64H96v20c0 6.6-5.4 12-12 12H44c-6.6 0-12-5.4-12-12V64h-8C10.7 64 0 74.7 0 88v336c0 13.3 10.7 24 24 24h8v-20c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v20h320v-20c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v20h8c13.3 0 24-10.7 24-24V88c0-13.3-10.7-24-24-24zM96 372c0 6.6-5.4 12-12 12H44c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40zm0-96c0 6.6-5.4 12-12 12H44c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40zm0-96c0 6.6-5.4 12-12 12H44c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40zm272 208c0 6.6-5.4 12-12 12H156c-6.6 0-12-5.4-12-12v-96c0-6.6 5.4-12 12-12h200c6.6 0 12 5.4 12 12v96zm0-168c0 6.6-5.4 12-12 12H156c-6.6 0-12-5.4-12-12v-96c0-6.6 5.4-12 12-12h200c6.6 0 12 5.4 12 12v96zm112 152c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40zm0-96c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40zm0-96c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40z"
+                                  fill="currentColor"
+                                  style={Object {}}
+                                />
+                              </svg>
+                            </FontAwesomeIcon>
+                            <span>
+                              React Movie DB
+                            </span>
+                          </a>
+                        </Link>
+                      </span>
+                    </StyledComponent>
+                  </styled.span>
+                </Logo>
                 <a
                   href="https://www.themoviedb.org/?language=pt-BR"
                   rel="noopener noreferrer"
@@ -183,7 +321,7 @@ exports[`<App /> should match snapshot 1`] = `
                                 "componentStyle": ComponentStyle {
                                   "componentId": "sc-bdVaJa",
                                   "isStatic": true,
-                                  "lastClassName": "c0",
+                                  "lastClassName": "c1",
                                   "rules": Array [
                                     "
   font-size: 32px;
@@ -204,7 +342,7 @@ exports[`<App /> should match snapshot 1`] = `
                             forwardedRef={null}
                           >
                             <h1
-                              className="c0"
+                              className="c1"
                             >
                               Popular Movies
                             </h1>
@@ -226,7 +364,7 @@ exports[`<App /> should match snapshot 1`] = `
                                       "componentStyle": ComponentStyle {
                                         "componentId": "sc-htpNat",
                                         "isStatic": true,
-                                        "lastClassName": "c1",
+                                        "lastClassName": "c2",
                                         "rules": Array [
                                           "
   display: grid;
@@ -264,7 +402,7 @@ exports[`<App /> should match snapshot 1`] = `
                                   forwardedRef={null}
                                 >
                                   <div
-                                    className="c1"
+                                    className="c2"
                                   />
                                 </StyledComponent>
                               </styled.div>
@@ -284,7 +422,7 @@ exports[`<App /> should match snapshot 1`] = `
                                 "componentStyle": ComponentStyle {
                                   "componentId": "sc-bdVaJa",
                                   "isStatic": true,
-                                  "lastClassName": "c0",
+                                  "lastClassName": "c1",
                                   "rules": Array [
                                     "
   font-size: 32px;
@@ -305,7 +443,7 @@ exports[`<App /> should match snapshot 1`] = `
                             forwardedRef={null}
                           >
                             <h1
-                              className="c0"
+                              className="c1"
                             >
                               Popular TV Series
                             </h1>
@@ -327,7 +465,7 @@ exports[`<App /> should match snapshot 1`] = `
                                       "componentStyle": ComponentStyle {
                                         "componentId": "sc-htpNat",
                                         "isStatic": true,
-                                        "lastClassName": "c1",
+                                        "lastClassName": "c2",
                                         "rules": Array [
                                           "
   display: grid;
@@ -365,7 +503,7 @@ exports[`<App /> should match snapshot 1`] = `
                                   forwardedRef={null}
                                 >
                                   <div
-                                    className="c1"
+                                    className="c2"
                                   />
                                 </StyledComponent>
                               </styled.div>
@@ -386,7 +524,109 @@ exports[`<App /> should match snapshot 1`] = `
               <div
                 className="container"
               >
-                Copyright © 2019
+                <span>
+                  Copyright © 2019  
+                </span>
+                <span>
+                  - Made with 
+                  <FontAwesomeIcon
+                    border={false}
+                    className=""
+                    fixedWidth={false}
+                    flip={null}
+                    icon={
+                      Object {
+                        "icon": Array [
+                          640,
+                          512,
+                          Array [],
+                          "f0f4",
+                          "M192 384h192c53 0 96-43 96-96h32c70.6 0 128-57.4 128-128S582.6 32 512 32H120c-13.3 0-24 10.7-24 24v232c0 53 43 96 96 96zM512 96c35.3 0 64 28.7 64 64s-28.7 64-64 64h-32V96h32zm47.7 384H48.3c-47.6 0-61-64-36-64h583.3c25 0 11.8 64-35.9 64z",
+                        ],
+                        "iconName": "coffee",
+                        "prefix": "fas",
+                      }
+                    }
+                    inverse={false}
+                    listItem={false}
+                    mask={null}
+                    pull={null}
+                    pulse={false}
+                    rotation={null}
+                    size={null}
+                    spin={false}
+                    symbol={false}
+                    title=""
+                    transform={null}
+                  >
+                    <svg
+                      aria-hidden="true"
+                      className="svg-inline--fa fa-coffee fa-w-20 "
+                      data-icon="coffee"
+                      data-prefix="fas"
+                      focusable="false"
+                      role="img"
+                      style={Object {}}
+                      viewBox="0 0 640 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M192 384h192c53 0 96-43 96-96h32c70.6 0 128-57.4 128-128S582.6 32 512 32H120c-13.3 0-24 10.7-24 24v232c0 53 43 96 96 96zM512 96c35.3 0 64 28.7 64 64s-28.7 64-64 64h-32V96h32zm47.7 384H48.3c-47.6 0-61-64-36-64h583.3c25 0 11.8 64-35.9 64z"
+                        fill="currentColor"
+                        style={Object {}}
+                      />
+                    </svg>
+                  </FontAwesomeIcon>
+                   and 
+                  <FontAwesomeIcon
+                    border={false}
+                    className=""
+                    fixedWidth={false}
+                    flip={null}
+                    icon={
+                      Object {
+                        "icon": Array [
+                          512,
+                          512,
+                          Array [],
+                          "f004",
+                          "M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z",
+                        ],
+                        "iconName": "heart",
+                        "prefix": "fas",
+                      }
+                    }
+                    inverse={false}
+                    listItem={false}
+                    mask={null}
+                    pull={null}
+                    pulse={false}
+                    rotation={null}
+                    size={null}
+                    spin={false}
+                    symbol={false}
+                    title=""
+                    transform={null}
+                  >
+                    <svg
+                      aria-hidden="true"
+                      className="svg-inline--fa fa-heart fa-w-16 "
+                      data-icon="heart"
+                      data-prefix="fas"
+                      focusable="false"
+                      role="img"
+                      style={Object {}}
+                      viewBox="0 0 512 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+                        fill="currentColor"
+                        style={Object {}}
+                      />
+                    </svg>
+                  </FontAwesomeIcon>
+                </span>
               </div>
             </footer>
           </Footer>

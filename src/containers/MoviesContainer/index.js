@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { format } from 'date-fns';
 import { array, func } from 'prop-types';
 import { fetchMovies } from 'store/movies/actions';
 import Card from 'components/Card';
@@ -21,6 +22,7 @@ class MoviesContainer extends Component {
             poster={movie.poster_path}
             id={`/movie/${movie.id}`}
             backdrop={movie.backdrop_path}
+            release={format(movie.release_date, 'YYYY')}
           />
         </React.Fragment>
       );

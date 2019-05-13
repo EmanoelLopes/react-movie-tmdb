@@ -1,9 +1,16 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFilm } from '@fortawesome/free-solid-svg-icons';
+import { LogoWrapper } from './styles';
 
 const Logo = () => (
-  <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 32 32">
-
-  </svg>
+  <LogoWrapper>
+    <Link to="/">
+      <FontAwesomeIcon icon={faFilm} />
+      <span>React Movie DB</span>
+    </Link>
+  </LogoWrapper>
 );
 
 export default Logo;

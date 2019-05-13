@@ -55,6 +55,10 @@ export const CardFeatured = styled.div`
     font-size: 22px;
     margin-bottom: 15px;
   }
+  .card-info small {
+    display: block;
+    margin-bottom: 15px;
+  }
 
   .card-info p {
     margin-bottom: 15px;

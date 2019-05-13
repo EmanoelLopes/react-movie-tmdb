@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { format } from 'date-fns';
 import { fetchTVSeries } from 'store/tvSeries/actions';
 import { array, func } from 'prop-types';
 import Grid from 'components/Grid';
@@ -21,6 +22,7 @@ class TVSeriesContainer extends Component {
             poster={tv.poster_path}
             id={`/tv/${tv.id}`}
             backdrop={tv.backdrop_path}
+            release={format(tv.first_air_date, 'YYYY')}
           />
         </React.Fragment>
       );

@@ -50,6 +50,11 @@ exports[`<Card /> should match snapshot 1`] = `
   margin-bottom: 15px;
 }
 
+.c0 .card-info small {
+  display: block;
+  margin-bottom: 15px;
+}
+
 .c0 .card-info p {
   margin-bottom: 15px;
 }
@@ -129,6 +134,7 @@ exports[`<Card /> should match snapshot 1`] = `
       description="some description"
       id="someid"
       poster="someposterpath.jpg"
+      release=""
       title="Some Card"
     >
       <styled.div
@@ -245,6 +251,10 @@ exports[`<Card /> should match snapshot 1`] = `
     font-size: 22px;
     margin-bottom: 15px;
   }
+  .card-info small {
+    display: block;
+    margin-bottom: 15px;
+  }
 
   .card-info p {
     margin-bottom: 15px;
@@ -313,6 +323,7 @@ exports[`<Card /> should match snapshot 1`] = `
                 <h3>
                   Some Card
                 </h3>
+                <small />
                 <p>
                   some description
                 </p>

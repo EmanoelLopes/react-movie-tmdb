@@ -6,7 +6,14 @@ import { imagesPath } from 'utils/styled';
 import { textTruncate } from 'utils/helpers';
 
 const Card = props => {
-  const { title, description, poster, id, backdrop } = props;
+  const {
+    title,
+    description,
+    poster,
+    id,
+    backdrop,
+    release,
+  } = props;
 
   return (
     <CardFeatured backdrop={backdrop}>
@@ -18,6 +25,7 @@ const Card = props => {
       <div className="card-info">
         <div className="card-info-wrapper">
           <h3>{title}</h3>
+          <small>{release}</small>
           <p>{textTruncate(description, 150)}</p>
           <Link to={id}>More info</Link>
         </div>
@@ -32,6 +40,7 @@ Card.propTypes = {
   description: string,
   id: string,
   backdrop: string,
+  release: string,
 };
 
 Card.defaultProps = {
@@ -40,6 +49,7 @@ Card.defaultProps = {
   description: '',
   id: '',
   backdrop: '',
+  release: '',
 };
 
 export default Card;
