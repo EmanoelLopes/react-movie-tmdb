@@ -65,13 +65,18 @@ export const CardFeatured = styled.div`
   }
 
   .card-info a {
+    border: 3px solid #fff;
     color: #fff;
     display: block;
-    width: 100%;
+    font-weight: 600;
+    padding: 10px 15px;    
+    width: 130px;
+    text-align: center;
     text-decoration: none;
 
     ${media.desktop`
       color: ${colors.mainColor};
+      border: 3px solid ${colors.mainColor};
     `}
 
     &:hover {

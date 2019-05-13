@@ -10,9 +10,7 @@ let defaultProps = {
 };
 
 beforeEach(() => {
-  wrapped = mount(
-    <HeroSection { ...defaultProps } />
-  );
+  wrapped = mount(<HeroSection {...defaultProps} />);
 });
 
 afterEach(() => {
@@ -22,5 +20,21 @@ afterEach(() => {
 describe('<HeroSection />', () => {
   it('should match snapshot', () => {
     expect(wrapped).toMatchSnapshot();
+  });
+
+  it('should have a tag <h1> with a text', () => {
+    expect(wrapped.find('.hero-info h1')).toHaveLength(1);
+  });
+
+  it('title text should be equal defaultProps title', () => {
+    expect(wrapped.find('.hero-info h1').text()).toEqual(defaultProps.title);
+  });
+
+  it('should have a tag <p> with a text', () => {
+    expect(wrapped.find('.hero-info p')).toHaveLength(1);
+  });
+
+  it('description text should be equal defaultProps description', () => {
+    expect(wrapped.find('.hero-info p').text()).toEqual(defaultProps.description);
   });
 });

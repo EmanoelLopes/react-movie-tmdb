@@ -78,7 +78,7 @@ export const GlobalStyle = createGlobalStyle`
     background-color: #ddd;
     display: flex;
     justify-content: center;
-    padding: 15px 0;
+    padding: 50px 0;
 
     .container {
       justify-content: center;
@@ -88,5 +88,5 @@ export const GlobalStyle = createGlobalStyle`
 
 export const H1 = styled.h1`
   font-size: 32px;
-  margin: 15px 0;
+  margin: 25px 0;
 `;
