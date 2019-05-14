@@ -79,7 +79,7 @@ exports[`<Header /> should match snapshot 1`] = `
                       "lastClassName": "c0",
                       "rules": Array [
                         "
-  color: #01d277
+  color: #01d277;
   display: flex;
   font-size: 18px;
 

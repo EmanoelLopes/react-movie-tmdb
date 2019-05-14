@@ -2,6 +2,9 @@
 
 exports[`<Logo /> should match snapshot 1`] = `
 <styled.div>
+  <span>
+    Loading...
+  </span>
   <FontAwesomeIcon
     border={false}
     className=""
