@@ -37,7 +37,7 @@ const HeroSection = props => {
                         {director.name} 
                         {createdBy.length -1 !== index ? ', ': '' }
                       </span>
-                    )
+                    );
                   })
                 }</h3>
                 <h3>

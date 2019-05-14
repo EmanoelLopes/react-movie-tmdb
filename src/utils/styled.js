@@ -10,7 +10,7 @@ export const fonts = {
   sourceSans: '\'Source Sans Pro\', sans-serif',
 };
 
-export const imagesPath = 'http://image.tmdb.org/t/p/';
+export const imagesPath = 'https://image.tmdb.org/t/p/';
 
 const sizes = {
   largeDesktop: 1280,
