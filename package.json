@@ -26,7 +26,7 @@
     "lint": "eslint ./src",
     "lint:fix": "yarn lint --fix",
     "start": "rescripts start",
-    "build": "sh -ac '. .env.${REACT_APP_ENV}; react-scripts build'",
+    "build": "react-scripts build",
     "build:staging": "REACT_APP_ENV=staging npm run build",
     "test": "rescripts test",
     "test:verbose": "yarn test --verbose",

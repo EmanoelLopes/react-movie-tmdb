@@ -1,11 +1,11 @@
-import React, { useEffect } from 'react';
+import React, { Fragment, useEffect } from 'react';
 import { func, object, bool } from 'prop-types';
 import { connect } from 'react-redux';
 import { fetchCurrentMovie } from 'store/movies/actions';
 import Loading from 'components/Loading';
-import { H1 } from 'utils/styled';
+import HeroSection from 'components/HeroSection';
 
-const CurrentMovieMovie = (props) => {
+const CurrentMovieContainer = (props) => {
   const { dispatch, match, currentMovie, loading } = props;
   const { params } = match;
 
@@ -18,14 +18,16 @@ const CurrentMovieMovie = (props) => {
   }, [dispatch, params.id]);
 
   return (
-    <React.Fragment>
+    <Fragment>
       {(loading) && <Loading />}
       {(!!currentMovie) &&
-        <div className="movie">
-          <H1>{currentMovie.title}</H1>
-        </div>
+        <HeroSection
+          backdrop={currentMovie.backdrop_path}
+          title={currentMovie.original_title}
+          description={currentMovie.overview}
+        />
       }
-    </React.Fragment>
+    </Fragment>
   );
 };
 
@@ -34,11 +36,11 @@ const mapStateToProps = state => ({
   currentMovie: state.currentMovie,
 });
 
-CurrentMovieMovie.propTypes = {
+CurrentMovieContainer.propTypes = {
   dispatch: func.isRequired,
   match: object.isRequired,
   currentMovie: object.isRequired,
   loading: bool.isRequired,
 };
 
-export default connect(mapStateToProps)(CurrentMovieMovie);
+export default connect(mapStateToProps)(CurrentMovieContainer);

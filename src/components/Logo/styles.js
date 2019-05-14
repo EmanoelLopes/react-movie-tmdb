@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { media } from 'utils/styled';
 
 export const LogoWrapper = styled.span`
-  color: #01d277
+  color: #01d277;
   display: flex;
   font-size: 18px;
 

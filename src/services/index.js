@@ -4,6 +4,7 @@ import config from 'utils/config';
 
 const endpoints = {
   currentMovie: '/movie',
+  currentTVserie: '/tv',
   discover: {
     movie: '/discover/movie',
     tv: '/discover/tv',

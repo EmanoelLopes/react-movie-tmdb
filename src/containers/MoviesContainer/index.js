@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Fragment, Component } from 'react';
 import { connect } from 'react-redux';
 import { format } from 'date-fns';
 import { array, func } from 'prop-types';
@@ -15,7 +15,7 @@ class MoviesContainer extends Component {
   renderMovies = movies => {
     return (!!movies.length) && movies.map(movie => {
       return (
-        <React.Fragment key={movie.id}>
+        <Fragment key={movie.id}>
           <Card
             title={movie.title}
             description={movie.overview}
@@ -24,7 +24,7 @@ class MoviesContainer extends Component {
             backdrop={movie.backdrop_path}
             release={format(movie.release_date, 'YYYY')}
           />
-        </React.Fragment>
+        </Fragment>
       );
     });
   };

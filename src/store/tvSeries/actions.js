@@ -9,6 +9,13 @@ const getTVSeries = payload => {
   };
 };
 
+const getCurrentTVSerie = payload => {
+  return {
+    type: types.FETCH_CURRENT_TV_SERIE,
+    currentTVSerie: payload,
+  };
+};
+
 const fetchTVSeries = () => {
   return async dispatch => {
     dispatch(setLoading(true));
@@ -30,8 +37,30 @@ const fetchTVSeries = () => {
   };
 };
 
+const fetchCurrentTVSerie = id => {
+  return async dispatch => {
+    dispatch(setLoading(true));
+    try {
+      const { currentTVserie } = endpoints;
+      const { data, status } = await instance.get(`${currentTVserie}/${id}`, {
+        params: { ...params },
+      });
+      if (status === 200) {
+        dispatch(setLoading(false));
+        dispatch(getCurrentTVSerie(data));
+      } else if (status >= 400) {
+        dispatch(setLoading(false));
+      }
+    } catch (e) {
+      throw new Error(e);
+    }
+  };
+};
+
 export {
   getTVSeries,
+  getCurrentTVSerie,
   fetchTVSeries,
+  fetchCurrentTVSerie,
 };
 
