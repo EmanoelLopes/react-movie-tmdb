@@ -1,6 +1,7 @@
 import React, { Fragment, useEffect } from 'react';
 import { func, object, bool } from 'prop-types';
 import { connect } from 'react-redux';
+import { format } from 'date-fns';
 import { fetchCurrentTVSerie } from 'store/tvSeries/actions';
 import Loading from 'components/Loading';
 import HeroSection from 'components/HeroSection';
@@ -23,8 +24,13 @@ const CurrentTVSerieContainer = props => {
       {(!!currentTV) &&
         <HeroSection
           backdrop={currentTV.backdrop_path}
-          title={currentTV.original_title}
+          title={currentTV.original_name}
           description={currentTV.overview}
+          isCurrent={true}
+          posterPath={currentTV.poster_path}
+          releaseDate={format(currentTV.first_air_date, 'YYYY')}
+          createdBy={currentTV.created_by}
+          rating={currentTV.vote_average}
         />
       }
     </Fragment>

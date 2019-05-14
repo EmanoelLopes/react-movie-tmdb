@@ -1,5 +1,6 @@
 import React, { Fragment, useEffect } from 'react';
 import { func, object, bool } from 'prop-types';
+import { format } from 'date-fns';
 import { connect } from 'react-redux';
 import { fetchCurrentMovie } from 'store/movies/actions';
 import Loading from 'components/Loading';
@@ -25,6 +26,11 @@ const CurrentMovieContainer = (props) => {
           backdrop={currentMovie.backdrop_path}
           title={currentMovie.original_title}
           description={currentMovie.overview}
+          isCurrent={true}
+          posterPath={currentMovie.poster_path}
+          releaseDate={format(currentMovie.release_date, 'YYYY')}
+          createdBy={currentMovie.production_companies}
+          rating={currentMovie.vote_average}
         />
       }
     </Fragment>
