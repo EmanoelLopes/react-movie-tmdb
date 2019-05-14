@@ -3,7 +3,7 @@
 exports[`<HeroSection /> should match snapshot 1`] = `
 .c0 {
   background-attachment: fixed;
-  background-image: url(http://image.tmdb.org/t/p/w1280);
+  background-image: url(https://image.tmdb.org/t/p/w1280);
   background-position: 0 0;
   background-size: cover;
   background-repeat: no-repeat;

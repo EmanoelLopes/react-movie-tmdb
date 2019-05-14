@@ -3,7 +3,7 @@
 exports[`<Card /> should match snapshot 1`] = `
 .c0 {
   background-color: #fff;
-  background-image: url(http://image.tmdb.org/t/p/w500);
+  background-image: url(https://image.tmdb.org/t/p/w500);
   color: #fff;
   background-size: cover;
   background-position: top center;
@@ -322,7 +322,7 @@ exports[`<Card /> should match snapshot 1`] = `
               <figure>
                 <img
                   alt="Some Card"
-                  src="http://image.tmdb.org/t/p/w500someposterpath.jpg"
+                  src="https://image.tmdb.org/t/p/w500someposterpath.jpg"
                 />
               </figure>
             </div>
