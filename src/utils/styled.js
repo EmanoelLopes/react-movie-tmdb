@@ -77,11 +77,22 @@ export const GlobalStyle = createGlobalStyle`
   .rm-footer {
     background-color: #ddd;
     display: flex;
+    font-size: 18px;
     justify-content: center;
     padding: 50px 0;
 
     .container {
       justify-content: center;
+      align-items: center;
+    }
+
+    .react-site-link {
+      color: #61dbfb;
+      font-size: 22px;
+    }
+
+    .fa-heart {
+      color: red;
     }
   }
 `;
