@@ -1,17 +1,15 @@
 import React from 'react';
 import { mount } from 'enzyme';
+import { Movies } from 'pages';
 import Root from 'components/Root';
-import Main from 'components/Main';
 
 let wrapped;
-let defaultProps = {
-  children: '<div>Main Component</div>',
-};
+let defaultProps = {};
 
 beforeEach(() => {
   wrapped = mount(
     <Root>
-      <Main {...defaultProps} />
+      <Movies {...defaultProps} />
     </Root>
   );
 });
@@ -20,7 +18,7 @@ afterEach(() => {
   wrapped.unmount();
 });
 
-describe('<Main />', () => {
+describe('<Movies />', () => {
   it('should match snapshot', () => {
     expect(wrapped).toMatchSnapshot();
   });

@@ -6,7 +6,7 @@ const handleRatingStatyles = value => {
   return {
     width: `${value / 10 * 100}%`,
     backgroundColor: `${(value >= 7 && value < 10) ? '#01d277' : (value < 5) ? 'red' : 'orange' }`
-  }
+  };
 };
 
 const Rating = ({ rating }) => {

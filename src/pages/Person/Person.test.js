@@ -1,17 +1,15 @@
 import React from 'react';
 import { mount } from 'enzyme';
+import { Person } from 'pages';
 import Root from 'components/Root';
-import Main from 'components/Main';
 
 let wrapped;
-let defaultProps = {
-  children: '<div>Main Component</div>',
-};
+let defaultProps = {};
 
 beforeEach(() => {
   wrapped = mount(
     <Root>
-      <Main {...defaultProps} />
+      <Person {...defaultProps} />
     </Root>
   );
 });
@@ -20,7 +18,7 @@ afterEach(() => {
   wrapped.unmount();
 });
 
-describe('<Main />', () => {
+describe('<Person />', () => {
   it('should match snapshot', () => {
     expect(wrapped).toMatchSnapshot();
   });
