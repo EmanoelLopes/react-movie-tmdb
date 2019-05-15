@@ -73,7 +73,10 @@ export const Hero = styled.section`
   }
 
   .hero-poster {
-    margin-right: 25px;
+    ${media.desktop`
+      margin-right: 25px;
+    `}
+
 
     figure {
       text-align: center;
@@ -81,8 +84,12 @@ export const Hero = styled.section`
     }
 
     img{
-      max-width: 200px;
+      max-width: 300px;
       border: 3px solid #fff;
+
+      ${media.desktop`
+        max-width: 200px;
+      `}
     }
   }
 `;
