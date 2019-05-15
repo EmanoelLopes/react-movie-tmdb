@@ -54,22 +54,6 @@ export const Hero = styled.section`
     p {
       font-size: 22px;
     }
-
-    .vote-average {
-      background-color: #fff;
-      display: inline-block;
-      height: 25px;
-      margin: 0 15px;
-      max-width: 200px;
-      vertical-align: middle;
-      width: 100%;
-
-      small {
-        background-color: #01d277;
-        display: block;
-        height: 100%;
-      }
-    }
   }
 
   .hero-poster {

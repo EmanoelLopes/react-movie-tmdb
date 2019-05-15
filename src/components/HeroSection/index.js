@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import { string, bool, array, number } from 'prop-types';
 import { imagesPath } from 'utils/styled';
+import Rating from 'components/Rating';
 import { Hero } from './styles';
 
 const HeroSection = props => {
@@ -48,9 +49,7 @@ const HeroSection = props => {
                 })}</h3>
                 <h3>
                   IMDB Rating:
-                  <span className="vote-average">
-                    <small style={{ width: `${rating/10 * 100}%`}}></small>
-                  </span> {rating}
+                  <Rating rating={rating} />
                 </h3>
               </Fragment>
             }
@@ -83,7 +82,7 @@ HeroSection.defaultProps = {
   releaseDate: '',
   createdBy: [],
   genres: [],
-  rating: null,
+  rating: 0,
 };
 
 export default HeroSection;

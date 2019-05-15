@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Search /> should match snapshot 1`] = `
+<Search>
+  <div>
+    Search
+  </div>
+</Search>
+`;
