@@ -11,6 +11,7 @@ const HeroSection = props => {
     isCurrent,
     posterPath,
     releaseDate,
+    genres,
     createdBy,
     rating,
   } = props;
@@ -30,8 +31,8 @@ const HeroSection = props => {
             <h1>{title}</h1>
             {(isCurrent) && 
               <Fragment>
-                <h2>First Release: {releaseDate}</h2>
-                <h3>Directors: {createdBy.map((director, index) => {
+                <h2>Release: {releaseDate}</h2>
+                <h3>By: {createdBy.map((director, index) => {
                     return (
                       <span key={director.id}>      
                         {director.name} 
@@ -40,8 +41,13 @@ const HeroSection = props => {
                     );
                   })
                 }</h3>
+                <h3>Genres: {genres.map(genre => {
+                  return (
+                    <span key={genre.id}>{genre.name} </span>
+                  );
+                })}</h3>
                 <h3>
-                  Rating:
+                  IMDB Rating:
                   <span className="vote-average">
                     <small style={{ width: `${rating/10 * 100}%`}}></small>
                   </span> {rating}
@@ -64,6 +70,7 @@ HeroSection.propTypes = {
   isCurrent: bool,
   releaseDate: string,
   createdBy: array,
+  genres: array,
   rating: number,
 };
 
@@ -75,6 +82,7 @@ HeroSection.defaultProps = {
   isCurrent: false,
   releaseDate: '',
   createdBy: [],
+  genres: [],
   rating: null,
 };
 

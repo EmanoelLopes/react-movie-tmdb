@@ -24,12 +24,19 @@ export const Hero = styled.section`
     padding: 50px 0;
 
     .container {
-      flex-direction: row;
+      ${media.desktop`
+        flex-direction: row;
+      `}
     }
 
     h1 {
       font-size: 32px;
+      text-align: center;
       text-transform: uppercase;
+
+      ${media.desktop`
+        text-align: left;
+      `}
     }
 
     h2 {
@@ -53,7 +60,7 @@ export const Hero = styled.section`
       display: inline-block;
       height: 25px;
       margin: 0 15px;
-      max-width: 300px;
+      max-width: 200px;
       vertical-align: middle;
       width: 100%;
 
@@ -67,6 +74,11 @@ export const Hero = styled.section`
 
   .hero-poster {
     margin-right: 25px;
+
+    figure {
+      text-align: center;
+      margin-bottom: 15px;
+    }
 
     img{
       max-width: 200px;

@@ -30,6 +30,7 @@ const CurrentMovieContainer = (props) => {
           posterPath={currentMovie.poster_path}
           releaseDate={format(currentMovie.release_date, 'YYYY')}
           createdBy={currentMovie.production_companies}
+          genres={currentMovie.genres}
           rating={currentMovie.vote_average}
         />
       }

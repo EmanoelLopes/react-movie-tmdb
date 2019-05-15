@@ -30,6 +30,7 @@ const CurrentTVSerieContainer = props => {
           posterPath={currentTV.poster_path}
           releaseDate={format(currentTV.first_air_date, 'YYYY')}
           createdBy={currentTV.created_by}
+          genres={currentTV.genres}
           rating={currentTV.vote_average}
         />
       }
