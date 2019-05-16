@@ -3,7 +3,7 @@
 exports[`<Card /> should match snapshot 1`] = `
 .c0 {
   background-color: #fff;
-  background-image: url(https://image.tmdb.org/t/p/w500);
+  background-image: url( http://placehold.jp/320x500.png?text=NO%20IMAGE );
   color: #fff;
   background-size: cover;
   background-position: top center;
@@ -158,9 +158,11 @@ exports[`<Card /> should match snapshot 1`] = `
                 "rules": Array [
                   "
   background-color: #fff;
-  background-image: url(",
+  background-image: url(
+    ",
                   [Function],
-                  ");
+                  "
+  );
   color: #fff;
 
   ",

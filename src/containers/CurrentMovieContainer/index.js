@@ -8,7 +8,13 @@ import Loading from 'components/Loading';
 import HeroSection from 'components/HeroSection';
 
 const CurrentMovieContainer = (props) => {
-  const { dispatch, match, currentMovie, loading, cast } = props;
+  const {
+    dispatch,
+    match,
+    currentMovie,
+    loading,
+    cast
+  } = props;
   const { params } = match;
 
   useEffect(() => {
@@ -37,12 +43,15 @@ const CurrentMovieContainer = (props) => {
         />
       }
       {!!cast && cast.map(actor => {
+      /* TODO - Move this to a separeted component */
         return (
           <div key={actor.cast_id} className="actors">
-            <img
-              src={`http://image.tmdb.org/t/p/w154/${actor.profile_path}`}
-              alt={actor.name}
-            />
+            {(!!actor.profile_path) &&
+              <img
+                src={`http://image.tmdb.org/t/p/w154/${actor.profile_path}`}
+                alt={actor.name}
+              />
+            }
             <h4>{`${actor.name} (${actor.character})`}</h4>
           </div>
         );

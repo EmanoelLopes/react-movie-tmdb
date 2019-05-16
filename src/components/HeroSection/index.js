@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import { string, bool, array, number } from 'prop-types';
-import { imagesPath } from 'utils/styled';
+import { images } from 'utils/styled';
 import Rating from 'components/Rating';
 import { Hero } from './styles';
 
@@ -24,7 +24,9 @@ const HeroSection = props => {
           {(isCurrent) &&
             <div className="hero-poster">
               <figure>
-                <img src={`${imagesPath}/w500${posterPath}`} alt={title} />
+                {(!!posterPath) && 
+                  <img src={`${images.path}${images.poster}${posterPath}`} alt={title} />
+                }
               </figure>
             </div>
           }

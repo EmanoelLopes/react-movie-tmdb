@@ -10,7 +10,16 @@ export const fonts = {
   sourceSans: '\'Source Sans Pro\', sans-serif',
 };
 
-export const imagesPath = 'https://image.tmdb.org/t/p/';
+export const images = {
+  path: 'https://image.tmdb.org/t/p/',
+  poster: 'w500',
+  backdrop: 'w1280',
+  profile: 'w154',
+  placeholder: {
+    poster: 'http://placehold.jp/320x500.png?text=NO%20IMAGE',
+    backdrop: 'http://placehold.jp/1280x720.png?text=NO%20IMAGE',
+  },
+};
 
 const sizes = {
   largeDesktop: 1280,

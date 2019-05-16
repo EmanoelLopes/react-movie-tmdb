@@ -37,12 +37,16 @@ const CurrentTVSerieContainer = props => {
         />
       }
       {!!cast && cast.map(actor => {
+        /* TODO - Move this to a separeted component */
         return (
           <div key={actor.id} className="actors">
-            <img
-              src={`http://image.tmdb.org/t/p/w154/${actor.profile_path}`}
-              alt={actor.name}
-            />
+            {(!!actor.profile_path) &&
+              <img
+                /* TODO - add profile path */
+                src={`http://image.tmdb.org/t/p/w154/${actor.profile_path}`}
+                alt={actor.name}
+              />
+            }
             <h4>{`${actor.name} (${actor.character})`}</h4>
           </div>
         );

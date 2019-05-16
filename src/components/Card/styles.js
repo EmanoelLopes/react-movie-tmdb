@@ -1,9 +1,16 @@
 import styled from 'styled-components';
-import { colors, media, imagesPath } from 'utils/styled';
+import { colors, media, images } from 'utils/styled';
+
+const { path, poster, placeholder } = images;
 
 export const CardFeatured = styled.div`
   background-color: #fff;
-  background-image: url(${props => `${imagesPath}w500${props.backdrop}`});
+  background-image: url(
+    ${props => (props.poster)
+      ? `${path}${poster}${props.poster}`
+      : `${placeholder.poster}`
+    }
+  );
   color: #fff;
 
   ${media.desktop`

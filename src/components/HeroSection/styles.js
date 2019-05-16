@@ -1,9 +1,16 @@
 import styled from 'styled-components';
-import { media, imagesPath } from 'utils/styled';
+import { media, images } from 'utils/styled';
+
+const { path, backdrop, placeholder } = images;
 
 export const Hero = styled.section`
   background-attachment: fixed;
-  background-image: url(${props => `${imagesPath}w1280${props.backdrop}`});
+  background-image: url(
+    ${props => (props.backdrop) 
+      ? `${path}${backdrop}${props.backdrop}`
+      : `${placeholder.backdrop}`
+    }
+  );
   background-position: 0 0;
   background-size: cover;
   background-repeat: no-repeat;

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInfoCircle, faCalendarAlt } from '@fortawesome/free-solid-svg-icons';
 import { CardFeatured } from './styles';
-import { imagesPath } from 'utils/styled';
+import { images } from 'utils/styled';
 import { textTruncate } from 'utils/helpers';
 
 const Card = props => {
@@ -21,7 +21,7 @@ const Card = props => {
     <CardFeatured backdrop={backdrop}>
       <div className="card-poster">
         <figure>
-          <img src={`${imagesPath}w500${poster}`} alt={title}/>
+          <img src={`${images.path}${images.poster}${poster}`} alt={title}/>
         </figure>
       </div>
       <div className="card-info">

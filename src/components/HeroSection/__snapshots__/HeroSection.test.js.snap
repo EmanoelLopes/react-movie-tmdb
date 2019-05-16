@@ -24,7 +24,7 @@ exports[`<HeroSection /> should match snapshot 1`] = `
 
 .c0 {
   background-attachment: fixed;
-  background-image: url(https://image.tmdb.org/t/p/w1280);
+  background-image: url( http://placehold.jp/1280x720.png?text=NO%20IMAGE );
   background-position: 0 0;
   background-size: cover;
   background-repeat: no-repeat;
@@ -171,9 +171,11 @@ exports[`<HeroSection /> should match snapshot 1`] = `
             "rules": Array [
               "
   background-attachment: fixed;
-  background-image: url(",
+  background-image: url(
+    ",
               [Function],
-              ");
+              "
+  );
   background-position: 0 0;
   background-size: cover;
   background-repeat: no-repeat;
@@ -323,12 +325,7 @@ exports[`<HeroSection /> should match snapshot 1`] = `
             <div
               className="hero-poster"
             >
-              <figure>
-                <img
-                  alt=""
-                  src="https://image.tmdb.org/t/p//w500"
-                />
-              </figure>
+              <figure />
             </div>
             <div
               className="hero-overview"
