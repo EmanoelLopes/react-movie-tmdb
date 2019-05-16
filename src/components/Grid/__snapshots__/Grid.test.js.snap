@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Grid /> should match snapshot 1`] = `
+.c0 {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  grid-column-gap: 25px;
+  grid-row-gap: 25px;
+}
+
+@media (min-width:62em) {
+  .c0 {
+    grid-template-columns: 50% 50%;
+  }
+}
+
+<Grid>
+  <styled.div>
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bwzfXH",
+            "isStatic": true,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto; 
+  grid-column-gap: 25px;
+  grid-row-gap: 25px;
+
+  ",
+              "
+    @media (min-width: ",
+              "62",
+              "em) {
+      ",
+              "
+    grid-template-columns: 50% 50%
+  ",
+              "
+    }
+  ",
+              "
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bwzfXH",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+    >
+      <div
+        className="c0"
+      >
+        &lt;div&gt;&lt;/div&gt;
+      </div>
+    </StyledComponent>
+  </styled.div>
+</Grid>
+`;

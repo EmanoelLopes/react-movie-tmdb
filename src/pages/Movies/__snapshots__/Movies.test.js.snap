@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Movies /> should match snapshot 1`] = `
+<Root>
+  <Provider
+    store={
+      Object {
+        "dispatch": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+        Symbol(observable): [Function],
+      }
+    }
+  >
+    <Movies>
+      <div
+        className="movies"
+      >
+        <h1>
+          Movies
+        </h1>
+      </div>
+    </Movies>
+  </Provider>
+</Root>
+`;

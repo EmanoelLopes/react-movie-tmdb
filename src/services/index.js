@@ -3,6 +3,9 @@ import axios from 'axios';
 import config from 'utils/config';
 
 const endpoints = {
+  currentMovie: '/movie',
+  currentTVserie: '/tv',
+  credits: '/credits',
   discover: {
     movie: '/discover/movie',
     tv: '/discover/tv',

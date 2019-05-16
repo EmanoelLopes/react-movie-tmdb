@@ -1,9 +1,16 @@
 import styled from 'styled-components';
-import { media, imagesPath } from 'utils/styled';
+import { media, images } from 'utils/styled';
+
+const { path, backdrop, placeholder } = images;
 
 export const Hero = styled.section`
   background-attachment: fixed;
-  background-image: url(${props => `${imagesPath}w1280${props.backdrop}`});
+  background-image: url(
+    ${props => (props.backdrop) 
+      ? `${path}${backdrop}${props.backdrop}`
+      : `${placeholder.backdrop}`
+    }
+  );
   background-position: 0 0;
   background-size: cover;
   background-repeat: no-repeat;
@@ -21,15 +28,59 @@ export const Hero = styled.section`
     color: #fff;
     display: flex;
     justify-content: center;
-    padding: 25px;
+    padding: 50px 0;
+
+    .container {
+      ${media.desktop`
+        flex-direction: row;
+      `}
+    }
 
     h1 {
       font-size: 32px;
+      text-align: center;
+      text-transform: uppercase;
+
+      ${media.desktop`
+        text-align: left;
+      `}
+    }
+
+    h2 {
+      font-size: 28px;
+    }
+
+    h3 {
+      font-size: 22px;
+    }
+
+    h1, h2, h3 {
       margin-bottom: 15px; 
     }
 
     p {
       font-size: 22px;
+    }
+  }
+
+  .hero-poster {
+    ${media.desktop`
+      margin-right: 25px;
+    `}
+
+
+    figure {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    img{
+      max-width: 300px;
+      border: 3px solid #fff;
+
+      ${media.desktop`
+        max-width: 200px;
+      `}
     }
   }
 `;

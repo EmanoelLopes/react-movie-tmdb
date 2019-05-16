@@ -1,5 +1,6 @@
-import React, { Component } from 'react';
+import React, { Fragment, Component } from 'react';
 import { connect } from 'react-redux';
+import { format } from 'date-fns';
 import { array, func } from 'prop-types';
 import { fetchMovies } from 'store/movies/actions';
 import Card from 'components/Card';
@@ -11,18 +12,19 @@ class MoviesContainer extends Component {
     dispatch(fetchMovies(getMovies));
   };
 
-  renderMovies = (movies) => {
+  renderMovies = movies => {
     return (!!movies.length) && movies.map(movie => {
       return (
-        <React.Fragment key={movie.id}>
+        <Fragment key={movie.id}>
           <Card
             title={movie.title}
             description={movie.overview}
             poster={movie.poster_path}
             id={`/movie/${movie.id}`}
             backdrop={movie.backdrop_path}
+            release={format(movie.release_date, 'YYYY')}
           />
-        </React.Fragment>
+        </Fragment>
       );
     });
   };

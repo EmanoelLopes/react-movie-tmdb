@@ -9,6 +9,13 @@ const getMovies = payload => {
   };
 };
 
+const getCurrentMovie = payload => {
+  return {
+    type: types.FETCH_CURRENT_MOVIE,
+    currentMovie: payload,
+  };
+};
+
 const fetchMovies = () => {
   return async dispatch => {
     dispatch(setLoading(true));
@@ -30,8 +37,31 @@ const fetchMovies = () => {
   };
 };
 
+const fetchCurrentMovie = id => {
+  return async dispatch => {
+    dispatch(setLoading(true));
+    try {
+      const { currentMovie } = endpoints;
+      const { data, status } = await instance.get(`${currentMovie}/${id}`, {
+        params: { ...params },
+      });
+      const movie = data;
+      if (status === 200) {
+        dispatch(setLoading(false));
+        dispatch(getCurrentMovie(movie));
+      } else if (status >= 400) {
+        dispatch(setLoading(false));
+      }
+    } catch (e) {
+      throw new Error(e);
+    }
+  };
+};
+
 export {
   getMovies,
+  getCurrentMovie,
   fetchMovies,
+  fetchCurrentMovie,
 };
 

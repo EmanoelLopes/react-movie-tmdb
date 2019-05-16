@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Rating /> should match snapshot 1`] = `
+<Fragment>
+  <styled.span>
+    <small
+      style={
+        Object {
+          "backgroundColor": "#01d277",
+          "width": "70%",
+        }
+      }
+    >
+      <span>
+        7
+      </span>
+    </small>
+  </styled.span>
+</Fragment>
+`;

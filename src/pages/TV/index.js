@@ -1,9 +1,18 @@
-import React from 'react';
+import React, { Fragment } from 'react';
+import { object } from 'prop-types';
+import { CurrentTVSerieContainer } from 'containers';
 
-const TV = () => (
-  <div className="TV">
-    <h1>TV</h1>
-  </div>
-);
+const TV = ({ match }) => {
+  return (
+    <Fragment>
+      <CurrentTVSerieContainer match={match} />
+    </Fragment>
+  );
+};
+
+TV.propTypes = {
+  match: object.isRequired,
+};
 
 export default TV;
+

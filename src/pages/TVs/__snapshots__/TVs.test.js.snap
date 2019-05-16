@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TVs /> should match snapshot 1`] = `
+<Root>
+  <Provider
+    store={
+      Object {
+        "dispatch": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+        Symbol(observable): [Function],
+      }
+    }
+  >
+    <TVs>
+      <div
+        className="tv-series"
+      >
+        <h1>
+          TV Series
+        </h1>
+      </div>
+    </TVs>
+  </Provider>
+</Root>
+`;
