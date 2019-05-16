@@ -21,6 +21,7 @@ export const Hero = styled.section`
 
   ${media.desktop`
     height: 700px;
+    background-position: center 0;
   `}
 
   .hero-info {

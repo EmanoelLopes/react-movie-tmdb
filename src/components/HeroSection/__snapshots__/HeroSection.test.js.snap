@@ -93,6 +93,7 @@ exports[`<HeroSection /> should match snapshot 1`] = `
 @media (min-width:62em) {
   .c0 {
     height: 700px;
+    background-position: center 0;
   }
 }
 
@@ -192,6 +193,7 @@ exports[`<HeroSection /> should match snapshot 1`] = `
       ",
               "
     height: 700px;
+    background-position: center 0;
   ",
               "
     }

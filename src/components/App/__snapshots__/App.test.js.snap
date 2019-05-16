@@ -8,7 +8,7 @@ exports[`<App /> should match snapshot 1`] = `
 
 .c3 {
   display: grid;
-  grid-template-columns: 100%;
+  grid-template-columns: auto;
   grid-template-rows: auto;
   grid-column-gap: 25px;
   grid-row-gap: 25px;
@@ -147,7 +147,7 @@ exports[`<App /> should match snapshot 1`] = `
                           "$$typeof": Symbol(react.forward_ref),
                           "attrs": Array [],
                           "componentStyle": ComponentStyle {
-                            "componentId": "sc-bZQynM",
+                            "componentId": "sc-gzVnrw",
                             "isStatic": true,
                             "lastClassName": "c0",
                             "rules": Array [
@@ -188,7 +188,7 @@ exports[`<App /> should match snapshot 1`] = `
                           "displayName": "styled.span",
                           "foldedComponentIds": Array [],
                           "render": [Function],
-                          "styledComponentId": "sc-bZQynM",
+                          "styledComponentId": "sc-gzVnrw",
                           "target": "span",
                           "toString": [Function],
                           "warnTooManyClasses": [Function],
@@ -605,24 +605,44 @@ exports[`<App /> should match snapshot 1`] = `
                               getMovies={[Function]}
                               movies={Array []}
                             >
-                              <Grid>
-                                <styled.div>
+                              <Grid
+                                columnGap="25px"
+                                columns="auto"
+                                rowGap="25px"
+                                rows="auto"
+                              >
+                                <styled.div
+                                  columnGap="25px"
+                                  columns="auto"
+                                  rowGap="25px"
+                                  rows="auto"
+                                >
                                   <StyledComponent
+                                    columnGap="25px"
+                                    columns="auto"
                                     forwardedComponent={
                                       Object {
                                         "$$typeof": Symbol(react.forward_ref),
                                         "attrs": Array [],
                                         "componentStyle": ComponentStyle {
                                           "componentId": "sc-htpNat",
-                                          "isStatic": true,
+                                          "isStatic": false,
                                           "lastClassName": "c3",
                                           "rules": Array [
                                             "
   display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: auto; 
-  grid-column-gap: 25px;
-  grid-row-gap: 25px;
+  grid-template-columns: ",
+                                            [Function],
+                                            ";
+  grid-template-rows: ",
+                                            [Function],
+                                            "; 
+  grid-column-gap: ",
+                                            [Function],
+                                            ";
+  grid-row-gap: ",
+                                            [Function],
+                                            ";
 
   ",
                                             "
@@ -631,7 +651,7 @@ exports[`<App /> should match snapshot 1`] = `
                                             "em) {
       ",
                                             "
-    grid-template-columns: 50% 50%
+    grid-template-columns: 50% 50%;
   ",
                                             "
     }
@@ -651,9 +671,12 @@ exports[`<App /> should match snapshot 1`] = `
                                       }
                                     }
                                     forwardedRef={null}
+                                    rowGap="25px"
+                                    rows="auto"
                                   >
                                     <div
                                       className="c3"
+                                      rows="auto"
                                     />
                                   </StyledComponent>
                                 </styled.div>
@@ -754,24 +777,44 @@ exports[`<App /> should match snapshot 1`] = `
                               getSeries={[Function]}
                               tvSeries={Array []}
                             >
-                              <Grid>
-                                <styled.div>
+                              <Grid
+                                columnGap="25px"
+                                columns="auto"
+                                rowGap="25px"
+                                rows="auto"
+                              >
+                                <styled.div
+                                  columnGap="25px"
+                                  columns="auto"
+                                  rowGap="25px"
+                                  rows="auto"
+                                >
                                   <StyledComponent
+                                    columnGap="25px"
+                                    columns="auto"
                                     forwardedComponent={
                                       Object {
                                         "$$typeof": Symbol(react.forward_ref),
                                         "attrs": Array [],
                                         "componentStyle": ComponentStyle {
                                           "componentId": "sc-htpNat",
-                                          "isStatic": true,
+                                          "isStatic": false,
                                           "lastClassName": "c3",
                                           "rules": Array [
                                             "
   display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: auto; 
-  grid-column-gap: 25px;
-  grid-row-gap: 25px;
+  grid-template-columns: ",
+                                            [Function],
+                                            ";
+  grid-template-rows: ",
+                                            [Function],
+                                            "; 
+  grid-column-gap: ",
+                                            [Function],
+                                            ";
+  grid-row-gap: ",
+                                            [Function],
+                                            ";
 
   ",
                                             "
@@ -780,7 +823,7 @@ exports[`<App /> should match snapshot 1`] = `
                                             "em) {
       ",
                                             "
-    grid-template-columns: 50% 50%
+    grid-template-columns: 50% 50%;
   ",
                                             "
     }
@@ -800,9 +843,12 @@ exports[`<App /> should match snapshot 1`] = `
                                       }
                                     }
                                     forwardedRef={null}
+                                    rowGap="25px"
+                                    rows="auto"
                                   >
                                     <div
                                       className="c3"
+                                      rows="auto"
                                     />
                                   </StyledComponent>
                                 </styled.div>
