@@ -11,7 +11,7 @@ export const Hero = styled.section`
       : `${placeholder.backdrop}`
     }
   );
-  background-position: 0 0;
+  background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;

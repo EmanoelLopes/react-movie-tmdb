@@ -1,17 +1,17 @@
-FROM node:10-alpine
+# base image
+FROM node:9.6.1
 
-ADD . /var/app
+# set working directory
+RUN mkdir /usr/src/app
+WORKDIR /usr/src/app
 
-WORKDIR /var/app
+# add `/usr/src/app/node_modules/.bin` to $PATH
+ENV PATH /usr/src/app/node_modules/.bin:$PATH
 
-ENV PATH="/var/app/node_modules/.bin/:${PATH}"
+# install and cache app dependencies
+COPY package.json /usr/src/app/package.json
+RUN npm install --silent
+RUN npm install react-scripts@1.1.1 -g --silent
 
-RUN npm install
-
-RUN npm run build
-
-# CMD serve -s build
-
-CMD npm start
-
-EXPOSE 3000
+# start app
+CMD ["npm", "start"]
