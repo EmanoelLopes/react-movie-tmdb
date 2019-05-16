@@ -48,7 +48,7 @@ const CurrentMovieContainer = (props) => {
           <div key={actor.cast_id} className="actors">
             {(!!actor.profile_path) &&
               <img
-                src={`http://image.tmdb.org/t/p/w154/${actor.profile_path}`}
+                src={`https://image.tmdb.org/t/p/w154/${actor.profile_path}`}
                 alt={actor.name}
               />
             }

@@ -24,7 +24,7 @@ exports[`<TV /> should match snapshot 1`] = `
 
 .c1 {
   background-attachment: fixed;
-  background-image: url( http://placehold.jp/1280x720.png?text=NO%20IMAGE );
+  background-image: url( https://placehold.jp/1280x720.png?text=NO%20IMAGE );
   background-position: 0 0;
   background-size: cover;
   background-repeat: no-repeat;

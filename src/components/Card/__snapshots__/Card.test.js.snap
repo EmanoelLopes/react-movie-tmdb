@@ -3,7 +3,7 @@
 exports[`<Card /> should match snapshot 1`] = `
 .c0 {
   background-color: #fff;
-  background-image: url( http://placehold.jp/320x500.png?text=NO%20IMAGE );
+  background-image: url( https://placehold.jp/320x500.png?text=NO%20IMAGE );
   color: #fff;
   background-size: cover;
   background-position: top center;

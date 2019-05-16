@@ -43,7 +43,7 @@ const CurrentTVSerieContainer = props => {
             {(!!actor.profile_path) &&
               <img
                 /* TODO - add profile path */
-                src={`http://image.tmdb.org/t/p/w154/${actor.profile_path}`}
+                src={`https://image.tmdb.org/t/p/w154/${actor.profile_path}`}
                 alt={actor.name}
               />
             }

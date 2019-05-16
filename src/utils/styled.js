@@ -16,8 +16,8 @@ export const images = {
   backdrop: 'w1280',
   profile: 'w154',
   placeholder: {
-    poster: 'http://placehold.jp/320x500.png?text=NO%20IMAGE',
-    backdrop: 'http://placehold.jp/1280x720.png?text=NO%20IMAGE',
+    poster: 'https://placehold.jp/320x500.png?text=NO%20IMAGE',
+    backdrop: 'https://placehold.jp/1280x720.png?text=NO%20IMAGE',
   },
 };
 
