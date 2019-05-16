@@ -6,9 +6,9 @@ const { path, poster, placeholder } = images;
 export const CardFeatured = styled.div`
   background-color: #fff;
   background-image: url(
-    ${props => (props.poster)
-      ? `${path}${poster}${props.poster}`
-      : `${placeholder.poster}`
+    ${props => (props.backdrop)
+      ? `${path}${poster}${props.backdrop}`
+      : `${placeholder.backdrop}`
     }
   );
   color: #fff;
