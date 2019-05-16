@@ -7,6 +7,7 @@ exports[`<TV /> should match snapshot 1`] = `
   height: 25px;
   margin: 0 15px;
   max-width: 190px;
+  position: relative;
   vertical-align: middle;
   width: 100%;
 }
@@ -15,6 +16,10 @@ exports[`<TV /> should match snapshot 1`] = `
   background-color: #01d277;
   display: block;
   height: 100%;
+}
+
+.c2 small > span {
+  margin-left: 5px;
 }
 
 .c1 {
@@ -188,6 +193,7 @@ exports[`<TV /> should match snapshot 1`] = `
         }
       >
         <CurrentTVSerieContainer
+          cast={Array []}
           currentTV={Object {}}
           dispatch={[Function]}
           loading={true}
@@ -511,7 +517,9 @@ exports[`<TV /> should match snapshot 1`] = `
                       <div
                         className="hero-overview"
                       >
-                        <h1 />
+                        <h1
+                          className="hero-title"
+                        />
                         <h2>
                           Release: 
                           Invalid Date
@@ -544,6 +552,7 @@ exports[`<TV /> should match snapshot 1`] = `
   height: 25px;
   margin: 0 15px;
   max-width: 190px;
+  position: relative;
   vertical-align: middle;
   width: 100%;
 
@@ -551,6 +560,10 @@ exports[`<TV /> should match snapshot 1`] = `
     background-color: #01d277;
     display: block;
     height: 100%;
+  }
+
+  small > span {
+    margin-left: 5px;
   }
 ",
                                       ],
@@ -587,7 +600,9 @@ exports[`<TV /> should match snapshot 1`] = `
                             </styled.span>
                           </Rating>
                         </h3>
-                        <p>
+                        <p
+                          className="hero-description"
+                        >
                           Overview: 
                         </p>
                       </div>

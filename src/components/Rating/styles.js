@@ -6,6 +6,7 @@ export const VoteAverage = styled.span`
   height: 25px;
   margin: 0 15px;
   max-width: 190px;
+  position: relative;
   vertical-align: middle;
   width: 100%;
 
@@ -13,5 +14,9 @@ export const VoteAverage = styled.span`
     background-color: #01d277;
     display: block;
     height: 100%;
+  }
+
+  small > span {
+    margin-left: 5px;
   }
 `;

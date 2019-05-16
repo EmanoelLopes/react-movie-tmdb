@@ -29,13 +29,13 @@ const HeroSection = props => {
             </div>
           }
           <div className="hero-overview">
-            <h1>{title}</h1>
+            <h1 className="hero-title">{title}</h1>
             {(isCurrent) && 
               <Fragment>
                 <h2>Release: {releaseDate}</h2>
                 <h3>By: {createdBy.map((director, index) => {
                     return (
-                      <span key={director.id}>      
+                      <span className="creted-by" key={director.id}>      
                         {director.name} 
                         {createdBy.length -1 !== index ? ', ': '' }
                       </span>
@@ -44,7 +44,7 @@ const HeroSection = props => {
                 }</h3>
                 <h3>Genres: {genres.map(genre => {
                   return (
-                    <span key={genre.id}>{genre.name} </span>
+                    <span className="genre" key={genre.id}>{genre.name} </span>
                   );
                 })}</h3>
                 <h3>
@@ -53,7 +53,7 @@ const HeroSection = props => {
                 </h3>
               </Fragment>
             }
-            <p>Overview: {description}</p>
+            <p className="hero-description">Overview: {description}</p>
           </div>
         </div>
       </div>

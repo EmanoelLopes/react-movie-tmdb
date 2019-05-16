@@ -1,18 +1,20 @@
 import React, { Fragment, useEffect } from 'react';
-import { func, object, bool } from 'prop-types';
+import { func, object, bool, array } from 'prop-types';
 import { connect } from 'react-redux';
 import { format } from 'date-fns';
 import { fetchCurrentTVSerie } from 'store/tvSeries/actions';
+import { fetchTVCredits } from 'store/credits/actions';
 import Loading from 'components/Loading';
 import HeroSection from 'components/HeroSection';
 
 const CurrentTVSerieContainer = props => {
-  const { dispatch, match, loading, currentTV } = props;
+  const { dispatch, match, loading, currentTV, cast } = props;
   const { params } = match;
 
   useEffect(() => {
     const getCurrentTVSerie = id => {
       dispatch(fetchCurrentTVSerie(id));
+      dispatch(fetchTVCredits(id));
     };
 
     getCurrentTVSerie(params.id);
@@ -34,6 +36,17 @@ const CurrentTVSerieContainer = props => {
           rating={currentTV.vote_average}
         />
       }
+      {!!cast && cast.map(actor => {
+        return (
+          <div key={actor.id} className="actors">
+            <img
+              src={`http://image.tmdb.org/t/p/w154/${actor.profile_path}`}
+              alt={actor.name}
+            />
+            <h4>{`${actor.name} (${actor.character})`}</h4>
+          </div>
+        );
+      })}
     </Fragment>
   );
 };
@@ -41,6 +54,7 @@ const CurrentTVSerieContainer = props => {
 const mapStateToProps = state => ({
   loading: state.loading,
   currentTV: state.currentTV,
+  cast: state.cast,
 });
 
 CurrentTVSerieContainer.propTypes = {
@@ -48,6 +62,7 @@ CurrentTVSerieContainer.propTypes = {
   match: object.isRequired,
   currentTV: object.isRequired,
   loading: bool.isRequired,
+  cast: array.isRequired,
 };
 
 export default connect(mapStateToProps)(CurrentTVSerieContainer);

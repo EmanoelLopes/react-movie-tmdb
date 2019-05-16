@@ -1,18 +1,20 @@
 import React, { Fragment, useEffect } from 'react';
-import { func, object, bool } from 'prop-types';
+import { func, object, bool, array } from 'prop-types';
 import { format } from 'date-fns';
 import { connect } from 'react-redux';
 import { fetchCurrentMovie } from 'store/movies/actions';
+import { fetchMovieCredits } from 'store/credits/actions';
 import Loading from 'components/Loading';
 import HeroSection from 'components/HeroSection';
 
 const CurrentMovieContainer = (props) => {
-  const { dispatch, match, currentMovie, loading } = props;
+  const { dispatch, match, currentMovie, loading, cast } = props;
   const { params } = match;
 
   useEffect(() => {
     const getCurrentMovie = id => {
       dispatch(fetchCurrentMovie(id));
+      dispatch(fetchMovieCredits(id));
     };
 
     getCurrentMovie(params.id);
@@ -34,6 +36,17 @@ const CurrentMovieContainer = (props) => {
           rating={currentMovie.vote_average}
         />
       }
+      {!!cast && cast.map(actor => {
+        return (
+          <div key={actor.cast_id} className="actors">
+            <img
+              src={`http://image.tmdb.org/t/p/w154/${actor.profile_path}`}
+              alt={actor.name}
+            />
+            <h4>{`${actor.name} (${actor.character})`}</h4>
+          </div>
+        );
+      })}
     </Fragment>
   );
 };
@@ -41,6 +54,7 @@ const CurrentMovieContainer = (props) => {
 const mapStateToProps = state => ({
   loading: state.loading,
   currentMovie: state.currentMovie,
+  cast: state.cast,
 });
 
 CurrentMovieContainer.propTypes = {
@@ -48,6 +62,7 @@ CurrentMovieContainer.propTypes = {
   match: object.isRequired,
   currentMovie: object.isRequired,
   loading: bool.isRequired,
+  cast: array.isRequired,
 };
 
 export default connect(mapStateToProps)(CurrentMovieContainer);

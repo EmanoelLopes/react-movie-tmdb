@@ -1,6 +1,27 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<HeroSection /> should match snapshot 1`] = `
+.c1 {
+  background-color: #fff;
+  display: inline-block;
+  height: 25px;
+  margin: 0 15px;
+  max-width: 190px;
+  position: relative;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.c1 small {
+  background-color: #01d277;
+  display: block;
+  height: 100%;
+}
+
+.c1 small > span {
+  margin-left: 5px;
+}
+
 .c0 {
   background-attachment: fixed;
   background-image: url(https://image.tmdb.org/t/p/w1280);
@@ -103,10 +124,32 @@ exports[`<HeroSection /> should match snapshot 1`] = `
 
 <HeroSection
   backdrop=""
-  createdBy={Array []}
+  createdBy={
+    Array [
+      Object {
+        "id": 1,
+        "name": "Marvel",
+      },
+      Object {
+        "id": 2,
+        "name": "HBO",
+      },
+    ]
+  }
   description=""
-  genres={Array []}
-  isCurrent={false}
+  genres={
+    Array [
+      Object {
+        "id": 123,
+        "name": "Science Fiction",
+      },
+      Object {
+        "id": 446,
+        "name": "Action",
+      },
+    ]
+  }
+  isCurrent={true}
   posterPath=""
   rating={0}
   releaseDate=""
@@ -278,10 +321,130 @@ exports[`<HeroSection /> should match snapshot 1`] = `
             className="container"
           >
             <div
+              className="hero-poster"
+            >
+              <figure>
+                <img
+                  alt=""
+                  src="https://image.tmdb.org/t/p//w500"
+                />
+              </figure>
+            </div>
+            <div
               className="hero-overview"
             >
-              <h1 />
-              <p>
+              <h1
+                className="hero-title"
+              />
+              <h2>
+                Release: 
+              </h2>
+              <h3>
+                By: 
+                <span
+                  className="creted-by"
+                  key="1"
+                >
+                  Marvel
+                  , 
+                </span>
+                <span
+                  className="creted-by"
+                  key="2"
+                >
+                  HBO
+                </span>
+              </h3>
+              <h3>
+                Genres: 
+                <span
+                  className="genre"
+                  key="123"
+                >
+                  Science Fiction
+                   
+                </span>
+                <span
+                  className="genre"
+                  key="446"
+                >
+                  Action
+                   
+                </span>
+              </h3>
+              <h3>
+                IMDB Rating:
+                <Rating
+                  rating={0}
+                >
+                  <styled.span>
+                    <StyledComponent
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "sc-bwzfXH",
+                            "isStatic": true,
+                            "lastClassName": "c1",
+                            "rules": Array [
+                              "
+  background-color: #fff;
+  display: inline-block;
+  height: 25px;
+  margin: 0 15px;
+  max-width: 190px;
+  position: relative;
+  vertical-align: middle;
+  width: 100%;
+
+  small {
+    background-color: #01d277;
+    display: block;
+    height: 100%;
+  }
+
+  small > span {
+    margin-left: 5px;
+  }
+",
+                            ],
+                          },
+                          "displayName": "styled.span",
+                          "foldedComponentIds": Array [],
+                          "render": [Function],
+                          "styledComponentId": "sc-bwzfXH",
+                          "target": "span",
+                          "toString": [Function],
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                        }
+                      }
+                      forwardedRef={null}
+                    >
+                      <span
+                        className="c1"
+                      >
+                        <small
+                          style={
+                            Object {
+                              "backgroundColor": "red",
+                              "width": "0%",
+                            }
+                          }
+                        >
+                          <span>
+                            0
+                          </span>
+                        </small>
+                      </span>
+                    </StyledComponent>
+                  </styled.span>
+                </Rating>
+              </h3>
+              <p
+                className="hero-description"
+              >
                 Overview: 
               </p>
             </div>
