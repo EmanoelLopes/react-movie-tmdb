@@ -3,11 +3,12 @@ import reset from 'styled-reset';
 
 export const colors = {
   mainColor: '#081c24',
+  movieDBColor: '#01d277',
   white: '#fff',
 };
 
 export const fonts = {
-  sourceSans: '\'Source Sans Pro\', sans-serif',
+  sourceSans: '\'Oswald\', sans-serif',
 };
 
 export const images = {
@@ -128,4 +129,5 @@ export const H1 = styled.h1`
   font-size: 32px;
   margin: 25px 0;
   width: 100%;
+  text-transform: uppercase;
 `;

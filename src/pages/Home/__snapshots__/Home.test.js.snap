@@ -5,6 +5,7 @@ exports[`<Home /> should match snapshot 1`] = `
   font-size: 32px;
   margin: 25px 0;
   width: 100%;
+  text-transform: uppercase;
 }
 
 .c2 {
@@ -239,6 +240,7 @@ exports[`<Home /> should match snapshot 1`] = `
   font-size: 32px;
   margin: 25px 0;
   width: 100%;
+  text-transform: uppercase;
 ",
                     ],
                   },
@@ -417,6 +419,7 @@ exports[`<Home /> should match snapshot 1`] = `
   font-size: 32px;
   margin: 25px 0;
   width: 100%;
+  text-transform: uppercase;
 ",
                     ],
                   },

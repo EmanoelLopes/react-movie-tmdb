@@ -1,13 +1,13 @@
 import styled from 'styled-components';
-import { media } from 'utils/styled';
+import { media, colors } from 'utils/styled';
 
 export const LogoWrapper = styled.span`
-  color: #01d277;
+  color: ${colors.movieDBColor};
   display: flex;
   font-size: 18px;
 
   a {
-    color: #01d277;
+    color: ${colors.movieDBColor};
     display: flex;
     align-items: center;
     text-decoration: none;

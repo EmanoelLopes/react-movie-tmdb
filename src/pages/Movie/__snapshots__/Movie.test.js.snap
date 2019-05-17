@@ -5,6 +5,7 @@ exports[`<Movie /> should match snapshot 1`] = `
   font-size: 32px;
   margin: 25px 0;
   width: 100%;
+  text-transform: uppercase;
 }
 
 .c4 {
@@ -661,6 +662,7 @@ exports[`<Movie /> should match snapshot 1`] = `
   font-size: 32px;
   margin: 25px 0;
   width: 100%;
+  text-transform: uppercase;
 ",
                       ],
                     },
