@@ -10,6 +10,12 @@ exports[`<TVInformation /> should match snapshot 1`] = `
   </p>
   <p>
     <strong>
+      Number of seasons: 
+      0
+    </strong>
+  </p>
+  <p>
+    <strong>
       Number of episodes: 
       0
     </strong>
@@ -23,6 +29,13 @@ exports[`<TVInformation /> should match snapshot 1`] = `
   <p>
     <strong>
       Last episode to air:  
+      0
+       - 
+    </strong>
+  </p>
+  <p>
+    <strong>
+      Next episode to air:  
       0
        - 
     </strong>

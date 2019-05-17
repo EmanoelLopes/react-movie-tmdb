@@ -51,11 +51,14 @@ const CurrentTVSerieContainer = props => {
         {
           (!!currentTV && !loading && !!currentTV.last_episode_to_air) &&
           <TVInformation
-            firstAirDate={currentTV.first_air_date}
+            firstAirDate={format(currentTV.first_air_date, 'MM/DD/YYYY')}
             numberOfEpisodes={currentTV.number_of_episodes}
-            seasonNumbe={currentTV.last_episode_to_air.season_number}
+            numberOfSeasons={currentTV.number_of_seasons}
+            seasonNumber={currentTV.last_episode_to_air.season_number}
             episodeNumber={currentTV.last_episode_to_air.episode_number}
             episodeName={currentTV.last_episode_to_air.name}
+            nextEpisodeNumber={currentTV.next_episode_to_air.episode_number}
+            nextEpisodeName={currentTV.next_episode_to_air.name}
             homepage={currentTV.homepage}
           />
         }
