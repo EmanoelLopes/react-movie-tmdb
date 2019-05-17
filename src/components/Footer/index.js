@@ -8,7 +8,7 @@ function Footer () {
     <footer className="rm-footer">
       <div className="container">
         <span>
-          Copyright &copy; 2019 - Made with <a className="react-site-link" href="https://reactjs.org/" rel="noopener noreferrer" target="_blank"><FontAwesomeIcon icon={faReact} /></a> and <FontAwesomeIcon icon={faHeart} />
+          Copyright &copy; 2019 - Made with <a className="react-site-link" aria-label="Check more in React.js Official Site" href="https://reactjs.org/" rel="noopener noreferrer" target="_blank"><FontAwesomeIcon icon={faReact} /></a> and <FontAwesomeIcon icon={faHeart} />
         </span>
       </div>
     </footer>

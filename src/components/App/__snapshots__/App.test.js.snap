@@ -895,6 +895,7 @@ exports[`<App /> should match snapshot 1`] = `
                 <span>
                   Copyright © 2019 - Made with 
                   <a
+                    aria-label="Check more in React.js Official Site"
                     className="react-site-link"
                     href="https://reactjs.org/"
                     rel="noopener noreferrer"
