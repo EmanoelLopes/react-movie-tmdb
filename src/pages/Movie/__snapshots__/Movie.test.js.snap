@@ -1,108 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Movie /> should match snapshot 1`] = `
-.c3 {
+.c1 {
   font-size: 32px;
   margin: 25px 0;
   width: 100%;
   text-transform: uppercase;
 }
 
-.c4 {
+.c2 {
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto;
   grid-column-gap: 25px;
   grid-row-gap: 25px;
-}
-
-.c2 {
-  background-color: #fff;
-  display: inline-block;
-  height: 25px;
-  margin: 0 15px;
-  max-width: 190px;
-  position: relative;
-  vertical-align: middle;
-  width: 100%;
-}
-
-.c2 small {
-  background-color: #01d277;
-  display: block;
-  height: 100%;
-}
-
-.c2 small > span {
-  margin-left: 5px;
-}
-
-.c1 {
-  background-attachment: fixed;
-  background-image: url( https://placehold.jp/1280x720.png?text=NO%20IMAGE );
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  width: 100%;
-}
-
-.c1 .hero-info {
-  background-color: rgba(0,0,0,.7);
-  color: #fff;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding: 50px 0;
-}
-
-.c1 .hero-info h1 {
-  font-size: 32px;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.c1 .hero-info h2 {
-  font-size: 28px;
-}
-
-.c1 .hero-info h3 {
-  font-size: 22px;
-}
-
-.c1 .hero-info h1,
-.c1 .hero-info h2,
-.c1 .hero-info h3 {
-  margin-bottom: 15px;
-}
-
-.c1 .hero-info p {
-  font-size: 22px;
-}
-
-.c1 .hero-poster figure {
-  text-align: center;
-  margin-bottom: 15px;
-}
-
-.c1 .hero-poster img {
-  max-width: 300px;
-  border: 3px solid #fff;
 }
 
 .c0 {
@@ -146,53 +57,20 @@ exports[`<Movie /> should match snapshot 1`] = `
 }
 
 @media (min-width:36em) {
-  .c4 {
+  .c2 {
     grid-template-columns: 50%% 50%%;
   }
 }
 
 @media (min-width:62em) {
-  .c4 {
+  .c2 {
     grid-template-columns: 32% 32% 32%;
   }
 }
 
 @media (min-width:80em) {
-  .c4 {
+  .c2 {
     grid-template-columns: 19% 19% 19% 19% 19%;
-  }
-}
-
-@media (min-width:62em) {
-  .c1 {
-    height: 700px;
-    background-position: center 0;
-  }
-}
-
-@media (min-width:62em) {
-  .c1 .hero-info .container {
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-  }
-}
-
-@media (min-width:62em) {
-  .c1 .hero-info h1 {
-    text-align: left;
-  }
-}
-
-@media (min-width:62em) {
-  .c1 .hero-poster {
-    margin-right: 25px;
-  }
-}
-
-@media (min-width:62em) {
-  .c1 .hero-poster img {
-    max-width: 200px;
   }
 }
 
@@ -362,288 +240,6 @@ exports[`<Movie /> should match snapshot 1`] = `
               </StyledComponent>
             </styled.div>
           </Loading>
-          <HeroSection
-            backdrop=""
-            createdBy={Array []}
-            description=""
-            genres={Array []}
-            isCurrent={true}
-            posterPath=""
-            rating={0}
-            releaseDate="Invalid Date"
-            title=""
-          >
-            <styled.section
-              backdrop=""
-            >
-              <StyledComponent
-                backdrop=""
-                forwardedComponent={
-                  Object {
-                    "$$typeof": Symbol(react.forward_ref),
-                    "attrs": Array [],
-                    "componentStyle": ComponentStyle {
-                      "componentId": "sc-ifAKCX",
-                      "isStatic": false,
-                      "lastClassName": "c1",
-                      "rules": Array [
-                        "
-  background-attachment: fixed;
-  background-image: url(
-    ",
-                        [Function],
-                        "
-  );
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  width: 100%;
-
-  ",
-                        "
-    @media (min-width: ",
-                        "62",
-                        "em) {
-      ",
-                        "
-    height: 700px;
-    background-position: center 0;
-  ",
-                        "
-    }
-  ",
-                        "
-
-  .hero-info {
-    background-color: rgba(0, 0, 0, .7);
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    padding: 50px 0;
-
-    .container {
-      ",
-                        "
-    @media (min-width: ",
-                        "62",
-                        "em) {
-      ",
-                        "
-        flex-direction: row;
-      ",
-                        "
-    }
-  ",
-                        "
-    }
-
-    h1 {
-      font-size: 32px;
-      text-align: center;
-      text-transform: uppercase;
-
-      ",
-                        "
-    @media (min-width: ",
-                        "62",
-                        "em) {
-      ",
-                        "
-        text-align: left;
-      ",
-                        "
-    }
-  ",
-                        "
-    }
-
-    h2 {
-      font-size: 28px;
-    }
-
-    h3 {
-      font-size: 22px;
-    }
-
-    h1, h2, h3 {
-      margin-bottom: 15px; 
-    }
-
-    p {
-      font-size: 22px;
-    }
-  }
-
-  .hero-poster {
-    ",
-                        "
-    @media (min-width: ",
-                        "62",
-                        "em) {
-      ",
-                        "
-      margin-right: 25px;
-    ",
-                        "
-    }
-  ",
-                        "
-
-
-    figure {
-      text-align: center;
-      margin-bottom: 15px;
-    }
-
-    img{
-      max-width: 300px;
-      border: 3px solid #fff;
-
-      ",
-                        "
-    @media (min-width: ",
-                        "62",
-                        "em) {
-      ",
-                        "
-        max-width: 200px;
-      ",
-                        "
-    }
-  ",
-                        "
-    }
-  }
-",
-                      ],
-                    },
-                    "displayName": "styled.section",
-                    "foldedComponentIds": Array [],
-                    "render": [Function],
-                    "styledComponentId": "sc-ifAKCX",
-                    "target": "section",
-                    "toString": [Function],
-                    "warnTooManyClasses": [Function],
-                    "withComponent": [Function],
-                  }
-                }
-                forwardedRef={null}
-              >
-                <section
-                  className="c1"
-                >
-                  <div
-                    className="hero-info"
-                  >
-                    <div
-                      className="container"
-                    >
-                      <div
-                        className="hero-poster"
-                      >
-                        <figure />
-                      </div>
-                      <div
-                        className="hero-overview"
-                      >
-                        <h1
-                          className="hero-title"
-                        />
-                        <h2>
-                          Release: 
-                          Invalid Date
-                        </h2>
-                        <h3>
-                          By: 
-                        </h3>
-                        <h3>
-                          Genres: 
-                        </h3>
-                        <h3>
-                          IMDB Rating:
-                          <Rating
-                            rating={0}
-                          >
-                            <styled.span>
-                              <StyledComponent
-                                forwardedComponent={
-                                  Object {
-                                    "$$typeof": Symbol(react.forward_ref),
-                                    "attrs": Array [],
-                                    "componentStyle": ComponentStyle {
-                                      "componentId": "sc-bxivhb",
-                                      "isStatic": true,
-                                      "lastClassName": "c2",
-                                      "rules": Array [
-                                        "
-  background-color: #fff;
-  display: inline-block;
-  height: 25px;
-  margin: 0 15px;
-  max-width: 190px;
-  position: relative;
-  vertical-align: middle;
-  width: 100%;
-
-  small {
-    background-color: #01d277;
-    display: block;
-    height: 100%;
-  }
-
-  small > span {
-    margin-left: 5px;
-  }
-",
-                                      ],
-                                    },
-                                    "displayName": "styled.span",
-                                    "foldedComponentIds": Array [],
-                                    "render": [Function],
-                                    "styledComponentId": "sc-bxivhb",
-                                    "target": "span",
-                                    "toString": [Function],
-                                    "warnTooManyClasses": [Function],
-                                    "withComponent": [Function],
-                                  }
-                                }
-                                forwardedRef={null}
-                              >
-                                <span
-                                  className="c2"
-                                >
-                                  <small
-                                    style={
-                                      Object {
-                                        "backgroundColor": "red",
-                                        "width": "0%",
-                                      }
-                                    }
-                                  >
-                                    <span>
-                                      0
-                                    </span>
-                                  </small>
-                                </span>
-                              </StyledComponent>
-                            </styled.span>
-                          </Rating>
-                        </h3>
-                        <p
-                          className="hero-description"
-                        >
-                          Overview: 
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </section>
-              </StyledComponent>
-            </styled.section>
-          </HeroSection>
           <div
             className="container"
           >
@@ -656,7 +252,7 @@ exports[`<Movie /> should match snapshot 1`] = `
                     "componentStyle": ComponentStyle {
                       "componentId": "sc-bdVaJa",
                       "isStatic": true,
-                      "lastClassName": "c3",
+                      "lastClassName": "c1",
                       "rules": Array [
                         "
   font-size: 32px;
@@ -679,15 +275,13 @@ exports[`<Movie /> should match snapshot 1`] = `
                 forwardedRef={null}
               >
                 <h1
-                  className="c3"
+                  className="c1"
                 >
                   Cast
                 </h1>
               </StyledComponent>
             </styled.h1>
-            <Grid
-              columns="24% 24% 24% 24% !important"
-            >
+            <Grid>
               <styled.div>
                 <StyledComponent
                   forwardedComponent={
@@ -697,7 +291,7 @@ exports[`<Movie /> should match snapshot 1`] = `
                       "componentStyle": ComponentStyle {
                         "componentId": "sc-htpNat",
                         "isStatic": true,
-                        "lastClassName": "c4",
+                        "lastClassName": "c2",
                         "rules": Array [
                           "
   display: grid;
@@ -763,7 +357,7 @@ exports[`<Movie /> should match snapshot 1`] = `
                   forwardedRef={null}
                 >
                   <div
-                    className="c4"
+                    className="c2"
                   />
                 </StyledComponent>
               </styled.div>

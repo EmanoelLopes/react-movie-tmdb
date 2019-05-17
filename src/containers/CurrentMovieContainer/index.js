@@ -10,7 +10,7 @@ import Grid from 'components/Grid';
 import CastCard from 'components/CastCard';
 import { H1 } from 'utils/styled';
 
-const CurrentMovieContainer = (props) => {
+const CurrentMovieContainer = props => {
   const {
     dispatch,
     match,
@@ -32,7 +32,7 @@ const CurrentMovieContainer = (props) => {
   return (
     <Fragment>
       {(loading) && <Loading />}
-      {(!!currentMovie) &&
+      {(!!currentMovie && !loading) &&
         <HeroSection
           backdrop={currentMovie.backdrop_path}
           title={currentMovie.original_title}
@@ -47,8 +47,7 @@ const CurrentMovieContainer = (props) => {
       }
       <div className="container">
         <H1>Cast</H1>
-        <Grid
-          columns={'24% 24% 24% 24% !important'}>
+        <Grid>
           {!!cast && cast.map(actor => {
             return (
               <CastCard

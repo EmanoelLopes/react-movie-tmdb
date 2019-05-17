@@ -11,6 +11,10 @@ beforeEach(() => {
   wrapped = shallow(<Rating {...defaultProps} />);
 });
 
+afterEach(() => {
+  wrapped.unmount();
+});
+
 describe('<Rating />', () => {
   it('should match snapshot', () => {
     wrapped.setProps({ rating: 7 });

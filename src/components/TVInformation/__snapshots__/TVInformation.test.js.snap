@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TVInformation /> should match snapshot 1`] = `
+<styled.section>
+  <p>
+    <strong>
+      First air date: 
+    </strong>
+     
+  </p>
+  <p>
+    <strong>
+      Number of episodes: 
+      0
+    </strong>
+  </p>
+  <p>
+    <strong>
+      Current season: 
+      0
+    </strong>
+  </p>
+  <p>
+    <strong>
+      Last episode to air:  
+      0
+       - 
+    </strong>
+  </p>
+  <p>
+    <strong>
+      Official Site: 
+    </strong>
+    <a
+      href=""
+      rel="noopener noreferrer"
+      target="_blank"
+    />
+  </p>
+</styled.section>
+`;
