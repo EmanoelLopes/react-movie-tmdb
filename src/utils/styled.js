@@ -91,9 +91,15 @@ export const GlobalStyle = createGlobalStyle`
     justify-content: center;
     padding: 50px 0;
 
+    a {
+      color: ${colors.mainColor};
+      text-decoration: none;
+    }
+
     .container {
       justify-content: center;
       align-items: center;
+      text-align: center;
     }
 
     .react-site-link {
