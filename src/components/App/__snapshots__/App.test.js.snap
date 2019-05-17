@@ -330,7 +330,7 @@ exports[`<App /> should match snapshot 1`] = `
                                 </svg>
                               </FontAwesomeIcon>
                               <br />
-                               Movie DB
+                               MOVIE DB
                             </span>
                           </a>
                         </Link>

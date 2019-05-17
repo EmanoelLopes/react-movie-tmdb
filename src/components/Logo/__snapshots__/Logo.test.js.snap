@@ -69,7 +69,7 @@ exports[`<Logo /> should match snapshot 1`] = `
         transform={null}
       />
       <br />
-       Movie DB
+       MOVIE DB
     </span>
   </Link>
 </styled.span>

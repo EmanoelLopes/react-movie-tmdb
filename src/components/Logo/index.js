@@ -9,7 +9,7 @@ const Logo = () => (
   <LogoWrapper>
     <Link to="/">
       <FontAwesomeIcon icon={faFilm} />
-      <span>React <FontAwesomeIcon icon={faReact} /><br /> Movie DB</span>
+      <span>React <FontAwesomeIcon icon={faReact} /><br /> MOVIE DB</span>
     </Link>
   </LogoWrapper>
 );
