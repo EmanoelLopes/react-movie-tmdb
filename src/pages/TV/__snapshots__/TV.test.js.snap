@@ -277,44 +277,6 @@ exports[`<TV /> should match snapshot 1`] = `
                 <h1
                   className="c1"
                 >
-                  Details
-                </h1>
-              </StyledComponent>
-            </styled.h1>
-            <styled.h1>
-              <StyledComponent
-                forwardedComponent={
-                  Object {
-                    "$$typeof": Symbol(react.forward_ref),
-                    "attrs": Array [],
-                    "componentStyle": ComponentStyle {
-                      "componentId": "sc-bdVaJa",
-                      "isStatic": true,
-                      "lastClassName": "c1",
-                      "rules": Array [
-                        "
-  font-size: 32px;
-  margin: 25px 0;
-  width: 100%;
-  text-transform: uppercase;
-",
-                      ],
-                    },
-                    "displayName": "styled.h1",
-                    "foldedComponentIds": Array [],
-                    "render": [Function],
-                    "styledComponentId": "sc-bdVaJa",
-                    "target": "h1",
-                    "toString": [Function],
-                    "warnTooManyClasses": [Function],
-                    "withComponent": [Function],
-                  }
-                }
-                forwardedRef={null}
-              >
-                <h1
-                  className="c1"
-                >
                   Cast
                 </h1>
               </StyledComponent>
