@@ -1,7 +1,13 @@
 {
   "name": "React Movie DB",
   "short_name": "React Movie",
-  "icons": [{
+  "theme_color": "#01d277",
+  "background_color": "#ffffff",
+  "display": "browser",
+  "Scope": "/",
+  "start_url": "/",
+  "icons": [
+    {
       "src": "images/icons/icon-72x72.png",
       "sizes": "72x72",
       "type": "image/png"
@@ -42,9 +48,5 @@
       "type": "image/png"
     }
   ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#01d277",
-  "background_color": "#ffffff",
   "splash_pages": null
 }
