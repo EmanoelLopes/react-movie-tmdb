@@ -8,7 +8,7 @@ exports[`<Home /> should match snapshot 1`] = `
 
 .c2 {
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns: 100%;
   grid-template-rows: auto;
   grid-column-gap: 25px;
   grid-row-gap: 25px;
@@ -54,9 +54,21 @@ exports[`<Home /> should match snapshot 1`] = `
   height: 5em;
 }
 
+@media (min-width:36em) {
+  .c2 {
+    grid-template-columns: 50%% 50%%;
+  }
+}
+
 @media (min-width:62em) {
   .c2 {
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 32% 32% 32%;
+  }
+}
+
+@media (min-width:80em) {
+  .c2 {
+    grid-template-columns: 24% 24% 24% 24%;
   }
 }
 
@@ -301,44 +313,38 @@ exports[`<Home /> should match snapshot 1`] = `
               getMovies={[Function]}
               movies={Array []}
             >
-              <Grid
-                columnGap="25px"
-                columns="auto"
-                rowGap="25px"
-                rows="auto"
-              >
-                <styled.div
-                  columnGap="25px"
-                  columns="auto"
-                  rowGap="25px"
-                  rows="auto"
-                >
+              <Grid>
+                <styled.div>
                   <StyledComponent
-                    columnGap="25px"
-                    columns="auto"
                     forwardedComponent={
                       Object {
                         "$$typeof": Symbol(react.forward_ref),
                         "attrs": Array [],
                         "componentStyle": ComponentStyle {
                           "componentId": "sc-htpNat",
-                          "isStatic": false,
+                          "isStatic": true,
                           "lastClassName": "c2",
                           "rules": Array [
                             "
   display: grid;
-  grid-template-columns: ",
-                            [Function],
-                            ";
-  grid-template-rows: ",
-                            [Function],
-                            "; 
-  grid-column-gap: ",
-                            [Function],
-                            ";
-  grid-row-gap: ",
-                            [Function],
-                            ";
+  grid-template-columns: 100%;
+  grid-template-rows: auto; 
+  grid-column-gap: 25px;
+  grid-row-gap: 25px;
+
+  ",
+                            "
+    @media (min-width: ",
+                            "36",
+                            "em) {
+      ",
+                            "
+    grid-template-columns: 50%% 50%%;
+  ",
+                            "
+    }
+  ",
+                            "
 
   ",
                             "
@@ -347,7 +353,21 @@ exports[`<Home /> should match snapshot 1`] = `
                             "em) {
       ",
                             "
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 32% 32% 32%;
+  ",
+                            "
+    }
+  ",
+                            "
+
+  ",
+                            "
+    @media (min-width: ",
+                            "80",
+                            "em) {
+      ",
+                            "
+    grid-template-columns: 24% 24% 24% 24%;
   ",
                             "
     }
@@ -367,12 +387,9 @@ exports[`<Home /> should match snapshot 1`] = `
                       }
                     }
                     forwardedRef={null}
-                    rowGap="25px"
-                    rows="auto"
                   >
                     <div
                       className="c2"
-                      rows="auto"
                     />
                   </StyledComponent>
                 </styled.div>
@@ -473,44 +490,38 @@ exports[`<Home /> should match snapshot 1`] = `
               getSeries={[Function]}
               tvSeries={Array []}
             >
-              <Grid
-                columnGap="25px"
-                columns="auto"
-                rowGap="25px"
-                rows="auto"
-              >
-                <styled.div
-                  columnGap="25px"
-                  columns="auto"
-                  rowGap="25px"
-                  rows="auto"
-                >
+              <Grid>
+                <styled.div>
                   <StyledComponent
-                    columnGap="25px"
-                    columns="auto"
                     forwardedComponent={
                       Object {
                         "$$typeof": Symbol(react.forward_ref),
                         "attrs": Array [],
                         "componentStyle": ComponentStyle {
                           "componentId": "sc-htpNat",
-                          "isStatic": false,
+                          "isStatic": true,
                           "lastClassName": "c2",
                           "rules": Array [
                             "
   display: grid;
-  grid-template-columns: ",
-                            [Function],
-                            ";
-  grid-template-rows: ",
-                            [Function],
-                            "; 
-  grid-column-gap: ",
-                            [Function],
-                            ";
-  grid-row-gap: ",
-                            [Function],
-                            ";
+  grid-template-columns: 100%;
+  grid-template-rows: auto; 
+  grid-column-gap: 25px;
+  grid-row-gap: 25px;
+
+  ",
+                            "
+    @media (min-width: ",
+                            "36",
+                            "em) {
+      ",
+                            "
+    grid-template-columns: 50%% 50%%;
+  ",
+                            "
+    }
+  ",
+                            "
 
   ",
                             "
@@ -519,7 +530,21 @@ exports[`<Home /> should match snapshot 1`] = `
                             "em) {
       ",
                             "
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 32% 32% 32%;
+  ",
+                            "
+    }
+  ",
+                            "
+
+  ",
+                            "
+    @media (min-width: ",
+                            "80",
+                            "em) {
+      ",
+                            "
+    grid-template-columns: 24% 24% 24% 24%;
   ",
                             "
     }
@@ -539,12 +564,9 @@ exports[`<Home /> should match snapshot 1`] = `
                       }
                     }
                     forwardedRef={null}
-                    rowGap="25px"
-                    rows="auto"
                   >
                     <div
                       className="c2"
-                      rows="auto"
                     />
                   </StyledComponent>
                 </styled.div>

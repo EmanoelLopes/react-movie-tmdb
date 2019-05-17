@@ -8,7 +8,7 @@ exports[`<App /> should match snapshot 1`] = `
 
 .c3 {
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns: 100%;
   grid-template-rows: auto;
   grid-column-gap: 25px;
   grid-row-gap: 25px;
@@ -83,9 +83,21 @@ exports[`<App /> should match snapshot 1`] = `
   width: 3em !important;
 }
 
+@media (min-width:36em) {
+  .c3 {
+    grid-template-columns: 50%% 50%%;
+  }
+}
+
 @media (min-width:62em) {
   .c3 {
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 32% 32% 32%;
+  }
+}
+
+@media (min-width:80em) {
+  .c3 {
+    grid-template-columns: 24% 24% 24% 24%;
   }
 }
 
@@ -605,44 +617,38 @@ exports[`<App /> should match snapshot 1`] = `
                               getMovies={[Function]}
                               movies={Array []}
                             >
-                              <Grid
-                                columnGap="25px"
-                                columns="auto"
-                                rowGap="25px"
-                                rows="auto"
-                              >
-                                <styled.div
-                                  columnGap="25px"
-                                  columns="auto"
-                                  rowGap="25px"
-                                  rows="auto"
-                                >
+                              <Grid>
+                                <styled.div>
                                   <StyledComponent
-                                    columnGap="25px"
-                                    columns="auto"
                                     forwardedComponent={
                                       Object {
                                         "$$typeof": Symbol(react.forward_ref),
                                         "attrs": Array [],
                                         "componentStyle": ComponentStyle {
                                           "componentId": "sc-htpNat",
-                                          "isStatic": false,
+                                          "isStatic": true,
                                           "lastClassName": "c3",
                                           "rules": Array [
                                             "
   display: grid;
-  grid-template-columns: ",
-                                            [Function],
-                                            ";
-  grid-template-rows: ",
-                                            [Function],
-                                            "; 
-  grid-column-gap: ",
-                                            [Function],
-                                            ";
-  grid-row-gap: ",
-                                            [Function],
-                                            ";
+  grid-template-columns: 100%;
+  grid-template-rows: auto; 
+  grid-column-gap: 25px;
+  grid-row-gap: 25px;
+
+  ",
+                                            "
+    @media (min-width: ",
+                                            "36",
+                                            "em) {
+      ",
+                                            "
+    grid-template-columns: 50%% 50%%;
+  ",
+                                            "
+    }
+  ",
+                                            "
 
   ",
                                             "
@@ -651,7 +657,21 @@ exports[`<App /> should match snapshot 1`] = `
                                             "em) {
       ",
                                             "
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 32% 32% 32%;
+  ",
+                                            "
+    }
+  ",
+                                            "
+
+  ",
+                                            "
+    @media (min-width: ",
+                                            "80",
+                                            "em) {
+      ",
+                                            "
+    grid-template-columns: 24% 24% 24% 24%;
   ",
                                             "
     }
@@ -671,12 +691,9 @@ exports[`<App /> should match snapshot 1`] = `
                                       }
                                     }
                                     forwardedRef={null}
-                                    rowGap="25px"
-                                    rows="auto"
                                   >
                                     <div
                                       className="c3"
-                                      rows="auto"
                                     />
                                   </StyledComponent>
                                 </styled.div>
@@ -777,44 +794,38 @@ exports[`<App /> should match snapshot 1`] = `
                               getSeries={[Function]}
                               tvSeries={Array []}
                             >
-                              <Grid
-                                columnGap="25px"
-                                columns="auto"
-                                rowGap="25px"
-                                rows="auto"
-                              >
-                                <styled.div
-                                  columnGap="25px"
-                                  columns="auto"
-                                  rowGap="25px"
-                                  rows="auto"
-                                >
+                              <Grid>
+                                <styled.div>
                                   <StyledComponent
-                                    columnGap="25px"
-                                    columns="auto"
                                     forwardedComponent={
                                       Object {
                                         "$$typeof": Symbol(react.forward_ref),
                                         "attrs": Array [],
                                         "componentStyle": ComponentStyle {
                                           "componentId": "sc-htpNat",
-                                          "isStatic": false,
+                                          "isStatic": true,
                                           "lastClassName": "c3",
                                           "rules": Array [
                                             "
   display: grid;
-  grid-template-columns: ",
-                                            [Function],
-                                            ";
-  grid-template-rows: ",
-                                            [Function],
-                                            "; 
-  grid-column-gap: ",
-                                            [Function],
-                                            ";
-  grid-row-gap: ",
-                                            [Function],
-                                            ";
+  grid-template-columns: 100%;
+  grid-template-rows: auto; 
+  grid-column-gap: 25px;
+  grid-row-gap: 25px;
+
+  ",
+                                            "
+    @media (min-width: ",
+                                            "36",
+                                            "em) {
+      ",
+                                            "
+    grid-template-columns: 50%% 50%%;
+  ",
+                                            "
+    }
+  ",
+                                            "
 
   ",
                                             "
@@ -823,7 +834,21 @@ exports[`<App /> should match snapshot 1`] = `
                                             "em) {
       ",
                                             "
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 32% 32% 32%;
+  ",
+                                            "
+    }
+  ",
+                                            "
+
+  ",
+                                            "
+    @media (min-width: ",
+                                            "80",
+                                            "em) {
+      ",
+                                            "
+    grid-template-columns: 24% 24% 24% 24%;
   ",
                                             "
     }
@@ -843,12 +868,9 @@ exports[`<App /> should match snapshot 1`] = `
                                       }
                                     }
                                     forwardedRef={null}
-                                    rowGap="25px"
-                                    rows="auto"
                                   >
                                     <div
                                       className="c3"
-                                      rows="auto"
                                     />
                                   </StyledComponent>
                                 </styled.div>

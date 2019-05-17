@@ -8,10 +8,6 @@ exports[`<Card /> should match snapshot 1`] = `
   background-size: cover;
   background-position: top center;
   border: 5px solid #081c24;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .c0 .card-poster figure,
@@ -21,7 +17,7 @@ exports[`<Card /> should match snapshot 1`] = `
 
 .c0 .card-poster img {
   display: none;
-  width: 185px;
+  width: 100%;
 }
 
 .c0 .card-info {
@@ -36,7 +32,6 @@ exports[`<Card /> should match snapshot 1`] = `
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  min-height: 300px;
   padding: 15px;
 }
 
@@ -187,7 +182,6 @@ exports[`<Card /> should match snapshot 1`] = `
   border: 5px solid ",
                   "#081c24",
                   ";
-  display: flex;
 
   .card-poster figure,
   .card-poster img {
@@ -196,7 +190,7 @@ exports[`<Card /> should match snapshot 1`] = `
 
   .card-poster img {
     display: none;
-    width: 185px;
+    width: 100%;
 
     ",
                   "
@@ -217,7 +211,6 @@ exports[`<Card /> should match snapshot 1`] = `
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    min-height: 300px;
     padding: 15px;
 
     ",

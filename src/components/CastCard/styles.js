@@ -1,15 +1,13 @@
 import styled from 'styled-components';
 
 export const CastContainer = styled.div`
-  background-color: #fff;
+  background-color: rgba(0,0,0,.7);
   display: flex;
-  flex-direction column;
-  justify-content: space-between;
+  max-width: 300px;
   text-align: center;
 
   h4 {
     color: #fff;
-    background-color: rgba(0,0,0,.7);
     padding: 15px;
   }
 
@@ -17,6 +15,7 @@ export const CastContainer = styled.div`
     display: block;
     width: 100%;
     height: 100%;
+    max-width: 100px;
   }
 `;
 

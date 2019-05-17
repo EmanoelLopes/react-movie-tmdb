@@ -3,56 +3,62 @@
 exports[`<Grid /> should match snapshot 1`] = `
 .c0 {
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns: 100%;
   grid-template-rows: auto;
   grid-column-gap: 25px;
   grid-row-gap: 25px;
 }
 
-@media (min-width:62em) {
+@media (min-width:36em) {
   .c0 {
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 50%% 50%%;
   }
 }
 
-<Grid
-  columnGap="25px"
-  columns="auto"
-  rowGap="25px"
-  rows="auto"
->
-  <styled.div
-    columnGap="25px"
-    columns="auto"
-    rowGap="25px"
-    rows="auto"
-  >
+@media (min-width:62em) {
+  .c0 {
+    grid-template-columns: 32% 32% 32%;
+  }
+}
+
+@media (min-width:80em) {
+  .c0 {
+    grid-template-columns: 24% 24% 24% 24%;
+  }
+}
+
+<Grid>
+  <styled.div>
     <StyledComponent
-      columnGap="25px"
-      columns="auto"
       forwardedComponent={
         Object {
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
             "componentId": "sc-bwzfXH",
-            "isStatic": false,
+            "isStatic": true,
             "lastClassName": "c0",
             "rules": Array [
               "
   display: grid;
-  grid-template-columns: ",
-              [Function],
-              ";
-  grid-template-rows: ",
-              [Function],
-              "; 
-  grid-column-gap: ",
-              [Function],
-              ";
-  grid-row-gap: ",
-              [Function],
-              ";
+  grid-template-columns: 100%;
+  grid-template-rows: auto; 
+  grid-column-gap: 25px;
+  grid-row-gap: 25px;
+
+  ",
+              "
+    @media (min-width: ",
+              "36",
+              "em) {
+      ",
+              "
+    grid-template-columns: 50%% 50%%;
+  ",
+              "
+    }
+  ",
+              "
 
   ",
               "
@@ -61,7 +67,21 @@ exports[`<Grid /> should match snapshot 1`] = `
               "em) {
       ",
               "
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 32% 32% 32%;
+  ",
+              "
+    }
+  ",
+              "
+
+  ",
+              "
+    @media (min-width: ",
+              "80",
+              "em) {
+      ",
+              "
+    grid-template-columns: 24% 24% 24% 24%;
   ",
               "
     }
@@ -81,12 +101,9 @@ exports[`<Grid /> should match snapshot 1`] = `
         }
       }
       forwardedRef={null}
-      rowGap="25px"
-      rows="auto"
     >
       <div
         className="c0"
-        rows="auto"
       >
         &lt;div&gt;&lt;/div&gt;
       </div>
