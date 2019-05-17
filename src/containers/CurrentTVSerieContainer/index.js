@@ -7,11 +7,18 @@ import { fetchTVCredits } from 'store/credits/actions';
 import Loading from 'components/Loading';
 import HeroSection from 'components/HeroSection';
 import Grid from 'components/Grid';
+import TVInformation from 'components/TVInformation';
 import CastCard from 'components/CastCard';
 import { H1 } from 'utils/styled';
 
 const CurrentTVSerieContainer = props => {
-  const { dispatch, match, loading, currentTV, cast } = props;
+  const {
+    dispatch,
+    match,
+    loading,
+    currentTV,
+    cast
+  } = props;
   const { params } = match;
 
   useEffect(() => {
@@ -26,7 +33,7 @@ const CurrentTVSerieContainer = props => {
   return (
     <Fragment>
       {(loading) && <Loading />}
-      {(!!currentTV) &&
+      {(!!currentTV && !loading) &&
         <HeroSection
           backdrop={currentTV.backdrop_path}
           title={currentTV.original_name}
@@ -40,9 +47,20 @@ const CurrentTVSerieContainer = props => {
         />
       }
       <div className="container">
+        <H1>Details</H1>
+        {
+          (!!currentTV && !loading && !!currentTV.last_episode_to_air) &&
+          <TVInformation
+            firstAirDate={currentTV.first_air_date}
+            numberOfEpisodes={currentTV.number_of_episodes}
+            seasonNumbe={currentTV.last_episode_to_air.season_number}
+            episodeNumber={currentTV.last_episode_to_air.episode_number}
+            episodeName={currentTV.last_episode_to_air.name}
+            homepage={currentTV.homepage}
+          />
+        }
         <H1>Cast</H1>
-        <Grid
-          columns={'24% 24% 24% 24% !important'}>
+        <Grid>
         {!!cast && cast.map(actor => {
           return (
             <CastCard

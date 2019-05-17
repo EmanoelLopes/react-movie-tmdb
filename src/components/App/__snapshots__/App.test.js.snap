@@ -166,7 +166,7 @@ exports[`<App /> should match snapshot 1`] = `
                           "$$typeof": Symbol(react.forward_ref),
                           "attrs": Array [],
                           "componentStyle": ComponentStyle {
-                            "componentId": "sc-gzVnrw",
+                            "componentId": "sc-htoDjs",
                             "isStatic": true,
                             "lastClassName": "c0",
                             "rules": Array [
@@ -216,7 +216,7 @@ exports[`<App /> should match snapshot 1`] = `
                           "displayName": "styled.span",
                           "foldedComponentIds": Array [],
                           "render": [Function],
-                          "styledComponentId": "sc-gzVnrw",
+                          "styledComponentId": "sc-htoDjs",
                           "target": "span",
                           "toString": [Function],
                           "warnTooManyClasses": [Function],
