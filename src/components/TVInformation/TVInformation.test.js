@@ -8,7 +8,7 @@ let defaultProps = {
   numberOfEpisodes: 0,
   seasonNumber: 0,
   episodeNumber: 0,
-  episodeName: 0,
+  episodeName: '',
   homepage: '',
 };
 
