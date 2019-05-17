@@ -1028,7 +1028,7 @@ exports[`<App /> should match snapshot 1`] = `
                       </svg>
                     </FontAwesomeIcon>
                   </a>
-                   • Copyright © 2019 • Made with 
+                   • 2019 • Made with 
                   <a
                     aria-label="Check more in React.js Official Site"
                     className="react-site-link"
