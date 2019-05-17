@@ -407,6 +407,7 @@ exports[`<Card /> should match snapshot 1`] = `
                   <figure>
                     <img
                       alt="Some Card"
+                      lazyload="on"
                       src="https://image.tmdb.org/t/p/w500someposterpath.jpg"
                     />
                   </figure>

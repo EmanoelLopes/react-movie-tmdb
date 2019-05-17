@@ -25,7 +25,11 @@ const HeroSection = props => {
             <div className="hero-poster">
               <figure>
                 {(!!posterPath) && 
-                  <img src={`${images.path}${images.poster}${posterPath}`} alt={title} />
+                  <img
+                    src={`${images.path}${images.poster}${posterPath}`}
+                    alt={title}
+                    lazyload="on"
+                  />
                 }
               </figure>
             </div>

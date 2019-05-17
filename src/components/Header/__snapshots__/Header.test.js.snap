@@ -263,6 +263,7 @@ exports[`<Header /> should match snapshot 1`] = `
           >
             <img
               alt="The Movie DB"
+              lazyload="on"
               src="tmdb_logo.png"
             />
           </a>

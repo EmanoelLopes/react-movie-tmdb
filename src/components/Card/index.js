@@ -22,7 +22,7 @@ const Card = props => {
       <Link to={id}>
         <div className="card-poster">
           <figure>
-            <img src={`${images.path}${images.poster}${poster}`} alt={title}/>
+            <img src={`${images.path}${images.poster}${poster}`} alt={title} lazyload="on"/>
           </figure>
         </div>
         <div className="card-info">
