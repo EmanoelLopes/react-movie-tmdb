@@ -105,6 +105,17 @@ export const GlobalStyle = createGlobalStyle`
       color: red;
     }
   }
+
+  /* CSS Transition Group */
+  .fade-enter {
+    opacity: 0;
+    z-index: 1;
+  }
+
+  .fade-enter.fade-enter-active {
+    opacity: 1;
+    transition: opacity 250ms ease-in;
+  }
 `;
 
 export const H1 = styled.h1`
