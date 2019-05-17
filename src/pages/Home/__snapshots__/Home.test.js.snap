@@ -4,11 +4,13 @@ exports[`<Home /> should match snapshot 1`] = `
 .c1 {
   font-size: 32px;
   margin: 25px 0;
+  width: 100%;
+  text-transform: uppercase;
 }
 
 .c2 {
   display: grid;
-  grid-template-columns: 100%;
+  grid-template-columns: auto;
   grid-template-rows: auto;
   grid-column-gap: 25px;
   grid-row-gap: 25px;
@@ -68,7 +70,7 @@ exports[`<Home /> should match snapshot 1`] = `
 
 @media (min-width:80em) {
   .c2 {
-    grid-template-columns: 24% 24% 24% 24%;
+    grid-template-columns: 19% 19% 19% 19% 19%;
   }
 }
 
@@ -237,6 +239,8 @@ exports[`<Home /> should match snapshot 1`] = `
                       "
   font-size: 32px;
   margin: 25px 0;
+  width: 100%;
+  text-transform: uppercase;
 ",
                     ],
                   },
@@ -327,7 +331,7 @@ exports[`<Home /> should match snapshot 1`] = `
                           "rules": Array [
                             "
   display: grid;
-  grid-template-columns: 100%;
+  grid-template-columns: auto;
   grid-template-rows: auto; 
   grid-column-gap: 25px;
   grid-row-gap: 25px;
@@ -367,7 +371,7 @@ exports[`<Home /> should match snapshot 1`] = `
                             "em) {
       ",
                             "
-    grid-template-columns: 24% 24% 24% 24%;
+    grid-template-columns: 19% 19% 19% 19% 19%;
   ",
                             "
     }
@@ -414,6 +418,8 @@ exports[`<Home /> should match snapshot 1`] = `
                       "
   font-size: 32px;
   margin: 25px 0;
+  width: 100%;
+  text-transform: uppercase;
 ",
                     ],
                   },
@@ -504,7 +510,7 @@ exports[`<Home /> should match snapshot 1`] = `
                           "rules": Array [
                             "
   display: grid;
-  grid-template-columns: 100%;
+  grid-template-columns: auto;
   grid-template-rows: auto; 
   grid-column-gap: 25px;
   grid-row-gap: 25px;
@@ -544,7 +550,7 @@ exports[`<Home /> should match snapshot 1`] = `
                             "em) {
       ",
                             "
-    grid-template-columns: 24% 24% 24% 24%;
+    grid-template-columns: 19% 19% 19% 19% 19%;
   ",
                             "
     }

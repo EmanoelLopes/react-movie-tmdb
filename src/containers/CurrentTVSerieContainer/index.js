@@ -39,21 +39,23 @@ const CurrentTVSerieContainer = props => {
           rating={currentTV.vote_average}
         />
       }
-      <H1>Cast</H1>
-      <Grid
-        columns={'24% 24% 24% 24% !important'}>
-      {!!cast && cast.map(actor => {
-        return (
-          <CastCard
-            key={actor.credit_id}
-            id={actor.id}
-            profile={actor.profile_path}
-            name={actor.name}
-            character={actor.character}
-          />
-        );
-      })}
-      </Grid>
+      <div className="container">
+        <H1>Cast</H1>
+        <Grid
+          columns={'24% 24% 24% 24% !important'}>
+        {!!cast && cast.map(actor => {
+          return (
+            <CastCard
+              key={actor.credit_id}
+              id={actor.id}
+              profile={actor.profile_path}
+              name={actor.name}
+              character={actor.character}
+            />
+          );
+        })}
+        </Grid>
+      </div>
     </Fragment>
   );
 };

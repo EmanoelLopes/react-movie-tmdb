@@ -2,7 +2,7 @@ import React from 'react';
 import { string } from 'prop-types';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faInfoCircle, faCalendarAlt } from '@fortawesome/free-solid-svg-icons';
+import { faCalendarAlt } from '@fortawesome/free-solid-svg-icons';
 import { CardFeatured } from './styles';
 import { images } from 'utils/styled';
 import { textTruncate } from 'utils/helpers';
@@ -19,19 +19,20 @@ const Card = props => {
 
   return (
     <CardFeatured backdrop={backdrop}>
-      <div className="card-poster">
-        <figure>
-          <img src={`${images.path}${images.poster}${poster}`} alt={title}/>
-        </figure>
-      </div>
-      <div className="card-info">
-        <div className="card-info-wrapper">
-          <h3>{title}</h3>
-          <small><FontAwesomeIcon icon={faCalendarAlt} /> {release}</small>
-          <p>{textTruncate(description, 150)}</p>
-          <Link to={id}>More Info <FontAwesomeIcon icon={faInfoCircle} /> </Link>
+      <Link to={id}>
+        <div className="card-poster">
+          <figure>
+            <img src={`${images.path}${images.poster}${poster}`} alt={title} lazyload="on"/>
+          </figure>
         </div>
-      </div>
+        <div className="card-info">
+          <div className="card-info-wrapper">
+            <h3>{title}</h3>
+            <small><FontAwesomeIcon icon={faCalendarAlt} /> {release}</small>
+            <p>{textTruncate(description, 80)} [more info]</p>
+          </div>
+        </div>
+      </Link>
     </CardFeatured>
   );
 };

@@ -3,7 +3,7 @@
 exports[`<Grid /> should match snapshot 1`] = `
 .c0 {
   display: grid;
-  grid-template-columns: 100%;
+  grid-template-columns: auto;
   grid-template-rows: auto;
   grid-column-gap: 25px;
   grid-row-gap: 25px;
@@ -23,7 +23,7 @@ exports[`<Grid /> should match snapshot 1`] = `
 
 @media (min-width:80em) {
   .c0 {
-    grid-template-columns: 24% 24% 24% 24%;
+    grid-template-columns: 19% 19% 19% 19% 19%;
   }
 }
 
@@ -41,7 +41,7 @@ exports[`<Grid /> should match snapshot 1`] = `
             "rules": Array [
               "
   display: grid;
-  grid-template-columns: 100%;
+  grid-template-columns: auto;
   grid-template-rows: auto; 
   grid-column-gap: 25px;
   grid-row-gap: 25px;
@@ -81,7 +81,7 @@ exports[`<Grid /> should match snapshot 1`] = `
               "em) {
       ",
               "
-    grid-template-columns: 24% 24% 24% 24%;
+    grid-template-columns: 19% 19% 19% 19% 19%;
   ",
               "
     }

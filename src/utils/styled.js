@@ -3,11 +3,12 @@ import reset from 'styled-reset';
 
 export const colors = {
   mainColor: '#081c24',
+  movieDBColor: '#01d277',
   white: '#fff',
 };
 
 export const fonts = {
-  sourceSans: '\'Source Sans Pro\', sans-serif',
+  sourceSans: '\'Oswald\', sans-serif',
 };
 
 export const images = {
@@ -91,9 +92,15 @@ export const GlobalStyle = createGlobalStyle`
     justify-content: center;
     padding: 50px 0;
 
+    a {
+      color: ${colors.mainColor};
+      text-decoration: none;
+    }
+
     .container {
       justify-content: center;
       align-items: center;
+      text-align: center;
     }
 
     .react-site-link {
@@ -121,4 +128,6 @@ export const GlobalStyle = createGlobalStyle`
 export const H1 = styled.h1`
   font-size: 32px;
   margin: 25px 0;
+  width: 100%;
+  text-transform: uppercase;
 `;
