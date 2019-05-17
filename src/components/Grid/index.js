@@ -3,6 +3,7 @@ import { node } from 'prop-types';
 import { GridContainer } from './styles';
 
 const Grid = ({ children }) => {
+
   return (
     <GridContainer>
       {children}

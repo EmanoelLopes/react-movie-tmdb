@@ -8,7 +8,15 @@ export const GridContainer = styled.div`
   grid-column-gap: 25px;
   grid-row-gap: 25px;
 
+  ${media.phone`
+    grid-template-columns: 50%% 50%%;
+  `}
+
   ${media.desktop`
-    grid-template-columns: 50% 50%
+    grid-template-columns: 32% 32% 32%;
+  `}
+
+  ${media.largeDesktop`
+    grid-template-columns: 24% 24% 24% 24%;
   `}
 `;

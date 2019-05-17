@@ -1,6 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<TV /> should match snapshot 1`] = `
+.c3 {
+  font-size: 32px;
+  margin: 25px 0;
+}
+
+.c4 {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  grid-column-gap: 25px;
+  grid-row-gap: 25px;
+}
+
 .c2 {
   background-color: #fff;
   display: inline-block;
@@ -130,9 +143,28 @@ exports[`<TV /> should match snapshot 1`] = `
   height: 5em;
 }
 
+@media (min-width:36em) {
+  .c4 {
+    grid-template-columns: 50%% 50%%;
+  }
+}
+
+@media (min-width:62em) {
+  .c4 {
+    grid-template-columns: 32% 32% 32%;
+  }
+}
+
+@media (min-width:80em) {
+  .c4 {
+    grid-template-columns: 24% 24% 24% 24%;
+  }
+}
+
 @media (min-width:62em) {
   .c1 {
     height: 700px;
+    background-position: center 0;
   }
 }
 
@@ -376,6 +408,7 @@ exports[`<TV /> should match snapshot 1`] = `
       ",
                         "
     height: 700px;
+    background-position: center 0;
   ",
                         "
     }
@@ -609,6 +642,125 @@ exports[`<TV /> should match snapshot 1`] = `
               </StyledComponent>
             </styled.section>
           </HeroSection>
+          <styled.h1>
+            <StyledComponent
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-bdVaJa",
+                    "isStatic": true,
+                    "lastClassName": "c3",
+                    "rules": Array [
+                      "
+  font-size: 32px;
+  margin: 25px 0;
+",
+                    ],
+                  },
+                  "displayName": "styled.h1",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-bdVaJa",
+                  "target": "h1",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+            >
+              <h1
+                className="c3"
+              >
+                Cast
+              </h1>
+            </StyledComponent>
+          </styled.h1>
+          <Grid
+            columns="24% 24% 24% 24% !important"
+          >
+            <styled.div>
+              <StyledComponent
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "sc-htpNat",
+                      "isStatic": true,
+                      "lastClassName": "c4",
+                      "rules": Array [
+                        "
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto; 
+  grid-column-gap: 25px;
+  grid-row-gap: 25px;
+
+  ",
+                        "
+    @media (min-width: ",
+                        "36",
+                        "em) {
+      ",
+                        "
+    grid-template-columns: 50%% 50%%;
+  ",
+                        "
+    }
+  ",
+                        "
+
+  ",
+                        "
+    @media (min-width: ",
+                        "62",
+                        "em) {
+      ",
+                        "
+    grid-template-columns: 32% 32% 32%;
+  ",
+                        "
+    }
+  ",
+                        "
+
+  ",
+                        "
+    @media (min-width: ",
+                        "80",
+                        "em) {
+      ",
+                        "
+    grid-template-columns: 24% 24% 24% 24%;
+  ",
+                        "
+    }
+  ",
+                        "
+",
+                      ],
+                    },
+                    "displayName": "styled.div",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "sc-htpNat",
+                    "target": "div",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+              >
+                <div
+                  className="c4"
+                />
+              </StyledComponent>
+            </styled.div>
+          </Grid>
         </CurrentTVSerieContainer>
       </Connect(CurrentTVSerieContainer)>
     </TV>

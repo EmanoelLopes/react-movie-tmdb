@@ -6,6 +6,9 @@ import { fetchCurrentTVSerie } from 'store/tvSeries/actions';
 import { fetchTVCredits } from 'store/credits/actions';
 import Loading from 'components/Loading';
 import HeroSection from 'components/HeroSection';
+import Grid from 'components/Grid';
+import CastCard from 'components/CastCard';
+import { H1 } from 'utils/styled';
 
 const CurrentTVSerieContainer = props => {
   const { dispatch, match, loading, currentTV, cast } = props;
@@ -36,21 +39,21 @@ const CurrentTVSerieContainer = props => {
           rating={currentTV.vote_average}
         />
       }
+      <H1>Cast</H1>
+      <Grid
+        columns={'24% 24% 24% 24% !important'}>
       {!!cast && cast.map(actor => {
-        /* TODO - Move this to a separeted component */
         return (
-          <div key={actor.id} className="actors">
-            {(!!actor.profile_path) &&
-              <img
-                /* TODO - add profile path */
-                src={`https://image.tmdb.org/t/p/w154/${actor.profile_path}`}
-                alt={actor.name}
-              />
-            }
-            <h4>{`${actor.name} (${actor.character})`}</h4>
-          </div>
+          <CastCard
+            key={actor.credit_id}
+            id={actor.id}
+            profile={actor.profile_path}
+            name={actor.name}
+            character={actor.character}
+          />
         );
       })}
+      </Grid>
     </Fragment>
   );
 };

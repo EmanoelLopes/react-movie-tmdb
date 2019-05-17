@@ -83,9 +83,21 @@ exports[`<App /> should match snapshot 1`] = `
   width: 3em !important;
 }
 
+@media (min-width:36em) {
+  .c3 {
+    grid-template-columns: 50%% 50%%;
+  }
+}
+
 @media (min-width:62em) {
   .c3 {
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 32% 32% 32%;
+  }
+}
+
+@media (min-width:80em) {
+  .c3 {
+    grid-template-columns: 24% 24% 24% 24%;
   }
 }
 
@@ -147,7 +159,7 @@ exports[`<App /> should match snapshot 1`] = `
                           "$$typeof": Symbol(react.forward_ref),
                           "attrs": Array [],
                           "componentStyle": ComponentStyle {
-                            "componentId": "sc-bZQynM",
+                            "componentId": "sc-gzVnrw",
                             "isStatic": true,
                             "lastClassName": "c0",
                             "rules": Array [
@@ -188,7 +200,7 @@ exports[`<App /> should match snapshot 1`] = `
                           "displayName": "styled.span",
                           "foldedComponentIds": Array [],
                           "render": [Function],
-                          "styledComponentId": "sc-bZQynM",
+                          "styledComponentId": "sc-gzVnrw",
                           "target": "span",
                           "toString": [Function],
                           "warnTooManyClasses": [Function],
@@ -627,11 +639,39 @@ exports[`<App /> should match snapshot 1`] = `
   ",
                                             "
     @media (min-width: ",
+                                            "36",
+                                            "em) {
+      ",
+                                            "
+    grid-template-columns: 50%% 50%%;
+  ",
+                                            "
+    }
+  ",
+                                            "
+
+  ",
+                                            "
+    @media (min-width: ",
                                             "62",
                                             "em) {
       ",
                                             "
-    grid-template-columns: 50% 50%
+    grid-template-columns: 32% 32% 32%;
+  ",
+                                            "
+    }
+  ",
+                                            "
+
+  ",
+                                            "
+    @media (min-width: ",
+                                            "80",
+                                            "em) {
+      ",
+                                            "
+    grid-template-columns: 24% 24% 24% 24%;
   ",
                                             "
     }
@@ -776,11 +816,39 @@ exports[`<App /> should match snapshot 1`] = `
   ",
                                             "
     @media (min-width: ",
+                                            "36",
+                                            "em) {
+      ",
+                                            "
+    grid-template-columns: 50%% 50%%;
+  ",
+                                            "
+    }
+  ",
+                                            "
+
+  ",
+                                            "
+    @media (min-width: ",
                                             "62",
                                             "em) {
       ",
                                             "
-    grid-template-columns: 50% 50%
+    grid-template-columns: 32% 32% 32%;
+  ",
+                                            "
+    }
+  ",
+                                            "
+
+  ",
+                                            "
+    @media (min-width: ",
+                                            "80",
+                                            "em) {
+      ",
+                                            "
+    grid-template-columns: 24% 24% 24% 24%;
   ",
                                             "
     }

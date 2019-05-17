@@ -6,6 +6,9 @@ import { fetchCurrentMovie } from 'store/movies/actions';
 import { fetchMovieCredits } from 'store/credits/actions';
 import Loading from 'components/Loading';
 import HeroSection from 'components/HeroSection';
+import Grid from 'components/Grid';
+import CastCard from 'components/CastCard';
+import { H1 } from 'utils/styled';
 
 const CurrentMovieContainer = (props) => {
   const {
@@ -42,20 +45,21 @@ const CurrentMovieContainer = (props) => {
           rating={currentMovie.vote_average}
         />
       }
-      {!!cast && cast.map(actor => {
-      /* TODO - Move this to a separeted component */
-        return (
-          <div key={actor.cast_id} className="actors">
-            {(!!actor.profile_path) &&
-              <img
-                src={`https://image.tmdb.org/t/p/w154/${actor.profile_path}`}
-                alt={actor.name}
-              />
-            }
-            <h4>{`${actor.name} (${actor.character})`}</h4>
-          </div>
-        );
-      })}
+      <H1>Cast</H1>
+      <Grid
+        columns={'24% 24% 24% 24% !important'}>
+        {!!cast && cast.map(actor => {
+          return (
+            <CastCard
+              key={actor.credit_id}
+              id={actor.id}
+              profile={actor.profile_path}
+              name={actor.name}
+              character={actor.character}
+            />
+          );
+        })}
+      </Grid>
     </Fragment>
   );
 };

@@ -16,6 +16,7 @@ export const images = {
   backdrop: 'w1280',
   profile: 'w154',
   placeholder: {
+    profile: 'https://placehold.jp/154x250.png?text=NO%20IMAGE', 
     poster: 'https://placehold.jp/320x500.png?text=NO%20IMAGE',
     backdrop: 'https://placehold.jp/1280x720.png?text=NO%20IMAGE',
   },
@@ -103,6 +104,17 @@ export const GlobalStyle = createGlobalStyle`
     .fa-heart {
       color: red;
     }
+  }
+
+  /* CSS Transition Group */
+  .fade-enter {
+    opacity: 0;
+    z-index: 1;
+  }
+
+  .fade-enter.fade-enter-active {
+    opacity: 1;
+    transition: opacity 250ms ease-in;
   }
 `;
 

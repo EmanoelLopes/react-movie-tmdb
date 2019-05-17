@@ -21,7 +21,6 @@ export const CardFeatured = styled.div`
   background-size: cover;
   background-position: top center;
   border: 5px solid ${colors.mainColor};
-  display: flex;
 
   .card-poster figure,
   .card-poster img {
@@ -30,7 +29,7 @@ export const CardFeatured = styled.div`
 
   .card-poster img {
     display: none;
-    width: 185px;
+    width: 100%;
 
     ${media.desktop`
       display: block;
@@ -41,7 +40,6 @@ export const CardFeatured = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    min-height: 300px;
     padding: 15px;
 
     ${media.desktop`

@@ -54,9 +54,21 @@ exports[`<Home /> should match snapshot 1`] = `
   height: 5em;
 }
 
+@media (min-width:36em) {
+  .c2 {
+    grid-template-columns: 50%% 50%%;
+  }
+}
+
 @media (min-width:62em) {
   .c2 {
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 32% 32% 32%;
+  }
+}
+
+@media (min-width:80em) {
+  .c2 {
+    grid-template-columns: 24% 24% 24% 24%;
   }
 }
 
@@ -323,11 +335,39 @@ exports[`<Home /> should match snapshot 1`] = `
   ",
                             "
     @media (min-width: ",
+                            "36",
+                            "em) {
+      ",
+                            "
+    grid-template-columns: 50%% 50%%;
+  ",
+                            "
+    }
+  ",
+                            "
+
+  ",
+                            "
+    @media (min-width: ",
                             "62",
                             "em) {
       ",
                             "
-    grid-template-columns: 50% 50%
+    grid-template-columns: 32% 32% 32%;
+  ",
+                            "
+    }
+  ",
+                            "
+
+  ",
+                            "
+    @media (min-width: ",
+                            "80",
+                            "em) {
+      ",
+                            "
+    grid-template-columns: 24% 24% 24% 24%;
   ",
                             "
     }
@@ -472,11 +512,39 @@ exports[`<Home /> should match snapshot 1`] = `
   ",
                             "
     @media (min-width: ",
+                            "36",
+                            "em) {
+      ",
+                            "
+    grid-template-columns: 50%% 50%%;
+  ",
+                            "
+    }
+  ",
+                            "
+
+  ",
+                            "
+    @media (min-width: ",
                             "62",
                             "em) {
       ",
                             "
-    grid-template-columns: 50% 50%
+    grid-template-columns: 32% 32% 32%;
+  ",
+                            "
+    }
+  ",
+                            "
+
+  ",
+                            "
+    @media (min-width: ",
+                            "80",
+                            "em) {
+      ",
+                            "
+    grid-template-columns: 24% 24% 24% 24%;
   ",
                             "
     }

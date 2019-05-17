@@ -9,9 +9,21 @@ exports[`<Grid /> should match snapshot 1`] = `
   grid-row-gap: 25px;
 }
 
+@media (min-width:36em) {
+  .c0 {
+    grid-template-columns: 50%% 50%%;
+  }
+}
+
 @media (min-width:62em) {
   .c0 {
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 32% 32% 32%;
+  }
+}
+
+@media (min-width:80em) {
+  .c0 {
+    grid-template-columns: 24% 24% 24% 24%;
   }
 }
 
@@ -37,11 +49,39 @@ exports[`<Grid /> should match snapshot 1`] = `
   ",
               "
     @media (min-width: ",
+              "36",
+              "em) {
+      ",
+              "
+    grid-template-columns: 50%% 50%%;
+  ",
+              "
+    }
+  ",
+              "
+
+  ",
+              "
+    @media (min-width: ",
               "62",
               "em) {
       ",
               "
-    grid-template-columns: 50% 50%
+    grid-template-columns: 32% 32% 32%;
+  ",
+              "
+    }
+  ",
+              "
+
+  ",
+              "
+    @media (min-width: ",
+              "80",
+              "em) {
+      ",
+              "
+    grid-template-columns: 24% 24% 24% 24%;
   ",
               "
     }
