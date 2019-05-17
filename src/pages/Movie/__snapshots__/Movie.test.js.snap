@@ -157,7 +157,7 @@ exports[`<Movie /> should match snapshot 1`] = `
 
 @media (min-width:80em) {
   .c4 {
-    grid-template-columns: 24% 24% 24% 24%;
+    grid-template-columns: 19% 19% 19% 19% 19%;
   }
 }
 
@@ -734,7 +734,7 @@ exports[`<Movie /> should match snapshot 1`] = `
                         "em) {
       ",
                         "
-    grid-template-columns: 24% 24% 24% 24%;
+    grid-template-columns: 19% 19% 19% 19% 19%;
   ",
                         "
     }

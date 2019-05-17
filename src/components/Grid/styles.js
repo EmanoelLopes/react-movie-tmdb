@@ -17,6 +17,6 @@ export const GridContainer = styled.div`
   `}
 
   ${media.largeDesktop`
-    grid-template-columns: 24% 24% 24% 24%;
+    grid-template-columns: 19% 19% 19% 19% 19%;
   `}
 `;

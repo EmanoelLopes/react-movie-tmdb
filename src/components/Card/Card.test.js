@@ -39,8 +39,4 @@ describe('<Card />', () => {
   it('should have a image tag with the poster path', () => {
     expect(wrapped.find('.card-poster figure img')).toHaveLength(1);
   });
-
-  it('should have a Link component', () => {
-    expect(wrapped.find('.card-info a')).toHaveLength(1);
-  });
 });

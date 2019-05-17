@@ -10,6 +10,20 @@ exports[`<Card /> should match snapshot 1`] = `
   border: 5px solid #081c24;
 }
 
+.c0 > a {
+  color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  height: 100%;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
 .c0 .card-poster figure,
 .c0 .card-poster img {
   height: 100%;
@@ -37,11 +51,10 @@ exports[`<Card /> should match snapshot 1`] = `
 
 .c0 .card-info-wrapper {
   background-color: rgba(0,0,0,.7);
-  padding: 15px;
 }
 
 .c0 .card-info h3 {
-  font-size: 22px;
+  font-size: 20px;
   margin-bottom: 15px;
 }
 
@@ -74,6 +87,12 @@ exports[`<Card /> should match snapshot 1`] = `
 @media (min-width:62em) {
   .c0 {
     background-image: none;
+    color: #081c24;
+  }
+}
+
+@media (min-width:62em) {
+  .c0 > a {
     color: #081c24;
   }
 }
@@ -177,6 +196,32 @@ exports[`<Card /> should match snapshot 1`] = `
   ",
                   "
 
+  > a {
+    color: ",
+                  "#fff",
+                  ";
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    text-decoration: none;
+
+    ",
+                  "
+    @media (min-width: ",
+                  "62",
+                  "em) {
+      ",
+                  "
+      color: ",
+                  "#081c24",
+                  ";
+    ",
+                  "
+    }
+  ",
+                  "
+  }
+
   background-size: cover;
   background-position: top center;
   border: 5px solid ",
@@ -230,7 +275,6 @@ exports[`<Card /> should match snapshot 1`] = `
 
   .card-info-wrapper {
     background-color: rgba(0,0,0,.7);
-    padding: 15px;
 
     ",
                   "
@@ -248,7 +292,7 @@ exports[`<Card /> should match snapshot 1`] = `
   }
 
   .card-info h3 {
-    font-size: 22px;
+    font-size: 20px;
     margin-bottom: 15px;
   }
   .card-info small {
@@ -311,141 +355,92 @@ exports[`<Card /> should match snapshot 1`] = `
           <div
             className="c0"
           >
-            <div
-              className="card-poster"
+            <Link
+              replace={false}
+              to="someid"
             >
-              <figure>
-                <img
-                  alt="Some Card"
-                  src="https://image.tmdb.org/t/p/w500someposterpath.jpg"
-                />
-              </figure>
-            </div>
-            <div
-              className="card-info"
-            >
-              <div
-                className="card-info-wrapper"
+              <a
+                href="/someid"
+                onClick={[Function]}
               >
-                <h3>
-                  Some Card
-                </h3>
-                <small>
-                  <FontAwesomeIcon
-                    border={false}
-                    className=""
-                    fixedWidth={false}
-                    flip={null}
-                    icon={
-                      Object {
-                        "icon": Array [
-                          448,
-                          512,
-                          Array [],
-                          "f073",
-                          "M0 464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V192H0v272zm320-196c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zM192 268c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zM64 268c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12v-40zM400 64h-48V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H160V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H48C21.5 64 0 85.5 0 112v48h448v-48c0-26.5-21.5-48-48-48z",
-                        ],
-                        "iconName": "calendar-alt",
-                        "prefix": "fas",
-                      }
-                    }
-                    inverse={false}
-                    listItem={false}
-                    mask={null}
-                    pull={null}
-                    pulse={false}
-                    rotation={null}
-                    size={null}
-                    spin={false}
-                    symbol={false}
-                    title=""
-                    transform={null}
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="svg-inline--fa fa-calendar-alt fa-w-14 "
-                      data-icon="calendar-alt"
-                      data-prefix="fas"
-                      focusable="false"
-                      role="img"
-                      style={Object {}}
-                      viewBox="0 0 448 512"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M0 464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V192H0v272zm320-196c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zM192 268c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zM64 268c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12v-40zM400 64h-48V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H160V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H48C21.5 64 0 85.5 0 112v48h448v-48c0-26.5-21.5-48-48-48z"
-                        fill="currentColor"
-                        style={Object {}}
-                      />
-                    </svg>
-                  </FontAwesomeIcon>
-                   
-                </small>
-                <p>
-                  some description
-                </p>
-                <Link
-                  replace={false}
-                  to="someid"
+                <div
+                  className="card-poster"
                 >
-                  <a
-                    href="/someid"
-                    onClick={[Function]}
+                  <figure>
+                    <img
+                      alt="Some Card"
+                      src="https://image.tmdb.org/t/p/w500someposterpath.jpg"
+                    />
+                  </figure>
+                </div>
+                <div
+                  className="card-info"
+                >
+                  <div
+                    className="card-info-wrapper"
                   >
-                    More Info 
-                    <FontAwesomeIcon
-                      border={false}
-                      className=""
-                      fixedWidth={false}
-                      flip={null}
-                      icon={
-                        Object {
-                          "icon": Array [
-                            512,
-                            512,
-                            Array [],
-                            "f05a",
-                            "M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z",
-                          ],
-                          "iconName": "info-circle",
-                          "prefix": "fas",
+                    <h3>
+                      Some Card
+                    </h3>
+                    <small>
+                      <FontAwesomeIcon
+                        border={false}
+                        className=""
+                        fixedWidth={false}
+                        flip={null}
+                        icon={
+                          Object {
+                            "icon": Array [
+                              448,
+                              512,
+                              Array [],
+                              "f073",
+                              "M0 464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V192H0v272zm320-196c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zM192 268c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zM64 268c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12v-40zM400 64h-48V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H160V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H48C21.5 64 0 85.5 0 112v48h448v-48c0-26.5-21.5-48-48-48z",
+                            ],
+                            "iconName": "calendar-alt",
+                            "prefix": "fas",
+                          }
                         }
-                      }
-                      inverse={false}
-                      listItem={false}
-                      mask={null}
-                      pull={null}
-                      pulse={false}
-                      rotation={null}
-                      size={null}
-                      spin={false}
-                      symbol={false}
-                      title=""
-                      transform={null}
-                    >
-                      <svg
-                        aria-hidden="true"
-                        className="svg-inline--fa fa-info-circle fa-w-16 "
-                        data-icon="info-circle"
-                        data-prefix="fas"
-                        focusable="false"
-                        role="img"
-                        style={Object {}}
-                        viewBox="0 0 512 512"
-                        xmlns="http://www.w3.org/2000/svg"
+                        inverse={false}
+                        listItem={false}
+                        mask={null}
+                        pull={null}
+                        pulse={false}
+                        rotation={null}
+                        size={null}
+                        spin={false}
+                        symbol={false}
+                        title=""
+                        transform={null}
                       >
-                        <path
-                          d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"
-                          fill="currentColor"
+                        <svg
+                          aria-hidden="true"
+                          className="svg-inline--fa fa-calendar-alt fa-w-14 "
+                          data-icon="calendar-alt"
+                          data-prefix="fas"
+                          focusable="false"
+                          role="img"
                           style={Object {}}
-                        />
-                      </svg>
-                    </FontAwesomeIcon>
-                     
-                  </a>
-                </Link>
-              </div>
-            </div>
+                          viewBox="0 0 448 512"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M0 464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V192H0v272zm320-196c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zM192 268c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zM64 268c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12v-40zM400 64h-48V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H160V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H48C21.5 64 0 85.5 0 112v48h448v-48c0-26.5-21.5-48-48-48z"
+                            fill="currentColor"
+                            style={Object {}}
+                          />
+                        </svg>
+                      </FontAwesomeIcon>
+                       
+                    </small>
+                    <p>
+                      some description
+                       [more info]
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </Link>
           </div>
         </StyledComponent>
       </styled.div>

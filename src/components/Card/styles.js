@@ -18,6 +18,18 @@ export const CardFeatured = styled.div`
     color: ${colors.mainColor};
   `}
 
+  > a {
+    color: ${colors.white};
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    text-decoration: none;
+
+    ${media.desktop`
+      color: ${colors.mainColor};
+    `}
+  }
+
   background-size: cover;
   background-position: top center;
   border: 5px solid ${colors.mainColor};
@@ -49,7 +61,6 @@ export const CardFeatured = styled.div`
 
   .card-info-wrapper {
     background-color: rgba(0,0,0,.7);
-    padding: 15px;
 
     ${media.desktop`
       background-color: transparent;
@@ -57,7 +68,7 @@ export const CardFeatured = styled.div`
   }
 
   .card-info h3 {
-    font-size: 22px;
+    font-size: 20px;
     margin-bottom: 15px;
   }
   .card-info small {
