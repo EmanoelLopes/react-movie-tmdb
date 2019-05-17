@@ -4,14 +4,14 @@ import { colors, media, images } from 'utils/styled';
 const { path, poster, placeholder } = images;
 
 export const CardFeatured = styled.div`
-  background-color: #fff;
+  background-color: ${colors.white};
   background-image: url(
     ${props => (props.backdrop)
       ? `${path}${poster}${props.backdrop}`
       : `${placeholder.backdrop}`
     }
   );
-  color: #fff;
+  color: ${colors.white};
 
   ${media.desktop`
     background-image: none;
@@ -32,7 +32,7 @@ export const CardFeatured = styled.div`
 
   background-size: cover;
   background-position: top center;
-  border: 5px solid ${colors.mainColor};
+  border: 1px solid #ccc;
 
   .card-poster figure,
   .card-poster img {
@@ -61,15 +61,25 @@ export const CardFeatured = styled.div`
 
   .card-info-wrapper {
     background-color: rgba(0,0,0,.7);
+    padding: 10px;
 
     ${media.desktop`
       background-color: transparent;
+      padding: 0;
     `}
   }
 
   .card-info h3 {
     font-size: 20px;
     margin-bottom: 15px;
+
+    ${media.desktop`
+      max-width: 200px;
+      overflow: hidden;
+      padding-bottom: 5px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    `}
   }
   .card-info small {
     display: block;
@@ -81,8 +91,8 @@ export const CardFeatured = styled.div`
   }
 
   .card-info a {
-    border: 3px solid #fff;
-    color: #fff;
+    border: 3px solid ${colors.white};
+    color: ${colors.white};
     display: block;
     font-weight: 600;
     padding: 10px 15px;    

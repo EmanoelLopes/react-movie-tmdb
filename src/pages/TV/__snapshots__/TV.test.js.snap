@@ -4,11 +4,12 @@ exports[`<TV /> should match snapshot 1`] = `
 .c3 {
   font-size: 32px;
   margin: 25px 0;
+  width: 100%;
 }
 
 .c4 {
   display: grid;
-  grid-template-columns: 100%;
+  grid-template-columns: auto;
   grid-template-rows: auto;
   grid-column-gap: 25px;
   grid-row-gap: 25px;
@@ -656,6 +657,7 @@ exports[`<TV /> should match snapshot 1`] = `
                       "
   font-size: 32px;
   margin: 25px 0;
+  width: 100%;
 ",
                     ],
                   },
@@ -694,7 +696,7 @@ exports[`<TV /> should match snapshot 1`] = `
                       "rules": Array [
                         "
   display: grid;
-  grid-template-columns: 100%;
+  grid-template-columns: auto;
   grid-template-rows: auto; 
   grid-column-gap: 25px;
   grid-row-gap: 25px;

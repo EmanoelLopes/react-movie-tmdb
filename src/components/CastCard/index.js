@@ -20,7 +20,8 @@ const CastCard = props => {
         }
         alt={name}
       />
-      <h4>{`${name} (${character})`}</h4>
+      <h4>{name}<br />{character}</h4>
+      <p></p>
     </CastContainer>
   );
 };

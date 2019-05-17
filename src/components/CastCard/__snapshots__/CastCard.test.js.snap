@@ -3,17 +3,31 @@
 exports[`<CastCard /> should match snapshot 1`] = `
 .c0 {
   background-color: rgba(0,0,0,.7);
+  border: 1px solid #081c24;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  max-width: 300px;
+  width: 100%;
   text-align: center;
 }
 
 .c0 h4 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   padding: 15px;
+  width: 100%;
 }
 
 .c0 img {
@@ -50,8 +64,11 @@ exports[`<CastCard /> should match snapshot 1`] = `
             "rules": Array [
               "
   background-color: rgba(0,0,0,.7);
+  border: 1px solid ",
+              "#081c24",
+              ";
   display: flex;
-  max-width: 300px;
+  width: 100%;
   text-align: center;
 
   ",
@@ -69,8 +86,14 @@ exports[`<CastCard /> should match snapshot 1`] = `
               "
 
   h4 {
-    color: #fff;
+    align-items: center;
+    color: ",
+              "#fff",
+              ";
+    display: flex;
+    justify-content: center;
     padding: 15px;
+    width: 100%;
   }
 
   img {
@@ -102,8 +125,11 @@ exports[`<CastCard /> should match snapshot 1`] = `
           src="https://image.tmdb.org/t/p/w154https://placehold.jp/154x250.png?text=NO%20IMAGE"
         />
         <h4>
-          Kit Harington (Jon Snow)
+          Kit Harington
+          <br />
+          Jon Snow
         </h4>
+        <p />
       </div>
     </StyledComponent>
   </styled.div>

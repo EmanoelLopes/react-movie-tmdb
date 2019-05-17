@@ -7,7 +7,7 @@ exports[`<Card /> should match snapshot 1`] = `
   color: #fff;
   background-size: cover;
   background-position: top center;
-  border: 5px solid #081c24;
+  border: 1px solid #ccc;
 }
 
 .c0 > a {
@@ -51,6 +51,7 @@ exports[`<Card /> should match snapshot 1`] = `
 
 .c0 .card-info-wrapper {
   background-color: rgba(0,0,0,.7);
+  padding: 10px;
 }
 
 .c0 .card-info h3 {
@@ -115,6 +116,17 @@ exports[`<Card /> should match snapshot 1`] = `
 @media (min-width:62em) {
   .c0 .card-info-wrapper {
     background-color: transparent;
+    padding: 0;
+  }
+}
+
+@media (min-width:62em) {
+  .c0 .card-info h3 {
+    max-width: 200px;
+    overflow: hidden;
+    padding-bottom: 5px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
 }
 
@@ -171,13 +183,17 @@ exports[`<Card /> should match snapshot 1`] = `
                 "lastClassName": "c0",
                 "rules": Array [
                   "
-  background-color: #fff;
+  background-color: ",
+                  "#fff",
+                  ";
   background-image: url(
     ",
                   [Function],
                   "
   );
-  color: #fff;
+  color: ",
+                  "#fff",
+                  ";
 
   ",
                   "
@@ -224,9 +240,7 @@ exports[`<Card /> should match snapshot 1`] = `
 
   background-size: cover;
   background-position: top center;
-  border: 5px solid ",
-                  "#081c24",
-                  ";
+  border: 1px solid #ccc;
 
   .card-poster figure,
   .card-poster img {
@@ -275,6 +289,7 @@ exports[`<Card /> should match snapshot 1`] = `
 
   .card-info-wrapper {
     background-color: rgba(0,0,0,.7);
+    padding: 10px;
 
     ",
                   "
@@ -284,6 +299,7 @@ exports[`<Card /> should match snapshot 1`] = `
       ",
                   "
       background-color: transparent;
+      padding: 0;
     ",
                   "
     }
@@ -294,6 +310,24 @@ exports[`<Card /> should match snapshot 1`] = `
   .card-info h3 {
     font-size: 20px;
     margin-bottom: 15px;
+
+    ",
+                  "
+    @media (min-width: ",
+                  "62",
+                  "em) {
+      ",
+                  "
+      max-width: 200px;
+      overflow: hidden;
+      padding-bottom: 5px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    ",
+                  "
+    }
+  ",
+                  "
   }
   .card-info small {
     display: block;
@@ -305,8 +339,12 @@ exports[`<Card /> should match snapshot 1`] = `
   }
 
   .card-info a {
-    border: 3px solid #fff;
-    color: #fff;
+    border: 3px solid ",
+                  "#fff",
+                  ";
+    color: ",
+                  "#fff",
+                  ";
     display: block;
     font-weight: 600;
     padding: 10px 15px;    

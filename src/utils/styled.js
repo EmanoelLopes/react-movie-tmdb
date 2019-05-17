@@ -121,4 +121,5 @@ export const GlobalStyle = createGlobalStyle`
 export const H1 = styled.h1`
   font-size: 32px;
   margin: 25px 0;
+  width: 100%;
 `;

@@ -21,5 +21,10 @@ export const LogoWrapper = styled.span`
     height: 3em;
     margin-right: 10px;
     width: 3em !important;
+
+    &.fa-react {
+      width: 20px !important;
+      height: 20px;
+    }
   }
 `;
