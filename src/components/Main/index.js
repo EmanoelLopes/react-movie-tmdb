@@ -1,7 +1,9 @@
 import React from 'react';
 import { node } from 'prop-types';
+import { withRouter } from 'react-router-dom';
+import withSrollToTop from 'HOC/withScrollToTop';
 
-function Main ({ children }) {
+function WrappedMain ({ children }) {
   return (
     <main className="rm-main">
       {children}
@@ -9,12 +11,14 @@ function Main ({ children }) {
   );
 }
  
-Main.propTypes = {
+WrappedMain.propTypes = {
   children: node,
 };
 
-Main.defaultProps = {
+WrappedMain.defaultProps = {
   children: {}
 };
+
+const Main = withRouter(withSrollToTop(WrappedMain));
 
 export default Main;
