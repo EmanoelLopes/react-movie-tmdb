@@ -6,9 +6,12 @@ let wrapped;
 let defaultProps = {
   firstAirDate: '',
   numberOfEpisodes: 0,
+  numberOfSeasons: 0,
   seasonNumber: 0,
   episodeNumber: 0,
   episodeName: '',
+  nextEpisodeNumber: 0,
+  nextEpisodeName: '', 
   homepage: '',
 };
 

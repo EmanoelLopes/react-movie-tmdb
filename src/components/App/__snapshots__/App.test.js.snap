@@ -166,7 +166,7 @@ exports[`<App /> should match snapshot 1`] = `
                           "$$typeof": Symbol(react.forward_ref),
                           "attrs": Array [],
                           "componentStyle": ComponentStyle {
-                            "componentId": "sc-htoDjs",
+                            "componentId": "sc-dnqmqq",
                             "isStatic": true,
                             "lastClassName": "c0",
                             "rules": Array [
@@ -216,7 +216,7 @@ exports[`<App /> should match snapshot 1`] = `
                           "displayName": "styled.span",
                           "foldedComponentIds": Array [],
                           "render": [Function],
-                          "styledComponentId": "sc-htoDjs",
+                          "styledComponentId": "sc-dnqmqq",
                           "target": "span",
                           "toString": [Function],
                           "warnTooManyClasses": [Function],
@@ -357,124 +357,201 @@ exports[`<App /> should match snapshot 1`] = `
               </div>
             </header>
           </Header>
-          <Main>
-            <main
-              className="rm-main"
-            >
-              <Routes>
-                <Switch>
-                  <Route
-                    component={[Function]}
-                    computedMatch={
-                      Object {
-                        "isExact": true,
-                        "params": Object {},
-                        "path": "/",
-                        "url": "/",
-                      }
-                    }
-                    exact={true}
-                    location={
-                      Object {
+          <withRouter(Wrapped)>
+            <Route>
+              <Wrapped
+                history={
+                  Object {
+                    "action": "POP",
+                    "block": [Function],
+                    "createHref": [Function],
+                    "go": [Function],
+                    "goBack": [Function],
+                    "goForward": [Function],
+                    "length": 1,
+                    "listen": [Function],
+                    "location": Object {
+                      "hash": "",
+                      "pathname": "/",
+                      "search": "",
+                      "state": undefined,
+                    },
+                    "push": [Function],
+                    "replace": [Function],
+                  }
+                }
+                location={
+                  Object {
+                    "hash": "",
+                    "pathname": "/",
+                    "search": "",
+                    "state": undefined,
+                  }
+                }
+                match={
+                  Object {
+                    "isExact": true,
+                    "params": Object {},
+                    "path": "/",
+                    "url": "/",
+                  }
+                }
+              >
+                <WrappedMain
+                  history={
+                    Object {
+                      "action": "POP",
+                      "block": [Function],
+                      "createHref": [Function],
+                      "go": [Function],
+                      "goBack": [Function],
+                      "goForward": [Function],
+                      "length": 1,
+                      "listen": [Function],
+                      "location": Object {
                         "hash": "",
                         "pathname": "/",
                         "search": "",
                         "state": undefined,
-                      }
+                      },
+                      "push": [Function],
+                      "replace": [Function],
                     }
-                    path="/"
+                  }
+                  location={
+                    Object {
+                      "hash": "",
+                      "pathname": "/",
+                      "search": "",
+                      "state": undefined,
+                    }
+                  }
+                  match={
+                    Object {
+                      "isExact": true,
+                      "params": Object {},
+                      "path": "/",
+                      "url": "/",
+                    }
+                  }
+                >
+                  <main
+                    className="rm-main"
                   >
-                    <Connect(Home)
-                      history={
-                        Object {
-                          "action": "POP",
-                          "block": [Function],
-                          "createHref": [Function],
-                          "go": [Function],
-                          "goBack": [Function],
-                          "goForward": [Function],
-                          "length": 1,
-                          "listen": [Function],
-                          "location": Object {
-                            "hash": "",
-                            "pathname": "/",
-                            "search": "",
-                            "state": undefined,
-                          },
-                          "push": [Function],
-                          "replace": [Function],
-                        }
-                      }
-                      location={
-                        Object {
-                          "hash": "",
-                          "pathname": "/",
-                          "search": "",
-                          "state": undefined,
-                        }
-                      }
-                      match={
-                        Object {
-                          "isExact": true,
-                          "params": Object {},
-                          "path": "/",
-                          "url": "/",
-                        }
-                      }
-                    >
-                      <Home
-                        dispatch={[Function]}
-                        history={
-                          Object {
-                            "action": "POP",
-                            "block": [Function],
-                            "createHref": [Function],
-                            "go": [Function],
-                            "goBack": [Function],
-                            "goForward": [Function],
-                            "length": 1,
-                            "listen": [Function],
-                            "location": Object {
+                    <Routes>
+                      <Switch>
+                        <Route
+                          component={[Function]}
+                          computedMatch={
+                            Object {
+                              "isExact": true,
+                              "params": Object {},
+                              "path": "/",
+                              "url": "/",
+                            }
+                          }
+                          exact={true}
+                          location={
+                            Object {
                               "hash": "",
                               "pathname": "/",
                               "search": "",
                               "state": undefined,
-                            },
-                            "push": [Function],
-                            "replace": [Function],
+                            }
                           }
-                        }
-                        loading={true}
-                        location={
-                          Object {
-                            "hash": "",
-                            "pathname": "/",
-                            "search": "",
-                            "state": undefined,
-                          }
-                        }
-                        match={
-                          Object {
-                            "isExact": true,
-                            "params": Object {},
-                            "path": "/",
-                            "url": "/",
-                          }
-                        }
-                      >
-                        <Loading>
-                          <styled.div>
-                            <StyledComponent
-                              forwardedComponent={
+                          path="/"
+                        >
+                          <Connect(Home)
+                            history={
+                              Object {
+                                "action": "POP",
+                                "block": [Function],
+                                "createHref": [Function],
+                                "go": [Function],
+                                "goBack": [Function],
+                                "goForward": [Function],
+                                "length": 1,
+                                "listen": [Function],
+                                "location": Object {
+                                  "hash": "",
+                                  "pathname": "/",
+                                  "search": "",
+                                  "state": undefined,
+                                },
+                                "push": [Function],
+                                "replace": [Function],
+                              }
+                            }
+                            location={
+                              Object {
+                                "hash": "",
+                                "pathname": "/",
+                                "search": "",
+                                "state": undefined,
+                              }
+                            }
+                            match={
+                              Object {
+                                "isExact": true,
+                                "params": Object {},
+                                "path": "/",
+                                "url": "/",
+                              }
+                            }
+                          >
+                            <Home
+                              dispatch={[Function]}
+                              history={
                                 Object {
-                                  "$$typeof": Symbol(react.forward_ref),
-                                  "attrs": Array [],
-                                  "componentStyle": ComponentStyle {
-                                    "componentId": "sc-EHOje",
-                                    "isStatic": true,
-                                    "lastClassName": "c1",
-                                    "rules": Array [
-                                      "
+                                  "action": "POP",
+                                  "block": [Function],
+                                  "createHref": [Function],
+                                  "go": [Function],
+                                  "goBack": [Function],
+                                  "goForward": [Function],
+                                  "length": 1,
+                                  "listen": [Function],
+                                  "location": Object {
+                                    "hash": "",
+                                    "pathname": "/",
+                                    "search": "",
+                                    "state": undefined,
+                                  },
+                                  "push": [Function],
+                                  "replace": [Function],
+                                }
+                              }
+                              loading={true}
+                              location={
+                                Object {
+                                  "hash": "",
+                                  "pathname": "/",
+                                  "search": "",
+                                  "state": undefined,
+                                }
+                              }
+                              match={
+                                Object {
+                                  "isExact": true,
+                                  "params": Object {},
+                                  "path": "/",
+                                  "url": "/",
+                                }
+                              }
+                            >
+                              <Loading>
+                                <styled.div>
+                                  <StyledComponent
+                                    forwardedComponent={
+                                      Object {
+                                        "$$typeof": Symbol(react.forward_ref),
+                                        "attrs": Array [],
+                                        "componentStyle": ComponentStyle {
+                                          "componentId": "sc-EHOje",
+                                          "isStatic": true,
+                                          "lastClassName": "c1",
+                                          "rules": Array [
+                                            "
   width: 100%;
   height: 100%;
   position: fixed;
@@ -496,264 +573,307 @@ exports[`<App /> should match snapshot 1`] = `
 
   svg {
     animation: ",
-                                      Keyframes {
-                                        "id": "sc-keyframes-iVXCSc",
-                                        "inject": [Function],
-                                        "name": "iVXCSc",
-                                        "rules": Array [
-                                          "@-webkit-keyframes iVXCSc{from{-webkit-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg);}to{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg);}}",
-                                          "@keyframes iVXCSc{from{-webkit-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg);}to{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg);}}",
-                                        ],
-                                        "toString": [Function],
-                                      },
-                                      " 1s linear infinite;
+                                            Keyframes {
+                                              "id": "sc-keyframes-iVXCSc",
+                                              "inject": [Function],
+                                              "name": "iVXCSc",
+                                              "rules": Array [
+                                                "@-webkit-keyframes iVXCSc{from{-webkit-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg);}to{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg);}}",
+                                                "@keyframes iVXCSc{from{-webkit-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg);}to{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg);}}",
+                                              ],
+                                              "toString": [Function],
+                                            },
+                                            " 1s linear infinite;
     color: #01d277;
     width: 5em !important;
     height: 5em;
 
   }
 ",
-                                    ],
-                                  },
-                                  "displayName": "styled.div",
-                                  "foldedComponentIds": Array [],
-                                  "render": [Function],
-                                  "styledComponentId": "sc-EHOje",
-                                  "target": "div",
-                                  "toString": [Function],
-                                  "warnTooManyClasses": [Function],
-                                  "withComponent": [Function],
-                                }
-                              }
-                              forwardedRef={null}
-                            >
+                                          ],
+                                        },
+                                        "displayName": "styled.div",
+                                        "foldedComponentIds": Array [],
+                                        "render": [Function],
+                                        "styledComponentId": "sc-EHOje",
+                                        "target": "div",
+                                        "toString": [Function],
+                                        "warnTooManyClasses": [Function],
+                                        "withComponent": [Function],
+                                      }
+                                    }
+                                    forwardedRef={null}
+                                  >
+                                    <div
+                                      className="c1"
+                                    >
+                                      <span>
+                                        Loading...
+                                      </span>
+                                      <FontAwesomeIcon
+                                        border={false}
+                                        className=""
+                                        fixedWidth={false}
+                                        flip={null}
+                                        icon={
+                                          Object {
+                                            "icon": Array [
+                                              512,
+                                              512,
+                                              Array [],
+                                              "f110",
+                                              "M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z",
+                                            ],
+                                            "iconName": "spinner",
+                                            "prefix": "fas",
+                                          }
+                                        }
+                                        inverse={false}
+                                        listItem={false}
+                                        mask={null}
+                                        pull={null}
+                                        pulse={false}
+                                        rotation={null}
+                                        size={null}
+                                        spin={false}
+                                        symbol={false}
+                                        title=""
+                                        transform={null}
+                                      >
+                                        <svg
+                                          aria-hidden="true"
+                                          className="svg-inline--fa fa-spinner fa-w-16 "
+                                          data-icon="spinner"
+                                          data-prefix="fas"
+                                          focusable="false"
+                                          role="img"
+                                          style={Object {}}
+                                          viewBox="0 0 512 512"
+                                          xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                          <path
+                                            d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z"
+                                            fill="currentColor"
+                                            style={Object {}}
+                                          />
+                                        </svg>
+                                      </FontAwesomeIcon>
+                                    </div>
+                                  </StyledComponent>
+                                </styled.div>
+                              </Loading>
+                              <Connect(HeroSectionContainer)>
+                                <HeroSectionContainer
+                                  dispatch={[Function]}
+                                  movies={Array []}
+                                />
+                              </Connect(HeroSectionContainer)>
                               <div
-                                className="c1"
+                                className="container"
                               >
-                                <span>
-                                  Loading...
-                                </span>
-                                <FontAwesomeIcon
-                                  border={false}
-                                  className=""
-                                  fixedWidth={false}
-                                  flip={null}
-                                  icon={
-                                    Object {
-                                      "icon": Array [
-                                        512,
-                                        512,
-                                        Array [],
-                                        "f110",
-                                        "M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z",
-                                      ],
-                                      "iconName": "spinner",
-                                      "prefix": "fas",
+                                <styled.h1>
+                                  <StyledComponent
+                                    forwardedComponent={
+                                      Object {
+                                        "$$typeof": Symbol(react.forward_ref),
+                                        "attrs": Array [],
+                                        "componentStyle": ComponentStyle {
+                                          "componentId": "sc-bdVaJa",
+                                          "isStatic": true,
+                                          "lastClassName": "c2",
+                                          "rules": Array [
+                                            "
+  font-size: 32px;
+  margin: 25px 0;
+  width: 100%;
+  text-transform: uppercase;
+",
+                                          ],
+                                        },
+                                        "displayName": "styled.h1",
+                                        "foldedComponentIds": Array [],
+                                        "render": [Function],
+                                        "styledComponentId": "sc-bdVaJa",
+                                        "target": "h1",
+                                        "toString": [Function],
+                                        "warnTooManyClasses": [Function],
+                                        "withComponent": [Function],
+                                      }
                                     }
-                                  }
-                                  inverse={false}
-                                  listItem={false}
-                                  mask={null}
-                                  pull={null}
-                                  pulse={false}
-                                  rotation={null}
-                                  size={null}
-                                  spin={false}
-                                  symbol={false}
-                                  title=""
-                                  transform={null}
-                                >
-                                  <svg
-                                    aria-hidden="true"
-                                    className="svg-inline--fa fa-spinner fa-w-16 "
-                                    data-icon="spinner"
-                                    data-prefix="fas"
-                                    focusable="false"
-                                    role="img"
-                                    style={Object {}}
-                                    viewBox="0 0 512 512"
-                                    xmlns="http://www.w3.org/2000/svg"
+                                    forwardedRef={null}
                                   >
-                                    <path
-                                      d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z"
-                                      fill="currentColor"
-                                      style={Object {}}
-                                    />
-                                  </svg>
-                                </FontAwesomeIcon>
+                                    <h1
+                                      className="c2"
+                                    >
+                                      Popular Movies 
+                                      <FontAwesomeIcon
+                                        border={false}
+                                        className=""
+                                        fixedWidth={false}
+                                        flip={null}
+                                        icon={
+                                          Object {
+                                            "icon": Array [
+                                              512,
+                                              512,
+                                              Array [],
+                                              "f008",
+                                              "M488 64h-8v20c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12V64H96v20c0 6.6-5.4 12-12 12H44c-6.6 0-12-5.4-12-12V64h-8C10.7 64 0 74.7 0 88v336c0 13.3 10.7 24 24 24h8v-20c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v20h320v-20c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v20h8c13.3 0 24-10.7 24-24V88c0-13.3-10.7-24-24-24zM96 372c0 6.6-5.4 12-12 12H44c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40zm0-96c0 6.6-5.4 12-12 12H44c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40zm0-96c0 6.6-5.4 12-12 12H44c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40zm272 208c0 6.6-5.4 12-12 12H156c-6.6 0-12-5.4-12-12v-96c0-6.6 5.4-12 12-12h200c6.6 0 12 5.4 12 12v96zm0-168c0 6.6-5.4 12-12 12H156c-6.6 0-12-5.4-12-12v-96c0-6.6 5.4-12 12-12h200c6.6 0 12 5.4 12 12v96zm112 152c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40zm0-96c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40zm0-96c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40z",
+                                            ],
+                                            "iconName": "film",
+                                            "prefix": "fas",
+                                          }
+                                        }
+                                        inverse={false}
+                                        listItem={false}
+                                        mask={null}
+                                        pull={null}
+                                        pulse={false}
+                                        rotation={null}
+                                        size={null}
+                                        spin={false}
+                                        symbol={false}
+                                        title=""
+                                        transform={null}
+                                      >
+                                        <svg
+                                          aria-hidden="true"
+                                          className="svg-inline--fa fa-film fa-w-16 "
+                                          data-icon="film"
+                                          data-prefix="fas"
+                                          focusable="false"
+                                          role="img"
+                                          style={Object {}}
+                                          viewBox="0 0 512 512"
+                                          xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                          <path
+                                            d="M488 64h-8v20c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12V64H96v20c0 6.6-5.4 12-12 12H44c-6.6 0-12-5.4-12-12V64h-8C10.7 64 0 74.7 0 88v336c0 13.3 10.7 24 24 24h8v-20c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v20h320v-20c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v20h8c13.3 0 24-10.7 24-24V88c0-13.3-10.7-24-24-24zM96 372c0 6.6-5.4 12-12 12H44c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40zm0-96c0 6.6-5.4 12-12 12H44c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40zm0-96c0 6.6-5.4 12-12 12H44c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40zm272 208c0 6.6-5.4 12-12 12H156c-6.6 0-12-5.4-12-12v-96c0-6.6 5.4-12 12-12h200c6.6 0 12 5.4 12 12v96zm0-168c0 6.6-5.4 12-12 12H156c-6.6 0-12-5.4-12-12v-96c0-6.6 5.4-12 12-12h200c6.6 0 12 5.4 12 12v96zm112 152c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40zm0-96c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40zm0-96c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40z"
+                                            fill="currentColor"
+                                            style={Object {}}
+                                          />
+                                        </svg>
+                                      </FontAwesomeIcon>
+                                    </h1>
+                                  </StyledComponent>
+                                </styled.h1>
+                                <Connect(MoviesContainer)>
+                                  <MoviesContainer
+                                    dispatch={[Function]}
+                                    getMovies={[Function]}
+                                    movies={Array []}
+                                  >
+                                    <Grid>
+                                      <styled.div>
+                                        <StyledComponent
+                                          forwardedComponent={
+                                            Object {
+                                              "$$typeof": Symbol(react.forward_ref),
+                                              "attrs": Array [],
+                                              "componentStyle": ComponentStyle {
+                                                "componentId": "sc-htpNat",
+                                                "isStatic": true,
+                                                "lastClassName": "c3",
+                                                "rules": Array [
+                                                  "
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto; 
+  grid-column-gap: 25px;
+  grid-row-gap: 25px;
+
+  ",
+                                                  "
+    @media (min-width: ",
+                                                  "36",
+                                                  "em) {
+      ",
+                                                  "
+    grid-template-columns: 50%% 50%%;
+  ",
+                                                  "
+    }
+  ",
+                                                  "
+
+  ",
+                                                  "
+    @media (min-width: ",
+                                                  "62",
+                                                  "em) {
+      ",
+                                                  "
+    grid-template-columns: 32% 32% 32%;
+  ",
+                                                  "
+    }
+  ",
+                                                  "
+
+  ",
+                                                  "
+    @media (min-width: ",
+                                                  "80",
+                                                  "em) {
+      ",
+                                                  "
+    grid-template-columns: 19% 19% 19% 19% 19%;
+  ",
+                                                  "
+    }
+  ",
+                                                  "
+",
+                                                ],
+                                              },
+                                              "displayName": "styled.div",
+                                              "foldedComponentIds": Array [],
+                                              "render": [Function],
+                                              "styledComponentId": "sc-htpNat",
+                                              "target": "div",
+                                              "toString": [Function],
+                                              "warnTooManyClasses": [Function],
+                                              "withComponent": [Function],
+                                            }
+                                          }
+                                          forwardedRef={null}
+                                        >
+                                          <div
+                                            className="c3"
+                                          />
+                                        </StyledComponent>
+                                      </styled.div>
+                                    </Grid>
+                                  </MoviesContainer>
+                                </Connect(MoviesContainer)>
                               </div>
-                            </StyledComponent>
-                          </styled.div>
-                        </Loading>
-                        <Connect(HeroSectionContainer)>
-                          <HeroSectionContainer
-                            dispatch={[Function]}
-                            movies={Array []}
-                          />
-                        </Connect(HeroSectionContainer)>
-                        <div
-                          className="container"
-                        >
-                          <styled.h1>
-                            <StyledComponent
-                              forwardedComponent={
-                                Object {
-                                  "$$typeof": Symbol(react.forward_ref),
-                                  "attrs": Array [],
-                                  "componentStyle": ComponentStyle {
-                                    "componentId": "sc-bdVaJa",
-                                    "isStatic": true,
-                                    "lastClassName": "c2",
-                                    "rules": Array [
-                                      "
-  font-size: 32px;
-  margin: 25px 0;
-  width: 100%;
-  text-transform: uppercase;
-",
-                                    ],
-                                  },
-                                  "displayName": "styled.h1",
-                                  "foldedComponentIds": Array [],
-                                  "render": [Function],
-                                  "styledComponentId": "sc-bdVaJa",
-                                  "target": "h1",
-                                  "toString": [Function],
-                                  "warnTooManyClasses": [Function],
-                                  "withComponent": [Function],
-                                }
-                              }
-                              forwardedRef={null}
-                            >
-                              <h1
-                                className="c2"
+                              <div
+                                className="container"
                               >
-                                Popular Movies 
-                                <FontAwesomeIcon
-                                  border={false}
-                                  className=""
-                                  fixedWidth={false}
-                                  flip={null}
-                                  icon={
-                                    Object {
-                                      "icon": Array [
-                                        512,
-                                        512,
-                                        Array [],
-                                        "f008",
-                                        "M488 64h-8v20c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12V64H96v20c0 6.6-5.4 12-12 12H44c-6.6 0-12-5.4-12-12V64h-8C10.7 64 0 74.7 0 88v336c0 13.3 10.7 24 24 24h8v-20c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v20h320v-20c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v20h8c13.3 0 24-10.7 24-24V88c0-13.3-10.7-24-24-24zM96 372c0 6.6-5.4 12-12 12H44c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40zm0-96c0 6.6-5.4 12-12 12H44c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40zm0-96c0 6.6-5.4 12-12 12H44c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40zm272 208c0 6.6-5.4 12-12 12H156c-6.6 0-12-5.4-12-12v-96c0-6.6 5.4-12 12-12h200c6.6 0 12 5.4 12 12v96zm0-168c0 6.6-5.4 12-12 12H156c-6.6 0-12-5.4-12-12v-96c0-6.6 5.4-12 12-12h200c6.6 0 12 5.4 12 12v96zm112 152c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40zm0-96c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40zm0-96c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40z",
-                                      ],
-                                      "iconName": "film",
-                                      "prefix": "fas",
-                                    }
-                                  }
-                                  inverse={false}
-                                  listItem={false}
-                                  mask={null}
-                                  pull={null}
-                                  pulse={false}
-                                  rotation={null}
-                                  size={null}
-                                  spin={false}
-                                  symbol={false}
-                                  title=""
-                                  transform={null}
-                                >
-                                  <svg
-                                    aria-hidden="true"
-                                    className="svg-inline--fa fa-film fa-w-16 "
-                                    data-icon="film"
-                                    data-prefix="fas"
-                                    focusable="false"
-                                    role="img"
-                                    style={Object {}}
-                                    viewBox="0 0 512 512"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                  >
-                                    <path
-                                      d="M488 64h-8v20c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12V64H96v20c0 6.6-5.4 12-12 12H44c-6.6 0-12-5.4-12-12V64h-8C10.7 64 0 74.7 0 88v336c0 13.3 10.7 24 24 24h8v-20c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v20h320v-20c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v20h8c13.3 0 24-10.7 24-24V88c0-13.3-10.7-24-24-24zM96 372c0 6.6-5.4 12-12 12H44c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40zm0-96c0 6.6-5.4 12-12 12H44c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40zm0-96c0 6.6-5.4 12-12 12H44c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40zm272 208c0 6.6-5.4 12-12 12H156c-6.6 0-12-5.4-12-12v-96c0-6.6 5.4-12 12-12h200c6.6 0 12 5.4 12 12v96zm0-168c0 6.6-5.4 12-12 12H156c-6.6 0-12-5.4-12-12v-96c0-6.6 5.4-12 12-12h200c6.6 0 12 5.4 12 12v96zm112 152c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40zm0-96c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40zm0-96c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40z"
-                                      fill="currentColor"
-                                      style={Object {}}
-                                    />
-                                  </svg>
-                                </FontAwesomeIcon>
-                              </h1>
-                            </StyledComponent>
-                          </styled.h1>
-                          <Connect(MoviesContainer)>
-                            <MoviesContainer
-                              dispatch={[Function]}
-                              getMovies={[Function]}
-                              movies={Array []}
-                            >
-                              <Grid>
-                                <styled.div>
+                                <styled.h1>
                                   <StyledComponent
                                     forwardedComponent={
                                       Object {
                                         "$$typeof": Symbol(react.forward_ref),
                                         "attrs": Array [],
                                         "componentStyle": ComponentStyle {
-                                          "componentId": "sc-htpNat",
+                                          "componentId": "sc-bdVaJa",
                                           "isStatic": true,
-                                          "lastClassName": "c3",
+                                          "lastClassName": "c2",
                                           "rules": Array [
                                             "
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto; 
-  grid-column-gap: 25px;
-  grid-row-gap: 25px;
-
-  ",
-                                            "
-    @media (min-width: ",
-                                            "36",
-                                            "em) {
-      ",
-                                            "
-    grid-template-columns: 50%% 50%%;
-  ",
-                                            "
-    }
-  ",
-                                            "
-
-  ",
-                                            "
-    @media (min-width: ",
-                                            "62",
-                                            "em) {
-      ",
-                                            "
-    grid-template-columns: 32% 32% 32%;
-  ",
-                                            "
-    }
-  ",
-                                            "
-
-  ",
-                                            "
-    @media (min-width: ",
-                                            "80",
-                                            "em) {
-      ",
-                                            "
-    grid-template-columns: 19% 19% 19% 19% 19%;
-  ",
-                                            "
-    }
-  ",
-                                            "
+  font-size: 32px;
+  margin: 25px 0;
+  width: 100%;
+  text-transform: uppercase;
 ",
                                           ],
                                         },
-                                        "displayName": "styled.div",
+                                        "displayName": "styled.h1",
                                         "foldedComponentIds": Array [],
                                         "render": [Function],
-                                        "styledComponentId": "sc-htpNat",
-                                        "target": "div",
+                                        "styledComponentId": "sc-bdVaJa",
+                                        "target": "h1",
                                         "toString": [Function],
                                         "warnTooManyClasses": [Function],
                                         "withComponent": [Function],
@@ -761,123 +881,80 @@ exports[`<App /> should match snapshot 1`] = `
                                     }
                                     forwardedRef={null}
                                   >
-                                    <div
-                                      className="c3"
-                                    />
+                                    <h1
+                                      className="c2"
+                                    >
+                                      Popular TV Series 
+                                      <FontAwesomeIcon
+                                        border={false}
+                                        className=""
+                                        fixedWidth={false}
+                                        flip={null}
+                                        icon={
+                                          Object {
+                                            "icon": Array [
+                                              640,
+                                              512,
+                                              Array [],
+                                              "f26c",
+                                              "M592 0H48C21.5 0 0 21.5 0 48v320c0 26.5 21.5 48 48 48h245.1v32h-160c-17.7 0-32 14.3-32 32s14.3 32 32 32h384c17.7 0 32-14.3 32-32s-14.3-32-32-32h-160v-32H592c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zm-16 352H64V64h512v288z",
+                                            ],
+                                            "iconName": "tv",
+                                            "prefix": "fas",
+                                          }
+                                        }
+                                        inverse={false}
+                                        listItem={false}
+                                        mask={null}
+                                        pull={null}
+                                        pulse={false}
+                                        rotation={null}
+                                        size={null}
+                                        spin={false}
+                                        symbol={false}
+                                        title=""
+                                        transform={null}
+                                      >
+                                        <svg
+                                          aria-hidden="true"
+                                          className="svg-inline--fa fa-tv fa-w-20 "
+                                          data-icon="tv"
+                                          data-prefix="fas"
+                                          focusable="false"
+                                          role="img"
+                                          style={Object {}}
+                                          viewBox="0 0 640 512"
+                                          xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                          <path
+                                            d="M592 0H48C21.5 0 0 21.5 0 48v320c0 26.5 21.5 48 48 48h245.1v32h-160c-17.7 0-32 14.3-32 32s14.3 32 32 32h384c17.7 0 32-14.3 32-32s-14.3-32-32-32h-160v-32H592c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zm-16 352H64V64h512v288z"
+                                            fill="currentColor"
+                                            style={Object {}}
+                                          />
+                                        </svg>
+                                      </FontAwesomeIcon>
+                                    </h1>
                                   </StyledComponent>
-                                </styled.div>
-                              </Grid>
-                            </MoviesContainer>
-                          </Connect(MoviesContainer)>
-                        </div>
-                        <div
-                          className="container"
-                        >
-                          <styled.h1>
-                            <StyledComponent
-                              forwardedComponent={
-                                Object {
-                                  "$$typeof": Symbol(react.forward_ref),
-                                  "attrs": Array [],
-                                  "componentStyle": ComponentStyle {
-                                    "componentId": "sc-bdVaJa",
-                                    "isStatic": true,
-                                    "lastClassName": "c2",
-                                    "rules": Array [
-                                      "
-  font-size: 32px;
-  margin: 25px 0;
-  width: 100%;
-  text-transform: uppercase;
-",
-                                    ],
-                                  },
-                                  "displayName": "styled.h1",
-                                  "foldedComponentIds": Array [],
-                                  "render": [Function],
-                                  "styledComponentId": "sc-bdVaJa",
-                                  "target": "h1",
-                                  "toString": [Function],
-                                  "warnTooManyClasses": [Function],
-                                  "withComponent": [Function],
-                                }
-                              }
-                              forwardedRef={null}
-                            >
-                              <h1
-                                className="c2"
-                              >
-                                Popular TV Series 
-                                <FontAwesomeIcon
-                                  border={false}
-                                  className=""
-                                  fixedWidth={false}
-                                  flip={null}
-                                  icon={
-                                    Object {
-                                      "icon": Array [
-                                        640,
-                                        512,
-                                        Array [],
-                                        "f26c",
-                                        "M592 0H48C21.5 0 0 21.5 0 48v320c0 26.5 21.5 48 48 48h245.1v32h-160c-17.7 0-32 14.3-32 32s14.3 32 32 32h384c17.7 0 32-14.3 32-32s-14.3-32-32-32h-160v-32H592c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zm-16 352H64V64h512v288z",
-                                      ],
-                                      "iconName": "tv",
-                                      "prefix": "fas",
-                                    }
-                                  }
-                                  inverse={false}
-                                  listItem={false}
-                                  mask={null}
-                                  pull={null}
-                                  pulse={false}
-                                  rotation={null}
-                                  size={null}
-                                  spin={false}
-                                  symbol={false}
-                                  title=""
-                                  transform={null}
-                                >
-                                  <svg
-                                    aria-hidden="true"
-                                    className="svg-inline--fa fa-tv fa-w-20 "
-                                    data-icon="tv"
-                                    data-prefix="fas"
-                                    focusable="false"
-                                    role="img"
-                                    style={Object {}}
-                                    viewBox="0 0 640 512"
-                                    xmlns="http://www.w3.org/2000/svg"
+                                </styled.h1>
+                                <Connect(TVSeriesContainer)>
+                                  <TVSeriesContainer
+                                    dispatch={[Function]}
+                                    getSeries={[Function]}
+                                    tvSeries={Array []}
                                   >
-                                    <path
-                                      d="M592 0H48C21.5 0 0 21.5 0 48v320c0 26.5 21.5 48 48 48h245.1v32h-160c-17.7 0-32 14.3-32 32s14.3 32 32 32h384c17.7 0 32-14.3 32-32s-14.3-32-32-32h-160v-32H592c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zm-16 352H64V64h512v288z"
-                                      fill="currentColor"
-                                      style={Object {}}
-                                    />
-                                  </svg>
-                                </FontAwesomeIcon>
-                              </h1>
-                            </StyledComponent>
-                          </styled.h1>
-                          <Connect(TVSeriesContainer)>
-                            <TVSeriesContainer
-                              dispatch={[Function]}
-                              getSeries={[Function]}
-                              tvSeries={Array []}
-                            >
-                              <Grid>
-                                <styled.div>
-                                  <StyledComponent
-                                    forwardedComponent={
-                                      Object {
-                                        "$$typeof": Symbol(react.forward_ref),
-                                        "attrs": Array [],
-                                        "componentStyle": ComponentStyle {
-                                          "componentId": "sc-htpNat",
-                                          "isStatic": true,
-                                          "lastClassName": "c3",
-                                          "rules": Array [
-                                            "
+                                    <Grid>
+                                      <styled.div>
+                                        <StyledComponent
+                                          forwardedComponent={
+                                            Object {
+                                              "$$typeof": Symbol(react.forward_ref),
+                                              "attrs": Array [],
+                                              "componentStyle": ComponentStyle {
+                                                "componentId": "sc-htpNat",
+                                                "isStatic": true,
+                                                "lastClassName": "c3",
+                                                "rules": Array [
+                                                  "
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto; 
@@ -885,77 +962,80 @@ exports[`<App /> should match snapshot 1`] = `
   grid-row-gap: 25px;
 
   ",
-                                            "
+                                                  "
     @media (min-width: ",
-                                            "36",
-                                            "em) {
+                                                  "36",
+                                                  "em) {
       ",
-                                            "
+                                                  "
     grid-template-columns: 50%% 50%%;
   ",
-                                            "
+                                                  "
     }
   ",
-                                            "
+                                                  "
 
   ",
-                                            "
+                                                  "
     @media (min-width: ",
-                                            "62",
-                                            "em) {
+                                                  "62",
+                                                  "em) {
       ",
-                                            "
+                                                  "
     grid-template-columns: 32% 32% 32%;
   ",
-                                            "
+                                                  "
     }
   ",
-                                            "
+                                                  "
 
   ",
-                                            "
+                                                  "
     @media (min-width: ",
-                                            "80",
-                                            "em) {
+                                                  "80",
+                                                  "em) {
       ",
-                                            "
+                                                  "
     grid-template-columns: 19% 19% 19% 19% 19%;
   ",
-                                            "
+                                                  "
     }
   ",
-                                            "
+                                                  "
 ",
-                                          ],
-                                        },
-                                        "displayName": "styled.div",
-                                        "foldedComponentIds": Array [],
-                                        "render": [Function],
-                                        "styledComponentId": "sc-htpNat",
-                                        "target": "div",
-                                        "toString": [Function],
-                                        "warnTooManyClasses": [Function],
-                                        "withComponent": [Function],
-                                      }
-                                    }
-                                    forwardedRef={null}
-                                  >
-                                    <div
-                                      className="c3"
-                                    />
-                                  </StyledComponent>
-                                </styled.div>
-                              </Grid>
-                            </TVSeriesContainer>
-                          </Connect(TVSeriesContainer)>
-                        </div>
-                      </Home>
-                    </Connect(Home)>
-                  </Route>
-                </Switch>
-              </Routes>
-            </main>
-          </Main>
+                                                ],
+                                              },
+                                              "displayName": "styled.div",
+                                              "foldedComponentIds": Array [],
+                                              "render": [Function],
+                                              "styledComponentId": "sc-htpNat",
+                                              "target": "div",
+                                              "toString": [Function],
+                                              "warnTooManyClasses": [Function],
+                                              "withComponent": [Function],
+                                            }
+                                          }
+                                          forwardedRef={null}
+                                        >
+                                          <div
+                                            className="c3"
+                                          />
+                                        </StyledComponent>
+                                      </styled.div>
+                                    </Grid>
+                                  </TVSeriesContainer>
+                                </Connect(TVSeriesContainer)>
+                              </div>
+                            </Home>
+                          </Connect(Home)>
+                        </Route>
+                      </Switch>
+                    </Routes>
+                  </main>
+                </WrappedMain>
+              </Wrapped>
+            </Route>
+          </withRouter(Wrapped)>
           <Footer>
             <footer
               className="rm-footer"

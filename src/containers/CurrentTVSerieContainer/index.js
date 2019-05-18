@@ -47,32 +47,42 @@ const CurrentTVSerieContainer = props => {
         />
       }
       <div className="container">
-        <H1>Details</H1>
         {
-          (!!currentTV && !loading && !!currentTV.last_episode_to_air) &&
-          <TVInformation
-            firstAirDate={currentTV.first_air_date}
-            numberOfEpisodes={currentTV.number_of_episodes}
-            seasonNumbe={currentTV.last_episode_to_air.season_number}
-            episodeNumber={currentTV.last_episode_to_air.episode_number}
-            episodeName={currentTV.last_episode_to_air.name}
-            homepage={currentTV.homepage}
-          />
-        }
-        <H1>Cast</H1>
-        <Grid>
-        {!!cast && cast.map(actor => {
-          return (
-            <CastCard
-              key={actor.credit_id}
-              id={actor.id}
-              profile={actor.profile_path}
-              name={actor.name}
-              character={actor.character}
+          (!!currentTV && 
+            !loading && 
+            !!currentTV.last_episode_to_air &&
+            !!currentTV.next_episode_to_air) &&
+          <Fragment>
+            <H1>Details</H1>
+            <TVInformation
+              firstAirDate={format(currentTV.first_air_date, 'MM/DD/YYYY')}
+              numberOfEpisodes={currentTV.number_of_episodes}
+              numberOfSeasons={currentTV.number_of_seasons}
+              seasonNumber={currentTV.last_episode_to_air.season_number}
+              episodeNumber={currentTV.last_episode_to_air.episode_number}
+              episodeName={currentTV.last_episode_to_air.name}
+              nextEpisodeNumber={currentTV.next_episode_to_air.episode_number}
+              nextEpisodeName={currentTV.next_episode_to_air.name}
+              homepage={currentTV.homepage}
             />
-          );
-        })}
-        </Grid>
+          </Fragment>
+        }
+        <Fragment>
+          <H1>Cast</H1>
+          <Grid>
+            {!!cast && cast.map(actor => {
+              return (
+                <CastCard
+                  key={actor.credit_id}
+                  id={actor.id}
+                  profile={actor.profile_path}
+                  name={actor.name}
+                  character={actor.character}
+                />
+              );
+            })}
+          </Grid>
+        </Fragment>
       </div>
     </Fragment>
   );

@@ -7,6 +7,7 @@ import { fetchMovieCredits } from 'store/credits/actions';
 import Loading from 'components/Loading';
 import HeroSection from 'components/HeroSection';
 import Grid from 'components/Grid';
+import MovieDetails from 'components/MovieDetails';
 import CastCard from 'components/CastCard';
 import { H1 } from 'utils/styled';
 
@@ -46,6 +47,13 @@ const CurrentMovieContainer = props => {
         />
       }
       <div className="container">
+        <MovieDetails
+          budget={currentMovie.budget}
+          revenue={currentMovie.revenue}
+          status={currentMovie.status}
+          releaseDate={format(currentMovie.release_date, 'MM/DD/YYYY')}
+          popularity={currentMovie.popularity}
+        />
         <H1>Cast</H1>
         <Grid>
           {!!cast && cast.map(actor => {
