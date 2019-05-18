@@ -17,7 +17,7 @@ const CurrentMovieContainer = props => {
     match,
     currentMovie,
     loading,
-    cast
+    cast,
   } = props;
   const { params } = match;
 
