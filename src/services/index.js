@@ -17,9 +17,15 @@ const endpoints = {
   },
 };
 
+const defaultLanguage = 'en-US';
+
+const currentLanguage = (localStorage.getItem('current_language') !== null)
+  ? localStorage.getItem('current_language')
+  : localStorage.setItem('current_language', defaultLanguage);
+
 const params = {
   api_key: config.REACT_APP_MOVIE_DB_API_KEY,
-  language: 'pt-BR',
+  language: currentLanguage,
   page: 1,
 };
 
