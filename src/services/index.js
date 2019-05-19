@@ -19,7 +19,7 @@ const endpoints = {
 
 const params = {
   api_key: config.REACT_APP_MOVIE_DB_API_KEY,
-  language: 'en-US',
+  language: 'pt-BR',
   page: 1,
 };
 

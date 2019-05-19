@@ -64,11 +64,22 @@ export const GlobalStyle = createGlobalStyle`
     background-color: ${colors.mainColor};
     color: #fff;
     display: flex;
-    height: 120px;
+    height: 70px;
     justify-content: center;
+
+    ${media.desktop`
+      height: 90px;
+    `}
 
     .container {
       justify-content: space-between;
+      align-items: center;
+    }
+
+    .tmdb-logo {
+      align-items: center;
+      display: flex;
+      height: 100%;
     }
   }
 
