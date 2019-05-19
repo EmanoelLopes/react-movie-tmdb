@@ -90,6 +90,10 @@ exports[`<HeroSection /> should match snapshot 1`] = `
   border: 3px solid #fff;
 }
 
+.c0 .hero-overview {
+  width: 100%;
+}
+
 @media (min-width:62em) {
   .c0 {
     height: 700px;
@@ -299,6 +303,10 @@ exports[`<HeroSection /> should match snapshot 1`] = `
   ",
               "
     }
+  }
+
+  .hero-overview {
+    width: 100%;
   }
 ",
             ],
