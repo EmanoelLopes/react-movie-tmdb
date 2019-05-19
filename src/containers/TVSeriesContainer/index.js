@@ -1,10 +1,13 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import { connect } from 'react-redux';
 import { format } from 'date-fns';
 import { fetchTVSeries } from 'store/tvSeries/actions';
-import { array, func } from 'prop-types';
+import { array, func, bool } from 'prop-types';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTv } from '@fortawesome/free-solid-svg-icons';
 import Grid from 'components/Grid';
 import Card from 'components/Card';
+import { H1 } from 'utils/styled';
 
 class TVSeriesContainer extends Component {
   getTVSeries = () => {
@@ -34,12 +37,18 @@ class TVSeriesContainer extends Component {
   }
 
   render() {
-    const { tvSeries } = this.props;
+    const { tvSeries, loading } = this.props;
 
     return (
-      <Grid>
-        {this.renderTVSeries(tvSeries)}
-      </Grid>
+      <div className="container">
+        {(!loading) &&
+        <Fragment>
+          <H1>Popular TV Series <FontAwesomeIcon icon={faTv} /></H1>
+          <Grid>
+            {this.renderTVSeries(tvSeries)}
+          </Grid>
+        </Fragment>}
+      </div>
     );
   }
 }
@@ -48,6 +57,7 @@ TVSeriesContainer.propTypes = {
   tvSeries: array,
   dispatch: func,
   getSeries: func,
+  loading: bool.isRequired,
 };
 
 TVSeriesContainer.defaultProps = {
@@ -58,6 +68,7 @@ TVSeriesContainer.defaultProps = {
 
 const mapStateToProps = state => ({
   tvSeries: state.tvSeries,
+  loading: state.loading,
 });
 
 export default connect(mapStateToProps)(TVSeriesContainer);

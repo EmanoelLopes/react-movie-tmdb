@@ -1,10 +1,13 @@
-import React, { Fragment, Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import { connect } from 'react-redux';
 import { format } from 'date-fns';
-import { array, func } from 'prop-types';
+import { array, func, bool } from 'prop-types';
 import { fetchMovies } from 'store/movies/actions';
 import Card from 'components/Card';
 import Grid from 'components/Grid';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFilm } from '@fortawesome/free-solid-svg-icons';
+import { H1 } from 'utils/styled';
 
 class MoviesContainer extends Component {
   getFetchedMovies = () => {
@@ -34,12 +37,19 @@ class MoviesContainer extends Component {
   }
 
   render() {
-    const { movies } = this.props;
+    const { movies, loading } = this.props;
 
     return (
-      <Grid>
-        {this.renderMovies(movies)}
-      </Grid>
+      <div className="container">
+        {(!loading) && 
+          <Fragment>
+            <H1>Popular Movies <FontAwesomeIcon icon={faFilm} /></H1>
+            <Grid>
+              {this.renderMovies(movies)}
+            </Grid>
+          </Fragment>
+        }
+      </div>
     );
   }
 }
@@ -48,6 +58,7 @@ MoviesContainer.propTypes = {
   movies: array,
   dispatch: func,
   getMovies: func,
+  loading: bool.isRequired,
 };
 
 MoviesContainer.defaultProps = {
@@ -58,6 +69,7 @@ MoviesContainer.defaultProps = {
 
 const mapStateToProps = state => ({
   movies: state.movies,
+  loading: state.loading,
 });
 
 export default connect(mapStateToProps)(MoviesContainer);
