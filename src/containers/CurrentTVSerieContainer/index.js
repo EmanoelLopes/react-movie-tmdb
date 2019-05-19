@@ -48,40 +48,61 @@ const CurrentTVSerieContainer = props => {
       }
       <div className="container">
         {
-          (!!currentTV && 
-            !loading && 
-            !!currentTV.last_episode_to_air &&
-            !!currentTV.next_episode_to_air) &&
+          (!!currentTV && !loading) &&
           <Fragment>
             <H1>Details</H1>
             <TVInformation
               firstAirDate={format(currentTV.first_air_date, 'MM/DD/YYYY')}
               numberOfEpisodes={currentTV.number_of_episodes}
               numberOfSeasons={currentTV.number_of_seasons}
-              seasonNumber={currentTV.last_episode_to_air.season_number}
-              episodeNumber={currentTV.last_episode_to_air.episode_number}
-              episodeName={currentTV.last_episode_to_air.name}
-              nextEpisodeNumber={currentTV.next_episode_to_air.episode_number}
-              nextEpisodeName={currentTV.next_episode_to_air.name}
+              seasonNumber={
+                (currentTV.last_episode_to_air) 
+                  ? currentTV.last_episode_to_air.season_number
+                  : 0
+              }
+              episodeNumber={
+                (currentTV.last_episode_to_air) 
+                  ? currentTV.last_episode_to_air.episode_number
+                  : 0
+              }
+              episodeName={
+                (currentTV.last_episode_to_air) 
+                  ? currentTV.last_episode_to_air.name
+                  : 'Uninformed'
+              }
+              nextEpisodeNumber={
+                (currentTV.next_episode_to_air)
+                  ? currentTV.next_episode_to_air.episode_number
+                  : 0
+              }
+              nextEpisodeName={
+                (currentTV.next_episode_to_air) 
+                  ? currentTV.next_episode_to_air.name
+                  : 'Uninformed'
+              }
               homepage={currentTV.homepage}
             />
           </Fragment>
         }
         <Fragment>
-          <H1>Cast</H1>
-          <Grid>
-            {!!cast && cast.map(actor => {
-              return (
-                <CastCard
-                  key={actor.credit_id}
-                  id={actor.id}
-                  profile={actor.profile_path}
-                  name={actor.name}
-                  character={actor.character}
-                />
-              );
-            })}
-          </Grid>
+          {(!!cast.length) && 
+            <Fragment>
+              <H1>Cast</H1>
+              <Grid>
+                {cast.map(actor => {
+                  return (
+                    <CastCard
+                      key={actor.credit_id}
+                      id={actor.id}
+                      profile={actor.profile_path}
+                      name={actor.name}
+                      character={actor.character}
+                    />
+                  );
+                })}
+              </Grid>
+            </Fragment>
+          }
         </Fragment>
       </div>
     </Fragment>

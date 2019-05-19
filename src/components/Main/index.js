@@ -1,7 +1,7 @@
 import React from 'react';
 import { node } from 'prop-types';
 import { withRouter } from 'react-router-dom';
-import withSrollToTop from 'HOC/withScrollToTop';
+import withSrollToTop from 'hoc/withScrollToTop';
 
 function WrappedMain ({ children }) {
   return (

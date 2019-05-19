@@ -29,7 +29,11 @@ const Card = props => {
           <div className="card-info-wrapper">
             <h3>{title}</h3>
             <small><FontAwesomeIcon icon={faCalendarAlt} /> {release}</small>
-            <p>{textTruncate(description, 80)} [more info]</p>
+            <p>{
+              (description) 
+                ? `${textTruncate(description, 80)} [more info]`
+                : <span>(No information provided) <br/> [more info] </span>}
+            </p>
           </div>
         </div>
       </Link>

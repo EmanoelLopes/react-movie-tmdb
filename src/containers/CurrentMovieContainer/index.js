@@ -54,20 +54,24 @@ const CurrentMovieContainer = props => {
           releaseDate={format(currentMovie.release_date, 'MM/DD/YYYY')}
           popularity={currentMovie.popularity}
         />
-        <H1>Cast</H1>
-        <Grid>
-          {!!cast && cast.map(actor => {
-            return (
-              <CastCard
-                key={actor.credit_id}
-                id={actor.id}
-                profile={actor.profile_path}
-                name={actor.name}
-                character={actor.character}
-              />
-            );
-          })}
-        </Grid>
+        {(!!cast.length) &&
+          <Fragment>
+            <H1>Cast</H1>
+            <Grid>
+              {cast.map(actor => {
+                return (
+                  <CastCard
+                    key={actor.credit_id}
+                    id={actor.id}
+                    profile={actor.profile_path}
+                    name={actor.name}
+                    character={actor.character}
+                  />
+                );
+              })}
+            </Grid>
+          </Fragment>
+        }
       </div>
     </Fragment>
   );
