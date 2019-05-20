@@ -1,0 +1,171 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Subheader /> should match snapshot 1`] = `
+.c0 {
+  background-color: #01d277;
+  color: #081c24;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 15px 0;
+}
+
+.c0 .container {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c0 .navigation > a {
+  margin-right: 15px;
+  color: #081c24;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+<BrowserRouter>
+  <Router
+    history={
+      Object {
+        "action": "POP",
+        "block": [Function],
+        "createHref": [Function],
+        "go": [Function],
+        "goBack": [Function],
+        "goForward": [Function],
+        "length": 1,
+        "listen": [Function],
+        "location": Object {
+          "hash": "",
+          "pathname": "/",
+          "search": "",
+          "state": undefined,
+        },
+        "push": [Function],
+        "replace": [Function],
+      }
+    }
+  >
+    <Subheader>
+      <styled.section>
+        <StyledComponent
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "sc-bwzfXH",
+                "isStatic": true,
+                "lastClassName": "c0",
+                "rules": Array [
+                  "
+  background-color: ",
+                  "#01d277",
+                  ";
+  color: ",
+                  "#081c24",
+                  ";
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+
+  .container {
+    justify-content: space-between;
+  }
+
+  .navigation {
+    > a {
+      margin-right: 15px;
+      color: ",
+                  "#081c24",
+                  ";
+      text-decoration: none;
+    }
+  }
+",
+                ],
+              },
+              "displayName": "styled.section",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "sc-bwzfXH",
+              "target": "section",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+        >
+          <section
+            className="c0"
+          >
+            <div
+              className="container"
+            >
+              <div
+                className="navigation"
+              >
+                <Link
+                  replace={false}
+                  to="/movies"
+                >
+                  <a
+                    href="/movies"
+                    onClick={[Function]}
+                  >
+                    Movies
+                  </a>
+                </Link>
+                <Link
+                  replace={false}
+                  to="/tvs"
+                >
+                  <a
+                    href="/tvs"
+                    onClick={[Function]}
+                  >
+                    TV Series
+                  </a>
+                </Link>
+              </div>
+              <SelectLanguage>
+                <select
+                  onChange={[Function]}
+                >
+                  <option
+                    defaultValue=""
+                  >
+                    Alterar idioma
+                  </option>
+                  <option
+                    value="pt-BR"
+                  >
+                    Português (BR)
+                  </option>
+                  <option
+                    value="es-ES"
+                  >
+                    Español
+                  </option>
+                  <option
+                    value="en-US"
+                  >
+                    English
+                  </option>
+                </select>
+              </SelectLanguage>
+            </div>
+          </section>
+        </StyledComponent>
+      </styled.section>
+    </Subheader>
+  </Router>
+</BrowserRouter>
+`;

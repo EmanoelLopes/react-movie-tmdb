@@ -38,4 +38,5 @@ export {
   endpoints,
   params,
   instance,
+  currentLanguage,
 };

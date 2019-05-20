@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SelectLanguage /> should match snapshot 1`] = `
+<SelectLanguage>
+  <select
+    onChange={[Function]}
+  >
+    <option
+      defaultValue=""
+    >
+      Alterar idioma
+    </option>
+    <option
+      value="pt-BR"
+    >
+      Português (BR)
+    </option>
+    <option
+      value="es-ES"
+    >
+      Español
+    </option>
+    <option
+      value="en-US"
+    >
+      English
+    </option>
+  </select>
+</SelectLanguage>
+`;
