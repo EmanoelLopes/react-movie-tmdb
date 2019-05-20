@@ -1,4 +1,11 @@
 const en_US = {
+  SUBHEADER: {
+    NAV_LINKS: {
+      MOVIES: 'Movies',
+      TV_SERIES: 'TV Series',
+    },
+    CHOOSE_LANGUAGE: 'Choose language',
+  },
   HOME: {
     POPULAR_MOVIES_TITLE: 'Popular movies',
     POPULAR_TV_SERIES_TITLE: 'Popular TV series'

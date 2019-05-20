@@ -1,7 +1,8 @@
 import React from 'react';
+import intl from 'react-intl-universal';
 
 const languages = [
-  {value: 'none', name: '--- Languages ---'},
+  {value: 'none', name: ''},
   {value: 'pt-BR', name: 'Português (BR)'},
   {value: 'es-ES', name: 'Español'},
   {value: 'en-US', name: 'English'},
@@ -28,7 +29,7 @@ const SelectLanguage = () => {
               disabled={index === 0}
               key={index}
               value={lang.value}>
-              {lang.name}
+              {(index === 0) ? intl.get('SUBHEADER.CHOOSE_LANGUAGE') : lang.name}
             </option>
           );
         })

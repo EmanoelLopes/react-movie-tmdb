@@ -145,7 +145,7 @@ exports[`<Subheader /> should match snapshot 1`] = `
                     key="0"
                     value="none"
                   >
-                    --- Languages ---
+                    Choose language
                   </option>
                   <option
                     disabled={false}
