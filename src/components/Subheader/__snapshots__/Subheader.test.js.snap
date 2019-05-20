@@ -155,6 +155,7 @@ exports[`<Subheader /> should match snapshot 1`] = `
               </div>
               <SelectLanguage>
                 <select
+                  aria-label="Choose language"
                   defaultValue={null}
                   onChange={[Function]}
                 >

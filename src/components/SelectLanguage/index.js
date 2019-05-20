@@ -20,6 +20,7 @@ const SelectLanguage = () => {
 
   return (
     <select
+      aria-label={intl.get('SUBHEADER.CHOOSE_LANGUAGE')}
       defaultValue={defaultLanguage}
       onChange={setCurrentLanguage}>
       {

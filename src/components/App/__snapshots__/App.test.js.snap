@@ -456,6 +456,7 @@ exports[`<App /> should match snapshot 1`] = `
                     </div>
                     <SelectLanguage>
                       <select
+                        aria-label="Choose language"
                         defaultValue="en-US"
                         onChange={[Function]}
                       >

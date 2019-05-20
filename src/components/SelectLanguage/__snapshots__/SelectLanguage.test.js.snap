@@ -3,6 +3,7 @@
 exports[`<SelectLanguage /> should match snapshot 1`] = `
 <SelectLanguage>
   <select
+    aria-label="Choose language"
     defaultValue={null}
     onChange={[Function]}
   >
