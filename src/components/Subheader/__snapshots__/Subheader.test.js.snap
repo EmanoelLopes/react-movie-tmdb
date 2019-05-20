@@ -23,10 +23,18 @@ exports[`<Subheader /> should match snapshot 1`] = `
 }
 
 .c0 .navigation > a {
-  margin-right: 15px;
   color: #081c24;
+  font-size: 18px;
+  margin-right: 15px;
   -webkit-text-decoration: none;
   text-decoration: none;
+}
+
+.c0 select {
+  background-color: #01d277;
+  border: none;
+  font-size: 15px;
+  max-width: 130px;
 }
 
 <BrowserRouter>
@@ -81,12 +89,22 @@ exports[`<Subheader /> should match snapshot 1`] = `
 
   .navigation {
     > a {
-      margin-right: 15px;
       color: ",
                   "#081c24",
                   ";
+      font-size: 18px;
+      margin-right: 15px;
       text-decoration: none;
     }
+  }
+
+  select {
+    background-color: ",
+                  "#01d277",
+                  ";
+    border: none;
+    font-size: 15px;
+    max-width: 130px;
   }
 ",
                 ],

@@ -14,9 +14,17 @@ export const SubheaderWrapper = styled.section`
 
   .navigation {
     > a {
-      margin-right: 15px;
       color: ${colors.mainColor};
+      font-size: 18px;
+      margin-right: 15px;
       text-decoration: none;
     }
+  }
+
+  select {
+    background-color: ${colors.movieDBColor};
+    border: none;
+    font-size: 15px;
+    max-width: 130px;
   }
 `;
