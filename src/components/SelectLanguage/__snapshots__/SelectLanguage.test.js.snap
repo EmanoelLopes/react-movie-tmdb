@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SelectLanguage /> should match snapshot 1`] = `
+<SelectLanguage>
+  <select
+    aria-label="Choose language"
+    defaultValue={null}
+    onChange={[Function]}
+  >
+    <option
+      disabled={true}
+      key="0"
+      value="none"
+    >
+      Choose language
+    </option>
+    <option
+      disabled={false}
+      key="1"
+      value="pt-BR"
+    >
+      Português (BR)
+    </option>
+    <option
+      disabled={false}
+      key="2"
+      value="es-ES"
+    >
+      Español
+    </option>
+    <option
+      disabled={false}
+      key="3"
+      value="en-US"
+    >
+      English
+    </option>
+  </select>
+</SelectLanguage>
+`;

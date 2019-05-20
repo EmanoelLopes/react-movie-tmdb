@@ -90,6 +90,7 @@ export const GlobalStyle = createGlobalStyle`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-bottom: 50px;
 
     > div {
       align-items: center;
@@ -105,11 +106,11 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   .rm-footer {
-    background-color: #ddd;
+    background-color: ${colors.movieDBColor};
     display: flex;
     font-size: 18px;
     justify-content: center;
-    padding: 50px 0;
+    padding: 25px 0;
 
     a {
       color: ${colors.mainColor};

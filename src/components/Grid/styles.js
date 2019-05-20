@@ -5,7 +5,7 @@ export const GridContainer = styled.div`
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto; 
-  grid-column-gap: 25px;
+  grid-column-gap: 15px;
   grid-row-gap: 25px;
 
   ${media.phone`

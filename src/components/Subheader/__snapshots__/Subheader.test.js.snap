@@ -1,0 +1,199 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Subheader /> should match snapshot 1`] = `
+.c0 {
+  background-color: #01d277;
+  color: #081c24;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 15px 0;
+}
+
+.c0 .container {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c0 .navigation > a {
+  color: #081c24;
+  font-size: 18px;
+  margin-right: 15px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0 select {
+  background-color: #01d277;
+  border: none;
+  font-size: 15px;
+  max-width: 130px;
+}
+
+<BrowserRouter>
+  <Router
+    history={
+      Object {
+        "action": "POP",
+        "block": [Function],
+        "createHref": [Function],
+        "go": [Function],
+        "goBack": [Function],
+        "goForward": [Function],
+        "length": 1,
+        "listen": [Function],
+        "location": Object {
+          "hash": "",
+          "pathname": "/",
+          "search": "",
+          "state": undefined,
+        },
+        "push": [Function],
+        "replace": [Function],
+      }
+    }
+  >
+    <Subheader>
+      <styled.section>
+        <StyledComponent
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "sc-bwzfXH",
+                "isStatic": true,
+                "lastClassName": "c0",
+                "rules": Array [
+                  "
+  background-color: ",
+                  "#01d277",
+                  ";
+  color: ",
+                  "#081c24",
+                  ";
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+
+  .container {
+    justify-content: space-between;
+  }
+
+  .navigation {
+    > a {
+      color: ",
+                  "#081c24",
+                  ";
+      font-size: 18px;
+      margin-right: 15px;
+      text-decoration: none;
+    }
+  }
+
+  select {
+    background-color: ",
+                  "#01d277",
+                  ";
+    border: none;
+    font-size: 15px;
+    max-width: 130px;
+  }
+",
+                ],
+              },
+              "displayName": "styled.section",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "sc-bwzfXH",
+              "target": "section",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+        >
+          <section
+            className="c0"
+          >
+            <div
+              className="container"
+            >
+              <div
+                className="navigation"
+              >
+                <Link
+                  replace={false}
+                  to="/movies"
+                >
+                  <a
+                    href="/movies"
+                    onClick={[Function]}
+                  >
+                    Movies
+                  </a>
+                </Link>
+                <Link
+                  replace={false}
+                  to="/tvs"
+                >
+                  <a
+                    href="/tvs"
+                    onClick={[Function]}
+                  >
+                    TV Series
+                  </a>
+                </Link>
+              </div>
+              <SelectLanguage>
+                <select
+                  aria-label="Choose language"
+                  defaultValue={null}
+                  onChange={[Function]}
+                >
+                  <option
+                    disabled={true}
+                    key="0"
+                    value="none"
+                  >
+                    Choose language
+                  </option>
+                  <option
+                    disabled={false}
+                    key="1"
+                    value="pt-BR"
+                  >
+                    Português (BR)
+                  </option>
+                  <option
+                    disabled={false}
+                    key="2"
+                    value="es-ES"
+                  >
+                    Español
+                  </option>
+                  <option
+                    disabled={false}
+                    key="3"
+                    value="en-US"
+                  >
+                    English
+                  </option>
+                </select>
+              </SelectLanguage>
+            </div>
+          </section>
+        </StyledComponent>
+      </styled.section>
+    </Subheader>
+  </Router>
+</BrowserRouter>
+`;
