@@ -90,6 +90,10 @@ exports[`<HeroSection /> should match snapshot 1`] = `
   border: 3px solid #fff;
 }
 
+.c0 .hero-overview {
+  width: 100%;
+}
+
 @media (min-width:62em) {
   .c0 {
     height: 700px;
@@ -300,6 +304,10 @@ exports[`<HeroSection /> should match snapshot 1`] = `
               "
     }
   }
+
+  .hero-overview {
+    width: 100%;
+  }
 ",
             ],
           },
@@ -336,10 +344,12 @@ exports[`<HeroSection /> should match snapshot 1`] = `
                 className="hero-title"
               />
               <h2>
-                Release: 
+                Release
+                : 
               </h2>
               <h3>
-                By: 
+                By
+                : 
                 <span
                   className="creted-by"
                   key="1"
@@ -355,24 +365,25 @@ exports[`<HeroSection /> should match snapshot 1`] = `
                 </span>
               </h3>
               <h3>
-                Genres: 
+                Genres
+                : 
                 <span
                   className="genre"
                   key="123"
                 >
                   Science Fiction
-                   
+                  , 
                 </span>
                 <span
                   className="genre"
                   key="446"
                 >
                   Action
-                   
                 </span>
               </h3>
               <h3>
-                IMDB Rating:
+                IMDB Rating
+                :
                 <Rating
                   rating={0}
                 >
@@ -383,7 +394,7 @@ exports[`<HeroSection /> should match snapshot 1`] = `
                           "$$typeof": Symbol(react.forward_ref),
                           "attrs": Array [],
                           "componentStyle": ComponentStyle {
-                            "componentId": "sc-bwzfXH",
+                            "componentId": "sc-bdVaJa",
                             "isStatic": true,
                             "lastClassName": "c1",
                             "rules": Array [
@@ -412,7 +423,7 @@ exports[`<HeroSection /> should match snapshot 1`] = `
                           "displayName": "styled.span",
                           "foldedComponentIds": Array [],
                           "render": [Function],
-                          "styledComponentId": "sc-bwzfXH",
+                          "styledComponentId": "sc-bdVaJa",
                           "target": "span",
                           "toString": [Function],
                           "warnTooManyClasses": [Function],
@@ -444,7 +455,8 @@ exports[`<HeroSection /> should match snapshot 1`] = `
               <p
                 className="hero-description"
               >
-                Overview: 
+                Overview
+                : 
               </p>
             </div>
           </div>

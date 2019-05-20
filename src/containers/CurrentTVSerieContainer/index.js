@@ -1,5 +1,6 @@
 import React, { Fragment, useEffect } from 'react';
 import { func, object, bool, array } from 'prop-types';
+import intl from 'react-intl-universal';
 import { connect } from 'react-redux';
 import { format } from 'date-fns';
 import { fetchCurrentTVSerie } from 'store/tvSeries/actions';
@@ -36,7 +37,7 @@ const CurrentTVSerieContainer = props => {
       {(!!currentTV && !loading) &&
         <HeroSection
           backdrop={currentTV.backdrop_path}
-          title={currentTV.original_name}
+          title={currentTV.name}
           description={currentTV.overview}
           isCurrent={true}
           posterPath={currentTV.poster_path}
@@ -50,7 +51,7 @@ const CurrentTVSerieContainer = props => {
         {
           (!!currentTV && !loading) &&
           <Fragment>
-            <H1>Details</H1>
+            <H1>{intl.get('TV_SERIE_PAGE.DETAILS_TITLE')}</H1>
             <TVInformation
               firstAirDate={format(currentTV.first_air_date, 'MM/DD/YYYY')}
               numberOfEpisodes={currentTV.number_of_episodes}
@@ -68,7 +69,7 @@ const CurrentTVSerieContainer = props => {
               episodeName={
                 (currentTV.last_episode_to_air) 
                   ? currentTV.last_episode_to_air.name
-                  : 'Uninformed'
+                  : intl.get('UNINFORMED')
               }
               nextEpisodeNumber={
                 (currentTV.next_episode_to_air)
@@ -78,7 +79,7 @@ const CurrentTVSerieContainer = props => {
               nextEpisodeName={
                 (currentTV.next_episode_to_air) 
                   ? currentTV.next_episode_to_air.name
-                  : 'Uninformed'
+                  : intl.get('UNINFORMED')
               }
               homepage={currentTV.homepage}
             />
@@ -87,7 +88,7 @@ const CurrentTVSerieContainer = props => {
         <Fragment>
           {(!!cast.length) && 
             <Fragment>
-              <H1>Cast</H1>
+              <H1>{intl.get('TV_SERIE_PAGE.CAST_TITLE')}</H1>
               <Grid>
                 {cast.map(actor => {
                   return (

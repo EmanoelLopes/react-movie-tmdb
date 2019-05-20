@@ -1,5 +1,6 @@
 import React from 'react';
 import { string, number } from 'prop-types';
+import intl from 'react-intl-universal';
 import { TVInformationContainer } from './styles';
 
 const TVInformation = props => {
@@ -17,22 +18,22 @@ const TVInformation = props => {
 
   return (
     <TVInformationContainer>
-      <p><strong>First air date: </strong> {firstAirDate}</p>
-      <p><strong>Number of seasons: {numberOfSeasons}</strong></p>
-      <p><strong>Number of episodes: {numberOfEpisodes}</strong></p>
-      <p><strong>Current season: {seasonNumber}</strong></p>
+      <p><strong>{intl.get('TV_SERIE_PAGE.DETAILS.FIRST_AIR_DATE')}: </strong> {firstAirDate}</p>
+      <p><strong>{intl.get('TV_SERIE_PAGE.DETAILS.NUMBER_OF_SEASONS')}: {numberOfSeasons}</strong></p>
+      <p><strong>{intl.get('TV_SERIE_PAGE.DETAILS.NUMBER_OF_EPISODES')}: {numberOfEpisodes}</strong></p>
+      <p><strong>{intl.get('TV_SERIE_PAGE.DETAILS.CURRENT_SEASON')}: {seasonNumber}</strong></p>
       <p>
-        <strong>Last episode to air: &nbsp;
+        <strong>{intl.get('TV_SERIE_PAGE.DETAILS.LAST_EPISODE')}: &nbsp;
           {episodeNumber} - {episodeName} 
         </strong>
       </p>
       <p>
-        <strong>Next episode to air: &nbsp;
+        <strong>{intl.get('TV_SERIE_PAGE.DETAILS.NEXT_EPISODE')}: &nbsp;
           {nextEpisodeNumber} - {nextEpisodeName} 
         </strong>
       </p>
       <p>
-        <strong>Official Site: </strong>
+        <strong>{intl.get('TV_SERIE_PAGE.DETAILS.OFFICIAL_SITE')}: </strong>
         <a
           href={`${homepage}`}
           target="_blank"

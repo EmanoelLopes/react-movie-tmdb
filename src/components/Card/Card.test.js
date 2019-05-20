@@ -2,6 +2,9 @@ import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import { mount } from 'enzyme';
 import Card from 'components/Card';
+import locale from 'lang';
+
+locale.init();
  
 let wrapped;
 let defaultProps = {

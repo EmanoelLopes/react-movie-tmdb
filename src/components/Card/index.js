@@ -1,5 +1,6 @@
 import React from 'react';
 import { string } from 'prop-types';
+import intl from 'react-intl-universal';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendarAlt } from '@fortawesome/free-solid-svg-icons';
@@ -31,8 +32,8 @@ const Card = props => {
             <small><FontAwesomeIcon icon={faCalendarAlt} /> {release}</small>
             <p>{
               (description) 
-                ? `${textTruncate(description, 80)} [more info]`
-                : <span>(No information provided) <br/> [more info] </span>}
+                ? <span>{textTruncate(description, 80)} <br /> [{intl.get('MORE_INFO')}]</span>
+                : <span>({intl.get('NO_INFORMATION_PROVIDED')}) <br /> [{intl.get('MORE_INFO')}] </span>}
             </p>
           </div>
         </div>

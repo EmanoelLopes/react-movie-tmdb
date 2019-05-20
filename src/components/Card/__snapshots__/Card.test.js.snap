@@ -473,7 +473,14 @@ exports[`<Card /> should match snapshot 1`] = `
                        
                     </small>
                     <p>
-                      some description [more info]
+                      <span>
+                        some description
+                         
+                        <br />
+                         [
+                        more info
+                        ]
+                      </span>
                     </p>
                   </div>
                 </div>

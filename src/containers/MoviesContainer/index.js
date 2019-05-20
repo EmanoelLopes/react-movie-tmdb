@@ -1,7 +1,8 @@
 import React, { Component, Fragment } from 'react';
+import { array, func, bool } from 'prop-types';
 import { connect } from 'react-redux';
 import { format } from 'date-fns';
-import { array, func, bool } from 'prop-types';
+import intl from 'react-intl-universal';
 import { fetchMovies } from 'store/movies/actions';
 import Card from 'components/Card';
 import Grid from 'components/Grid';
@@ -43,7 +44,7 @@ class MoviesContainer extends Component {
       <div className="container">
         {(!loading) && 
           <Fragment>
-            <H1>Popular Movies <FontAwesomeIcon icon={faFilm} /></H1>
+            <H1>{intl.get('HOME.POPULAR_MOVIES_TITLE')} <FontAwesomeIcon icon={faFilm} /></H1>
             <Grid>
               {this.renderMovies(movies)}
             </Grid>

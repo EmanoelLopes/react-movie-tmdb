@@ -7,7 +7,7 @@ function Header () {
     <header className="rm-header">
       <div className="container">
         <Logo />
-        <a href="https://www.themoviedb.org/?language=pt-BR" target="_blank" rel="noopener noreferrer">
+        <a className="tmdb-logo" href="https://www.themoviedb.org/?language=pt-BR" target="_blank" rel="noopener noreferrer">
           <img src={tmdbLogo} alt="The Movie DB" lazyload="on" />
         </a>
       </div>

@@ -1,5 +1,6 @@
 import React, { Fragment, useEffect } from 'react';
 import { func, object, bool, array } from 'prop-types';
+import intl from 'react-intl-universal';
 import { format } from 'date-fns';
 import { connect } from 'react-redux';
 import { fetchCurrentMovie } from 'store/movies/actions';
@@ -36,7 +37,7 @@ const CurrentMovieContainer = props => {
       {(!!currentMovie && !loading) &&
         <HeroSection
           backdrop={currentMovie.backdrop_path}
-          title={currentMovie.original_title}
+          title={currentMovie.title}
           description={currentMovie.overview}
           isCurrent={true}
           posterPath={currentMovie.poster_path}
@@ -56,7 +57,7 @@ const CurrentMovieContainer = props => {
         />
         {(!!cast.length) &&
           <Fragment>
-            <H1>Cast</H1>
+            <H1>{intl.get('MOVIE_PAGE.CAST_TITLE')}</H1>
             <Grid>
               {cast.map(actor => {
                 return (
