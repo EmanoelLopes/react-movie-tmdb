@@ -2,6 +2,9 @@ import React from 'react';
 import { mount } from 'enzyme';
 import { format } from 'date-fns';
 import MovieDetails from 'components/MovieDetails';
+import locale from 'lang';
+
+locale.init();
 
 let wrapped;
 let defaultProps = {

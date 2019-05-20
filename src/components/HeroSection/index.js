@@ -1,8 +1,9 @@
 import React, { Fragment } from 'react';
 import { string, bool, array, number } from 'prop-types';
-import { images } from 'utils/styled';
+import intl from 'react-intl-universal';
 import Rating from 'components/Rating';
 import { Hero } from './styles';
+import { images } from 'utils/styled';
 
 const HeroSection = props => {
   const {
@@ -38,8 +39,8 @@ const HeroSection = props => {
             <h1 className="hero-title">{title}</h1>
             {(isCurrent) && 
               <Fragment>
-                <h2>Release: {releaseDate}</h2>
-                <h3>By: {createdBy.map((director, index) => {
+                  <h2>{intl.get('HERO_SECTION.RELEASE')}: {releaseDate}</h2>
+                  <h3>{intl.get('HERO_SECTION.BY')}: {createdBy.map((director, index) => {
                     return (
                       <span className="creted-by" key={director.id}>      
                         {director.name} 
@@ -48,18 +49,21 @@ const HeroSection = props => {
                     );
                   })
                 }</h3>
-                <h3>Genres: {genres.map(genre => {
+                  <h3>{intl.get('HERO_SECTION.GENRES')}: {genres.map((genre, index) => {
                   return (
-                    <span className="genre" key={genre.id}>{genre.name} </span>
+                    <span className="genre"key={genre.id}>
+                      {genre.name}
+                      {genres.length -1 !== index ? ', ': '' }
+                    </span>
                   );
                 })}</h3>
                 <h3>
-                  IMDB Rating:
+                  {intl.get('HERO_SECTION.IMDB_RATING')}:
                   <Rating rating={rating} />
                 </h3>
               </Fragment>
             }
-            <p className="hero-description">Overview: {description}</p>
+            <p className="hero-description">{intl.get('HERO_SECTION.OVERVIEW')}: {description}</p>
           </div>
         </div>
       </div>

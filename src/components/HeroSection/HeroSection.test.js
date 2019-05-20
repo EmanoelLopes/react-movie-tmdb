@@ -1,6 +1,9 @@
 import React from 'react';
 import { mount } from 'enzyme';
 import HeroSection from 'components/HeroSection';
+import locale from 'lang';
+
+locale.init();
 
 let wrapped;
 let defaultProps = {

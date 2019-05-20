@@ -84,4 +84,8 @@ export const Hero = styled.section`
       `}
     }
   }
+
+  .hero-overview {
+    width: 100%;
+  }
 `;
