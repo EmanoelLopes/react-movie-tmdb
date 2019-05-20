@@ -137,24 +137,33 @@ exports[`<Subheader /> should match snapshot 1`] = `
               </div>
               <SelectLanguage>
                 <select
+                  defaultValue={null}
                   onChange={[Function]}
                 >
                   <option
-                    defaultValue=""
+                    disabled={true}
+                    key="0"
+                    value="none"
                   >
-                    Alterar idioma
+                    --- Languages ---
                   </option>
                   <option
+                    disabled={false}
+                    key="1"
                     value="pt-BR"
                   >
                     Português (BR)
                   </option>
                   <option
+                    disabled={false}
+                    key="2"
                     value="es-ES"
                   >
                     Español
                   </option>
                   <option
+                    disabled={false}
+                    key="3"
                     value="en-US"
                   >
                     English

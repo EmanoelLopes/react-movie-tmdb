@@ -1,5 +1,14 @@
 import React from 'react';
 
+const languages = [
+  {value: 'none', name: '--- Languages ---'},
+  {value: 'pt-BR', name: 'Português (BR)'},
+  {value: 'es-ES', name: 'Español'},
+  {value: 'en-US', name: 'English'},
+];
+
+const defaultLanguage = localStorage.getItem('current_language');
+
 const SelectLanguage = () => {
   const setCurrentLanguage = event => {
     localStorage.setItem('current_language', event.target.value);
@@ -9,11 +18,21 @@ const SelectLanguage = () => {
   };
 
   return (
-    <select onChange={setCurrentLanguage}>
-      <option defaultValue="">Alterar idioma</option>
-      <option value="pt-BR">Português (BR)</option>
-      <option value="es-ES">Español</option>
-      <option value="en-US">English</option>
+    <select
+      defaultValue={defaultLanguage}
+      onChange={setCurrentLanguage}>
+      {
+        languages.map((lang, index) => {
+          return (
+            <option
+              disabled={index === 0}
+              key={index}
+              value={lang.value}>
+              {lang.name}
+            </option>
+          );
+        })
+      }
     </select>
   );
 };
