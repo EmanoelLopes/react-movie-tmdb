@@ -1,6 +1,9 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import TVInformation from 'components/TVInformation';
+import locale from 'lang';
+
+locale.init();
 
 let wrapped;
 let defaultProps = {

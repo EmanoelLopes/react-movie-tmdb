@@ -426,7 +426,8 @@ exports[`<Movie /> should match snapshot 1`] = `
                             className="c3"
                           >
                             <h2>
-                              Budget 
+                              Budget
+                               
                               <FontAwesomeIcon
                                 border={false}
                                 className=""
@@ -530,7 +531,8 @@ exports[`<Movie /> should match snapshot 1`] = `
                             className="c3"
                           >
                             <h2>
-                              Revenue 
+                              Revenue
+                               
                               <FontAwesomeIcon
                                 border={false}
                                 className=""
@@ -634,7 +636,8 @@ exports[`<Movie /> should match snapshot 1`] = `
                             className="c3"
                           >
                             <h2>
-                              Status 
+                              Status
+                               
                               <FontAwesomeIcon
                                 border={false}
                                 className=""
@@ -735,7 +738,8 @@ exports[`<Movie /> should match snapshot 1`] = `
                             className="c3"
                           >
                             <h2>
-                              Release 
+                              Release
+                               
                               <FontAwesomeIcon
                                 border={false}
                                 className=""
@@ -838,7 +842,8 @@ exports[`<Movie /> should match snapshot 1`] = `
                             className="c3"
                           >
                             <h2>
-                              Popularity 
+                              Popularity
+                               
                               <FontAwesomeIcon
                                 border={false}
                                 className=""

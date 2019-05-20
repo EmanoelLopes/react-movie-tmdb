@@ -1,6 +1,6 @@
 import React from 'react';
-import { connect } from 'react-redux';
 import { array, bool } from 'prop-types';
+import { connect } from 'react-redux';
 import HeroSection from 'components/HeroSection';
 
 const HeroSectionContainer = ({ movies, loading }) => {
@@ -8,7 +8,7 @@ const HeroSectionContainer = ({ movies, loading }) => {
     (!!movies.length && !loading) &&
     <HeroSection
       backdrop={movies[0].backdrop_path}
-      title={movies[0].original_title}
+      title={movies[0].title}
       description={movies[0].overview}
     />
   );

@@ -1,8 +1,9 @@
 import React, { Component, Fragment } from 'react';
+import { array, func, bool } from 'prop-types';
 import { connect } from 'react-redux';
 import { format } from 'date-fns';
 import { fetchTVSeries } from 'store/tvSeries/actions';
-import { array, func, bool } from 'prop-types';
+import intl from 'react-intl-universal';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTv } from '@fortawesome/free-solid-svg-icons';
 import Grid from 'components/Grid';
@@ -43,7 +44,7 @@ class TVSeriesContainer extends Component {
       <div className="container">
         {(!loading) &&
         <Fragment>
-          <H1>Popular TV Series <FontAwesomeIcon icon={faTv} /></H1>
+          <H1>{intl.get('HOME.POPULAR_TV_SERIES_TITLE')} <FontAwesomeIcon icon={faTv} /></H1>
           <Grid>
             {this.renderTVSeries(tvSeries)}
           </Grid>

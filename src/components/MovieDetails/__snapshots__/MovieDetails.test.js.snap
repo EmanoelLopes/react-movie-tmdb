@@ -217,7 +217,8 @@ exports[`<MovieDetails /> should match snashot 1`] = `
                 className="c2"
               >
                 <h2>
-                  Budget 
+                  Budget
+                   
                   <FontAwesomeIcon
                     border={false}
                     className=""
@@ -321,7 +322,8 @@ exports[`<MovieDetails /> should match snashot 1`] = `
                 className="c2"
               >
                 <h2>
-                  Revenue 
+                  Revenue
+                   
                   <FontAwesomeIcon
                     border={false}
                     className=""
@@ -425,7 +427,8 @@ exports[`<MovieDetails /> should match snashot 1`] = `
                 className="c2"
               >
                 <h2>
-                  Status 
+                  Status
+                   
                   <FontAwesomeIcon
                     border={false}
                     className=""
@@ -528,7 +531,8 @@ exports[`<MovieDetails /> should match snashot 1`] = `
                 className="c2"
               >
                 <h2>
-                  Release 
+                  Release
+                   
                   <FontAwesomeIcon
                     border={false}
                     className=""
@@ -631,7 +635,8 @@ exports[`<MovieDetails /> should match snashot 1`] = `
                 className="c2"
               >
                 <h2>
-                  Popularity 
+                  Popularity
+                   
                   <FontAwesomeIcon
                     border={false}
                     className=""

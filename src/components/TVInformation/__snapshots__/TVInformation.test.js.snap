@@ -4,45 +4,52 @@ exports[`<TVInformation /> should match snapshot 1`] = `
 <styled.section>
   <p>
     <strong>
-      First air date: 
+      Official release
+      : 
     </strong>
      
   </p>
   <p>
     <strong>
-      Number of seasons: 
+      Number of seasons
+      : 
       0
     </strong>
   </p>
   <p>
     <strong>
-      Number of episodes: 
+      Number of episodes
+      : 
       0
     </strong>
   </p>
   <p>
     <strong>
-      Current season: 
+      Current season
+      : 
       0
     </strong>
   </p>
   <p>
     <strong>
-      Last episode to air:  
-      0
-       - 
-    </strong>
-  </p>
-  <p>
-    <strong>
-      Next episode to air:  
+      Last episode
+      :  
       0
        - 
     </strong>
   </p>
   <p>
     <strong>
-      Official Site: 
+      Next episode
+      :  
+      0
+       - 
+    </strong>
+  </p>
+  <p>
+    <strong>
+      Official web site
+      : 
     </strong>
     <a
       href=""
