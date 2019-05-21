@@ -1,10 +1,14 @@
 import React from 'react';
+import { MoviesContainer } from 'containers';
+import { PageWrapper, Container } from 'utils/styled';
 
 const Movies = () => {
   return (
-    <div className="movies">
-      <h1>Movies</h1>
-    </div>
+    <PageWrapper>
+      <Container>
+        <MoviesContainer />
+      </Container>
+    </PageWrapper>
   );
 };
 

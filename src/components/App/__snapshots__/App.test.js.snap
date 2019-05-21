@@ -41,6 +41,35 @@ exports[`<App /> should match snapshot 1`] = `
   height: 5em;
 }
 
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 0 15px;
+}
+
 .c0 {
   color: #01d277;
   display: -webkit-box;
@@ -112,6 +141,12 @@ exports[`<App /> should match snapshot 1`] = `
 }
 
 @media (min-width:62em) {
+  .c4 {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width:62em) {
   .c0 {
     font-size: 22px;
   }
@@ -169,7 +204,7 @@ exports[`<App /> should match snapshot 1`] = `
                           "$$typeof": Symbol(react.forward_ref),
                           "attrs": Array [],
                           "componentStyle": ComponentStyle {
-                            "componentId": "sc-dnqmqq",
+                            "componentId": "sc-gZMcBi",
                             "isStatic": true,
                             "lastClassName": "c0",
                             "rules": Array [
@@ -219,7 +254,7 @@ exports[`<App /> should match snapshot 1`] = `
                           "displayName": "styled.span",
                           "foldedComponentIds": Array [],
                           "render": [Function],
-                          "styledComponentId": "sc-dnqmqq",
+                          "styledComponentId": "sc-gZMcBi",
                           "target": "span",
                           "toString": [Function],
                           "warnTooManyClasses": [Function],
@@ -369,7 +404,7 @@ exports[`<App /> should match snapshot 1`] = `
                     "$$typeof": Symbol(react.forward_ref),
                     "attrs": Array [],
                     "componentStyle": ComponentStyle {
-                      "componentId": "sc-iwsKbI",
+                      "componentId": "sc-gqjmRU",
                       "isStatic": true,
                       "lastClassName": "c1",
                       "rules": Array [
@@ -413,7 +448,7 @@ exports[`<App /> should match snapshot 1`] = `
                     "displayName": "styled.section",
                     "foldedComponentIds": Array [],
                     "render": [Function],
-                    "styledComponentId": "sc-iwsKbI",
+                    "styledComponentId": "sc-gqjmRU",
                     "target": "section",
                     "toString": [Function],
                     "warnTooManyClasses": [Function],
@@ -802,30 +837,112 @@ exports[`<App /> should match snapshot 1`] = `
                                               movies={Array []}
                                             />
                                           </Connect(HeroSectionContainer)>
-                                          <Connect(MoviesContainer)>
-                                            <MoviesContainer
-                                              dispatch={[Function]}
-                                              getMovies={[Function]}
-                                              loading={true}
-                                              movies={Array []}
+                                          <styled.section>
+                                            <StyledComponent
+                                              forwardedComponent={
+                                                Object {
+                                                  "$$typeof": Symbol(react.forward_ref),
+                                                  "attrs": Array [],
+                                                  "componentStyle": ComponentStyle {
+                                                    "componentId": "sc-htpNat",
+                                                    "isStatic": true,
+                                                    "lastClassName": "c3",
+                                                    "rules": Array [
+                                                      "
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  width: 100%;
+",
+                                                    ],
+                                                  },
+                                                  "displayName": "styled.section",
+                                                  "foldedComponentIds": Array [],
+                                                  "render": [Function],
+                                                  "styledComponentId": "sc-htpNat",
+                                                  "target": "section",
+                                                  "toString": [Function],
+                                                  "warnTooManyClasses": [Function],
+                                                  "withComponent": [Function],
+                                                }
+                                              }
+                                              forwardedRef={null}
                                             >
-                                              <div
-                                                className="container"
-                                              />
-                                            </MoviesContainer>
-                                          </Connect(MoviesContainer)>
-                                          <Connect(TVSeriesContainer)>
-                                            <TVSeriesContainer
-                                              dispatch={[Function]}
-                                              getSeries={[Function]}
-                                              loading={true}
-                                              tvSeries={Array []}
-                                            >
-                                              <div
-                                                className="container"
-                                              />
-                                            </TVSeriesContainer>
-                                          </Connect(TVSeriesContainer)>
+                                              <section
+                                                className="c3"
+                                              >
+                                                <styled.div>
+                                                  <StyledComponent
+                                                    forwardedComponent={
+                                                      Object {
+                                                        "$$typeof": Symbol(react.forward_ref),
+                                                        "attrs": Array [],
+                                                        "componentStyle": ComponentStyle {
+                                                          "componentId": "sc-bxivhb",
+                                                          "isStatic": true,
+                                                          "lastClassName": "c4",
+                                                          "rules": Array [
+                                                            "
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 0 15px;
+
+  ",
+                                                            "
+    @media (min-width: ",
+                                                            "62",
+                                                            "em) {
+      ",
+                                                            "
+    max-width: ",
+                                                            "1280",
+                                                            "px;
+  ",
+                                                            "
+    }
+  ",
+                                                            "
+",
+                                                          ],
+                                                        },
+                                                        "displayName": "styled.div",
+                                                        "foldedComponentIds": Array [],
+                                                        "render": [Function],
+                                                        "styledComponentId": "sc-bxivhb",
+                                                        "target": "div",
+                                                        "toString": [Function],
+                                                        "warnTooManyClasses": [Function],
+                                                        "withComponent": [Function],
+                                                      }
+                                                    }
+                                                    forwardedRef={null}
+                                                  >
+                                                    <div
+                                                      className="c4"
+                                                    >
+                                                      <Connect(MoviesContainer)>
+                                                        <MoviesContainer
+                                                          dispatch={[Function]}
+                                                          getMovies={[Function]}
+                                                          loading={true}
+                                                          movies={Array []}
+                                                        />
+                                                      </Connect(MoviesContainer)>
+                                                      <Connect(TVSeriesContainer)>
+                                                        <TVSeriesContainer
+                                                          dispatch={[Function]}
+                                                          getSeries={[Function]}
+                                                          loading={true}
+                                                          tvSeries={Array []}
+                                                        />
+                                                      </Connect(TVSeriesContainer)>
+                                                    </div>
+                                                  </StyledComponent>
+                                                </styled.div>
+                                              </section>
+                                            </StyledComponent>
+                                          </styled.section>
                                         </HomeContainer>
                                       </Connect(HomeContainer)>
                                     </Home>

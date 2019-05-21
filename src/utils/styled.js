@@ -151,3 +151,23 @@ export const H1 = styled.h1`
   width: 100%;
   text-transform: uppercase;
 `;
+
+export const PageWrapper = styled.section`
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  width: 100%;
+`;
+
+export const Container = styled.div`
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 0 15px;
+
+  ${media.desktop`
+    max-width: ${sizes.largeDesktop}px;
+  `}
+`;
+
+

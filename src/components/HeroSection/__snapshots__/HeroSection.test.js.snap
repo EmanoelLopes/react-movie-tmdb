@@ -170,7 +170,7 @@ exports[`<HeroSection /> should match snapshot 1`] = `
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-htpNat",
+            "componentId": "sc-ifAKCX",
             "isStatic": false,
             "lastClassName": "c0",
             "rules": Array [
@@ -314,7 +314,7 @@ exports[`<HeroSection /> should match snapshot 1`] = `
           "displayName": "styled.section",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-htpNat",
+          "styledComponentId": "sc-ifAKCX",
           "target": "section",
           "toString": [Function],
           "warnTooManyClasses": [Function],

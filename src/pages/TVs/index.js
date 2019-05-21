@@ -1,9 +1,15 @@
 import React from 'react';
+import { TVSeriesContainer } from 'containers';
+import { PageWrapper, Container } from 'utils/styled';
 
-const TVs = () => (
-  <div className="tv-series">
-    <h1>TV Series</h1>
-  </div>
-);
+const TVs = () => {
+  return (
+    <PageWrapper>
+      <Container>
+        <TVSeriesContainer />
+      </Container>
+    </PageWrapper>
+  );
+};
 
 export default TVs;

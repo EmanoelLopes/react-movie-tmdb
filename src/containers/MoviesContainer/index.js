@@ -1,7 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import { array, func, bool } from 'prop-types';
 import { connect } from 'react-redux';
-import { format } from 'date-fns';
 import intl from 'react-intl-universal';
 import { fetchMovies } from 'store/movies/actions';
 import Card from 'components/Card';
@@ -26,7 +25,6 @@ class MoviesContainer extends Component {
             poster={movie.poster_path}
             id={`/movie/${movie.id}`}
             backdrop={movie.backdrop_path}
-            release={format(movie.release_date, 'YYYY')}
           />
         </Fragment>
       );
@@ -41,7 +39,7 @@ class MoviesContainer extends Component {
     const { movies, loading } = this.props;
 
     return (
-      <div className="container">
+      <Fragment>
         {(!loading) && 
           <Fragment>
             <H1>{intl.get('HOME.POPULAR_MOVIES_TITLE')} <FontAwesomeIcon icon={faFilm} /></H1>
@@ -50,7 +48,7 @@ class MoviesContainer extends Component {
             </Grid>
           </Fragment>
         }
-      </div>
+      </Fragment>
     );
   }
 }

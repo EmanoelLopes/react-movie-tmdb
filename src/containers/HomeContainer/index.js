@@ -7,14 +7,19 @@ import {
   HeroSectionContainer,
 } from 'containers';
 import Loading from 'components/Loading';
+import { PageWrapper, Container } from 'utils/styled';
 
 const HomeContainer = ({ loading }) => {
   return (
     <Fragment>
       {(loading) && <Loading />}
       <HeroSectionContainer />
-      <MoviesContainer />
-      <TVSeriesContainer />
+      <PageWrapper>
+        <Container>
+          <MoviesContainer />
+          <TVSeriesContainer />
+        </Container>
+      </PageWrapper>
     </Fragment>
   );
 };

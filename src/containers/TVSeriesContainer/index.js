@@ -1,7 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import { array, func, bool } from 'prop-types';
 import { connect } from 'react-redux';
-import { format } from 'date-fns';
 import { fetchTVSeries } from 'store/tvSeries/actions';
 import intl from 'react-intl-universal';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -19,16 +18,15 @@ class TVSeriesContainer extends Component {
   renderTVSeries = tvs => {
     return (!!tvs.length) && tvs.map(tv => {
       return (
-        <React.Fragment key={tv.id}>
+        <Fragment key={tv.id}>
           <Card  
             title={tv.original_name}
             description={tv.overview}
             poster={tv.poster_path}
             id={`/tv/${tv.id}`}
             backdrop={tv.backdrop_path}
-            release={format(tv.first_air_date, 'YYYY')}
           />
-        </React.Fragment>
+        </Fragment>
       );
     });
   };
@@ -41,7 +39,7 @@ class TVSeriesContainer extends Component {
     const { tvSeries, loading } = this.props;
 
     return (
-      <div className="container">
+      <Fragment>
         {(!loading) &&
         <Fragment>
           <H1>{intl.get('HOME.POPULAR_TV_SERIES_TITLE')} <FontAwesomeIcon icon={faTv} /></H1>
@@ -49,7 +47,7 @@ class TVSeriesContainer extends Component {
             {this.renderTVSeries(tvSeries)}
           </Grid>
         </Fragment>}
-      </div>
+      </Fragment>
     );
   }
 }
