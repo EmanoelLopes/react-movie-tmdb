@@ -12,7 +12,7 @@ exports[`<MovieDetails /> should match snashot 1`] = `
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto;
-  grid-column-gap: 15px;
+  grid-column-gap: 0;
   grid-row-gap: 25px;
 }
 
@@ -33,13 +33,15 @@ exports[`<MovieDetails /> should match snashot 1`] = `
 
 @media (min-width:36em) {
   .c1 {
-    grid-template-columns: 50%% 50%%;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 5px;
   }
 }
 
 @media (min-width:62em) {
   .c1 {
-    grid-template-columns: 32% 32% 32%;
+    grid-template-columns: 24% 24% 24% 24%;
+    grid-column-gap: 15px;
   }
 }
 
@@ -110,7 +112,7 @@ exports[`<MovieDetails /> should match snashot 1`] = `
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto; 
-  grid-column-gap: 15px;
+  grid-column-gap: 0;
   grid-row-gap: 25px;
 
   ",
@@ -120,7 +122,8 @@ exports[`<MovieDetails /> should match snashot 1`] = `
                 "em) {
       ",
                 "
-    grid-template-columns: 50%% 50%%;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 5px;
   ",
                 "
     }
@@ -134,7 +137,8 @@ exports[`<MovieDetails /> should match snashot 1`] = `
                 "em) {
       ",
                 "
-    grid-template-columns: 32% 32% 32%;
+    grid-template-columns: 24% 24% 24% 24%;
+    grid-column-gap: 15px;
   ",
                 "
     }
