@@ -17,6 +17,12 @@ const pt_BR = {
     IMDB_RATING: 'Avaliação IMDB',
     OVERVIEW: 'Resumo',
   },
+  MOVIES_PAGE: {
+    TITLE: 'Filmes',
+  },
+  TVS_PAGE: {
+    TITLE: 'Séries',
+  },
   MOVIE_PAGE: {
     DETAILS_TITLE: 'Detalhes',
     CAST_TITLE: 'Elenco',

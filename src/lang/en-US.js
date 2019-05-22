@@ -17,6 +17,12 @@ const en_US = {
     IMDB_RATING: 'IMDB Rating',
     OVERVIEW: 'Overview',
   },
+  MOVIES_PAGE: {
+    TITLE: 'Movies',
+  },
+  TVS_PAGE: {
+    TITLE: 'TV Series',
+  },
   MOVIE_PAGE: {
     DETAILS_TITLE: 'Details',
     CAST_TITLE: 'Cast',

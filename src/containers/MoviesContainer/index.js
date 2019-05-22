@@ -1,18 +1,15 @@
 import React, { Component, Fragment } from 'react';
-import { array, func, bool } from 'prop-types';
+import { array, func, bool, string } from 'prop-types';
 import { connect } from 'react-redux';
-import intl from 'react-intl-universal';
 import { fetchMovies } from 'store/movies/actions';
 import Card from 'components/Card';
 import Grid from 'components/Grid';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFilm } from '@fortawesome/free-solid-svg-icons';
-import { H1 } from 'utils/styled';
+import Loading from 'components/Loading';
 
 class MoviesContainer extends Component {
   getFetchedMovies = () => {
-    const { dispatch, getMovies } = this.props;
-    dispatch(fetchMovies(getMovies));
+    const { dispatch, getMovies, type } = this.props;
+    dispatch(fetchMovies(type, getMovies));
   };
 
   renderMovies = movies => {
@@ -40,13 +37,13 @@ class MoviesContainer extends Component {
 
     return (
       <Fragment>
-        {(!loading) && 
-          <Fragment>
-            <H1>{intl.get('HOME.POPULAR_MOVIES_TITLE')} <FontAwesomeIcon icon={faFilm} /></H1>
-            <Grid>
-              {this.renderMovies(movies)}
-            </Grid>
-          </Fragment>
+        {(loading) 
+          ? <Loading />
+          : <Fragment>
+              <Grid>
+                {this.renderMovies(movies)}
+              </Grid>
+            </Fragment>
         }
       </Fragment>
     );
@@ -55,6 +52,7 @@ class MoviesContainer extends Component {
 
 MoviesContainer.propTypes = {
   movies: array,
+  type: string.isRequired,
   dispatch: func,
   getMovies: func,
   loading: bool.isRequired,

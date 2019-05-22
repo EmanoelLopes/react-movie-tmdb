@@ -16,12 +16,11 @@ const getCurrentMovie = payload => {
   };
 };
 
-const fetchMovies = () => {
+const fetchMovies = type => {
   return async dispatch => {
     dispatch(setLoading(true));
     try {
-      const { popular } = endpoints;
-      const { data, status } = await instance.get(popular.movies, {
+      const { data, status } = await instance.get(type, {
         params: { ...params },
       });
       const fetchedMovies = data.results;
@@ -41,8 +40,7 @@ const fetchCurrentMovie = id => {
   return async dispatch => {
     dispatch(setLoading(true));
     try {
-      const { currentMovie } = endpoints;
-      const { data, status } = await instance.get(`${currentMovie}/${id}`, {
+      const { data, status } = await instance.get(`${endpoints.movie.current}/${id}`, {
         params: { ...params },
       });
       const movie = data;

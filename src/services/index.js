@@ -6,14 +6,17 @@ const endpoints = {
   currentMovie: '/movie',
   currentTVserie: '/tv',
   credits: '/credits',
-  discover: {
-    movie: '/discover/movie',
-    tv: '/discover/tv',
+  movie: {
+    topRated: '/movie/top_rated',
+    popular: '/movie/popular',
+    discover: '/movie/discover',
+    current: '/movie'
   },
-  popular: {
-    movies: '/movie/popular',
-    tv: '/tv/popular',
-    person: '/person/popular'
+  tv: {
+    topRated: '/tv/top_rated',
+    popular: '/tv/popular',
+    discover: '/tv/discover',
+    current: '/tv'
   },
 };
 

@@ -1,18 +1,15 @@
 import React, { Component, Fragment } from 'react';
-import { array, func, bool } from 'prop-types';
+import { array, func, bool, string } from 'prop-types';
 import { connect } from 'react-redux';
 import { fetchTVSeries } from 'store/tvSeries/actions';
-import intl from 'react-intl-universal';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTv } from '@fortawesome/free-solid-svg-icons';
 import Grid from 'components/Grid';
 import Card from 'components/Card';
-import { H1 } from 'utils/styled';
+import Loading from 'components/Loading';
 
 class TVSeriesContainer extends Component {
   getTVSeries = () => {
-    const { dispatch, getSeries } = this.props;
-    dispatch(fetchTVSeries(getSeries));
+    const { dispatch, getSeries, type } = this.props;
+    dispatch(fetchTVSeries(type, getSeries));
   };
 
   renderTVSeries = tvs => {
@@ -40,13 +37,14 @@ class TVSeriesContainer extends Component {
 
     return (
       <Fragment>
-        {(!loading) &&
-        <Fragment>
-          <H1>{intl.get('HOME.POPULAR_TV_SERIES_TITLE')} <FontAwesomeIcon icon={faTv} /></H1>
-          <Grid>
-            {this.renderTVSeries(tvSeries)}
-          </Grid>
-        </Fragment>}
+        {(loading)
+          ? <Loading />
+          : <Fragment>
+              <Grid>
+                {this.renderTVSeries(tvSeries)}
+              </Grid>
+            </Fragment>
+        }
       </Fragment>
     );
   }
@@ -56,6 +54,7 @@ TVSeriesContainer.propTypes = {
   tvSeries: array,
   dispatch: func,
   getSeries: func,
+  type: string.isRequired,
   loading: bool.isRequired,
 };
 
