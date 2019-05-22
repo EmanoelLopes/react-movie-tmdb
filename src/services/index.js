@@ -3,9 +3,6 @@ import axios from 'axios';
 import config from 'utils/config';
 
 const endpoints = {
-  currentMovie: '/movie',
-  currentTVserie: '/tv',
-  credits: '/credits',
   movie: {
     topRated: '/movie/top_rated',
     popular: '/movie/popular',
@@ -16,8 +13,10 @@ const endpoints = {
     topRated: '/tv/top_rated',
     popular: '/tv/popular',
     discover: '/tv/discover',
-    current: '/tv'
+    current: '/tv',
+    onTheAir: 'tv/on_the_air',
   },
+  credits: '/credits',
 };
 
 const defaultLanguage = 'en-US';

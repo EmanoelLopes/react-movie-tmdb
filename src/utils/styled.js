@@ -153,8 +153,10 @@ export const H1 = styled.h1`
 `;
 
 export const PageWrapper = styled.section`
+  align-items: center;
   display: flex;
   flex: 1;
+  flex-direction: column;
   justify-content: center;
   width: 100%;
 `;

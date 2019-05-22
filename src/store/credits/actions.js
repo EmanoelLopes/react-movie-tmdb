@@ -13,8 +13,11 @@ const fetchMovieCredits = id => {
   return async dispatch => {
     dispatch(setLoading(true));
     try {
-      const { credits, currentMovie } = endpoints;
-      const { data, status } = await instance.get(`${currentMovie}/${id}${credits}`, {
+      const { credits, movie } = endpoints;
+      const {
+        data,
+        status
+      } = await instance.get(`${movie.current}/${id}${credits}`, {
         params: { ...params },
       });
       const cast = data.cast;
@@ -34,8 +37,11 @@ const fetchTVCredits = id => {
   return async dispatch => {
     dispatch(setLoading(true));
     try {
-      const { credits, currentTVserie } = endpoints;
-      const { data, status } = await instance.get(`${currentTVserie}/${id}${credits}`, {
+      const { credits, tv } = endpoints;
+      const {
+        data,
+        status
+      } = await instance.get(`${tv.current}/${id}${credits}`, {
         params: { ...params },
       });
       const cast = data.cast;
