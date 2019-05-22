@@ -79,7 +79,7 @@ exports[`<Header /> should match snapshot 1`] = `
                     "$$typeof": Symbol(react.forward_ref),
                     "attrs": Array [],
                     "componentStyle": ComponentStyle {
-                      "componentId": "sc-bwzfXH",
+                      "componentId": "sc-bxivhb",
                       "isStatic": true,
                       "lastClassName": "c0",
                       "rules": Array [
@@ -129,7 +129,7 @@ exports[`<Header /> should match snapshot 1`] = `
                     "displayName": "styled.span",
                     "foldedComponentIds": Array [],
                     "render": [Function],
-                    "styledComponentId": "sc-bwzfXH",
+                    "styledComponentId": "sc-bxivhb",
                     "target": "span",
                     "toString": [Function],
                     "warnTooManyClasses": [Function],

@@ -2,8 +2,6 @@ import React from 'react';
 import { string } from 'prop-types';
 import intl from 'react-intl-universal';
 import { Link } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCalendarAlt } from '@fortawesome/free-solid-svg-icons';
 import { CardFeatured } from './styles';
 import { images } from 'utils/styled';
 import { textTruncate } from 'utils/helpers';
@@ -15,7 +13,6 @@ const Card = props => {
     poster,
     id,
     backdrop,
-    release,
   } = props;
 
   return (
@@ -29,7 +26,6 @@ const Card = props => {
         <div className="card-info">
           <div className="card-info-wrapper">
             <h3>{title}</h3>
-            <small><FontAwesomeIcon icon={faCalendarAlt} /> {release}</small>
             <p>{
               (description) 
                 ? <span>{textTruncate(description, 80)} <br /> [{intl.get('MORE_INFO')}]</span>
@@ -48,7 +44,6 @@ Card.propTypes = {
   description: string,
   id: string,
   backdrop: string,
-  release: string,
 };
 
 Card.defaultProps = {
@@ -57,7 +52,6 @@ Card.defaultProps = {
   description: '',
   id: '',
   backdrop: '',
-  release: '',
 };
 
 export default Card;

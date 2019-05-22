@@ -16,12 +16,11 @@ const getCurrentTVSerie = payload => {
   };
 };
 
-const fetchTVSeries = () => {
+const fetchTVSeries = type => {
   return async dispatch => {
     dispatch(setLoading(true));
     try {
-      const { popular } = endpoints;
-      const { data, status } = await instance.get(popular.tv, {
+      const { data, status } = await instance.get(type, {
         params: { ...params },
       });
       const fetchedTVSeries = data.results;
@@ -41,8 +40,7 @@ const fetchCurrentTVSerie = id => {
   return async dispatch => {
     dispatch(setLoading(true));
     try {
-      const { currentTVserie } = endpoints;
-      const { data, status } = await instance.get(`${currentTVserie}/${id}`, {
+      const { data, status } = await instance.get(`${endpoints.tv.current}/${id}`, {
         params: { ...params },
       });
       if (status === 200) {

@@ -17,6 +17,12 @@ const en_US = {
     IMDB_RATING: 'IMDB Rating',
     OVERVIEW: 'Overview',
   },
+  MOVIES_PAGE: {
+    TITLE: 'Movies',
+  },
+  TVS_PAGE: {
+    TITLE: 'TV Series',
+  },
   MOVIE_PAGE: {
     DETAILS_TITLE: 'Details',
     CAST_TITLE: 'Cast',
@@ -44,6 +50,7 @@ const en_US = {
   UNINFORMED: 'Uninformed',
   NO_INFORMATION_PROVIDED: 'No information provided',
   MORE_INFO: 'more info',
+  LOADING_MESSAGE: 'Loading...',
 };
 
 export default en_US;

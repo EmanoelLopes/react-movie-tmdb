@@ -17,6 +17,12 @@ const es_ES = {
     IMDB_RATING: 'Evaluación IMDB',
     OVERVIEW: 'Resumen',
   },
+  MOVIES_PAGE: {
+    TITLE: 'Películas',
+  },
+  TVS_PAGE: {
+    TITLE: 'Series',
+  },
   MOVIE_PAGE: {
     DETAILS_TITLE: 'Detalles',
     CAST_TITLE: 'Actores',
@@ -44,6 +50,7 @@ const es_ES = {
   UNINFORMED: 'No informado',
   NO_INFORMATION_PROVIDED: 'Ninguna información suministrada',
   MORE_INFO: 'mas informaciones',
+  LOADING_MESSAGE: 'Cargando...',
 };
 
 export default es_ES;

@@ -3,18 +3,20 @@ import axios from 'axios';
 import config from 'utils/config';
 
 const endpoints = {
-  currentMovie: '/movie',
-  currentTVserie: '/tv',
+  movie: {
+    topRated: '/movie/top_rated',
+    popular: '/movie/popular',
+    discover: '/movie/discover',
+    current: '/movie'
+  },
+  tv: {
+    topRated: '/tv/top_rated',
+    popular: '/tv/popular',
+    discover: '/tv/discover',
+    current: '/tv',
+    onTheAir: 'tv/on_the_air',
+  },
   credits: '/credits',
-  discover: {
-    movie: '/discover/movie',
-    tv: '/discover/tv',
-  },
-  popular: {
-    movies: '/movie/popular',
-    tv: '/tv/popular',
-    person: '/person/popular'
-  },
 };
 
 const defaultLanguage = 'en-US';
