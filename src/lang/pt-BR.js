@@ -50,6 +50,7 @@ const pt_BR = {
   UNINFORMED: 'Não informado',
   NO_INFORMATION_PROVIDED: 'Nenhuma informação fornecida',
   MORE_INFO: 'mais informações',
+  LOADING_MESSAGE: 'Carregando...',
 };
 
 export default pt_BR;

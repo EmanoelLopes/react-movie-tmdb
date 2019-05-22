@@ -50,6 +50,7 @@ const en_US = {
   UNINFORMED: 'Uninformed',
   NO_INFORMATION_PROVIDED: 'No information provided',
   MORE_INFO: 'more info',
+  LOADING_MESSAGE: 'Loading...',
 };
 
 export default en_US;
