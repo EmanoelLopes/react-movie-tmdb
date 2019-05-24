@@ -14,8 +14,9 @@ const endpoints = {
     topRated: '/tv/top_rated',
     popular: '/tv/popular',
     discover: '/tv/discover',
-    current: '/tv',
     onTheAir: 'tv/on_the_air',
+    airingToday: 'tv/airing_today',
+    current: '/tv',
   },
   credits: '/credits',
 };

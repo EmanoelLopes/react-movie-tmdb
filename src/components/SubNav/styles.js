@@ -5,6 +5,7 @@ export const SubNavList = styled.ul`
   display: inline-flex;
   justify-content: space-between;
   padding: 25px 0;
+  margin-bottom: 25px;
 
   ${media.desktop`
   justify-content: flex-start;

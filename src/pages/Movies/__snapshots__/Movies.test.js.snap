@@ -55,6 +55,7 @@ exports[`<Movies /> should match snapshot 1`] = `
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 25px 0;
+  margin-bottom: 25px;
 }
 
 .c4 {
@@ -290,6 +291,7 @@ exports[`<Movies /> should match snapshot 1`] = `
   display: inline-flex;
   justify-content: space-between;
   padding: 25px 0;
+  margin-bottom: 25px;
 
   ",
                                     "
