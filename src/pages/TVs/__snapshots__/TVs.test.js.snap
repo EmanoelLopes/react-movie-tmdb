@@ -247,12 +247,12 @@ exports[`<TVs /> should match snapshot 1`] = `
                     items={
                       Array [
                         Object {
-                          "link": "/tvs/top-rated",
-                          "page": "Top Rated",
-                        },
-                        Object {
                           "link": "/tvs/popular",
                           "page": "Popular",
+                        },
+                        Object {
+                          "link": "/tvs/top-rated",
+                          "page": "Top Rated",
                         },
                         Object {
                           "link": "/tvs/on-the-air",
@@ -370,22 +370,22 @@ exports[`<TVs /> should match snapshot 1`] = `
                                 <NavLink
                                   activeClassName="is-active"
                                   aria-current="page"
-                                  to="/tvs/top-rated"
+                                  to="/tvs/popular"
                                 >
                                   <Route
-                                    path="\\\\/tvs\\\\/top-rated"
+                                    path="\\\\/tvs\\\\/popular"
                                   >
                                     <Link
                                       aria-current={null}
                                       replace={false}
-                                      to="/tvs/top-rated"
+                                      to="/tvs/popular"
                                     >
                                       <a
                                         aria-current={null}
-                                        href="/tvs/top-rated"
+                                        href="/tvs/popular"
                                         onClick={[Function]}
                                       >
-                                        Top Rated
+                                        Popular
                                       </a>
                                     </Link>
                                   </Route>
@@ -447,22 +447,22 @@ exports[`<TVs /> should match snapshot 1`] = `
                                 <NavLink
                                   activeClassName="is-active"
                                   aria-current="page"
-                                  to="/tvs/popular"
+                                  to="/tvs/top-rated"
                                 >
                                   <Route
-                                    path="\\\\/tvs\\\\/popular"
+                                    path="\\\\/tvs\\\\/top-rated"
                                   >
                                     <Link
                                       aria-current={null}
                                       replace={false}
-                                      to="/tvs/popular"
+                                      to="/tvs/top-rated"
                                     >
                                       <a
                                         aria-current={null}
-                                        href="/tvs/popular"
+                                        href="/tvs/top-rated"
                                         onClick={[Function]}
                                       >
-                                        Popular
+                                        Top Rated
                                       </a>
                                     </Link>
                                   </Route>
