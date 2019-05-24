@@ -6,6 +6,20 @@ const pt_BR = {
     },
     CHOOSE_LANGUAGE: 'Selecione o idioma',
   },
+  SUBNAV: {
+    MOVIES: {
+      POPULAR: 'Popular',
+      TOP_RATED: 'Mais votados',
+      UP_COMING: 'Próximos',
+      NOW_PLAYING: 'Em Cartaz',
+    },
+    TVS: {
+      POPULAR: 'Popular',
+      TOP_RATED: 'Mais Votados',
+      ON_TV: 'No Ar',
+      AIRING_TODAY: 'Atualmente',
+    },
+  },
   HOME: {
     POPULAR_MOVIES_TITLE: 'Filmes populares',
     POPULAR_TV_SERIES_TITLE: 'Séries populares'

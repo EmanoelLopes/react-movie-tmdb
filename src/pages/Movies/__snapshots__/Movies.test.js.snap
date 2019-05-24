@@ -46,6 +46,7 @@ exports[`<Movies /> should match snapshot 1`] = `
 }
 
 .c3 {
+  background-color: #fff;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -54,7 +55,7 @@ exports[`<Movies /> should match snapshot 1`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding: 25px 0;
+  padding: 25px;
   margin-bottom: 25px;
 }
 
@@ -266,12 +267,12 @@ exports[`<Movies /> should match snapshot 1`] = `
                               "page": "Popular",
                             },
                             Object {
-                              "link": "/movies/up-coming",
-                              "page": "Up Coming",
-                            },
-                            Object {
                               "link": "/movies/now-playing",
                               "page": "Now Playing",
+                            },
+                            Object {
+                              "link": "/movies/up-coming",
+                              "page": "Up Coming",
                             },
                           ]
                         }
@@ -288,9 +289,12 @@ exports[`<Movies /> should match snapshot 1`] = `
                                   "lastClassName": "c3",
                                   "rules": Array [
                                     "
+  background-color: ",
+                                    "#fff",
+                                    ";
   display: inline-flex;
   justify-content: space-between;
-  padding: 25px 0;
+  padding: 25px;
   margin-bottom: 25px;
 
   ",
@@ -532,22 +536,22 @@ exports[`<Movies /> should match snapshot 1`] = `
                                     <NavLink
                                       activeClassName="is-active"
                                       aria-current="page"
-                                      to="/movies/up-coming"
+                                      to="/movies/now-playing"
                                     >
                                       <Route
-                                        path="\\\\/movies\\\\/up-coming"
+                                        path="\\\\/movies\\\\/now-playing"
                                       >
                                         <Link
                                           aria-current={null}
                                           replace={false}
-                                          to="/movies/up-coming"
+                                          to="/movies/now-playing"
                                         >
                                           <a
                                             aria-current={null}
-                                            href="/movies/up-coming"
+                                            href="/movies/now-playing"
                                             onClick={[Function]}
                                           >
-                                            Up Coming
+                                            Now Playing
                                           </a>
                                         </Link>
                                       </Route>
@@ -609,22 +613,22 @@ exports[`<Movies /> should match snapshot 1`] = `
                                     <NavLink
                                       activeClassName="is-active"
                                       aria-current="page"
-                                      to="/movies/now-playing"
+                                      to="/movies/up-coming"
                                     >
                                       <Route
-                                        path="\\\\/movies\\\\/now-playing"
+                                        path="\\\\/movies\\\\/up-coming"
                                       >
                                         <Link
                                           aria-current={null}
                                           replace={false}
-                                          to="/movies/now-playing"
+                                          to="/movies/up-coming"
                                         >
                                           <a
                                             aria-current={null}
-                                            href="/movies/now-playing"
+                                            href="/movies/up-coming"
                                             onClick={[Function]}
                                           >
-                                            Now Playing
+                                            Up Coming
                                           </a>
                                         </Link>
                                       </Route>

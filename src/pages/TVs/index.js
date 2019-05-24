@@ -6,13 +6,6 @@ import { TVSeriesContainer } from 'containers';
 import { PageWrapper, Container, H1 } from 'utils/styled';
 import { endpoints } from 'services';
 
-const items = [
-  { link: '/tvs/top-rated', page: 'Top Rated' },
-  { link: '/tvs/popular', page: 'Popular' },
-  { link: '/tvs/on-the-air', page: 'On The Air' },
-  { link: '/tvs/airing-today', page: 'Airing Today' },
-];
-
 const {
   topRated,
   popular,
@@ -53,6 +46,13 @@ const NowPlaying = () => {
 };
 
 const TVs = () => {
+  const items = [
+    { link: '/tvs/top-rated', page: `${intl.get('SUBNAV.TVS.TOP_RATED')}` },
+    { link: '/tvs/popular', page: `${intl.get('SUBNAV.TVS.POPULAR')}` },
+    { link: '/tvs/on-the-air', page: `${intl.get('SUBNAV.TVS.ON_TV')}` },
+    { link: '/tvs/airing-today', page: `${intl.get('SUBNAV.TVS.AIRING_TODAY')}` },
+  ];
+
   return (
     <PageWrapper>
       <Container>

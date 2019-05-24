@@ -2,6 +2,7 @@
 
 exports[`<SubNav /> should match snapshot 1`] = `
 .c0 {
+  background-color: #fff;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -10,7 +11,7 @@ exports[`<SubNav /> should match snapshot 1`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding: 25px 0;
+  padding: 25px;
   margin-bottom: 25px;
 }
 
@@ -100,9 +101,12 @@ exports[`<SubNav /> should match snapshot 1`] = `
                 "lastClassName": "c0",
                 "rules": Array [
                   "
+  background-color: ",
+                  "#fff",
+                  ";
   display: inline-flex;
   justify-content: space-between;
-  padding: 25px 0;
+  padding: 25px;
   margin-bottom: 25px;
 
   ",

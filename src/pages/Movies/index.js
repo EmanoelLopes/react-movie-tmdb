@@ -6,13 +6,6 @@ import { MoviesContainer } from 'containers';
 import { PageWrapper, Container, H1 } from 'utils/styled';
 import { endpoints } from 'services';
 
-const items = [
-  { link: '/movies/top-rated', page: 'Top Rated' },
-  { link: '/movies/popular', page: 'Popular' },
-  { link: '/movies/up-coming', page: 'Up Coming' },
-  { link: '/movies/now-playing', page: 'Now Playing' },
-];
-
 const {
   topRated,
   popular,
@@ -36,14 +29,6 @@ const Popular = () => {
   );
 };
 
-const UpComing = () => {
-  return (
-    <Container>
-      <MoviesContainer type={upComing} />
-    </Container>
-  );
-};
-
 const NowPlaying = () => {
   return (
     <Container>
@@ -52,7 +37,22 @@ const NowPlaying = () => {
   );
 };
 
+const UpComing = () => {
+  return (
+    <Container>
+      <MoviesContainer type={upComing} />
+    </Container>
+  );
+};
+
 const Movies = () => {
+  const items = [
+    { link: '/movies/top-rated', page: `${intl.get('SUBNAV.MOVIES.TOP_RATED')}` },
+    { link: '/movies/popular', page: `${intl.get('SUBNAV.MOVIES.POPULAR')}` },
+    { link: '/movies/now-playing', page: `${intl.get('SUBNAV.MOVIES.NOW_PLAYING')}` },
+    { link: '/movies/up-coming', page: `${intl.get('SUBNAV.MOVIES.UP_COMING')}` },
+  ];
+  
   return (
     <PageWrapper>
       <Container>
