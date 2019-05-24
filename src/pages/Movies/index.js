@@ -23,7 +23,6 @@ const {
 const TopRated = () => {
   return (
     <Container>
-      <H1>{intl.get('MOVIES_PAGE.TITLE')}</H1>
       <MoviesContainer type={topRated} />
     </Container>
   );
@@ -32,7 +31,6 @@ const TopRated = () => {
 const Popular = () => {
   return (
     <Container>
-      <H1>{intl.get('MOVIES_PAGE.TITLE')}</H1>
       <MoviesContainer type={popular} />
     </Container>
   );
@@ -41,7 +39,6 @@ const Popular = () => {
 const UpComing = () => {
   return (
     <Container>
-      <H1>{intl.get('MOVIES_PAGE.TITLE')}</H1>
       <MoviesContainer type={upComing} />
     </Container>
   );
@@ -50,7 +47,6 @@ const UpComing = () => {
 const NowPlaying = () => {
   return (
     <Container>
-      <H1>{intl.get('MOVIES_PAGE.TITLE')}</H1>
       <MoviesContainer type={nowPlaying} />
     </Container>
   );
@@ -60,6 +56,7 @@ const Movies = () => {
   return (
     <PageWrapper>
       <Container>
+        <H1>{intl.get('MOVIES_PAGE.TITLE')}</H1>
         <SubNav items={items} />
       </Container>
       <Switch>
