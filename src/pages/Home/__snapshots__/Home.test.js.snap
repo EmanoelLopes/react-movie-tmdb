@@ -82,6 +82,7 @@ exports[`<Home /> should match snapshot 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   padding: 0 15px;
+  width: 100%;
 }
 
 @media (min-width:62em) {
@@ -292,6 +293,7 @@ exports[`<Home /> should match snapshot 1`] = `
   flex: 1;
   flex-direction: column;
   padding: 0 15px;
+  width: 100%;
 
   ",
                             "

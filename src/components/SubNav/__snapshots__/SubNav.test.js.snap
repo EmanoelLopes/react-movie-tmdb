@@ -1,0 +1,451 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SubNav /> should match snapshot 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 25px 0;
+}
+
+.c1 {
+  margin-right: 15px;
+}
+
+.c1 > a {
+  color: #081c24;
+  font-size: 18px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c1 > a:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c1 > a.is-active {
+  color: #01d277;
+}
+
+@media (min-width:62em) {
+  .c0 {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}
+
+<BrowserRouter>
+  <Router
+    history={
+      Object {
+        "action": "POP",
+        "block": [Function],
+        "createHref": [Function],
+        "go": [Function],
+        "goBack": [Function],
+        "goForward": [Function],
+        "length": 1,
+        "listen": [Function],
+        "location": Object {
+          "hash": "",
+          "pathname": "/",
+          "search": "",
+          "state": undefined,
+        },
+        "push": [Function],
+        "replace": [Function],
+      }
+    }
+  >
+    <SubNav
+      items={
+        Array [
+          Object {
+            "link": "/movies/top-rated",
+            "page": "Top Rated",
+          },
+          Object {
+            "link": "/movies/popular",
+            "page": "Popular",
+          },
+          Object {
+            "link": "/movies/up-coming",
+            "page": "Up Coming",
+          },
+          Object {
+            "link": "/movies/now-playing",
+            "page": "Now Playing",
+          },
+        ]
+      }
+    >
+      <styled.ul>
+        <StyledComponent
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "sc-bxivhb",
+                "isStatic": true,
+                "lastClassName": "c0",
+                "rules": Array [
+                  "
+  display: inline-flex;
+  justify-content: space-between;
+  padding: 25px 0;
+
+  ",
+                  "
+    @media (min-width: ",
+                  "62",
+                  "em) {
+      ",
+                  "
+  justify-content: flex-start;
+  ",
+                  "
+    }
+  ",
+                  "
+",
+                ],
+              },
+              "displayName": "styled.ul",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "sc-bxivhb",
+              "target": "ul",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+        >
+          <ul
+            className="c0"
+          >
+            <styled.li
+              key="0"
+            >
+              <StyledComponent
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "sc-ifAKCX",
+                      "isStatic": true,
+                      "lastClassName": "c1",
+                      "rules": Array [
+                        "
+  margin-right: 15px;
+
+  > a {
+    color: ",
+                        "#081c24",
+                        ";
+    font-size: 18px;
+    text-decoration: none;
+  }
+
+  > a:hover {
+    text-decoration: underline;
+  }
+
+  > a.is-active {
+    color: ",
+                        "#01d277",
+                        ";
+  }
+",
+                      ],
+                    },
+                    "displayName": "styled.li",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "sc-ifAKCX",
+                    "target": "li",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+              >
+                <li
+                  className="c1"
+                >
+                  <NavLink
+                    activeClassName="is-active"
+                    aria-current="page"
+                    to="/movies/top-rated"
+                  >
+                    <Route
+                      path="\\\\/movies\\\\/top-rated"
+                    >
+                      <Link
+                        aria-current={null}
+                        replace={false}
+                        to="/movies/top-rated"
+                      >
+                        <a
+                          aria-current={null}
+                          href="/movies/top-rated"
+                          onClick={[Function]}
+                        >
+                          Top Rated
+                        </a>
+                      </Link>
+                    </Route>
+                  </NavLink>
+                </li>
+              </StyledComponent>
+            </styled.li>
+            <styled.li
+              key="1"
+            >
+              <StyledComponent
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "sc-ifAKCX",
+                      "isStatic": true,
+                      "lastClassName": "c1",
+                      "rules": Array [
+                        "
+  margin-right: 15px;
+
+  > a {
+    color: ",
+                        "#081c24",
+                        ";
+    font-size: 18px;
+    text-decoration: none;
+  }
+
+  > a:hover {
+    text-decoration: underline;
+  }
+
+  > a.is-active {
+    color: ",
+                        "#01d277",
+                        ";
+  }
+",
+                      ],
+                    },
+                    "displayName": "styled.li",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "sc-ifAKCX",
+                    "target": "li",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+              >
+                <li
+                  className="c1"
+                >
+                  <NavLink
+                    activeClassName="is-active"
+                    aria-current="page"
+                    to="/movies/popular"
+                  >
+                    <Route
+                      path="\\\\/movies\\\\/popular"
+                    >
+                      <Link
+                        aria-current={null}
+                        replace={false}
+                        to="/movies/popular"
+                      >
+                        <a
+                          aria-current={null}
+                          href="/movies/popular"
+                          onClick={[Function]}
+                        >
+                          Popular
+                        </a>
+                      </Link>
+                    </Route>
+                  </NavLink>
+                </li>
+              </StyledComponent>
+            </styled.li>
+            <styled.li
+              key="2"
+            >
+              <StyledComponent
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "sc-ifAKCX",
+                      "isStatic": true,
+                      "lastClassName": "c1",
+                      "rules": Array [
+                        "
+  margin-right: 15px;
+
+  > a {
+    color: ",
+                        "#081c24",
+                        ";
+    font-size: 18px;
+    text-decoration: none;
+  }
+
+  > a:hover {
+    text-decoration: underline;
+  }
+
+  > a.is-active {
+    color: ",
+                        "#01d277",
+                        ";
+  }
+",
+                      ],
+                    },
+                    "displayName": "styled.li",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "sc-ifAKCX",
+                    "target": "li",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+              >
+                <li
+                  className="c1"
+                >
+                  <NavLink
+                    activeClassName="is-active"
+                    aria-current="page"
+                    to="/movies/up-coming"
+                  >
+                    <Route
+                      path="\\\\/movies\\\\/up-coming"
+                    >
+                      <Link
+                        aria-current={null}
+                        replace={false}
+                        to="/movies/up-coming"
+                      >
+                        <a
+                          aria-current={null}
+                          href="/movies/up-coming"
+                          onClick={[Function]}
+                        >
+                          Up Coming
+                        </a>
+                      </Link>
+                    </Route>
+                  </NavLink>
+                </li>
+              </StyledComponent>
+            </styled.li>
+            <styled.li
+              key="3"
+            >
+              <StyledComponent
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "sc-ifAKCX",
+                      "isStatic": true,
+                      "lastClassName": "c1",
+                      "rules": Array [
+                        "
+  margin-right: 15px;
+
+  > a {
+    color: ",
+                        "#081c24",
+                        ";
+    font-size: 18px;
+    text-decoration: none;
+  }
+
+  > a:hover {
+    text-decoration: underline;
+  }
+
+  > a.is-active {
+    color: ",
+                        "#01d277",
+                        ";
+  }
+",
+                      ],
+                    },
+                    "displayName": "styled.li",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "sc-ifAKCX",
+                    "target": "li",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+              >
+                <li
+                  className="c1"
+                >
+                  <NavLink
+                    activeClassName="is-active"
+                    aria-current="page"
+                    to="/movies/now-playing"
+                  >
+                    <Route
+                      path="\\\\/movies\\\\/now-playing"
+                    >
+                      <Link
+                        aria-current={null}
+                        replace={false}
+                        to="/movies/now-playing"
+                      >
+                        <a
+                          aria-current={null}
+                          href="/movies/now-playing"
+                          onClick={[Function]}
+                        >
+                          Now Playing
+                        </a>
+                      </Link>
+                    </Route>
+                  </NavLink>
+                </li>
+              </StyledComponent>
+            </styled.li>
+          </ul>
+        </StyledComponent>
+      </styled.ul>
+    </SubNav>
+  </Router>
+</BrowserRouter>
+`;

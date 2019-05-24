@@ -1,5 +1,6 @@
 import React from 'react';
 import { mount } from 'enzyme';
+import { BrowserRouter as Router } from 'react-router-dom';
 import { Movies } from 'pages';
 import Root from 'components/Root';
 import locale from 'lang';
@@ -12,7 +13,9 @@ let defaultProps = {};
 beforeEach(() => {
   wrapped = mount(
     <Root>
-      <Movies {...defaultProps} />
+      <Router>
+        <Movies {...defaultProps} />
+      </Router>
     </Root>
   );
 });

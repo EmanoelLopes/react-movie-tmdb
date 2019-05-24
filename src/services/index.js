@@ -6,7 +6,8 @@ const endpoints = {
   movie: {
     topRated: '/movie/top_rated',
     popular: '/movie/popular',
-    discover: '/movie/discover',
+    nowPlaying: '/movie/now_playing',
+    upComing: 'movie/upcoming',
     current: '/movie'
   },
   tv: {
