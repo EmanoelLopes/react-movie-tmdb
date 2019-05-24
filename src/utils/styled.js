@@ -166,6 +166,7 @@ export const Container = styled.div`
   flex: 1;
   flex-direction: column;
   padding: 0 15px;
+  width: 100%;
 
   ${media.desktop`
     max-width: ${sizes.largeDesktop}px;
