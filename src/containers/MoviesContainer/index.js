@@ -38,7 +38,7 @@ const MoviesContainer = props => {
 
   useEffect(() => {
     getFetchedMovies();
-  }, [getFetchedMovies]);
+  });
 
   return (
     <Fragment>

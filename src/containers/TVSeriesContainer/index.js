@@ -38,7 +38,7 @@ const TVSeriesContainer = props => {
   
   useEffect(() => {
     getTVSeries();
-  }, [getTVSeries]);
+  });
 
   return (
     <Fragment>
