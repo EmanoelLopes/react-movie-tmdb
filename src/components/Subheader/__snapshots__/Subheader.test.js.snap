@@ -132,10 +132,10 @@ exports[`<Subheader /> should match snapshot 1`] = `
               >
                 <Link
                   replace={false}
-                  to="/movies/popular"
+                  to="/movies"
                 >
                   <a
-                    href="/movies/popular"
+                    href="/movies"
                     onClick={[Function]}
                   >
                     Movies
@@ -143,10 +143,10 @@ exports[`<Subheader /> should match snapshot 1`] = `
                 </Link>
                 <Link
                   replace={false}
-                  to="/tvs/popular"
+                  to="/tvs"
                 >
                   <a
-                    href="/tvs/popular"
+                    href="/tvs"
                     onClick={[Function]}
                   >
                     TV Series
