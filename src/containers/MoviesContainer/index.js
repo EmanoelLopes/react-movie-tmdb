@@ -1,18 +1,26 @@
-import React, { Component, Fragment } from 'react';
+import React, { useEffect, Fragment } from 'react';
 import { array, func, bool, string } from 'prop-types';
 import { connect } from 'react-redux';
+import { withRouter } from 'react-router-dom';
 import { fetchMovies } from 'store/movies/actions';
 import Card from 'components/Card';
 import Grid from 'components/Grid';
 import Loading from 'components/Loading';
 
-class MoviesContainer extends Component {
-  getFetchedMovies = () => {
-    const { dispatch, getMovies, type } = this.props;
+const MoviesContainer = props => {
+  const {
+    dispatch,
+    getMovies,
+    type,
+    movies,
+    loading,
+  } = props;
+
+  const getFetchedMovies = () => {
     dispatch(fetchMovies(type, getMovies));
   };
 
-  renderMovies = movies => {
+  const renderMovies = movies => {
     return (!!movies.length) && movies.map(movie => {
       return (
         <Fragment key={movie.id}>
@@ -28,27 +36,21 @@ class MoviesContainer extends Component {
     });
   };
 
-  componentDidMount() {
-    this.getFetchedMovies();
-  }
+  useEffect(() => {
+    getFetchedMovies();
+  }, [getFetchedMovies]);
 
-  render() {
-    const { movies, loading } = this.props;
-
-    return (
+  return (
+    <Fragment>
+      {(loading) && <Loading />}
       <Fragment>
-        {(loading) 
-          ? <Loading />
-          : <Fragment>
-              <Grid>
-                {this.renderMovies(movies)}
-              </Grid>
-            </Fragment>
-        }
+        <Grid>
+          {renderMovies(movies)}
+        </Grid>
       </Fragment>
-    );
-  }
-}
+    </Fragment>
+  );
+};
 
 MoviesContainer.propTypes = {
   movies: array,
@@ -69,4 +71,4 @@ const mapStateToProps = state => ({
   loading: state.loading,
 });
 
-export default connect(mapStateToProps)(MoviesContainer);
+export default withRouter(connect(mapStateToProps)(MoviesContainer));

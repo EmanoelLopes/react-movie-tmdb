@@ -1,22 +1,30 @@
-import React, { Component, Fragment } from 'react';
+import React, { useEffect, Fragment } from 'react';
 import { array, func, bool, string } from 'prop-types';
 import { connect } from 'react-redux';
+import { withRouter } from 'react-router-dom';
 import { fetchTVSeries } from 'store/tvSeries/actions';
 import Grid from 'components/Grid';
 import Card from 'components/Card';
 import Loading from 'components/Loading';
 
-class TVSeriesContainer extends Component {
-  getTVSeries = () => {
-    const { dispatch, getSeries, type } = this.props;
+const TVSeriesContainer = props => {
+  const {
+    dispatch,
+    getSeries,
+    type,
+    tvSeries,
+    loading,
+  } = props;
+
+  const getTVSeries = () => {
     dispatch(fetchTVSeries(type, getSeries));
   };
-
-  renderTVSeries = tvs => {
+  
+  const renderTVSeries = tvs => {
     return (!!tvs.length) && tvs.map(tv => {
       return (
         <Fragment key={tv.id}>
-          <Card  
+          <Card
             title={tv.original_name}
             description={tv.overview}
             poster={tv.poster_path}
@@ -27,28 +35,22 @@ class TVSeriesContainer extends Component {
       );
     });
   };
+  
+  useEffect(() => {
+    getTVSeries();
+  }, [getTVSeries]);
 
-  componentDidMount() {
-    this.getTVSeries();
-  }
-
-  render() {
-    const { tvSeries, loading } = this.props;
-
-    return (
+  return (
+    <Fragment>
+      {(loading) && <Loading />}
       <Fragment>
-        {(loading)
-          ? <Loading />
-          : <Fragment>
-              <Grid>
-                {this.renderTVSeries(tvSeries)}
-              </Grid>
-            </Fragment>
-        }
+        <Grid>
+          {renderTVSeries(tvSeries)}
+        </Grid>
       </Fragment>
-    );
-  }
-}
+    </Fragment>
+  );
+};
 
 TVSeriesContainer.propTypes = {
   tvSeries: array,
@@ -69,4 +71,4 @@ const mapStateToProps = state => ({
   loading: state.loading,
 });
 
-export default connect(mapStateToProps)(TVSeriesContainer);
+export default withRouter(connect(mapStateToProps)(TVSeriesContainer));

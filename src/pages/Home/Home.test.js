@@ -1,7 +1,8 @@
 import React from 'react';
 import { mount } from 'enzyme';
-import { Home } from 'pages';
+import { BrowserRouter as WrappedRouter } from 'react-router-dom';
 import Root from 'components/Root';
+import { Home } from 'pages';
 import locale from 'lang';
 
 locale.init();
@@ -14,8 +15,10 @@ let defaultProps = {
 beforeEach(() => {
   wrapped = mount(
     <Root>
-      <Home {...defaultProps} />
-    </Root>
+      <WrappedRouter>
+        <Home {...defaultProps} />
+      </WrappedRouter>
+    </Root> 
   );
 });
 

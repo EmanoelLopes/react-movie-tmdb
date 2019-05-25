@@ -117,19 +117,58 @@ exports[`<TVs /> should match snapshot 1`] = `
       }
     }
   >
-    <TVs>
-      <styled.section>
-        <StyledComponent
-          forwardedComponent={
+    <withRouter(TVs)>
+      <Route>
+        <TVs
+          history={
             Object {
-              "$$typeof": Symbol(react.forward_ref),
-              "attrs": Array [],
-              "componentStyle": ComponentStyle {
-                "componentId": "sc-htpNat",
-                "isStatic": true,
-                "lastClassName": "c0",
-                "rules": Array [
-                  "
+              "action": "POP",
+              "block": [Function],
+              "createHref": [Function],
+              "go": [Function],
+              "goBack": [Function],
+              "goForward": [Function],
+              "length": 1,
+              "listen": [Function],
+              "location": Object {
+                "hash": "",
+                "pathname": "/",
+                "search": "",
+                "state": undefined,
+              },
+              "push": [Function],
+              "replace": [Function],
+            }
+          }
+          location={
+            Object {
+              "hash": "",
+              "pathname": "/",
+              "search": "",
+              "state": undefined,
+            }
+          }
+          match={
+            Object {
+              "isExact": true,
+              "params": Object {},
+              "path": "/",
+              "url": "/",
+            }
+          }
+        >
+          <styled.section>
+            <StyledComponent
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-htpNat",
+                    "isStatic": true,
+                    "lastClassName": "c0",
+                    "rules": Array [
+                      "
   align-items: center;
   display: flex;
   flex: 1;
@@ -137,35 +176,35 @@ exports[`<TVs /> should match snapshot 1`] = `
   justify-content: center;
   width: 100%;
 ",
-                ],
-              },
-              "displayName": "styled.section",
-              "foldedComponentIds": Array [],
-              "render": [Function],
-              "styledComponentId": "sc-htpNat",
-              "target": "section",
-              "toString": [Function],
-              "warnTooManyClasses": [Function],
-              "withComponent": [Function],
-            }
-          }
-          forwardedRef={null}
-        >
-          <section
-            className="c0"
-          >
-            <styled.div>
-              <StyledComponent
-                forwardedComponent={
-                  Object {
-                    "$$typeof": Symbol(react.forward_ref),
-                    "attrs": Array [],
-                    "componentStyle": ComponentStyle {
-                      "componentId": "sc-bxivhb",
-                      "isStatic": true,
-                      "lastClassName": "c1",
-                      "rules": Array [
-                        "
+                    ],
+                  },
+                  "displayName": "styled.section",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-htpNat",
+                  "target": "section",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+            >
+              <section
+                className="c0"
+              >
+                <styled.div>
+                  <StyledComponent
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "sc-bxivhb",
+                          "isStatic": true,
+                          "lastClassName": "c1",
+                          "rules": Array [
+                            "
   display: flex;
   flex: 1;
   flex-direction: column;
@@ -173,169 +212,169 @@ exports[`<TVs /> should match snapshot 1`] = `
   width: 100%;
 
   ",
-                        "
+                            "
     @media (min-width: ",
-                        "62",
-                        "em) {
+                            "62",
+                            "em) {
       ",
-                        "
+                            "
     max-width: ",
-                        "1280",
-                        "px;
+                            "1280",
+                            "px;
   ",
-                        "
+                            "
     }
   ",
-                        "
+                            "
 ",
-                      ],
-                    },
-                    "displayName": "styled.div",
-                    "foldedComponentIds": Array [],
-                    "render": [Function],
-                    "styledComponentId": "sc-bxivhb",
-                    "target": "div",
-                    "toString": [Function],
-                    "warnTooManyClasses": [Function],
-                    "withComponent": [Function],
-                  }
-                }
-                forwardedRef={null}
-              >
-                <div
-                  className="c1"
-                >
-                  <styled.h1>
-                    <StyledComponent
-                      forwardedComponent={
-                        Object {
-                          "$$typeof": Symbol(react.forward_ref),
-                          "attrs": Array [],
-                          "componentStyle": ComponentStyle {
-                            "componentId": "sc-bwzfXH",
-                            "isStatic": true,
-                            "lastClassName": "c2",
-                            "rules": Array [
-                              "
+                          ],
+                        },
+                        "displayName": "styled.div",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "sc-bxivhb",
+                        "target": "div",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                  >
+                    <div
+                      className="c1"
+                    >
+                      <styled.h1>
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "sc-bwzfXH",
+                                "isStatic": true,
+                                "lastClassName": "c2",
+                                "rules": Array [
+                                  "
   font-size: 32px;
   margin: 25px 0;
   width: 100%;
   text-transform: uppercase;
 ",
-                            ],
-                          },
-                          "displayName": "styled.h1",
-                          "foldedComponentIds": Array [],
-                          "render": [Function],
-                          "styledComponentId": "sc-bwzfXH",
-                          "target": "h1",
-                          "toString": [Function],
-                          "warnTooManyClasses": [Function],
-                          "withComponent": [Function],
+                                ],
+                              },
+                              "displayName": "styled.h1",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "sc-bwzfXH",
+                              "target": "h1",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                        >
+                          <h1
+                            className="c2"
+                          >
+                            TV Series
+                          </h1>
+                        </StyledComponent>
+                      </styled.h1>
+                      <SubNav
+                        items={
+                          Array [
+                            Object {
+                              "link": "/tvs/top-rated",
+                              "page": "Top Rated",
+                            },
+                            Object {
+                              "link": "/tvs/popular",
+                              "page": "Popular",
+                            },
+                            Object {
+                              "link": "/tvs/on-the-air",
+                              "page": "On TV",
+                            },
+                            Object {
+                              "link": "/tvs/airing-today",
+                              "page": "Airing Today",
+                            },
+                          ]
                         }
-                      }
-                      forwardedRef={null}
-                    >
-                      <h1
-                        className="c2"
                       >
-                        TV Series
-                      </h1>
-                    </StyledComponent>
-                  </styled.h1>
-                  <SubNav
-                    items={
-                      Array [
-                        Object {
-                          "link": "/tvs/top-rated",
-                          "page": "Top Rated",
-                        },
-                        Object {
-                          "link": "/tvs/popular",
-                          "page": "Popular",
-                        },
-                        Object {
-                          "link": "/tvs/on-the-air",
-                          "page": "On TV",
-                        },
-                        Object {
-                          "link": "/tvs/airing-today",
-                          "page": "Airing Today",
-                        },
-                      ]
-                    }
-                  >
-                    <styled.ul>
-                      <StyledComponent
-                        forwardedComponent={
-                          Object {
-                            "$$typeof": Symbol(react.forward_ref),
-                            "attrs": Array [],
-                            "componentStyle": ComponentStyle {
-                              "componentId": "sc-gZMcBi",
-                              "isStatic": true,
-                              "lastClassName": "c3",
-                              "rules": Array [
-                                "
+                        <styled.ul>
+                          <StyledComponent
+                            forwardedComponent={
+                              Object {
+                                "$$typeof": Symbol(react.forward_ref),
+                                "attrs": Array [],
+                                "componentStyle": ComponentStyle {
+                                  "componentId": "sc-gZMcBi",
+                                  "isStatic": true,
+                                  "lastClassName": "c3",
+                                  "rules": Array [
+                                    "
   background-color: ",
-                                "#fff",
-                                ";
+                                    "#fff",
+                                    ";
   display: inline-flex;
   justify-content: space-between;
   padding: 25px;
   margin-bottom: 25px;
 
   ",
-                                "
+                                    "
     @media (min-width: ",
-                                "62",
-                                "em) {
+                                    "62",
+                                    "em) {
       ",
-                                "
+                                    "
   justify-content: flex-start;
   ",
-                                "
+                                    "
     }
   ",
-                                "
+                                    "
 ",
-                              ],
-                            },
-                            "displayName": "styled.ul",
-                            "foldedComponentIds": Array [],
-                            "render": [Function],
-                            "styledComponentId": "sc-gZMcBi",
-                            "target": "ul",
-                            "toString": [Function],
-                            "warnTooManyClasses": [Function],
-                            "withComponent": [Function],
-                          }
-                        }
-                        forwardedRef={null}
-                      >
-                        <ul
-                          className="c3"
-                        >
-                          <styled.li
-                            key="0"
+                                  ],
+                                },
+                                "displayName": "styled.ul",
+                                "foldedComponentIds": Array [],
+                                "render": [Function],
+                                "styledComponentId": "sc-gZMcBi",
+                                "target": "ul",
+                                "toString": [Function],
+                                "warnTooManyClasses": [Function],
+                                "withComponent": [Function],
+                              }
+                            }
+                            forwardedRef={null}
                           >
-                            <StyledComponent
-                              forwardedComponent={
-                                Object {
-                                  "$$typeof": Symbol(react.forward_ref),
-                                  "attrs": Array [],
-                                  "componentStyle": ComponentStyle {
-                                    "componentId": "sc-gqjmRU",
-                                    "isStatic": true,
-                                    "lastClassName": "c4",
-                                    "rules": Array [
-                                      "
+                            <ul
+                              className="c3"
+                            >
+                              <styled.li
+                                key="0"
+                              >
+                                <StyledComponent
+                                  forwardedComponent={
+                                    Object {
+                                      "$$typeof": Symbol(react.forward_ref),
+                                      "attrs": Array [],
+                                      "componentStyle": ComponentStyle {
+                                        "componentId": "sc-gqjmRU",
+                                        "isStatic": true,
+                                        "lastClassName": "c4",
+                                        "rules": Array [
+                                          "
   margin-right: 15px;
 
   > a {
     color: ",
-                                      "#081c24",
-                                      ";
+                                          "#081c24",
+                                          ";
     font-size: 18px;
     text-decoration: none;
   }
@@ -346,73 +385,73 @@ exports[`<TVs /> should match snapshot 1`] = `
 
   > a.is-active {
     color: ",
-                                      "#01d277",
-                                      ";
+                                          "#01d277",
+                                          ";
   }
 ",
-                                    ],
-                                  },
-                                  "displayName": "styled.li",
-                                  "foldedComponentIds": Array [],
-                                  "render": [Function],
-                                  "styledComponentId": "sc-gqjmRU",
-                                  "target": "li",
-                                  "toString": [Function],
-                                  "warnTooManyClasses": [Function],
-                                  "withComponent": [Function],
-                                }
-                              }
-                              forwardedRef={null}
-                            >
-                              <li
-                                className="c4"
-                              >
-                                <NavLink
-                                  activeClassName="is-active"
-                                  aria-current="page"
-                                  to="/tvs/top-rated"
+                                        ],
+                                      },
+                                      "displayName": "styled.li",
+                                      "foldedComponentIds": Array [],
+                                      "render": [Function],
+                                      "styledComponentId": "sc-gqjmRU",
+                                      "target": "li",
+                                      "toString": [Function],
+                                      "warnTooManyClasses": [Function],
+                                      "withComponent": [Function],
+                                    }
+                                  }
+                                  forwardedRef={null}
                                 >
-                                  <Route
-                                    path="\\\\/tvs\\\\/top-rated"
+                                  <li
+                                    className="c4"
                                   >
-                                    <Link
-                                      aria-current={null}
-                                      replace={false}
+                                    <NavLink
+                                      activeClassName="is-active"
+                                      aria-current="page"
                                       to="/tvs/top-rated"
                                     >
-                                      <a
-                                        aria-current={null}
-                                        href="/tvs/top-rated"
-                                        onClick={[Function]}
+                                      <Route
+                                        path="\\\\/tvs\\\\/top-rated"
                                       >
-                                        Top Rated
-                                      </a>
-                                    </Link>
-                                  </Route>
-                                </NavLink>
-                              </li>
-                            </StyledComponent>
-                          </styled.li>
-                          <styled.li
-                            key="1"
-                          >
-                            <StyledComponent
-                              forwardedComponent={
-                                Object {
-                                  "$$typeof": Symbol(react.forward_ref),
-                                  "attrs": Array [],
-                                  "componentStyle": ComponentStyle {
-                                    "componentId": "sc-gqjmRU",
-                                    "isStatic": true,
-                                    "lastClassName": "c4",
-                                    "rules": Array [
-                                      "
+                                        <Link
+                                          aria-current={null}
+                                          replace={false}
+                                          to="/tvs/top-rated"
+                                        >
+                                          <a
+                                            aria-current={null}
+                                            href="/tvs/top-rated"
+                                            onClick={[Function]}
+                                          >
+                                            Top Rated
+                                          </a>
+                                        </Link>
+                                      </Route>
+                                    </NavLink>
+                                  </li>
+                                </StyledComponent>
+                              </styled.li>
+                              <styled.li
+                                key="1"
+                              >
+                                <StyledComponent
+                                  forwardedComponent={
+                                    Object {
+                                      "$$typeof": Symbol(react.forward_ref),
+                                      "attrs": Array [],
+                                      "componentStyle": ComponentStyle {
+                                        "componentId": "sc-gqjmRU",
+                                        "isStatic": true,
+                                        "lastClassName": "c4",
+                                        "rules": Array [
+                                          "
   margin-right: 15px;
 
   > a {
     color: ",
-                                      "#081c24",
-                                      ";
+                                          "#081c24",
+                                          ";
     font-size: 18px;
     text-decoration: none;
   }
@@ -423,73 +462,73 @@ exports[`<TVs /> should match snapshot 1`] = `
 
   > a.is-active {
     color: ",
-                                      "#01d277",
-                                      ";
+                                          "#01d277",
+                                          ";
   }
 ",
-                                    ],
-                                  },
-                                  "displayName": "styled.li",
-                                  "foldedComponentIds": Array [],
-                                  "render": [Function],
-                                  "styledComponentId": "sc-gqjmRU",
-                                  "target": "li",
-                                  "toString": [Function],
-                                  "warnTooManyClasses": [Function],
-                                  "withComponent": [Function],
-                                }
-                              }
-                              forwardedRef={null}
-                            >
-                              <li
-                                className="c4"
-                              >
-                                <NavLink
-                                  activeClassName="is-active"
-                                  aria-current="page"
-                                  to="/tvs/popular"
+                                        ],
+                                      },
+                                      "displayName": "styled.li",
+                                      "foldedComponentIds": Array [],
+                                      "render": [Function],
+                                      "styledComponentId": "sc-gqjmRU",
+                                      "target": "li",
+                                      "toString": [Function],
+                                      "warnTooManyClasses": [Function],
+                                      "withComponent": [Function],
+                                    }
+                                  }
+                                  forwardedRef={null}
                                 >
-                                  <Route
-                                    path="\\\\/tvs\\\\/popular"
+                                  <li
+                                    className="c4"
                                   >
-                                    <Link
-                                      aria-current={null}
-                                      replace={false}
+                                    <NavLink
+                                      activeClassName="is-active"
+                                      aria-current="page"
                                       to="/tvs/popular"
                                     >
-                                      <a
-                                        aria-current={null}
-                                        href="/tvs/popular"
-                                        onClick={[Function]}
+                                      <Route
+                                        path="\\\\/tvs\\\\/popular"
                                       >
-                                        Popular
-                                      </a>
-                                    </Link>
-                                  </Route>
-                                </NavLink>
-                              </li>
-                            </StyledComponent>
-                          </styled.li>
-                          <styled.li
-                            key="2"
-                          >
-                            <StyledComponent
-                              forwardedComponent={
-                                Object {
-                                  "$$typeof": Symbol(react.forward_ref),
-                                  "attrs": Array [],
-                                  "componentStyle": ComponentStyle {
-                                    "componentId": "sc-gqjmRU",
-                                    "isStatic": true,
-                                    "lastClassName": "c4",
-                                    "rules": Array [
-                                      "
+                                        <Link
+                                          aria-current={null}
+                                          replace={false}
+                                          to="/tvs/popular"
+                                        >
+                                          <a
+                                            aria-current={null}
+                                            href="/tvs/popular"
+                                            onClick={[Function]}
+                                          >
+                                            Popular
+                                          </a>
+                                        </Link>
+                                      </Route>
+                                    </NavLink>
+                                  </li>
+                                </StyledComponent>
+                              </styled.li>
+                              <styled.li
+                                key="2"
+                              >
+                                <StyledComponent
+                                  forwardedComponent={
+                                    Object {
+                                      "$$typeof": Symbol(react.forward_ref),
+                                      "attrs": Array [],
+                                      "componentStyle": ComponentStyle {
+                                        "componentId": "sc-gqjmRU",
+                                        "isStatic": true,
+                                        "lastClassName": "c4",
+                                        "rules": Array [
+                                          "
   margin-right: 15px;
 
   > a {
     color: ",
-                                      "#081c24",
-                                      ";
+                                          "#081c24",
+                                          ";
     font-size: 18px;
     text-decoration: none;
   }
@@ -500,73 +539,73 @@ exports[`<TVs /> should match snapshot 1`] = `
 
   > a.is-active {
     color: ",
-                                      "#01d277",
-                                      ";
+                                          "#01d277",
+                                          ";
   }
 ",
-                                    ],
-                                  },
-                                  "displayName": "styled.li",
-                                  "foldedComponentIds": Array [],
-                                  "render": [Function],
-                                  "styledComponentId": "sc-gqjmRU",
-                                  "target": "li",
-                                  "toString": [Function],
-                                  "warnTooManyClasses": [Function],
-                                  "withComponent": [Function],
-                                }
-                              }
-                              forwardedRef={null}
-                            >
-                              <li
-                                className="c4"
-                              >
-                                <NavLink
-                                  activeClassName="is-active"
-                                  aria-current="page"
-                                  to="/tvs/on-the-air"
+                                        ],
+                                      },
+                                      "displayName": "styled.li",
+                                      "foldedComponentIds": Array [],
+                                      "render": [Function],
+                                      "styledComponentId": "sc-gqjmRU",
+                                      "target": "li",
+                                      "toString": [Function],
+                                      "warnTooManyClasses": [Function],
+                                      "withComponent": [Function],
+                                    }
+                                  }
+                                  forwardedRef={null}
                                 >
-                                  <Route
-                                    path="\\\\/tvs\\\\/on-the-air"
+                                  <li
+                                    className="c4"
                                   >
-                                    <Link
-                                      aria-current={null}
-                                      replace={false}
+                                    <NavLink
+                                      activeClassName="is-active"
+                                      aria-current="page"
                                       to="/tvs/on-the-air"
                                     >
-                                      <a
-                                        aria-current={null}
-                                        href="/tvs/on-the-air"
-                                        onClick={[Function]}
+                                      <Route
+                                        path="\\\\/tvs\\\\/on-the-air"
                                       >
-                                        On TV
-                                      </a>
-                                    </Link>
-                                  </Route>
-                                </NavLink>
-                              </li>
-                            </StyledComponent>
-                          </styled.li>
-                          <styled.li
-                            key="3"
-                          >
-                            <StyledComponent
-                              forwardedComponent={
-                                Object {
-                                  "$$typeof": Symbol(react.forward_ref),
-                                  "attrs": Array [],
-                                  "componentStyle": ComponentStyle {
-                                    "componentId": "sc-gqjmRU",
-                                    "isStatic": true,
-                                    "lastClassName": "c4",
-                                    "rules": Array [
-                                      "
+                                        <Link
+                                          aria-current={null}
+                                          replace={false}
+                                          to="/tvs/on-the-air"
+                                        >
+                                          <a
+                                            aria-current={null}
+                                            href="/tvs/on-the-air"
+                                            onClick={[Function]}
+                                          >
+                                            On TV
+                                          </a>
+                                        </Link>
+                                      </Route>
+                                    </NavLink>
+                                  </li>
+                                </StyledComponent>
+                              </styled.li>
+                              <styled.li
+                                key="3"
+                              >
+                                <StyledComponent
+                                  forwardedComponent={
+                                    Object {
+                                      "$$typeof": Symbol(react.forward_ref),
+                                      "attrs": Array [],
+                                      "componentStyle": ComponentStyle {
+                                        "componentId": "sc-gqjmRU",
+                                        "isStatic": true,
+                                        "lastClassName": "c4",
+                                        "rules": Array [
+                                          "
   margin-right: 15px;
 
   > a {
     color: ",
-                                      "#081c24",
-                                      ";
+                                          "#081c24",
+                                          ";
     font-size: 18px;
     text-decoration: none;
   }
@@ -577,65 +616,67 @@ exports[`<TVs /> should match snapshot 1`] = `
 
   > a.is-active {
     color: ",
-                                      "#01d277",
-                                      ";
+                                          "#01d277",
+                                          ";
   }
 ",
-                                    ],
-                                  },
-                                  "displayName": "styled.li",
-                                  "foldedComponentIds": Array [],
-                                  "render": [Function],
-                                  "styledComponentId": "sc-gqjmRU",
-                                  "target": "li",
-                                  "toString": [Function],
-                                  "warnTooManyClasses": [Function],
-                                  "withComponent": [Function],
-                                }
-                              }
-                              forwardedRef={null}
-                            >
-                              <li
-                                className="c4"
-                              >
-                                <NavLink
-                                  activeClassName="is-active"
-                                  aria-current="page"
-                                  to="/tvs/airing-today"
+                                        ],
+                                      },
+                                      "displayName": "styled.li",
+                                      "foldedComponentIds": Array [],
+                                      "render": [Function],
+                                      "styledComponentId": "sc-gqjmRU",
+                                      "target": "li",
+                                      "toString": [Function],
+                                      "warnTooManyClasses": [Function],
+                                      "withComponent": [Function],
+                                    }
+                                  }
+                                  forwardedRef={null}
                                 >
-                                  <Route
-                                    path="\\\\/tvs\\\\/airing-today"
+                                  <li
+                                    className="c4"
                                   >
-                                    <Link
-                                      aria-current={null}
-                                      replace={false}
+                                    <NavLink
+                                      activeClassName="is-active"
+                                      aria-current="page"
                                       to="/tvs/airing-today"
                                     >
-                                      <a
-                                        aria-current={null}
-                                        href="/tvs/airing-today"
-                                        onClick={[Function]}
+                                      <Route
+                                        path="\\\\/tvs\\\\/airing-today"
                                       >
-                                        Airing Today
-                                      </a>
-                                    </Link>
-                                  </Route>
-                                </NavLink>
-                              </li>
-                            </StyledComponent>
-                          </styled.li>
-                        </ul>
-                      </StyledComponent>
-                    </styled.ul>
-                  </SubNav>
-                </div>
-              </StyledComponent>
-            </styled.div>
-            <Switch />
-          </section>
-        </StyledComponent>
-      </styled.section>
-    </TVs>
+                                        <Link
+                                          aria-current={null}
+                                          replace={false}
+                                          to="/tvs/airing-today"
+                                        >
+                                          <a
+                                            aria-current={null}
+                                            href="/tvs/airing-today"
+                                            onClick={[Function]}
+                                          >
+                                            Airing Today
+                                          </a>
+                                        </Link>
+                                      </Route>
+                                    </NavLink>
+                                  </li>
+                                </StyledComponent>
+                              </styled.li>
+                            </ul>
+                          </StyledComponent>
+                        </styled.ul>
+                      </SubNav>
+                    </div>
+                  </StyledComponent>
+                </styled.div>
+                <Switch />
+              </section>
+            </StyledComponent>
+          </styled.section>
+        </TVs>
+      </Route>
+    </withRouter(TVs)>
   </Router>
 </BrowserRouter>
 `;

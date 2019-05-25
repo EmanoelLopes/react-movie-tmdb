@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import { withRouter } from 'react-router-dom';
 import { HomeContainer } from 'containers';
 
 const Home = () => {
@@ -9,4 +10,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default withRouter(Home);

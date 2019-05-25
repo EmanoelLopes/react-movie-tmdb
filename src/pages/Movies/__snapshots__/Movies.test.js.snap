@@ -129,19 +129,58 @@ exports[`<Movies /> should match snapshot 1`] = `
           }
         }
       >
-        <Movies>
-          <styled.section>
-            <StyledComponent
-              forwardedComponent={
+        <withRouter(Movies)>
+          <Route>
+            <Movies
+              history={
                 Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "sc-htpNat",
-                    "isStatic": true,
-                    "lastClassName": "c0",
-                    "rules": Array [
-                      "
+                  "action": "POP",
+                  "block": [Function],
+                  "createHref": [Function],
+                  "go": [Function],
+                  "goBack": [Function],
+                  "goForward": [Function],
+                  "length": 1,
+                  "listen": [Function],
+                  "location": Object {
+                    "hash": "",
+                    "pathname": "/",
+                    "search": "",
+                    "state": undefined,
+                  },
+                  "push": [Function],
+                  "replace": [Function],
+                }
+              }
+              location={
+                Object {
+                  "hash": "",
+                  "pathname": "/",
+                  "search": "",
+                  "state": undefined,
+                }
+              }
+              match={
+                Object {
+                  "isExact": true,
+                  "params": Object {},
+                  "path": "/",
+                  "url": "/",
+                }
+              }
+            >
+              <styled.section>
+                <StyledComponent
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-htpNat",
+                        "isStatic": true,
+                        "lastClassName": "c0",
+                        "rules": Array [
+                          "
   align-items: center;
   display: flex;
   flex: 1;
@@ -149,35 +188,35 @@ exports[`<Movies /> should match snapshot 1`] = `
   justify-content: center;
   width: 100%;
 ",
-                    ],
-                  },
-                  "displayName": "styled.section",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "sc-htpNat",
-                  "target": "section",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
-            >
-              <section
-                className="c0"
-              >
-                <styled.div>
-                  <StyledComponent
-                    forwardedComponent={
-                      Object {
-                        "$$typeof": Symbol(react.forward_ref),
-                        "attrs": Array [],
-                        "componentStyle": ComponentStyle {
-                          "componentId": "sc-bxivhb",
-                          "isStatic": true,
-                          "lastClassName": "c1",
-                          "rules": Array [
-                            "
+                        ],
+                      },
+                      "displayName": "styled.section",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "sc-htpNat",
+                      "target": "section",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                >
+                  <section
+                    className="c0"
+                  >
+                    <styled.div>
+                      <StyledComponent
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-bxivhb",
+                              "isStatic": true,
+                              "lastClassName": "c1",
+                              "rules": Array [
+                                "
   display: flex;
   flex: 1;
   flex-direction: column;
@@ -185,169 +224,169 @@ exports[`<Movies /> should match snapshot 1`] = `
   width: 100%;
 
   ",
-                            "
+                                "
     @media (min-width: ",
-                            "62",
-                            "em) {
+                                "62",
+                                "em) {
       ",
-                            "
+                                "
     max-width: ",
-                            "1280",
-                            "px;
+                                "1280",
+                                "px;
   ",
-                            "
+                                "
     }
   ",
-                            "
+                                "
 ",
-                          ],
-                        },
-                        "displayName": "styled.div",
-                        "foldedComponentIds": Array [],
-                        "render": [Function],
-                        "styledComponentId": "sc-bxivhb",
-                        "target": "div",
-                        "toString": [Function],
-                        "warnTooManyClasses": [Function],
-                        "withComponent": [Function],
-                      }
-                    }
-                    forwardedRef={null}
-                  >
-                    <div
-                      className="c1"
-                    >
-                      <styled.h1>
-                        <StyledComponent
-                          forwardedComponent={
-                            Object {
-                              "$$typeof": Symbol(react.forward_ref),
-                              "attrs": Array [],
-                              "componentStyle": ComponentStyle {
-                                "componentId": "sc-bwzfXH",
-                                "isStatic": true,
-                                "lastClassName": "c2",
-                                "rules": Array [
-                                  "
+                              ],
+                            },
+                            "displayName": "styled.div",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "sc-bxivhb",
+                            "target": "div",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                      >
+                        <div
+                          className="c1"
+                        >
+                          <styled.h1>
+                            <StyledComponent
+                              forwardedComponent={
+                                Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "attrs": Array [],
+                                  "componentStyle": ComponentStyle {
+                                    "componentId": "sc-bwzfXH",
+                                    "isStatic": true,
+                                    "lastClassName": "c2",
+                                    "rules": Array [
+                                      "
   font-size: 32px;
   margin: 25px 0;
   width: 100%;
   text-transform: uppercase;
 ",
-                                ],
-                              },
-                              "displayName": "styled.h1",
-                              "foldedComponentIds": Array [],
-                              "render": [Function],
-                              "styledComponentId": "sc-bwzfXH",
-                              "target": "h1",
-                              "toString": [Function],
-                              "warnTooManyClasses": [Function],
-                              "withComponent": [Function],
+                                    ],
+                                  },
+                                  "displayName": "styled.h1",
+                                  "foldedComponentIds": Array [],
+                                  "render": [Function],
+                                  "styledComponentId": "sc-bwzfXH",
+                                  "target": "h1",
+                                  "toString": [Function],
+                                  "warnTooManyClasses": [Function],
+                                  "withComponent": [Function],
+                                }
+                              }
+                              forwardedRef={null}
+                            >
+                              <h1
+                                className="c2"
+                              >
+                                Movies
+                              </h1>
+                            </StyledComponent>
+                          </styled.h1>
+                          <SubNav
+                            items={
+                              Array [
+                                Object {
+                                  "link": "/movies/top-rated",
+                                  "page": "Top Rated",
+                                },
+                                Object {
+                                  "link": "/movies/popular",
+                                  "page": "Popular",
+                                },
+                                Object {
+                                  "link": "/movies/now-playing",
+                                  "page": "Now Playing",
+                                },
+                                Object {
+                                  "link": "/movies/up-coming",
+                                  "page": "Up Coming",
+                                },
+                              ]
                             }
-                          }
-                          forwardedRef={null}
-                        >
-                          <h1
-                            className="c2"
                           >
-                            Movies
-                          </h1>
-                        </StyledComponent>
-                      </styled.h1>
-                      <SubNav
-                        items={
-                          Array [
-                            Object {
-                              "link": "/movies/top-rated",
-                              "page": "Top Rated",
-                            },
-                            Object {
-                              "link": "/movies/popular",
-                              "page": "Popular",
-                            },
-                            Object {
-                              "link": "/movies/now-playing",
-                              "page": "Now Playing",
-                            },
-                            Object {
-                              "link": "/movies/up-coming",
-                              "page": "Up Coming",
-                            },
-                          ]
-                        }
-                      >
-                        <styled.ul>
-                          <StyledComponent
-                            forwardedComponent={
-                              Object {
-                                "$$typeof": Symbol(react.forward_ref),
-                                "attrs": Array [],
-                                "componentStyle": ComponentStyle {
-                                  "componentId": "sc-gZMcBi",
-                                  "isStatic": true,
-                                  "lastClassName": "c3",
-                                  "rules": Array [
-                                    "
+                            <styled.ul>
+                              <StyledComponent
+                                forwardedComponent={
+                                  Object {
+                                    "$$typeof": Symbol(react.forward_ref),
+                                    "attrs": Array [],
+                                    "componentStyle": ComponentStyle {
+                                      "componentId": "sc-gZMcBi",
+                                      "isStatic": true,
+                                      "lastClassName": "c3",
+                                      "rules": Array [
+                                        "
   background-color: ",
-                                    "#fff",
-                                    ";
+                                        "#fff",
+                                        ";
   display: inline-flex;
   justify-content: space-between;
   padding: 25px;
   margin-bottom: 25px;
 
   ",
-                                    "
+                                        "
     @media (min-width: ",
-                                    "62",
-                                    "em) {
+                                        "62",
+                                        "em) {
       ",
-                                    "
+                                        "
   justify-content: flex-start;
   ",
-                                    "
+                                        "
     }
   ",
-                                    "
+                                        "
 ",
-                                  ],
-                                },
-                                "displayName": "styled.ul",
-                                "foldedComponentIds": Array [],
-                                "render": [Function],
-                                "styledComponentId": "sc-gZMcBi",
-                                "target": "ul",
-                                "toString": [Function],
-                                "warnTooManyClasses": [Function],
-                                "withComponent": [Function],
-                              }
-                            }
-                            forwardedRef={null}
-                          >
-                            <ul
-                              className="c3"
-                            >
-                              <styled.li
-                                key="0"
+                                      ],
+                                    },
+                                    "displayName": "styled.ul",
+                                    "foldedComponentIds": Array [],
+                                    "render": [Function],
+                                    "styledComponentId": "sc-gZMcBi",
+                                    "target": "ul",
+                                    "toString": [Function],
+                                    "warnTooManyClasses": [Function],
+                                    "withComponent": [Function],
+                                  }
+                                }
+                                forwardedRef={null}
                               >
-                                <StyledComponent
-                                  forwardedComponent={
-                                    Object {
-                                      "$$typeof": Symbol(react.forward_ref),
-                                      "attrs": Array [],
-                                      "componentStyle": ComponentStyle {
-                                        "componentId": "sc-gqjmRU",
-                                        "isStatic": true,
-                                        "lastClassName": "c4",
-                                        "rules": Array [
-                                          "
+                                <ul
+                                  className="c3"
+                                >
+                                  <styled.li
+                                    key="0"
+                                  >
+                                    <StyledComponent
+                                      forwardedComponent={
+                                        Object {
+                                          "$$typeof": Symbol(react.forward_ref),
+                                          "attrs": Array [],
+                                          "componentStyle": ComponentStyle {
+                                            "componentId": "sc-gqjmRU",
+                                            "isStatic": true,
+                                            "lastClassName": "c4",
+                                            "rules": Array [
+                                              "
   margin-right: 15px;
 
   > a {
     color: ",
-                                          "#081c24",
-                                          ";
+                                              "#081c24",
+                                              ";
     font-size: 18px;
     text-decoration: none;
   }
@@ -358,73 +397,73 @@ exports[`<Movies /> should match snapshot 1`] = `
 
   > a.is-active {
     color: ",
-                                          "#01d277",
-                                          ";
+                                              "#01d277",
+                                              ";
   }
 ",
-                                        ],
-                                      },
-                                      "displayName": "styled.li",
-                                      "foldedComponentIds": Array [],
-                                      "render": [Function],
-                                      "styledComponentId": "sc-gqjmRU",
-                                      "target": "li",
-                                      "toString": [Function],
-                                      "warnTooManyClasses": [Function],
-                                      "withComponent": [Function],
-                                    }
-                                  }
-                                  forwardedRef={null}
-                                >
-                                  <li
-                                    className="c4"
-                                  >
-                                    <NavLink
-                                      activeClassName="is-active"
-                                      aria-current="page"
-                                      to="/movies/top-rated"
+                                            ],
+                                          },
+                                          "displayName": "styled.li",
+                                          "foldedComponentIds": Array [],
+                                          "render": [Function],
+                                          "styledComponentId": "sc-gqjmRU",
+                                          "target": "li",
+                                          "toString": [Function],
+                                          "warnTooManyClasses": [Function],
+                                          "withComponent": [Function],
+                                        }
+                                      }
+                                      forwardedRef={null}
                                     >
-                                      <Route
-                                        path="\\\\/movies\\\\/top-rated"
+                                      <li
+                                        className="c4"
                                       >
-                                        <Link
-                                          aria-current={null}
-                                          replace={false}
+                                        <NavLink
+                                          activeClassName="is-active"
+                                          aria-current="page"
                                           to="/movies/top-rated"
                                         >
-                                          <a
-                                            aria-current={null}
-                                            href="/movies/top-rated"
-                                            onClick={[Function]}
+                                          <Route
+                                            path="\\\\/movies\\\\/top-rated"
                                           >
-                                            Top Rated
-                                          </a>
-                                        </Link>
-                                      </Route>
-                                    </NavLink>
-                                  </li>
-                                </StyledComponent>
-                              </styled.li>
-                              <styled.li
-                                key="1"
-                              >
-                                <StyledComponent
-                                  forwardedComponent={
-                                    Object {
-                                      "$$typeof": Symbol(react.forward_ref),
-                                      "attrs": Array [],
-                                      "componentStyle": ComponentStyle {
-                                        "componentId": "sc-gqjmRU",
-                                        "isStatic": true,
-                                        "lastClassName": "c4",
-                                        "rules": Array [
-                                          "
+                                            <Link
+                                              aria-current={null}
+                                              replace={false}
+                                              to="/movies/top-rated"
+                                            >
+                                              <a
+                                                aria-current={null}
+                                                href="/movies/top-rated"
+                                                onClick={[Function]}
+                                              >
+                                                Top Rated
+                                              </a>
+                                            </Link>
+                                          </Route>
+                                        </NavLink>
+                                      </li>
+                                    </StyledComponent>
+                                  </styled.li>
+                                  <styled.li
+                                    key="1"
+                                  >
+                                    <StyledComponent
+                                      forwardedComponent={
+                                        Object {
+                                          "$$typeof": Symbol(react.forward_ref),
+                                          "attrs": Array [],
+                                          "componentStyle": ComponentStyle {
+                                            "componentId": "sc-gqjmRU",
+                                            "isStatic": true,
+                                            "lastClassName": "c4",
+                                            "rules": Array [
+                                              "
   margin-right: 15px;
 
   > a {
     color: ",
-                                          "#081c24",
-                                          ";
+                                              "#081c24",
+                                              ";
     font-size: 18px;
     text-decoration: none;
   }
@@ -435,73 +474,73 @@ exports[`<Movies /> should match snapshot 1`] = `
 
   > a.is-active {
     color: ",
-                                          "#01d277",
-                                          ";
+                                              "#01d277",
+                                              ";
   }
 ",
-                                        ],
-                                      },
-                                      "displayName": "styled.li",
-                                      "foldedComponentIds": Array [],
-                                      "render": [Function],
-                                      "styledComponentId": "sc-gqjmRU",
-                                      "target": "li",
-                                      "toString": [Function],
-                                      "warnTooManyClasses": [Function],
-                                      "withComponent": [Function],
-                                    }
-                                  }
-                                  forwardedRef={null}
-                                >
-                                  <li
-                                    className="c4"
-                                  >
-                                    <NavLink
-                                      activeClassName="is-active"
-                                      aria-current="page"
-                                      to="/movies/popular"
+                                            ],
+                                          },
+                                          "displayName": "styled.li",
+                                          "foldedComponentIds": Array [],
+                                          "render": [Function],
+                                          "styledComponentId": "sc-gqjmRU",
+                                          "target": "li",
+                                          "toString": [Function],
+                                          "warnTooManyClasses": [Function],
+                                          "withComponent": [Function],
+                                        }
+                                      }
+                                      forwardedRef={null}
                                     >
-                                      <Route
-                                        path="\\\\/movies\\\\/popular"
+                                      <li
+                                        className="c4"
                                       >
-                                        <Link
-                                          aria-current={null}
-                                          replace={false}
+                                        <NavLink
+                                          activeClassName="is-active"
+                                          aria-current="page"
                                           to="/movies/popular"
                                         >
-                                          <a
-                                            aria-current={null}
-                                            href="/movies/popular"
-                                            onClick={[Function]}
+                                          <Route
+                                            path="\\\\/movies\\\\/popular"
                                           >
-                                            Popular
-                                          </a>
-                                        </Link>
-                                      </Route>
-                                    </NavLink>
-                                  </li>
-                                </StyledComponent>
-                              </styled.li>
-                              <styled.li
-                                key="2"
-                              >
-                                <StyledComponent
-                                  forwardedComponent={
-                                    Object {
-                                      "$$typeof": Symbol(react.forward_ref),
-                                      "attrs": Array [],
-                                      "componentStyle": ComponentStyle {
-                                        "componentId": "sc-gqjmRU",
-                                        "isStatic": true,
-                                        "lastClassName": "c4",
-                                        "rules": Array [
-                                          "
+                                            <Link
+                                              aria-current={null}
+                                              replace={false}
+                                              to="/movies/popular"
+                                            >
+                                              <a
+                                                aria-current={null}
+                                                href="/movies/popular"
+                                                onClick={[Function]}
+                                              >
+                                                Popular
+                                              </a>
+                                            </Link>
+                                          </Route>
+                                        </NavLink>
+                                      </li>
+                                    </StyledComponent>
+                                  </styled.li>
+                                  <styled.li
+                                    key="2"
+                                  >
+                                    <StyledComponent
+                                      forwardedComponent={
+                                        Object {
+                                          "$$typeof": Symbol(react.forward_ref),
+                                          "attrs": Array [],
+                                          "componentStyle": ComponentStyle {
+                                            "componentId": "sc-gqjmRU",
+                                            "isStatic": true,
+                                            "lastClassName": "c4",
+                                            "rules": Array [
+                                              "
   margin-right: 15px;
 
   > a {
     color: ",
-                                          "#081c24",
-                                          ";
+                                              "#081c24",
+                                              ";
     font-size: 18px;
     text-decoration: none;
   }
@@ -512,73 +551,73 @@ exports[`<Movies /> should match snapshot 1`] = `
 
   > a.is-active {
     color: ",
-                                          "#01d277",
-                                          ";
+                                              "#01d277",
+                                              ";
   }
 ",
-                                        ],
-                                      },
-                                      "displayName": "styled.li",
-                                      "foldedComponentIds": Array [],
-                                      "render": [Function],
-                                      "styledComponentId": "sc-gqjmRU",
-                                      "target": "li",
-                                      "toString": [Function],
-                                      "warnTooManyClasses": [Function],
-                                      "withComponent": [Function],
-                                    }
-                                  }
-                                  forwardedRef={null}
-                                >
-                                  <li
-                                    className="c4"
-                                  >
-                                    <NavLink
-                                      activeClassName="is-active"
-                                      aria-current="page"
-                                      to="/movies/now-playing"
+                                            ],
+                                          },
+                                          "displayName": "styled.li",
+                                          "foldedComponentIds": Array [],
+                                          "render": [Function],
+                                          "styledComponentId": "sc-gqjmRU",
+                                          "target": "li",
+                                          "toString": [Function],
+                                          "warnTooManyClasses": [Function],
+                                          "withComponent": [Function],
+                                        }
+                                      }
+                                      forwardedRef={null}
                                     >
-                                      <Route
-                                        path="\\\\/movies\\\\/now-playing"
+                                      <li
+                                        className="c4"
                                       >
-                                        <Link
-                                          aria-current={null}
-                                          replace={false}
+                                        <NavLink
+                                          activeClassName="is-active"
+                                          aria-current="page"
                                           to="/movies/now-playing"
                                         >
-                                          <a
-                                            aria-current={null}
-                                            href="/movies/now-playing"
-                                            onClick={[Function]}
+                                          <Route
+                                            path="\\\\/movies\\\\/now-playing"
                                           >
-                                            Now Playing
-                                          </a>
-                                        </Link>
-                                      </Route>
-                                    </NavLink>
-                                  </li>
-                                </StyledComponent>
-                              </styled.li>
-                              <styled.li
-                                key="3"
-                              >
-                                <StyledComponent
-                                  forwardedComponent={
-                                    Object {
-                                      "$$typeof": Symbol(react.forward_ref),
-                                      "attrs": Array [],
-                                      "componentStyle": ComponentStyle {
-                                        "componentId": "sc-gqjmRU",
-                                        "isStatic": true,
-                                        "lastClassName": "c4",
-                                        "rules": Array [
-                                          "
+                                            <Link
+                                              aria-current={null}
+                                              replace={false}
+                                              to="/movies/now-playing"
+                                            >
+                                              <a
+                                                aria-current={null}
+                                                href="/movies/now-playing"
+                                                onClick={[Function]}
+                                              >
+                                                Now Playing
+                                              </a>
+                                            </Link>
+                                          </Route>
+                                        </NavLink>
+                                      </li>
+                                    </StyledComponent>
+                                  </styled.li>
+                                  <styled.li
+                                    key="3"
+                                  >
+                                    <StyledComponent
+                                      forwardedComponent={
+                                        Object {
+                                          "$$typeof": Symbol(react.forward_ref),
+                                          "attrs": Array [],
+                                          "componentStyle": ComponentStyle {
+                                            "componentId": "sc-gqjmRU",
+                                            "isStatic": true,
+                                            "lastClassName": "c4",
+                                            "rules": Array [
+                                              "
   margin-right: 15px;
 
   > a {
     color: ",
-                                          "#081c24",
-                                          ";
+                                              "#081c24",
+                                              ";
     font-size: 18px;
     text-decoration: none;
   }
@@ -589,65 +628,67 @@ exports[`<Movies /> should match snapshot 1`] = `
 
   > a.is-active {
     color: ",
-                                          "#01d277",
-                                          ";
+                                              "#01d277",
+                                              ";
   }
 ",
-                                        ],
-                                      },
-                                      "displayName": "styled.li",
-                                      "foldedComponentIds": Array [],
-                                      "render": [Function],
-                                      "styledComponentId": "sc-gqjmRU",
-                                      "target": "li",
-                                      "toString": [Function],
-                                      "warnTooManyClasses": [Function],
-                                      "withComponent": [Function],
-                                    }
-                                  }
-                                  forwardedRef={null}
-                                >
-                                  <li
-                                    className="c4"
-                                  >
-                                    <NavLink
-                                      activeClassName="is-active"
-                                      aria-current="page"
-                                      to="/movies/up-coming"
+                                            ],
+                                          },
+                                          "displayName": "styled.li",
+                                          "foldedComponentIds": Array [],
+                                          "render": [Function],
+                                          "styledComponentId": "sc-gqjmRU",
+                                          "target": "li",
+                                          "toString": [Function],
+                                          "warnTooManyClasses": [Function],
+                                          "withComponent": [Function],
+                                        }
+                                      }
+                                      forwardedRef={null}
                                     >
-                                      <Route
-                                        path="\\\\/movies\\\\/up-coming"
+                                      <li
+                                        className="c4"
                                       >
-                                        <Link
-                                          aria-current={null}
-                                          replace={false}
+                                        <NavLink
+                                          activeClassName="is-active"
+                                          aria-current="page"
                                           to="/movies/up-coming"
                                         >
-                                          <a
-                                            aria-current={null}
-                                            href="/movies/up-coming"
-                                            onClick={[Function]}
+                                          <Route
+                                            path="\\\\/movies\\\\/up-coming"
                                           >
-                                            Up Coming
-                                          </a>
-                                        </Link>
-                                      </Route>
-                                    </NavLink>
-                                  </li>
-                                </StyledComponent>
-                              </styled.li>
-                            </ul>
-                          </StyledComponent>
-                        </styled.ul>
-                      </SubNav>
-                    </div>
-                  </StyledComponent>
-                </styled.div>
-                <Switch />
-              </section>
-            </StyledComponent>
-          </styled.section>
-        </Movies>
+                                            <Link
+                                              aria-current={null}
+                                              replace={false}
+                                              to="/movies/up-coming"
+                                            >
+                                              <a
+                                                aria-current={null}
+                                                href="/movies/up-coming"
+                                                onClick={[Function]}
+                                              >
+                                                Up Coming
+                                              </a>
+                                            </Link>
+                                          </Route>
+                                        </NavLink>
+                                      </li>
+                                    </StyledComponent>
+                                  </styled.li>
+                                </ul>
+                              </StyledComponent>
+                            </styled.ul>
+                          </SubNav>
+                        </div>
+                      </StyledComponent>
+                    </styled.div>
+                    <Switch />
+                  </section>
+                </StyledComponent>
+              </styled.section>
+            </Movies>
+          </Route>
+        </withRouter(Movies)>
       </Router>
     </BrowserRouter>
   </Provider>

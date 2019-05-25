@@ -1,6 +1,6 @@
 import React from 'react';
 import intl from 'react-intl-universal';
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, withRouter } from 'react-router-dom';
 import SubNav from 'components/SubNav';
 import { TVSeriesContainer } from 'containers';
 import { PageWrapper, Container, H1 } from 'utils/styled';
@@ -70,4 +70,4 @@ const TVs = () => {
   );
 };
 
-export default TVs;
+export default withRouter(TVs);
