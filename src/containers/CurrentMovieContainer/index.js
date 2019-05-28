@@ -10,7 +10,7 @@ import HeroSection from 'components/HeroSection';
 import Grid from 'components/Grid';
 import MovieDetails from 'components/MovieDetails';
 import CastCard from 'components/CastCard';
-import { H1 } from 'utils/styled';
+import { PageWrapper, Container, H1 } from 'utils/styled';
 
 const CurrentMovieContainer = props => {
   const {
@@ -32,7 +32,7 @@ const CurrentMovieContainer = props => {
   }, [dispatch, params.id]);
 
   return (
-    <Fragment>
+    <PageWrapper>
       {(loading) && <Loading />}
       {(!!currentMovie && !loading) &&
         <HeroSection
@@ -47,7 +47,7 @@ const CurrentMovieContainer = props => {
           rating={currentMovie.vote_average}
         />
       }
-      <div className="container">
+      <Container>
         <MovieDetails
           budget={currentMovie.budget}
           revenue={currentMovie.revenue}
@@ -73,8 +73,8 @@ const CurrentMovieContainer = props => {
             </Grid>
           </Fragment>
         }
-      </div>
-    </Fragment>
+      </Container>
+    </PageWrapper>
   );
 };
 
