@@ -10,7 +10,7 @@ import HeroSection from 'components/HeroSection';
 import Grid from 'components/Grid';
 import TVInformation from 'components/TVInformation';
 import CastCard from 'components/CastCard';
-import { H1 } from 'utils/styled';
+import { PageWrapper, Container, H1 } from 'utils/styled';
 
 const CurrentTVSerieContainer = props => {
   const {
@@ -32,7 +32,7 @@ const CurrentTVSerieContainer = props => {
   }, [dispatch, params.id]);
 
   return (
-    <Fragment>
+    <PageWrapper>
       {(loading) && <Loading />}
       {(!!currentTV && !loading) &&
         <HeroSection
@@ -47,7 +47,7 @@ const CurrentTVSerieContainer = props => {
           rating={currentTV.vote_average}
         />
       }
-      <div className="container">
+      <Container>
         {
           (!!currentTV && !loading) &&
           <Fragment>
@@ -105,8 +105,8 @@ const CurrentTVSerieContainer = props => {
             </Fragment>
           }
         </Fragment>
-      </div>
-    </Fragment>
+      </Container>
+    </PageWrapper>
   );
 };
 

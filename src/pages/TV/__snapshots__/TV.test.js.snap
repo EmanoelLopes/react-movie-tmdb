@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<TV /> should match snapshot 1`] = `
-.c0 {
+.c1 {
   width: 100%;
   height: 100%;
   position: fixed;
@@ -28,17 +28,60 @@ exports[`<TV /> should match snapshot 1`] = `
   align-items: center;
 }
 
-.c0 span {
+.c1 span {
   font-size: 32px;
   margin-bottom: 15px;
 }
 
-.c0 svg {
+.c1 svg {
   -webkit-animation: iVXCSc 1s linear infinite;
   animation: iVXCSc 1s linear infinite;
   color: #01d277;
   width: 5em !important;
   height: 5em;
+}
+
+.c0 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 0 15px;
+  width: 100%;
+}
+
+@media (min-width:62em) {
+  .c2 {
+    max-width: 1280px;
+  }
 }
 
 <Root>
@@ -84,19 +127,55 @@ exports[`<TV /> should match snapshot 1`] = `
             }
           }
         >
-          <Loading>
-            <styled.div>
-              <StyledComponent
-                forwardedComponent={
-                  Object {
-                    "$$typeof": Symbol(react.forward_ref),
-                    "attrs": Array [],
-                    "componentStyle": ComponentStyle {
-                      "componentId": "sc-bdVaJa",
-                      "isStatic": true,
-                      "lastClassName": "c0",
-                      "rules": Array [
-                        "
+          <styled.section>
+            <StyledComponent
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-htpNat",
+                    "isStatic": true,
+                    "lastClassName": "c0",
+                    "rules": Array [
+                      "
+  align-items: center;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+",
+                    ],
+                  },
+                  "displayName": "styled.section",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-htpNat",
+                  "target": "section",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+            >
+              <section
+                className="c0"
+              >
+                <Loading>
+                  <styled.div>
+                    <StyledComponent
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "sc-bdVaJa",
+                            "isStatic": true,
+                            "lastClassName": "c1",
+                            "rules": Array [
+                              "
   width: 100%;
   height: 100%;
   position: fixed;
@@ -118,98 +197,151 @@ exports[`<TV /> should match snapshot 1`] = `
 
   svg {
     animation: ",
-                        Keyframes {
-                          "id": "sc-keyframes-iVXCSc",
-                          "inject": [Function],
-                          "name": "iVXCSc",
-                          "rules": Array [
-                            "@-webkit-keyframes iVXCSc{from{-webkit-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg);}to{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg);}}",
-                            "@keyframes iVXCSc{from{-webkit-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg);}to{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg);}}",
-                          ],
-                          "toString": [Function],
-                        },
-                        " 1s linear infinite;
+                              Keyframes {
+                                "id": "sc-keyframes-iVXCSc",
+                                "inject": [Function],
+                                "name": "iVXCSc",
+                                "rules": Array [
+                                  "@-webkit-keyframes iVXCSc{from{-webkit-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg);}to{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg);}}",
+                                  "@keyframes iVXCSc{from{-webkit-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg);}to{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg);}}",
+                                ],
+                                "toString": [Function],
+                              },
+                              " 1s linear infinite;
     color: #01d277;
     width: 5em !important;
     height: 5em;
 
   }
 ",
-                      ],
-                    },
-                    "displayName": "styled.div",
-                    "foldedComponentIds": Array [],
-                    "render": [Function],
-                    "styledComponentId": "sc-bdVaJa",
-                    "target": "div",
-                    "toString": [Function],
-                    "warnTooManyClasses": [Function],
-                    "withComponent": [Function],
-                  }
-                }
-                forwardedRef={null}
-              >
-                <div
-                  className="c0"
-                >
-                  <span>
-                    Loading...
-                  </span>
-                  <FontAwesomeIcon
-                    border={false}
-                    className=""
-                    fixedWidth={false}
-                    flip={null}
-                    icon={
+                            ],
+                          },
+                          "displayName": "styled.div",
+                          "foldedComponentIds": Array [],
+                          "render": [Function],
+                          "styledComponentId": "sc-bdVaJa",
+                          "target": "div",
+                          "toString": [Function],
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                        }
+                      }
+                      forwardedRef={null}
+                    >
+                      <div
+                        className="c1"
+                      >
+                        <span>
+                          Loading...
+                        </span>
+                        <FontAwesomeIcon
+                          border={false}
+                          className=""
+                          fixedWidth={false}
+                          flip={null}
+                          icon={
+                            Object {
+                              "icon": Array [
+                                512,
+                                512,
+                                Array [],
+                                "f110",
+                                "M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z",
+                              ],
+                              "iconName": "spinner",
+                              "prefix": "fas",
+                            }
+                          }
+                          inverse={false}
+                          listItem={false}
+                          mask={null}
+                          pull={null}
+                          pulse={false}
+                          rotation={null}
+                          size={null}
+                          spin={false}
+                          symbol={false}
+                          title=""
+                          transform={null}
+                        >
+                          <svg
+                            aria-hidden="true"
+                            className="svg-inline--fa fa-spinner fa-w-16 "
+                            data-icon="spinner"
+                            data-prefix="fas"
+                            focusable="false"
+                            role="img"
+                            style={Object {}}
+                            viewBox="0 0 512 512"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z"
+                              fill="currentColor"
+                              style={Object {}}
+                            />
+                          </svg>
+                        </FontAwesomeIcon>
+                      </div>
+                    </StyledComponent>
+                  </styled.div>
+                </Loading>
+                <styled.div>
+                  <StyledComponent
+                    forwardedComponent={
                       Object {
-                        "icon": Array [
-                          512,
-                          512,
-                          Array [],
-                          "f110",
-                          "M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z",
-                        ],
-                        "iconName": "spinner",
-                        "prefix": "fas",
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "sc-bxivhb",
+                          "isStatic": true,
+                          "lastClassName": "c2",
+                          "rules": Array [
+                            "
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 0 15px;
+  width: 100%;
+
+  ",
+                            "
+    @media (min-width: ",
+                            "62",
+                            "em) {
+      ",
+                            "
+    max-width: ",
+                            "1280",
+                            "px;
+  ",
+                            "
+    }
+  ",
+                            "
+",
+                          ],
+                        },
+                        "displayName": "styled.div",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "sc-bxivhb",
+                        "target": "div",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
                       }
                     }
-                    inverse={false}
-                    listItem={false}
-                    mask={null}
-                    pull={null}
-                    pulse={false}
-                    rotation={null}
-                    size={null}
-                    spin={false}
-                    symbol={false}
-                    title=""
-                    transform={null}
+                    forwardedRef={null}
                   >
-                    <svg
-                      aria-hidden="true"
-                      className="svg-inline--fa fa-spinner fa-w-16 "
-                      data-icon="spinner"
-                      data-prefix="fas"
-                      focusable="false"
-                      role="img"
-                      style={Object {}}
-                      viewBox="0 0 512 512"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z"
-                        fill="currentColor"
-                        style={Object {}}
-                      />
-                    </svg>
-                  </FontAwesomeIcon>
-                </div>
-              </StyledComponent>
-            </styled.div>
-          </Loading>
-          <div
-            className="container"
-          />
+                    <div
+                      className="c2"
+                    />
+                  </StyledComponent>
+                </styled.div>
+              </section>
+            </StyledComponent>
+          </styled.section>
         </CurrentTVSerieContainer>
       </Connect(CurrentTVSerieContainer)>
     </TV>
