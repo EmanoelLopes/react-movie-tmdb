@@ -1,53 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Movie /> should match snapshot 1`] = `
-.c1 {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  color: #01d277;
-  z-index: 1;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  background: rgba(0,0,0,.9);
-  top: 0;
-  left: 0;
-  right: 0;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c1 span {
-  font-size: 32px;
-  margin-bottom: 15px;
-}
-
-.c1 svg {
-  -webkit-animation: iVXCSc 1s linear infinite;
-  animation: iVXCSc 1s linear infinite;
-  color: #01d277;
-  width: 5em !important;
-  height: 5em;
-}
-
-.c3 {
-  font-size: 32px;
-  margin: 25px 0;
-  width: 100%;
-  text-transform: uppercase;
-}
-
 .c0 {
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -85,52 +38,45 @@ exports[`<Movie /> should match snapshot 1`] = `
   width: 100%;
 }
 
-.c4 {
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto;
-  grid-column-gap: 0;
-  grid-row-gap: 25px;
+.c1 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #01d277;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 100%;
+  padding: 50px 0;
+  width: 100%;
+  z-index: 1;
 }
 
-.c5 {
-  background-color: #fff;
-  padding: 25px;
-  text-align: center;
-}
-
-.c5 h2 {
-  font-size: 22px;
+.c1 span {
+  font-size: 32px;
   margin-bottom: 15px;
 }
 
-.c5 p {
-  font-size: 18px;
+.c1 svg {
+  -webkit-animation: iVXCSc 1s linear infinite;
+  animation: iVXCSc 1s linear infinite;
+  color: #01d277;
+  width: 5em !important;
+  height: 5em;
 }
 
 @media (min-width:62em) {
   .c2 {
     max-width: 1280px;
-  }
-}
-
-@media (min-width:36em) {
-  .c4 {
-    grid-template-columns: 50% 50%;
-    grid-column-gap: 5px;
-  }
-}
-
-@media (min-width:62em) {
-  .c4 {
-    grid-template-columns: 24% 24% 24% 24%;
-    grid-column-gap: 15px;
-  }
-}
-
-@media (min-width:80em) {
-  .c4 {
-    grid-template-columns: 19% 19% 19% 19% 19%;
   }
 }
 
@@ -184,7 +130,7 @@ exports[`<Movie /> should match snapshot 1`] = `
                   "$$typeof": Symbol(react.forward_ref),
                   "attrs": Array [],
                   "componentStyle": ComponentStyle {
-                    "componentId": "sc-htpNat",
+                    "componentId": "sc-bwzfXH",
                     "isStatic": true,
                     "lastClassName": "c0",
                     "rules": Array [
@@ -201,7 +147,7 @@ exports[`<Movie /> should match snapshot 1`] = `
                   "displayName": "styled.section",
                   "foldedComponentIds": Array [],
                   "render": [Function],
-                  "styledComponentId": "sc-htpNat",
+                  "styledComponentId": "sc-bwzfXH",
                   "target": "section",
                   "toString": [Function],
                   "warnTooManyClasses": [Function],
@@ -221,24 +167,20 @@ exports[`<Movie /> should match snapshot 1`] = `
                           "$$typeof": Symbol(react.forward_ref),
                           "attrs": Array [],
                           "componentStyle": ComponentStyle {
-                            "componentId": "sc-bdVaJa",
+                            "componentId": "sc-EHOje",
                             "isStatic": true,
                             "lastClassName": "c1",
                             "rules": Array [
                               "
-  width: 100%;
-  height: 100%;
-  position: fixed;
+  align-items: center;
   color: #01d277;
-  z-index: 1;
   display: flex;
   flex-direction: column;
-  background: rgba(0,0,0, .9);
-  top: 0;
-  left: 0;
-  right: 0;
   justify-content: center;
-  align-items: center;
+  height: 100%;
+  padding: 50px 0;
+  width: 100%;
+  z-index: 1;
 
   span {
     font-size: 32px;
@@ -269,7 +211,7 @@ exports[`<Movie /> should match snapshot 1`] = `
                           "displayName": "styled.div",
                           "foldedComponentIds": Array [],
                           "render": [Function],
-                          "styledComponentId": "sc-bdVaJa",
+                          "styledComponentId": "sc-EHOje",
                           "target": "div",
                           "toString": [Function],
                           "warnTooManyClasses": [Function],
@@ -343,7 +285,7 @@ exports[`<Movie /> should match snapshot 1`] = `
                         "$$typeof": Symbol(react.forward_ref),
                         "attrs": Array [],
                         "componentStyle": ComponentStyle {
-                          "componentId": "sc-bxivhb",
+                          "componentId": "sc-htpNat",
                           "isStatic": true,
                           "lastClassName": "c2",
                           "rules": Array [
@@ -375,7 +317,7 @@ exports[`<Movie /> should match snapshot 1`] = `
                         "displayName": "styled.div",
                         "foldedComponentIds": Array [],
                         "render": [Function],
-                        "styledComponentId": "sc-bxivhb",
+                        "styledComponentId": "sc-htpNat",
                         "target": "div",
                         "toString": [Function],
                         "warnTooManyClasses": [Function],
@@ -386,658 +328,7 @@ exports[`<Movie /> should match snapshot 1`] = `
                   >
                     <div
                       className="c2"
-                    >
-                      <MovieDetails
-                        budget={0}
-                        popularity={0}
-                        releaseDate="Invalid Date"
-                        revenue={0}
-                        status=""
-                      >
-                        <styled.h1>
-                          <StyledComponent
-                            forwardedComponent={
-                              Object {
-                                "$$typeof": Symbol(react.forward_ref),
-                                "attrs": Array [],
-                                "componentStyle": ComponentStyle {
-                                  "componentId": "sc-bwzfXH",
-                                  "isStatic": true,
-                                  "lastClassName": "c3",
-                                  "rules": Array [
-                                    "
-  font-size: 32px;
-  margin: 25px 0;
-  width: 100%;
-  text-transform: uppercase;
-",
-                                  ],
-                                },
-                                "displayName": "styled.h1",
-                                "foldedComponentIds": Array [],
-                                "render": [Function],
-                                "styledComponentId": "sc-bwzfXH",
-                                "target": "h1",
-                                "toString": [Function],
-                                "warnTooManyClasses": [Function],
-                                "withComponent": [Function],
-                              }
-                            }
-                            forwardedRef={null}
-                          >
-                            <h1
-                              className="c3"
-                            >
-                              Details
-                            </h1>
-                          </StyledComponent>
-                        </styled.h1>
-                        <Grid>
-                          <styled.div>
-                            <StyledComponent
-                              forwardedComponent={
-                                Object {
-                                  "$$typeof": Symbol(react.forward_ref),
-                                  "attrs": Array [],
-                                  "componentStyle": ComponentStyle {
-                                    "componentId": "sc-EHOje",
-                                    "isStatic": true,
-                                    "lastClassName": "c4",
-                                    "rules": Array [
-                                      "
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto; 
-  grid-column-gap: 0;
-  grid-row-gap: 25px;
-
-  ",
-                                      "
-    @media (min-width: ",
-                                      "36",
-                                      "em) {
-      ",
-                                      "
-    grid-template-columns: 50% 50%;
-    grid-column-gap: 5px;
-  ",
-                                      "
-    }
-  ",
-                                      "
-
-  ",
-                                      "
-    @media (min-width: ",
-                                      "62",
-                                      "em) {
-      ",
-                                      "
-    grid-template-columns: 24% 24% 24% 24%;
-    grid-column-gap: 15px;
-  ",
-                                      "
-    }
-  ",
-                                      "
-
-  ",
-                                      "
-    @media (min-width: ",
-                                      "80",
-                                      "em) {
-      ",
-                                      "
-    grid-template-columns: 19% 19% 19% 19% 19%;
-  ",
-                                      "
-    }
-  ",
-                                      "
-",
-                                    ],
-                                  },
-                                  "displayName": "styled.div",
-                                  "foldedComponentIds": Array [],
-                                  "render": [Function],
-                                  "styledComponentId": "sc-EHOje",
-                                  "target": "div",
-                                  "toString": [Function],
-                                  "warnTooManyClasses": [Function],
-                                  "withComponent": [Function],
-                                }
-                              }
-                              forwardedRef={null}
-                            >
-                              <div
-                                className="c4"
-                              >
-                                <styled.div>
-                                  <StyledComponent
-                                    forwardedComponent={
-                                      Object {
-                                        "$$typeof": Symbol(react.forward_ref),
-                                        "attrs": Array [],
-                                        "componentStyle": ComponentStyle {
-                                          "componentId": "sc-htoDjs",
-                                          "isStatic": true,
-                                          "lastClassName": "c5",
-                                          "rules": Array [
-                                            "
-  background-color: ",
-                                            "#fff",
-                                            ";
-  padding: 25px;
-  text-align: center;
-
-  h2 {
-    font-size: 22px;
-    margin-bottom: 15px;
-  }
-
-  p {
-    font-size: 18px;
-  }
-",
-                                          ],
-                                        },
-                                        "displayName": "styled.div",
-                                        "foldedComponentIds": Array [],
-                                        "render": [Function],
-                                        "styledComponentId": "sc-htoDjs",
-                                        "target": "div",
-                                        "toString": [Function],
-                                        "warnTooManyClasses": [Function],
-                                        "withComponent": [Function],
-                                      }
-                                    }
-                                    forwardedRef={null}
-                                  >
-                                    <div
-                                      className="c5"
-                                    >
-                                      <h2>
-                                        Budget
-                                         
-                                        <FontAwesomeIcon
-                                          border={false}
-                                          className=""
-                                          fixedWidth={false}
-                                          flip={null}
-                                          icon={
-                                            Object {
-                                              "icon": Array [
-                                                288,
-                                                512,
-                                                Array [],
-                                                "f155",
-                                                "M209.2 233.4l-108-31.6C88.7 198.2 80 186.5 80 173.5c0-16.3 13.2-29.5 29.5-29.5h66.3c12.2 0 24.2 3.7 34.2 10.5 6.1 4.1 14.3 3.1 19.5-2l34.8-34c7.1-6.9 6.1-18.4-1.8-24.5C238 74.8 207.4 64.1 176 64V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48h-2.5C45.8 64-5.4 118.7.5 183.6c4.2 46.1 39.4 83.6 83.8 96.6l102.5 30c12.5 3.7 21.2 15.3 21.2 28.3 0 16.3-13.2 29.5-29.5 29.5h-66.3C100 368 88 364.3 78 357.5c-6.1-4.1-14.3-3.1-19.5 2l-34.8 34c-7.1 6.9-6.1 18.4 1.8 24.5 24.5 19.2 55.1 29.9 86.5 30v48c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16v-48.2c46.6-.9 90.3-28.6 105.7-72.7 21.5-61.6-14.6-124.8-72.5-141.7z",
-                                              ],
-                                              "iconName": "dollar-sign",
-                                              "prefix": "fas",
-                                            }
-                                          }
-                                          inverse={false}
-                                          listItem={false}
-                                          mask={null}
-                                          pull={null}
-                                          pulse={false}
-                                          rotation={null}
-                                          size={null}
-                                          spin={false}
-                                          symbol={false}
-                                          title=""
-                                          transform={null}
-                                        >
-                                          <svg
-                                            aria-hidden="true"
-                                            className="svg-inline--fa fa-dollar-sign fa-w-9 "
-                                            data-icon="dollar-sign"
-                                            data-prefix="fas"
-                                            focusable="false"
-                                            role="img"
-                                            style={Object {}}
-                                            viewBox="0 0 288 512"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                          >
-                                            <path
-                                              d="M209.2 233.4l-108-31.6C88.7 198.2 80 186.5 80 173.5c0-16.3 13.2-29.5 29.5-29.5h66.3c12.2 0 24.2 3.7 34.2 10.5 6.1 4.1 14.3 3.1 19.5-2l34.8-34c7.1-6.9 6.1-18.4-1.8-24.5C238 74.8 207.4 64.1 176 64V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48h-2.5C45.8 64-5.4 118.7.5 183.6c4.2 46.1 39.4 83.6 83.8 96.6l102.5 30c12.5 3.7 21.2 15.3 21.2 28.3 0 16.3-13.2 29.5-29.5 29.5h-66.3C100 368 88 364.3 78 357.5c-6.1-4.1-14.3-3.1-19.5 2l-34.8 34c-7.1 6.9-6.1 18.4 1.8 24.5 24.5 19.2 55.1 29.9 86.5 30v48c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16v-48.2c46.6-.9 90.3-28.6 105.7-72.7 21.5-61.6-14.6-124.8-72.5-141.7z"
-                                              fill="currentColor"
-                                              style={Object {}}
-                                            />
-                                          </svg>
-                                        </FontAwesomeIcon>
-                                      </h2>
-                                      <p
-                                        className="budget"
-                                      >
-                                        $ 
-                                        0
-                                      </p>
-                                    </div>
-                                  </StyledComponent>
-                                </styled.div>
-                                <styled.div>
-                                  <StyledComponent
-                                    forwardedComponent={
-                                      Object {
-                                        "$$typeof": Symbol(react.forward_ref),
-                                        "attrs": Array [],
-                                        "componentStyle": ComponentStyle {
-                                          "componentId": "sc-htoDjs",
-                                          "isStatic": true,
-                                          "lastClassName": "c5",
-                                          "rules": Array [
-                                            "
-  background-color: ",
-                                            "#fff",
-                                            ";
-  padding: 25px;
-  text-align: center;
-
-  h2 {
-    font-size: 22px;
-    margin-bottom: 15px;
-  }
-
-  p {
-    font-size: 18px;
-  }
-",
-                                          ],
-                                        },
-                                        "displayName": "styled.div",
-                                        "foldedComponentIds": Array [],
-                                        "render": [Function],
-                                        "styledComponentId": "sc-htoDjs",
-                                        "target": "div",
-                                        "toString": [Function],
-                                        "warnTooManyClasses": [Function],
-                                        "withComponent": [Function],
-                                      }
-                                    }
-                                    forwardedRef={null}
-                                  >
-                                    <div
-                                      className="c5"
-                                    >
-                                      <h2>
-                                        Revenue
-                                         
-                                        <FontAwesomeIcon
-                                          border={false}
-                                          className=""
-                                          fixedWidth={false}
-                                          flip={null}
-                                          icon={
-                                            Object {
-                                              "icon": Array [
-                                                640,
-                                                512,
-                                                Array [],
-                                                "f3d1",
-                                                "M352 288h-16v-88c0-4.42-3.58-8-8-8h-13.58c-4.74 0-9.37 1.4-13.31 4.03l-15.33 10.22a7.994 7.994 0 0 0-2.22 11.09l8.88 13.31a7.994 7.994 0 0 0 11.09 2.22l.47-.31V288h-16c-4.42 0-8 3.58-8 8v16c0 4.42 3.58 8 8 8h64c4.42 0 8-3.58 8-8v-16c0-4.42-3.58-8-8-8zM608 64H32C14.33 64 0 78.33 0 96v320c0 17.67 14.33 32 32 32h576c17.67 0 32-14.33 32-32V96c0-17.67-14.33-32-32-32zM48 400v-64c35.35 0 64 28.65 64 64H48zm0-224v-64h64c0 35.35-28.65 64-64 64zm272 192c-53.02 0-96-50.15-96-112 0-61.86 42.98-112 96-112s96 50.14 96 112c0 61.87-43 112-96 112zm272 32h-64c0-35.35 28.65-64 64-64v64zm0-224c-35.35 0-64-28.65-64-64h64v64z",
-                                              ],
-                                              "iconName": "money-bill-alt",
-                                              "prefix": "fas",
-                                            }
-                                          }
-                                          inverse={false}
-                                          listItem={false}
-                                          mask={null}
-                                          pull={null}
-                                          pulse={false}
-                                          rotation={null}
-                                          size={null}
-                                          spin={false}
-                                          symbol={false}
-                                          title=""
-                                          transform={null}
-                                        >
-                                          <svg
-                                            aria-hidden="true"
-                                            className="svg-inline--fa fa-money-bill-alt fa-w-20 "
-                                            data-icon="money-bill-alt"
-                                            data-prefix="fas"
-                                            focusable="false"
-                                            role="img"
-                                            style={Object {}}
-                                            viewBox="0 0 640 512"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                          >
-                                            <path
-                                              d="M352 288h-16v-88c0-4.42-3.58-8-8-8h-13.58c-4.74 0-9.37 1.4-13.31 4.03l-15.33 10.22a7.994 7.994 0 0 0-2.22 11.09l8.88 13.31a7.994 7.994 0 0 0 11.09 2.22l.47-.31V288h-16c-4.42 0-8 3.58-8 8v16c0 4.42 3.58 8 8 8h64c4.42 0 8-3.58 8-8v-16c0-4.42-3.58-8-8-8zM608 64H32C14.33 64 0 78.33 0 96v320c0 17.67 14.33 32 32 32h576c17.67 0 32-14.33 32-32V96c0-17.67-14.33-32-32-32zM48 400v-64c35.35 0 64 28.65 64 64H48zm0-224v-64h64c0 35.35-28.65 64-64 64zm272 192c-53.02 0-96-50.15-96-112 0-61.86 42.98-112 96-112s96 50.14 96 112c0 61.87-43 112-96 112zm272 32h-64c0-35.35 28.65-64 64-64v64zm0-224c-35.35 0-64-28.65-64-64h64v64z"
-                                              fill="currentColor"
-                                              style={Object {}}
-                                            />
-                                          </svg>
-                                        </FontAwesomeIcon>
-                                      </h2>
-                                      <p
-                                        className="revenue"
-                                      >
-                                        $ 
-                                        0
-                                      </p>
-                                    </div>
-                                  </StyledComponent>
-                                </styled.div>
-                                <styled.div>
-                                  <StyledComponent
-                                    forwardedComponent={
-                                      Object {
-                                        "$$typeof": Symbol(react.forward_ref),
-                                        "attrs": Array [],
-                                        "componentStyle": ComponentStyle {
-                                          "componentId": "sc-htoDjs",
-                                          "isStatic": true,
-                                          "lastClassName": "c5",
-                                          "rules": Array [
-                                            "
-  background-color: ",
-                                            "#fff",
-                                            ";
-  padding: 25px;
-  text-align: center;
-
-  h2 {
-    font-size: 22px;
-    margin-bottom: 15px;
-  }
-
-  p {
-    font-size: 18px;
-  }
-",
-                                          ],
-                                        },
-                                        "displayName": "styled.div",
-                                        "foldedComponentIds": Array [],
-                                        "render": [Function],
-                                        "styledComponentId": "sc-htoDjs",
-                                        "target": "div",
-                                        "toString": [Function],
-                                        "warnTooManyClasses": [Function],
-                                        "withComponent": [Function],
-                                      }
-                                    }
-                                    forwardedRef={null}
-                                  >
-                                    <div
-                                      className="c5"
-                                    >
-                                      <h2>
-                                        Status
-                                         
-                                        <FontAwesomeIcon
-                                          border={false}
-                                          className=""
-                                          fixedWidth={false}
-                                          flip={null}
-                                          icon={
-                                            Object {
-                                              "icon": Array [
-                                                448,
-                                                512,
-                                                Array [],
-                                                "f274",
-                                                "M436 160H12c-6.627 0-12-5.373-12-12v-36c0-26.51 21.49-48 48-48h48V12c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v52h128V12c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v52h48c26.51 0 48 21.49 48 48v36c0 6.627-5.373 12-12 12zM12 192h424c6.627 0 12 5.373 12 12v260c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V204c0-6.627 5.373-12 12-12zm333.296 95.947l-28.169-28.398c-4.667-4.705-12.265-4.736-16.97-.068L194.12 364.665l-45.98-46.352c-4.667-4.705-12.266-4.736-16.971-.068l-28.397 28.17c-4.705 4.667-4.736 12.265-.068 16.97l82.601 83.269c4.667 4.705 12.265 4.736 16.97.068l142.953-141.805c4.705-4.667 4.736-12.265.068-16.97z",
-                                              ],
-                                              "iconName": "calendar-check",
-                                              "prefix": "fas",
-                                            }
-                                          }
-                                          inverse={false}
-                                          listItem={false}
-                                          mask={null}
-                                          pull={null}
-                                          pulse={false}
-                                          rotation={null}
-                                          size={null}
-                                          spin={false}
-                                          symbol={false}
-                                          title=""
-                                          transform={null}
-                                        >
-                                          <svg
-                                            aria-hidden="true"
-                                            className="svg-inline--fa fa-calendar-check fa-w-14 "
-                                            data-icon="calendar-check"
-                                            data-prefix="fas"
-                                            focusable="false"
-                                            role="img"
-                                            style={Object {}}
-                                            viewBox="0 0 448 512"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                          >
-                                            <path
-                                              d="M436 160H12c-6.627 0-12-5.373-12-12v-36c0-26.51 21.49-48 48-48h48V12c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v52h128V12c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v52h48c26.51 0 48 21.49 48 48v36c0 6.627-5.373 12-12 12zM12 192h424c6.627 0 12 5.373 12 12v260c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V204c0-6.627 5.373-12 12-12zm333.296 95.947l-28.169-28.398c-4.667-4.705-12.265-4.736-16.97-.068L194.12 364.665l-45.98-46.352c-4.667-4.705-12.266-4.736-16.971-.068l-28.397 28.17c-4.705 4.667-4.736 12.265-.068 16.97l82.601 83.269c4.667 4.705 12.265 4.736 16.97.068l142.953-141.805c4.705-4.667 4.736-12.265.068-16.97z"
-                                              fill="currentColor"
-                                              style={Object {}}
-                                            />
-                                          </svg>
-                                        </FontAwesomeIcon>
-                                      </h2>
-                                      <p
-                                        className="status"
-                                      />
-                                    </div>
-                                  </StyledComponent>
-                                </styled.div>
-                                <styled.div>
-                                  <StyledComponent
-                                    forwardedComponent={
-                                      Object {
-                                        "$$typeof": Symbol(react.forward_ref),
-                                        "attrs": Array [],
-                                        "componentStyle": ComponentStyle {
-                                          "componentId": "sc-htoDjs",
-                                          "isStatic": true,
-                                          "lastClassName": "c5",
-                                          "rules": Array [
-                                            "
-  background-color: ",
-                                            "#fff",
-                                            ";
-  padding: 25px;
-  text-align: center;
-
-  h2 {
-    font-size: 22px;
-    margin-bottom: 15px;
-  }
-
-  p {
-    font-size: 18px;
-  }
-",
-                                          ],
-                                        },
-                                        "displayName": "styled.div",
-                                        "foldedComponentIds": Array [],
-                                        "render": [Function],
-                                        "styledComponentId": "sc-htoDjs",
-                                        "target": "div",
-                                        "toString": [Function],
-                                        "warnTooManyClasses": [Function],
-                                        "withComponent": [Function],
-                                      }
-                                    }
-                                    forwardedRef={null}
-                                  >
-                                    <div
-                                      className="c5"
-                                    >
-                                      <h2>
-                                        Release
-                                         
-                                        <FontAwesomeIcon
-                                          border={false}
-                                          className=""
-                                          fixedWidth={false}
-                                          flip={null}
-                                          icon={
-                                            Object {
-                                              "icon": Array [
-                                                448,
-                                                512,
-                                                Array [],
-                                                "f073",
-                                                "M0 464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V192H0v272zm320-196c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zM192 268c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zM64 268c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12v-40zM400 64h-48V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H160V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H48C21.5 64 0 85.5 0 112v48h448v-48c0-26.5-21.5-48-48-48z",
-                                              ],
-                                              "iconName": "calendar-alt",
-                                              "prefix": "fas",
-                                            }
-                                          }
-                                          inverse={false}
-                                          listItem={false}
-                                          mask={null}
-                                          pull={null}
-                                          pulse={false}
-                                          rotation={null}
-                                          size={null}
-                                          spin={false}
-                                          symbol={false}
-                                          title=""
-                                          transform={null}
-                                        >
-                                          <svg
-                                            aria-hidden="true"
-                                            className="svg-inline--fa fa-calendar-alt fa-w-14 "
-                                            data-icon="calendar-alt"
-                                            data-prefix="fas"
-                                            focusable="false"
-                                            role="img"
-                                            style={Object {}}
-                                            viewBox="0 0 448 512"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                          >
-                                            <path
-                                              d="M0 464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V192H0v272zm320-196c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zM192 268c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zM64 268c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12v-40zM400 64h-48V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H160V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H48C21.5 64 0 85.5 0 112v48h448v-48c0-26.5-21.5-48-48-48z"
-                                              fill="currentColor"
-                                              style={Object {}}
-                                            />
-                                          </svg>
-                                        </FontAwesomeIcon>
-                                      </h2>
-                                      <p
-                                        className="release-date"
-                                      >
-                                        Invalid Date
-                                      </p>
-                                    </div>
-                                  </StyledComponent>
-                                </styled.div>
-                                <styled.div>
-                                  <StyledComponent
-                                    forwardedComponent={
-                                      Object {
-                                        "$$typeof": Symbol(react.forward_ref),
-                                        "attrs": Array [],
-                                        "componentStyle": ComponentStyle {
-                                          "componentId": "sc-htoDjs",
-                                          "isStatic": true,
-                                          "lastClassName": "c5",
-                                          "rules": Array [
-                                            "
-  background-color: ",
-                                            "#fff",
-                                            ";
-  padding: 25px;
-  text-align: center;
-
-  h2 {
-    font-size: 22px;
-    margin-bottom: 15px;
-  }
-
-  p {
-    font-size: 18px;
-  }
-",
-                                          ],
-                                        },
-                                        "displayName": "styled.div",
-                                        "foldedComponentIds": Array [],
-                                        "render": [Function],
-                                        "styledComponentId": "sc-htoDjs",
-                                        "target": "div",
-                                        "toString": [Function],
-                                        "warnTooManyClasses": [Function],
-                                        "withComponent": [Function],
-                                      }
-                                    }
-                                    forwardedRef={null}
-                                  >
-                                    <div
-                                      className="c5"
-                                    >
-                                      <h2>
-                                        Popularity
-                                         
-                                        <FontAwesomeIcon
-                                          border={false}
-                                          className=""
-                                          fixedWidth={false}
-                                          flip={null}
-                                          icon={
-                                            Object {
-                                              "icon": Array [
-                                                496,
-                                                512,
-                                                Array [],
-                                                "f118",
-                                                "M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm80 168c17.7 0 32 14.3 32 32s-14.3 32-32 32-32-14.3-32-32 14.3-32 32-32zm-160 0c17.7 0 32 14.3 32 32s-14.3 32-32 32-32-14.3-32-32 14.3-32 32-32zm194.8 170.2C334.3 380.4 292.5 400 248 400s-86.3-19.6-114.8-53.8c-13.6-16.3 11-36.7 24.6-20.5 22.4 26.9 55.2 42.2 90.2 42.2s67.8-15.4 90.2-42.2c13.4-16.2 38.1 4.2 24.6 20.5z",
-                                              ],
-                                              "iconName": "smile",
-                                              "prefix": "fas",
-                                            }
-                                          }
-                                          inverse={false}
-                                          listItem={false}
-                                          mask={null}
-                                          pull={null}
-                                          pulse={false}
-                                          rotation={null}
-                                          size={null}
-                                          spin={false}
-                                          symbol={false}
-                                          title=""
-                                          transform={null}
-                                        >
-                                          <svg
-                                            aria-hidden="true"
-                                            className="svg-inline--fa fa-smile fa-w-16 "
-                                            data-icon="smile"
-                                            data-prefix="fas"
-                                            focusable="false"
-                                            role="img"
-                                            style={Object {}}
-                                            viewBox="0 0 496 512"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                          >
-                                            <path
-                                              d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm80 168c17.7 0 32 14.3 32 32s-14.3 32-32 32-32-14.3-32-32 14.3-32 32-32zm-160 0c17.7 0 32 14.3 32 32s-14.3 32-32 32-32-14.3-32-32 14.3-32 32-32zm194.8 170.2C334.3 380.4 292.5 400 248 400s-86.3-19.6-114.8-53.8c-13.6-16.3 11-36.7 24.6-20.5 22.4 26.9 55.2 42.2 90.2 42.2s67.8-15.4 90.2-42.2c13.4-16.2 38.1 4.2 24.6 20.5z"
-                                              fill="currentColor"
-                                              style={Object {}}
-                                            />
-                                          </svg>
-                                        </FontAwesomeIcon>
-                                      </h2>
-                                      <p
-                                        className="popularity"
-                                      >
-                                        0
-                                      </p>
-                                    </div>
-                                  </StyledComponent>
-                                </styled.div>
-                              </div>
-                            </StyledComponent>
-                          </styled.div>
-                        </Grid>
-                      </MovieDetails>
-                    </div>
+                    />
                   </StyledComponent>
                 </styled.div>
               </section>

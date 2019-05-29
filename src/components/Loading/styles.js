@@ -11,19 +11,15 @@ const spinning = keyframes`
 `;
 
 export const Loader = styled.div`
-  width: 100%;
-  height: 100%;
-  position: fixed;
+  align-items: center;
   color: #01d277;
-  z-index: 1;
   display: flex;
   flex-direction: column;
-  background: rgba(0,0,0, .9);
-  top: 0;
-  left: 0;
-  right: 0;
   justify-content: center;
-  align-items: center;
+  height: 100%;
+  padding: 50px 0;
+  width: 100%;
+  z-index: 1;
 
   span {
     font-size: 32px;

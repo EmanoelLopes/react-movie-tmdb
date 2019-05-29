@@ -50,7 +50,10 @@ exports[`<Card /> should match snapshot 1`] = `
 }
 
 .c0 .card-info-wrapper {
-  background-color: rgba(0,0,0,.7);
+  background-color: rgba(0,0,0,.3);
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   padding: 10px;
 }
 
@@ -66,6 +69,10 @@ exports[`<Card /> should match snapshot 1`] = `
 
 .c0 .card-info p {
   margin-bottom: 15px;
+}
+
+.c0 .card-info span {
+  line-height: 24px;
 }
 
 .c0 .card-info a {
@@ -287,7 +294,8 @@ exports[`<Card /> should match snapshot 1`] = `
   }
 
   .card-info-wrapper {
-    background-color: rgba(0,0,0,.7);
+    background-color: rgba(0,0,0,.3);
+    flex: 1;
     padding: 10px;
 
     ",
@@ -335,6 +343,10 @@ exports[`<Card /> should match snapshot 1`] = `
 
   .card-info p {
     margin-bottom: 15px;
+  }
+
+  .card-info span {
+    line-height: 24px;
   }
 
   .card-info a {
@@ -394,11 +406,13 @@ exports[`<Card /> should match snapshot 1`] = `
           >
             <Link
               replace={false}
+              title="Some Card - some description"
               to="someid"
             >
               <a
                 href="/someid"
                 onClick={[Function]}
+                title="Some Card - some description"
               >
                 <div
                   className="card-poster"

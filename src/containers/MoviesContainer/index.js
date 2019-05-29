@@ -37,14 +37,12 @@ class MoviesContainer extends Component {
 
     return (
       <Fragment>
-        {(loading) 
-          ? <Loading />
-          : <Fragment>
-              <Grid>
-                {this.renderMovies(movies)}
-              </Grid>
-            </Fragment>
-        }
+        {(loading) && <Loading />}
+        {(movies && !loading) && (
+          <Grid>
+            {this.renderMovies(movies)}
+          </Grid>
+        )}
       </Fragment>
     );
   }
@@ -52,10 +50,10 @@ class MoviesContainer extends Component {
 
 MoviesContainer.propTypes = {
   movies: array,
+  loading: bool.isRequired,
   type: string.isRequired,
   dispatch: func,
   getMovies: func,
-  loading: bool.isRequired,
 };
 
 MoviesContainer.defaultProps = {

@@ -1,46 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<TV /> should match snapshot 1`] = `
-.c1 {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  color: #01d277;
-  z-index: 1;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  background: rgba(0,0,0,.9);
-  top: 0;
-  left: 0;
-  right: 0;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c1 span {
-  font-size: 32px;
-  margin-bottom: 15px;
-}
-
-.c1 svg {
-  -webkit-animation: iVXCSc 1s linear infinite;
-  animation: iVXCSc 1s linear infinite;
-  color: #01d277;
-  width: 5em !important;
-  height: 5em;
-}
-
 .c0 {
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -76,6 +36,42 @@ exports[`<TV /> should match snapshot 1`] = `
   flex-direction: column;
   padding: 0 15px;
   width: 100%;
+}
+
+.c1 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #01d277;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 100%;
+  padding: 50px 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.c1 span {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.c1 svg {
+  -webkit-animation: iVXCSc 1s linear infinite;
+  animation: iVXCSc 1s linear infinite;
+  color: #01d277;
+  width: 5em !important;
+  height: 5em;
 }
 
 @media (min-width:62em) {
@@ -134,7 +130,7 @@ exports[`<TV /> should match snapshot 1`] = `
                   "$$typeof": Symbol(react.forward_ref),
                   "attrs": Array [],
                   "componentStyle": ComponentStyle {
-                    "componentId": "sc-htpNat",
+                    "componentId": "sc-bwzfXH",
                     "isStatic": true,
                     "lastClassName": "c0",
                     "rules": Array [
@@ -151,7 +147,7 @@ exports[`<TV /> should match snapshot 1`] = `
                   "displayName": "styled.section",
                   "foldedComponentIds": Array [],
                   "render": [Function],
-                  "styledComponentId": "sc-htpNat",
+                  "styledComponentId": "sc-bwzfXH",
                   "target": "section",
                   "toString": [Function],
                   "warnTooManyClasses": [Function],
@@ -171,24 +167,20 @@ exports[`<TV /> should match snapshot 1`] = `
                           "$$typeof": Symbol(react.forward_ref),
                           "attrs": Array [],
                           "componentStyle": ComponentStyle {
-                            "componentId": "sc-bdVaJa",
+                            "componentId": "sc-EHOje",
                             "isStatic": true,
                             "lastClassName": "c1",
                             "rules": Array [
                               "
-  width: 100%;
-  height: 100%;
-  position: fixed;
+  align-items: center;
   color: #01d277;
-  z-index: 1;
   display: flex;
   flex-direction: column;
-  background: rgba(0,0,0, .9);
-  top: 0;
-  left: 0;
-  right: 0;
   justify-content: center;
-  align-items: center;
+  height: 100%;
+  padding: 50px 0;
+  width: 100%;
+  z-index: 1;
 
   span {
     font-size: 32px;
@@ -219,7 +211,7 @@ exports[`<TV /> should match snapshot 1`] = `
                           "displayName": "styled.div",
                           "foldedComponentIds": Array [],
                           "render": [Function],
-                          "styledComponentId": "sc-bdVaJa",
+                          "styledComponentId": "sc-EHOje",
                           "target": "div",
                           "toString": [Function],
                           "warnTooManyClasses": [Function],
@@ -293,7 +285,7 @@ exports[`<TV /> should match snapshot 1`] = `
                         "$$typeof": Symbol(react.forward_ref),
                         "attrs": Array [],
                         "componentStyle": ComponentStyle {
-                          "componentId": "sc-bxivhb",
+                          "componentId": "sc-htpNat",
                           "isStatic": true,
                           "lastClassName": "c2",
                           "rules": Array [
@@ -325,7 +317,7 @@ exports[`<TV /> should match snapshot 1`] = `
                         "displayName": "styled.div",
                         "foldedComponentIds": Array [],
                         "render": [Function],
-                        "styledComponentId": "sc-bxivhb",
+                        "styledComponentId": "sc-htpNat",
                         "target": "div",
                         "toString": [Function],
                         "warnTooManyClasses": [Function],

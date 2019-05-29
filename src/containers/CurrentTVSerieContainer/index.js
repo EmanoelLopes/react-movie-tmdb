@@ -86,20 +86,22 @@ const CurrentTVSerieContainer = props => {
           </Fragment>
         }
         <Fragment>
-          {(!!cast.length) && 
+          {(!!cast.length && !loading) && 
             <Fragment>
               <H1>{intl.get('TV_SERIE_PAGE.CAST_TITLE')}</H1>
               <Grid>
-                {cast.map(actor => {
-                  return (
-                    <CastCard
-                      key={actor.credit_id}
-                      id={actor.id}
-                      profile={actor.profile_path}
-                      name={actor.name}
-                      character={actor.character}
-                    />
-                  );
+                {cast
+                  .filter(actor => actor.profile_path !== null)
+                  .map(actor => {
+                    return (
+                      <CastCard
+                        key={actor.credit_id}
+                        id={actor.id}
+                        profile={actor.profile_path}
+                        name={actor.name}
+                        character={actor.character}
+                      />
+                    );
                 })}
               </Grid>
             </Fragment>

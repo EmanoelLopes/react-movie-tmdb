@@ -2,53 +2,6 @@
 
 exports[`<App /> should match snapshot 1`] = `
 .c2 {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  color: #01d277;
-  z-index: 1;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  background: rgba(0,0,0,.9);
-  top: 0;
-  left: 0;
-  right: 0;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c2 span {
-  font-size: 32px;
-  margin-bottom: 15px;
-}
-
-.c2 svg {
-  -webkit-animation: iVXCSc 1s linear infinite;
-  animation: iVXCSc 1s linear infinite;
-  color: #01d277;
-  width: 5em !important;
-  height: 5em;
-}
-
-.c5 {
-  font-size: 32px;
-  margin: 25px 0;
-  width: 100%;
-  text-transform: uppercase;
-}
-
-.c3 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -70,7 +23,7 @@ exports[`<App /> should match snapshot 1`] = `
   width: 100%;
 }
 
-.c4 {
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -83,6 +36,42 @@ exports[`<App /> should match snapshot 1`] = `
   flex-direction: column;
   padding: 0 15px;
   width: 100%;
+}
+
+.c4 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #01d277;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 100%;
+  padding: 50px 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.c4 span {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.c4 svg {
+  -webkit-animation: iVXCSc 1s linear infinite;
+  animation: iVXCSc 1s linear infinite;
+  color: #01d277;
+  width: 5em !important;
+  height: 5em;
 }
 
 .c0 {
@@ -156,7 +145,7 @@ exports[`<App /> should match snapshot 1`] = `
 }
 
 @media (min-width:62em) {
-  .c4 {
+  .c3 {
     max-width: 1280px;
   }
 }
@@ -219,7 +208,7 @@ exports[`<App /> should match snapshot 1`] = `
                           "$$typeof": Symbol(react.forward_ref),
                           "attrs": Array [],
                           "componentStyle": ComponentStyle {
-                            "componentId": "sc-VigVT",
+                            "componentId": "sc-fjdhpX",
                             "isStatic": true,
                             "lastClassName": "c0",
                             "rules": Array [
@@ -269,7 +258,7 @@ exports[`<App /> should match snapshot 1`] = `
                           "displayName": "styled.span",
                           "foldedComponentIds": Array [],
                           "render": [Function],
-                          "styledComponentId": "sc-VigVT",
+                          "styledComponentId": "sc-fjdhpX",
                           "target": "span",
                           "toString": [Function],
                           "warnTooManyClasses": [Function],
@@ -419,7 +408,7 @@ exports[`<App /> should match snapshot 1`] = `
                     "$$typeof": Symbol(react.forward_ref),
                     "attrs": Array [],
                     "componentStyle": ComponentStyle {
-                      "componentId": "sc-jTzLTM",
+                      "componentId": "sc-jzJRlG",
                       "isStatic": true,
                       "lastClassName": "c1",
                       "rules": Array [
@@ -463,7 +452,7 @@ exports[`<App /> should match snapshot 1`] = `
                     "displayName": "styled.section",
                     "foldedComponentIds": Array [],
                     "render": [Function],
-                    "styledComponentId": "sc-jTzLTM",
+                    "styledComponentId": "sc-jzJRlG",
                     "target": "section",
                     "toString": [Function],
                     "warnTooManyClasses": [Function],
@@ -695,129 +684,6 @@ exports[`<App /> should match snapshot 1`] = `
                                   dispatch={[Function]}
                                   loading={true}
                                 >
-                                  <Loading>
-                                    <styled.div>
-                                      <StyledComponent
-                                        forwardedComponent={
-                                          Object {
-                                            "$$typeof": Symbol(react.forward_ref),
-                                            "attrs": Array [],
-                                            "componentStyle": ComponentStyle {
-                                              "componentId": "sc-bdVaJa",
-                                              "isStatic": true,
-                                              "lastClassName": "c2",
-                                              "rules": Array [
-                                                "
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  color: #01d277;
-  z-index: 1;
-  display: flex;
-  flex-direction: column;
-  background: rgba(0,0,0, .9);
-  top: 0;
-  left: 0;
-  right: 0;
-  justify-content: center;
-  align-items: center;
-
-  span {
-    font-size: 32px;
-    margin-bottom: 15px;
-  }
-
-  svg {
-    animation: ",
-                                                Keyframes {
-                                                  "id": "sc-keyframes-iVXCSc",
-                                                  "inject": [Function],
-                                                  "name": "iVXCSc",
-                                                  "rules": Array [
-                                                    "@-webkit-keyframes iVXCSc{from{-webkit-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg);}to{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg);}}",
-                                                    "@keyframes iVXCSc{from{-webkit-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg);}to{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg);}}",
-                                                  ],
-                                                  "toString": [Function],
-                                                },
-                                                " 1s linear infinite;
-    color: #01d277;
-    width: 5em !important;
-    height: 5em;
-
-  }
-",
-                                              ],
-                                            },
-                                            "displayName": "styled.div",
-                                            "foldedComponentIds": Array [],
-                                            "render": [Function],
-                                            "styledComponentId": "sc-bdVaJa",
-                                            "target": "div",
-                                            "toString": [Function],
-                                            "warnTooManyClasses": [Function],
-                                            "withComponent": [Function],
-                                          }
-                                        }
-                                        forwardedRef={null}
-                                      >
-                                        <div
-                                          className="c2"
-                                        >
-                                          <span>
-                                            Loading...
-                                          </span>
-                                          <FontAwesomeIcon
-                                            border={false}
-                                            className=""
-                                            fixedWidth={false}
-                                            flip={null}
-                                            icon={
-                                              Object {
-                                                "icon": Array [
-                                                  512,
-                                                  512,
-                                                  Array [],
-                                                  "f110",
-                                                  "M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z",
-                                                ],
-                                                "iconName": "spinner",
-                                                "prefix": "fas",
-                                              }
-                                            }
-                                            inverse={false}
-                                            listItem={false}
-                                            mask={null}
-                                            pull={null}
-                                            pulse={false}
-                                            rotation={null}
-                                            size={null}
-                                            spin={false}
-                                            symbol={false}
-                                            title=""
-                                            transform={null}
-                                          >
-                                            <svg
-                                              aria-hidden="true"
-                                              className="svg-inline--fa fa-spinner fa-w-16 "
-                                              data-icon="spinner"
-                                              data-prefix="fas"
-                                              focusable="false"
-                                              role="img"
-                                              style={Object {}}
-                                              viewBox="0 0 512 512"
-                                              xmlns="http://www.w3.org/2000/svg"
-                                            >
-                                              <path
-                                                d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z"
-                                                fill="currentColor"
-                                                style={Object {}}
-                                              />
-                                            </svg>
-                                          </FontAwesomeIcon>
-                                        </div>
-                                      </StyledComponent>
-                                    </styled.div>
-                                  </Loading>
                                   <Connect(HeroSectionContainer)>
                                     <HeroSectionContainer
                                       dispatch={[Function]}
@@ -832,9 +698,9 @@ exports[`<App /> should match snapshot 1`] = `
                                           "$$typeof": Symbol(react.forward_ref),
                                           "attrs": Array [],
                                           "componentStyle": ComponentStyle {
-                                            "componentId": "sc-htpNat",
+                                            "componentId": "sc-bwzfXH",
                                             "isStatic": true,
-                                            "lastClassName": "c3",
+                                            "lastClassName": "c2",
                                             "rules": Array [
                                               "
   align-items: center;
@@ -849,7 +715,7 @@ exports[`<App /> should match snapshot 1`] = `
                                           "displayName": "styled.section",
                                           "foldedComponentIds": Array [],
                                           "render": [Function],
-                                          "styledComponentId": "sc-htpNat",
+                                          "styledComponentId": "sc-bwzfXH",
                                           "target": "section",
                                           "toString": [Function],
                                           "warnTooManyClasses": [Function],
@@ -859,7 +725,7 @@ exports[`<App /> should match snapshot 1`] = `
                                       forwardedRef={null}
                                     >
                                       <section
-                                        className="c3"
+                                        className="c2"
                                       >
                                         <styled.div>
                                           <StyledComponent
@@ -868,9 +734,9 @@ exports[`<App /> should match snapshot 1`] = `
                                                 "$$typeof": Symbol(react.forward_ref),
                                                 "attrs": Array [],
                                                 "componentStyle": ComponentStyle {
-                                                  "componentId": "sc-bxivhb",
+                                                  "componentId": "sc-htpNat",
                                                   "isStatic": true,
-                                                  "lastClassName": "c4",
+                                                  "lastClassName": "c3",
                                                   "rules": Array [
                                                     "
   display: flex;
@@ -900,7 +766,7 @@ exports[`<App /> should match snapshot 1`] = `
                                                 "displayName": "styled.div",
                                                 "foldedComponentIds": Array [],
                                                 "render": [Function],
-                                                "styledComponentId": "sc-bxivhb",
+                                                "styledComponentId": "sc-htpNat",
                                                 "target": "div",
                                                 "toString": [Function],
                                                 "warnTooManyClasses": [Function],
@@ -910,95 +776,8 @@ exports[`<App /> should match snapshot 1`] = `
                                             forwardedRef={null}
                                           >
                                             <div
-                                              className="c4"
+                                              className="c3"
                                             >
-                                              <styled.h1>
-                                                <StyledComponent
-                                                  forwardedComponent={
-                                                    Object {
-                                                      "$$typeof": Symbol(react.forward_ref),
-                                                      "attrs": Array [],
-                                                      "componentStyle": ComponentStyle {
-                                                        "componentId": "sc-bwzfXH",
-                                                        "isStatic": true,
-                                                        "lastClassName": "c5",
-                                                        "rules": Array [
-                                                          "
-  font-size: 32px;
-  margin: 25px 0;
-  width: 100%;
-  text-transform: uppercase;
-",
-                                                        ],
-                                                      },
-                                                      "displayName": "styled.h1",
-                                                      "foldedComponentIds": Array [],
-                                                      "render": [Function],
-                                                      "styledComponentId": "sc-bwzfXH",
-                                                      "target": "h1",
-                                                      "toString": [Function],
-                                                      "warnTooManyClasses": [Function],
-                                                      "withComponent": [Function],
-                                                    }
-                                                  }
-                                                  forwardedRef={null}
-                                                >
-                                                  <h1
-                                                    className="c5"
-                                                  >
-                                                    Popular movies
-                                                     
-                                                    <FontAwesomeIcon
-                                                      border={false}
-                                                      className=""
-                                                      fixedWidth={false}
-                                                      flip={null}
-                                                      icon={
-                                                        Object {
-                                                          "icon": Array [
-                                                            512,
-                                                            512,
-                                                            Array [],
-                                                            "f008",
-                                                            "M488 64h-8v20c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12V64H96v20c0 6.6-5.4 12-12 12H44c-6.6 0-12-5.4-12-12V64h-8C10.7 64 0 74.7 0 88v336c0 13.3 10.7 24 24 24h8v-20c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v20h320v-20c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v20h8c13.3 0 24-10.7 24-24V88c0-13.3-10.7-24-24-24zM96 372c0 6.6-5.4 12-12 12H44c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40zm0-96c0 6.6-5.4 12-12 12H44c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40zm0-96c0 6.6-5.4 12-12 12H44c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40zm272 208c0 6.6-5.4 12-12 12H156c-6.6 0-12-5.4-12-12v-96c0-6.6 5.4-12 12-12h200c6.6 0 12 5.4 12 12v96zm0-168c0 6.6-5.4 12-12 12H156c-6.6 0-12-5.4-12-12v-96c0-6.6 5.4-12 12-12h200c6.6 0 12 5.4 12 12v96zm112 152c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40zm0-96c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40zm0-96c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40z",
-                                                          ],
-                                                          "iconName": "film",
-                                                          "prefix": "fas",
-                                                        }
-                                                      }
-                                                      inverse={false}
-                                                      listItem={false}
-                                                      mask={null}
-                                                      pull={null}
-                                                      pulse={false}
-                                                      rotation={null}
-                                                      size={null}
-                                                      spin={false}
-                                                      symbol={false}
-                                                      title=""
-                                                      transform={null}
-                                                    >
-                                                      <svg
-                                                        aria-hidden="true"
-                                                        className="svg-inline--fa fa-film fa-w-16 "
-                                                        data-icon="film"
-                                                        data-prefix="fas"
-                                                        focusable="false"
-                                                        role="img"
-                                                        style={Object {}}
-                                                        viewBox="0 0 512 512"
-                                                        xmlns="http://www.w3.org/2000/svg"
-                                                      >
-                                                        <path
-                                                          d="M488 64h-8v20c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12V64H96v20c0 6.6-5.4 12-12 12H44c-6.6 0-12-5.4-12-12V64h-8C10.7 64 0 74.7 0 88v336c0 13.3 10.7 24 24 24h8v-20c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v20h320v-20c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v20h8c13.3 0 24-10.7 24-24V88c0-13.3-10.7-24-24-24zM96 372c0 6.6-5.4 12-12 12H44c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40zm0-96c0 6.6-5.4 12-12 12H44c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40zm0-96c0 6.6-5.4 12-12 12H44c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40zm272 208c0 6.6-5.4 12-12 12H156c-6.6 0-12-5.4-12-12v-96c0-6.6 5.4-12 12-12h200c6.6 0 12 5.4 12 12v96zm0-168c0 6.6-5.4 12-12 12H156c-6.6 0-12-5.4-12-12v-96c0-6.6 5.4-12 12-12h200c6.6 0 12 5.4 12 12v96zm112 152c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40zm0-96c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40zm0-96c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40z"
-                                                          fill="currentColor"
-                                                          style={Object {}}
-                                                        />
-                                                      </svg>
-                                                    </FontAwesomeIcon>
-                                                  </h1>
-                                                </StyledComponent>
-                                              </styled.h1>
                                               <Connect(MoviesContainer)
                                                 type="/movie/popular"
                                               >
@@ -1017,24 +796,20 @@ exports[`<App /> should match snapshot 1`] = `
                                                             "$$typeof": Symbol(react.forward_ref),
                                                             "attrs": Array [],
                                                             "componentStyle": ComponentStyle {
-                                                              "componentId": "sc-bdVaJa",
+                                                              "componentId": "sc-EHOje",
                                                               "isStatic": true,
-                                                              "lastClassName": "c2",
+                                                              "lastClassName": "c4",
                                                               "rules": Array [
                                                                 "
-  width: 100%;
-  height: 100%;
-  position: fixed;
+  align-items: center;
   color: #01d277;
-  z-index: 1;
   display: flex;
   flex-direction: column;
-  background: rgba(0,0,0, .9);
-  top: 0;
-  left: 0;
-  right: 0;
   justify-content: center;
-  align-items: center;
+  height: 100%;
+  padding: 50px 0;
+  width: 100%;
+  z-index: 1;
 
   span {
     font-size: 32px;
@@ -1065,7 +840,7 @@ exports[`<App /> should match snapshot 1`] = `
                                                             "displayName": "styled.div",
                                                             "foldedComponentIds": Array [],
                                                             "render": [Function],
-                                                            "styledComponentId": "sc-bdVaJa",
+                                                            "styledComponentId": "sc-EHOje",
                                                             "target": "div",
                                                             "toString": [Function],
                                                             "warnTooManyClasses": [Function],
@@ -1075,7 +850,7 @@ exports[`<App /> should match snapshot 1`] = `
                                                         forwardedRef={null}
                                                       >
                                                         <div
-                                                          className="c2"
+                                                          className="c4"
                                                         >
                                                           <span>
                                                             Loading...
@@ -1134,93 +909,6 @@ exports[`<App /> should match snapshot 1`] = `
                                                   </Loading>
                                                 </MoviesContainer>
                                               </Connect(MoviesContainer)>
-                                              <styled.h1>
-                                                <StyledComponent
-                                                  forwardedComponent={
-                                                    Object {
-                                                      "$$typeof": Symbol(react.forward_ref),
-                                                      "attrs": Array [],
-                                                      "componentStyle": ComponentStyle {
-                                                        "componentId": "sc-bwzfXH",
-                                                        "isStatic": true,
-                                                        "lastClassName": "c5",
-                                                        "rules": Array [
-                                                          "
-  font-size: 32px;
-  margin: 25px 0;
-  width: 100%;
-  text-transform: uppercase;
-",
-                                                        ],
-                                                      },
-                                                      "displayName": "styled.h1",
-                                                      "foldedComponentIds": Array [],
-                                                      "render": [Function],
-                                                      "styledComponentId": "sc-bwzfXH",
-                                                      "target": "h1",
-                                                      "toString": [Function],
-                                                      "warnTooManyClasses": [Function],
-                                                      "withComponent": [Function],
-                                                    }
-                                                  }
-                                                  forwardedRef={null}
-                                                >
-                                                  <h1
-                                                    className="c5"
-                                                  >
-                                                    Popular TV series
-                                                     
-                                                    <FontAwesomeIcon
-                                                      border={false}
-                                                      className=""
-                                                      fixedWidth={false}
-                                                      flip={null}
-                                                      icon={
-                                                        Object {
-                                                          "icon": Array [
-                                                            640,
-                                                            512,
-                                                            Array [],
-                                                            "f26c",
-                                                            "M592 0H48C21.5 0 0 21.5 0 48v320c0 26.5 21.5 48 48 48h245.1v32h-160c-17.7 0-32 14.3-32 32s14.3 32 32 32h384c17.7 0 32-14.3 32-32s-14.3-32-32-32h-160v-32H592c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zm-16 352H64V64h512v288z",
-                                                          ],
-                                                          "iconName": "tv",
-                                                          "prefix": "fas",
-                                                        }
-                                                      }
-                                                      inverse={false}
-                                                      listItem={false}
-                                                      mask={null}
-                                                      pull={null}
-                                                      pulse={false}
-                                                      rotation={null}
-                                                      size={null}
-                                                      spin={false}
-                                                      symbol={false}
-                                                      title=""
-                                                      transform={null}
-                                                    >
-                                                      <svg
-                                                        aria-hidden="true"
-                                                        className="svg-inline--fa fa-tv fa-w-20 "
-                                                        data-icon="tv"
-                                                        data-prefix="fas"
-                                                        focusable="false"
-                                                        role="img"
-                                                        style={Object {}}
-                                                        viewBox="0 0 640 512"
-                                                        xmlns="http://www.w3.org/2000/svg"
-                                                      >
-                                                        <path
-                                                          d="M592 0H48C21.5 0 0 21.5 0 48v320c0 26.5 21.5 48 48 48h245.1v32h-160c-17.7 0-32 14.3-32 32s14.3 32 32 32h384c17.7 0 32-14.3 32-32s-14.3-32-32-32h-160v-32H592c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zm-16 352H64V64h512v288z"
-                                                          fill="currentColor"
-                                                          style={Object {}}
-                                                        />
-                                                      </svg>
-                                                    </FontAwesomeIcon>
-                                                  </h1>
-                                                </StyledComponent>
-                                              </styled.h1>
                                               <Connect(TVSeriesContainer)
                                                 type="/tv/popular"
                                               >
@@ -1239,24 +927,20 @@ exports[`<App /> should match snapshot 1`] = `
                                                             "$$typeof": Symbol(react.forward_ref),
                                                             "attrs": Array [],
                                                             "componentStyle": ComponentStyle {
-                                                              "componentId": "sc-bdVaJa",
+                                                              "componentId": "sc-EHOje",
                                                               "isStatic": true,
-                                                              "lastClassName": "c2",
+                                                              "lastClassName": "c4",
                                                               "rules": Array [
                                                                 "
-  width: 100%;
-  height: 100%;
-  position: fixed;
+  align-items: center;
   color: #01d277;
-  z-index: 1;
   display: flex;
   flex-direction: column;
-  background: rgba(0,0,0, .9);
-  top: 0;
-  left: 0;
-  right: 0;
   justify-content: center;
-  align-items: center;
+  height: 100%;
+  padding: 50px 0;
+  width: 100%;
+  z-index: 1;
 
   span {
     font-size: 32px;
@@ -1287,7 +971,7 @@ exports[`<App /> should match snapshot 1`] = `
                                                             "displayName": "styled.div",
                                                             "foldedComponentIds": Array [],
                                                             "render": [Function],
-                                                            "styledComponentId": "sc-bdVaJa",
+                                                            "styledComponentId": "sc-EHOje",
                                                             "target": "div",
                                                             "toString": [Function],
                                                             "warnTooManyClasses": [Function],
@@ -1297,7 +981,7 @@ exports[`<App /> should match snapshot 1`] = `
                                                         forwardedRef={null}
                                                       >
                                                         <div
-                                                          className="c2"
+                                                          className="c4"
                                                         >
                                                           <span>
                                                             Loading...

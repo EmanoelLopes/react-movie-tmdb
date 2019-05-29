@@ -17,7 +17,7 @@ const Card = props => {
 
   return (
     <CardFeatured backdrop={backdrop}>
-      <Link to={id}>
+      <Link to={id} title={`${title} - ${description}`}>
         <div className="card-poster">
           <figure>
             <img src={`${images.path}${images.poster}${poster}`} alt={title} lazyload="on"/>

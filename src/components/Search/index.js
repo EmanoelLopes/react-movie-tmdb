@@ -1,8 +1,12 @@
 import React from 'react';
+import { StyledSearch } from './styles';
 
 const Search = () => {
   return (
-    <div>Search</div>
+    <StyledSearch>
+      <label>Pesquisar: </label>
+      <input type="text" placeholder="Pesquisar títulos..." />
+    </StyledSearch>
   );
 };
 

@@ -48,27 +48,31 @@ const CurrentMovieContainer = props => {
         />
       }
       <Container>
-        <MovieDetails
-          budget={currentMovie.budget}
-          revenue={currentMovie.revenue}
-          status={currentMovie.status}
-          releaseDate={format(currentMovie.release_date, 'MM/DD/YYYY')}
-          popularity={currentMovie.popularity}
-        />
-        {(!!cast.length) &&
+        {(!loading) && (
+          <MovieDetails
+            budget={currentMovie.budget}
+            revenue={currentMovie.revenue}
+            status={currentMovie.status}
+            releaseDate={format(currentMovie.release_date, 'MM/DD/YYYY')}
+            popularity={currentMovie.popularity}
+          />
+        )}
+        {(!!cast.length && !loading) &&
           <Fragment>
             <H1>{intl.get('MOVIE_PAGE.CAST_TITLE')}</H1>
             <Grid>
-              {cast.map(actor => {
-                return (
-                  <CastCard
-                    key={actor.credit_id}
-                    id={actor.id}
-                    profile={actor.profile_path}
-                    name={actor.name}
-                    character={actor.character}
-                  />
-                );
+              {cast
+                .filter(actor => actor.profile_path !== null)
+                .map(actor => {
+                  return (
+                    <CastCard
+                      key={actor.credit_id}
+                      id={actor.id}
+                      profile={actor.profile_path}
+                      name={actor.name}
+                      character={actor.character}
+                    />
+                  );
               })}
             </Grid>
           </Fragment>

@@ -60,7 +60,8 @@ export const CardFeatured = styled.div`
   }
 
   .card-info-wrapper {
-    background-color: rgba(0,0,0,.7);
+    background-color: rgba(0,0,0,.3);
+    flex: 1;
     padding: 10px;
 
     ${media.desktop`
@@ -88,6 +89,10 @@ export const CardFeatured = styled.div`
 
   .card-info p {
     margin-bottom: 15px;
+  }
+
+  .card-info span {
+    line-height: 24px;
   }
 
   .card-info a {

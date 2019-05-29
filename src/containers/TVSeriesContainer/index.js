@@ -37,14 +37,12 @@ class TVSeriesContainer extends Component {
 
     return (
       <Fragment>
-        {(loading)
-          ? <Loading />
-          : <Fragment>
-              <Grid>
-                {this.renderTVSeries(tvSeries)}
-              </Grid>
-            </Fragment>
-        }
+        {(loading) && <Loading />}
+        {(tvSeries && (!loading)) && (
+          <Grid>
+            {this.renderTVSeries(tvSeries)}
+          </Grid>
+        )}
       </Fragment>
     );
   }
@@ -54,8 +52,8 @@ TVSeriesContainer.propTypes = {
   tvSeries: array,
   dispatch: func,
   getSeries: func,
-  type: string.isRequired,
   loading: bool.isRequired,
+  type: string.isRequired,
 };
 
 TVSeriesContainer.defaultProps = {
