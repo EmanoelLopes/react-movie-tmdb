@@ -208,7 +208,7 @@ exports[`<App /> should match snapshot 1`] = `
                           "$$typeof": Symbol(react.forward_ref),
                           "attrs": Array [],
                           "componentStyle": ComponentStyle {
-                            "componentId": "sc-fjdhpX",
+                            "componentId": "sc-jTzLTM",
                             "isStatic": true,
                             "lastClassName": "c0",
                             "rules": Array [
@@ -258,7 +258,7 @@ exports[`<App /> should match snapshot 1`] = `
                           "displayName": "styled.span",
                           "foldedComponentIds": Array [],
                           "render": [Function],
-                          "styledComponentId": "sc-fjdhpX",
+                          "styledComponentId": "sc-jTzLTM",
                           "target": "span",
                           "toString": [Function],
                           "warnTooManyClasses": [Function],
@@ -408,7 +408,7 @@ exports[`<App /> should match snapshot 1`] = `
                     "$$typeof": Symbol(react.forward_ref),
                     "attrs": Array [],
                     "componentStyle": ComponentStyle {
-                      "componentId": "sc-jzJRlG",
+                      "componentId": "sc-fjdhpX",
                       "isStatic": true,
                       "lastClassName": "c1",
                       "rules": Array [
@@ -452,7 +452,7 @@ exports[`<App /> should match snapshot 1`] = `
                     "displayName": "styled.section",
                     "foldedComponentIds": Array [],
                     "render": [Function],
-                    "styledComponentId": "sc-jzJRlG",
+                    "styledComponentId": "sc-fjdhpX",
                     "target": "section",
                     "toString": [Function],
                     "warnTooManyClasses": [Function],

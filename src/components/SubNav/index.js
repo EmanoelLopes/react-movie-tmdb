@@ -1,7 +1,7 @@
 import React from 'react';
 import { array } from 'prop-types';
 import { NavLink } from 'react-router-dom';
-import Search from 'components/Search';
+// import Search from 'components/Search';
 import {
   StyledSubNav,
   SubNavList,
@@ -30,7 +30,7 @@ const SubNav = ({ items }) => {
       <SubNavList>
         {renderItems()}
       </SubNavList>
-      <Search />
+      {/* <Search /> */}
     </StyledSubNav>
   );
 };

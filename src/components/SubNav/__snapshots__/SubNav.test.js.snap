@@ -1,13 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<SubNav /> should match snapshot 1`] = `
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .c0 {
   background-color: #fff;
   display: -webkit-box;
@@ -131,7 +124,7 @@ exports[`<SubNav /> should match snapshot 1`] = `
               "$$typeof": Symbol(react.forward_ref),
               "attrs": Array [],
               "componentStyle": ComponentStyle {
-                "componentId": "sc-ifAKCX",
+                "componentId": "sc-bxivhb",
                 "isStatic": true,
                 "lastClassName": "c0",
                 "rules": Array [
@@ -164,7 +157,7 @@ exports[`<SubNav /> should match snapshot 1`] = `
               "displayName": "styled.nav",
               "foldedComponentIds": Array [],
               "render": [Function],
-              "styledComponentId": "sc-ifAKCX",
+              "styledComponentId": "sc-bxivhb",
               "target": "nav",
               "toString": [Function],
               "warnTooManyClasses": [Function],
@@ -183,7 +176,7 @@ exports[`<SubNav /> should match snapshot 1`] = `
                     "$$typeof": Symbol(react.forward_ref),
                     "attrs": Array [],
                     "componentStyle": ComponentStyle {
-                      "componentId": "sc-EHOje",
+                      "componentId": "sc-ifAKCX",
                       "isStatic": true,
                       "lastClassName": "c1",
                       "rules": Array [
@@ -210,7 +203,7 @@ exports[`<SubNav /> should match snapshot 1`] = `
                     "displayName": "styled.ul",
                     "foldedComponentIds": Array [],
                     "render": [Function],
-                    "styledComponentId": "sc-EHOje",
+                    "styledComponentId": "sc-ifAKCX",
                     "target": "ul",
                     "toString": [Function],
                     "warnTooManyClasses": [Function],
@@ -231,7 +224,7 @@ exports[`<SubNav /> should match snapshot 1`] = `
                           "$$typeof": Symbol(react.forward_ref),
                           "attrs": Array [],
                           "componentStyle": ComponentStyle {
-                            "componentId": "sc-bZQynM",
+                            "componentId": "sc-EHOje",
                             "isStatic": true,
                             "lastClassName": "c2",
                             "rules": Array [
@@ -275,7 +268,7 @@ exports[`<SubNav /> should match snapshot 1`] = `
                           "displayName": "styled.li",
                           "foldedComponentIds": Array [],
                           "render": [Function],
-                          "styledComponentId": "sc-bZQynM",
+                          "styledComponentId": "sc-EHOje",
                           "target": "li",
                           "toString": [Function],
                           "warnTooManyClasses": [Function],
@@ -322,7 +315,7 @@ exports[`<SubNav /> should match snapshot 1`] = `
                           "$$typeof": Symbol(react.forward_ref),
                           "attrs": Array [],
                           "componentStyle": ComponentStyle {
-                            "componentId": "sc-bZQynM",
+                            "componentId": "sc-EHOje",
                             "isStatic": true,
                             "lastClassName": "c2",
                             "rules": Array [
@@ -366,7 +359,7 @@ exports[`<SubNav /> should match snapshot 1`] = `
                           "displayName": "styled.li",
                           "foldedComponentIds": Array [],
                           "render": [Function],
-                          "styledComponentId": "sc-bZQynM",
+                          "styledComponentId": "sc-EHOje",
                           "target": "li",
                           "toString": [Function],
                           "warnTooManyClasses": [Function],
@@ -413,7 +406,7 @@ exports[`<SubNav /> should match snapshot 1`] = `
                           "$$typeof": Symbol(react.forward_ref),
                           "attrs": Array [],
                           "componentStyle": ComponentStyle {
-                            "componentId": "sc-bZQynM",
+                            "componentId": "sc-EHOje",
                             "isStatic": true,
                             "lastClassName": "c2",
                             "rules": Array [
@@ -457,7 +450,7 @@ exports[`<SubNav /> should match snapshot 1`] = `
                           "displayName": "styled.li",
                           "foldedComponentIds": Array [],
                           "render": [Function],
-                          "styledComponentId": "sc-bZQynM",
+                          "styledComponentId": "sc-EHOje",
                           "target": "li",
                           "toString": [Function],
                           "warnTooManyClasses": [Function],
@@ -504,7 +497,7 @@ exports[`<SubNav /> should match snapshot 1`] = `
                           "$$typeof": Symbol(react.forward_ref),
                           "attrs": Array [],
                           "componentStyle": ComponentStyle {
-                            "componentId": "sc-bZQynM",
+                            "componentId": "sc-EHOje",
                             "isStatic": true,
                             "lastClassName": "c2",
                             "rules": Array [
@@ -548,7 +541,7 @@ exports[`<SubNav /> should match snapshot 1`] = `
                           "displayName": "styled.li",
                           "foldedComponentIds": Array [],
                           "render": [Function],
-                          "styledComponentId": "sc-bZQynM",
+                          "styledComponentId": "sc-EHOje",
                           "target": "li",
                           "toString": [Function],
                           "warnTooManyClasses": [Function],
@@ -589,49 +582,6 @@ exports[`<SubNav /> should match snapshot 1`] = `
                 </ul>
               </StyledComponent>
             </styled.ul>
-            <Search>
-              <styled.div>
-                <StyledComponent
-                  forwardedComponent={
-                    Object {
-                      "$$typeof": Symbol(react.forward_ref),
-                      "attrs": Array [],
-                      "componentStyle": ComponentStyle {
-                        "componentId": "sc-bdVaJa",
-                        "isStatic": true,
-                        "lastClassName": "c3",
-                        "rules": Array [
-                          "
-  display: flex;
-",
-                        ],
-                      },
-                      "displayName": "styled.div",
-                      "foldedComponentIds": Array [],
-                      "render": [Function],
-                      "styledComponentId": "sc-bdVaJa",
-                      "target": "div",
-                      "toString": [Function],
-                      "warnTooManyClasses": [Function],
-                      "withComponent": [Function],
-                    }
-                  }
-                  forwardedRef={null}
-                >
-                  <div
-                    className="c3"
-                  >
-                    <label>
-                      Pesquisar: 
-                    </label>
-                    <input
-                      placeholder="Pesquisar títulos..."
-                      type="text"
-                    />
-                  </div>
-                </StyledComponent>
-              </styled.div>
-            </Search>
           </nav>
         </StyledComponent>
       </styled.nav>

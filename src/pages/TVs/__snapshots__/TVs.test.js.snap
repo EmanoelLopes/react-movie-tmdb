@@ -45,13 +45,6 @@ exports[`<TVs /> should match snapshot 1`] = `
   width: 100%;
 }
 
-.c6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .c3 {
   background-color: #fff;
   display: -webkit-box;
@@ -346,7 +339,7 @@ exports[`<TVs /> should match snapshot 1`] = `
                                 "$$typeof": Symbol(react.forward_ref),
                                 "attrs": Array [],
                                 "componentStyle": ComponentStyle {
-                                  "componentId": "sc-gqjmRU",
+                                  "componentId": "sc-gZMcBi",
                                   "isStatic": true,
                                   "lastClassName": "c3",
                                   "rules": Array [
@@ -379,7 +372,7 @@ exports[`<TVs /> should match snapshot 1`] = `
                                 "displayName": "styled.nav",
                                 "foldedComponentIds": Array [],
                                 "render": [Function],
-                                "styledComponentId": "sc-gqjmRU",
+                                "styledComponentId": "sc-gZMcBi",
                                 "target": "nav",
                                 "toString": [Function],
                                 "warnTooManyClasses": [Function],
@@ -398,7 +391,7 @@ exports[`<TVs /> should match snapshot 1`] = `
                                       "$$typeof": Symbol(react.forward_ref),
                                       "attrs": Array [],
                                       "componentStyle": ComponentStyle {
-                                        "componentId": "sc-VigVT",
+                                        "componentId": "sc-gqjmRU",
                                         "isStatic": true,
                                         "lastClassName": "c4",
                                         "rules": Array [
@@ -425,7 +418,7 @@ exports[`<TVs /> should match snapshot 1`] = `
                                       "displayName": "styled.ul",
                                       "foldedComponentIds": Array [],
                                       "render": [Function],
-                                      "styledComponentId": "sc-VigVT",
+                                      "styledComponentId": "sc-gqjmRU",
                                       "target": "ul",
                                       "toString": [Function],
                                       "warnTooManyClasses": [Function],
@@ -446,7 +439,7 @@ exports[`<TVs /> should match snapshot 1`] = `
                                             "$$typeof": Symbol(react.forward_ref),
                                             "attrs": Array [],
                                             "componentStyle": ComponentStyle {
-                                              "componentId": "sc-jTzLTM",
+                                              "componentId": "sc-VigVT",
                                               "isStatic": true,
                                               "lastClassName": "c5",
                                               "rules": Array [
@@ -490,7 +483,7 @@ exports[`<TVs /> should match snapshot 1`] = `
                                             "displayName": "styled.li",
                                             "foldedComponentIds": Array [],
                                             "render": [Function],
-                                            "styledComponentId": "sc-jTzLTM",
+                                            "styledComponentId": "sc-VigVT",
                                             "target": "li",
                                             "toString": [Function],
                                             "warnTooManyClasses": [Function],
@@ -537,7 +530,7 @@ exports[`<TVs /> should match snapshot 1`] = `
                                             "$$typeof": Symbol(react.forward_ref),
                                             "attrs": Array [],
                                             "componentStyle": ComponentStyle {
-                                              "componentId": "sc-jTzLTM",
+                                              "componentId": "sc-VigVT",
                                               "isStatic": true,
                                               "lastClassName": "c5",
                                               "rules": Array [
@@ -581,7 +574,7 @@ exports[`<TVs /> should match snapshot 1`] = `
                                             "displayName": "styled.li",
                                             "foldedComponentIds": Array [],
                                             "render": [Function],
-                                            "styledComponentId": "sc-jTzLTM",
+                                            "styledComponentId": "sc-VigVT",
                                             "target": "li",
                                             "toString": [Function],
                                             "warnTooManyClasses": [Function],
@@ -628,7 +621,7 @@ exports[`<TVs /> should match snapshot 1`] = `
                                             "$$typeof": Symbol(react.forward_ref),
                                             "attrs": Array [],
                                             "componentStyle": ComponentStyle {
-                                              "componentId": "sc-jTzLTM",
+                                              "componentId": "sc-VigVT",
                                               "isStatic": true,
                                               "lastClassName": "c5",
                                               "rules": Array [
@@ -672,7 +665,7 @@ exports[`<TVs /> should match snapshot 1`] = `
                                             "displayName": "styled.li",
                                             "foldedComponentIds": Array [],
                                             "render": [Function],
-                                            "styledComponentId": "sc-jTzLTM",
+                                            "styledComponentId": "sc-VigVT",
                                             "target": "li",
                                             "toString": [Function],
                                             "warnTooManyClasses": [Function],
@@ -719,7 +712,7 @@ exports[`<TVs /> should match snapshot 1`] = `
                                             "$$typeof": Symbol(react.forward_ref),
                                             "attrs": Array [],
                                             "componentStyle": ComponentStyle {
-                                              "componentId": "sc-jTzLTM",
+                                              "componentId": "sc-VigVT",
                                               "isStatic": true,
                                               "lastClassName": "c5",
                                               "rules": Array [
@@ -763,7 +756,7 @@ exports[`<TVs /> should match snapshot 1`] = `
                                             "displayName": "styled.li",
                                             "foldedComponentIds": Array [],
                                             "render": [Function],
-                                            "styledComponentId": "sc-jTzLTM",
+                                            "styledComponentId": "sc-VigVT",
                                             "target": "li",
                                             "toString": [Function],
                                             "warnTooManyClasses": [Function],
@@ -804,49 +797,6 @@ exports[`<TVs /> should match snapshot 1`] = `
                                   </ul>
                                 </StyledComponent>
                               </styled.ul>
-                              <Search>
-                                <styled.div>
-                                  <StyledComponent
-                                    forwardedComponent={
-                                      Object {
-                                        "$$typeof": Symbol(react.forward_ref),
-                                        "attrs": Array [],
-                                        "componentStyle": ComponentStyle {
-                                          "componentId": "sc-gZMcBi",
-                                          "isStatic": true,
-                                          "lastClassName": "c6",
-                                          "rules": Array [
-                                            "
-  display: flex;
-",
-                                          ],
-                                        },
-                                        "displayName": "styled.div",
-                                        "foldedComponentIds": Array [],
-                                        "render": [Function],
-                                        "styledComponentId": "sc-gZMcBi",
-                                        "target": "div",
-                                        "toString": [Function],
-                                        "warnTooManyClasses": [Function],
-                                        "withComponent": [Function],
-                                      }
-                                    }
-                                    forwardedRef={null}
-                                  >
-                                    <div
-                                      className="c6"
-                                    >
-                                      <label>
-                                        Pesquisar: 
-                                      </label>
-                                      <input
-                                        placeholder="Pesquisar títulos..."
-                                        type="text"
-                                      />
-                                    </div>
-                                  </StyledComponent>
-                                </styled.div>
-                              </Search>
                             </nav>
                           </StyledComponent>
                         </styled.nav>
