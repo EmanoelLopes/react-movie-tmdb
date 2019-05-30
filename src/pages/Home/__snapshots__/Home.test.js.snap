@@ -212,7 +212,7 @@ exports[`<Home /> should match snapshot 1`] = `
                                     "$$typeof": Symbol(react.forward_ref),
                                     "attrs": Array [],
                                     "componentStyle": ComponentStyle {
-                                      "componentId": "sc-EHOje",
+                                      "componentId": "sc-ifAKCX",
                                       "isStatic": true,
                                       "lastClassName": "c2",
                                       "rules": Array [
@@ -256,7 +256,7 @@ exports[`<Home /> should match snapshot 1`] = `
                                     "displayName": "styled.div",
                                     "foldedComponentIds": Array [],
                                     "render": [Function],
-                                    "styledComponentId": "sc-EHOje",
+                                    "styledComponentId": "sc-ifAKCX",
                                     "target": "div",
                                     "toString": [Function],
                                     "warnTooManyClasses": [Function],
@@ -343,7 +343,7 @@ exports[`<Home /> should match snapshot 1`] = `
                                     "$$typeof": Symbol(react.forward_ref),
                                     "attrs": Array [],
                                     "componentStyle": ComponentStyle {
-                                      "componentId": "sc-EHOje",
+                                      "componentId": "sc-ifAKCX",
                                       "isStatic": true,
                                       "lastClassName": "c2",
                                       "rules": Array [
@@ -387,7 +387,7 @@ exports[`<Home /> should match snapshot 1`] = `
                                     "displayName": "styled.div",
                                     "foldedComponentIds": Array [],
                                     "render": [Function],
-                                    "styledComponentId": "sc-EHOje",
+                                    "styledComponentId": "sc-ifAKCX",
                                     "target": "div",
                                     "toString": [Function],
                                     "warnTooManyClasses": [Function],

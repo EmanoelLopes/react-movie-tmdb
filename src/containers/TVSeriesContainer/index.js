@@ -1,10 +1,11 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component, Fragment, Suspense, lazy } from 'react';
 import { array, func, bool, string } from 'prop-types';
 import { connect } from 'react-redux';
 import { fetchTVSeries } from 'store/tvSeries/actions';
 import Grid from 'components/Grid';
-import Card from 'components/Card';
 import Loading from 'components/Loading';
+
+const Card = lazy(() => import('components/Card'));
 
 class TVSeriesContainer extends Component {
   getTVSeries = () => {
@@ -15,7 +16,9 @@ class TVSeriesContainer extends Component {
   renderTVSeries = tvs => {
     return (!!tvs.length) && tvs.map(tv => {
       return (
-        <Fragment key={tv.id}>
+        <Suspense
+          key={tv.id}
+          fallback={<div>Loading...</div>}>
           <Card  
             title={tv.original_name}
             description={tv.overview}
@@ -23,7 +26,7 @@ class TVSeriesContainer extends Component {
             id={`/tv/${tv.id}`}
             backdrop={tv.backdrop_path}
           />
-        </Fragment>
+        </Suspense>
       );
     });
   };

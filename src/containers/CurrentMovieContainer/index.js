@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect } from 'react';
+import React, { Fragment, useEffect, lazy, Suspense } from 'react';
 import { func, object, bool, array } from 'prop-types';
 import intl from 'react-intl-universal';
 import { format } from 'date-fns';
@@ -9,8 +9,10 @@ import Loading from 'components/Loading';
 import HeroSection from 'components/HeroSection';
 import Grid from 'components/Grid';
 import MovieDetails from 'components/MovieDetails';
-import CastCard from 'components/CastCard';
 import { PageWrapper, Container, H1 } from 'utils/styled';
+
+// Lazy Load Cast Cards
+const CastCard = lazy(() => import('components/CastCard'));
 
 const CurrentMovieContainer = props => {
   const {
@@ -65,13 +67,16 @@ const CurrentMovieContainer = props => {
                 .filter(actor => actor.profile_path !== null)
                 .map(actor => {
                   return (
-                    <CastCard
+                    <Suspense
                       key={actor.credit_id}
-                      id={actor.id}
-                      profile={actor.profile_path}
-                      name={actor.name}
-                      character={actor.character}
-                    />
+                      fallback={<div>Loading...</div>}>
+                      <CastCard
+                        id={actor.id}
+                        profile={actor.profile_path}
+                        name={actor.name}
+                        character={actor.character}
+                      />
+                    </Suspense>
                   );
               })}
             </Grid>

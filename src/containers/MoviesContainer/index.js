@@ -1,10 +1,11 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component, Fragment, Suspense, lazy } from 'react';
 import { array, func, bool, string } from 'prop-types';
 import { connect } from 'react-redux';
 import { fetchMovies } from 'store/movies/actions';
-import Card from 'components/Card';
 import Grid from 'components/Grid';
 import Loading from 'components/Loading';
+
+const Card = lazy(() => import('components/Card'));
 
 class MoviesContainer extends Component {
   getFetchedMovies = () => {
@@ -15,7 +16,9 @@ class MoviesContainer extends Component {
   renderMovies = movies => {
     return (!!movies.length) && movies.map(movie => {
       return (
-        <Fragment key={movie.id}>
+        <Suspense
+          key={movie.id}
+          fallback={<div>Loading...</div>}>
           <Card
             title={movie.title}
             description={movie.overview}
@@ -23,7 +26,7 @@ class MoviesContainer extends Component {
             id={`/movie/${movie.id}`}
             backdrop={movie.backdrop_path}
           />
-        </Fragment>
+        </Suspense>
       );
     });
   };

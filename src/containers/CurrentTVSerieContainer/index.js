@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect } from 'react';
+import React, { Fragment, useEffect, Suspense, lazy } from 'react';
 import { func, object, bool, array } from 'prop-types';
 import intl from 'react-intl-universal';
 import { connect } from 'react-redux';
@@ -9,8 +9,9 @@ import Loading from 'components/Loading';
 import HeroSection from 'components/HeroSection';
 import Grid from 'components/Grid';
 import TVInformation from 'components/TVInformation';
-import CastCard from 'components/CastCard';
 import { PageWrapper, Container, H1 } from 'utils/styled';
+
+const CastCard = lazy(() => import('components/CastCard'));
 
 const CurrentTVSerieContainer = props => {
   const {
@@ -94,13 +95,16 @@ const CurrentTVSerieContainer = props => {
                   .filter(actor => actor.profile_path !== null)
                   .map(actor => {
                     return (
-                      <CastCard
+                      <Suspense
                         key={actor.credit_id}
-                        id={actor.id}
-                        profile={actor.profile_path}
-                        name={actor.name}
-                        character={actor.character}
-                      />
+                        fallback={<div>Loading...</div>}>
+                        <CastCard
+                          id={actor.id}
+                          profile={actor.profile_path}
+                          name={actor.name}
+                          character={actor.character}
+                        />
+                      </Suspense>
                     );
                 })}
               </Grid>
