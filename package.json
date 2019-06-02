@@ -28,8 +28,8 @@
   "scripts": {
     "lint": "eslint ./src",
     "lint:fix": "yarn lint --fix",
-    "start": "env-cmd .env rescripts start",
-    "build": "env-cmd .env.production react-scripts build",
+    "start": "rescripts start",
+    "build": "rescripts build",
     "build:staging": "REACT_APP_ENV=staging npm run build",
     "deploy:surge": "yarn build && surge --project /Users/emanoellopes/development/studies/react/react-movie-db/build --domain https://react-movie-db.surge.sh",
     "test": "rescripts test",
