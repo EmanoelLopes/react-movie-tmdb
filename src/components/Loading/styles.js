@@ -1,4 +1,5 @@
 import styled, { keyframes } from 'styled-components';
+import { colors } from 'utils/styled';
 
 const spinning = keyframes`
   from {
@@ -12,7 +13,7 @@ const spinning = keyframes`
 
 export const Loader = styled.div`
   align-items: center;
-  color: #01d277;
+  color: ${colors.movieDBColor};
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -28,7 +29,7 @@ export const Loader = styled.div`
 
   svg {
     animation: ${spinning} 1s linear infinite;
-    color: #01d277;
+    color: ${colors.movieDBColor};
     width: 5em !important;
     height: 5em;
 
