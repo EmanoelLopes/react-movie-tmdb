@@ -30,7 +30,7 @@
     "start": "rescripts start",
     "build": "react-scripts build",
     "build:staging": "REACT_APP_ENV=staging npm run build",
-    "deploy:surge": "yarn build && surge --project /Users/emanoellopes/development/studies/react/react-movie-db/build --domain https://react-movie-db.surge.sh",
+    "deploy:surge": "yarn build && surge --project /Users/emanoellopes/development/studies/react/react-movie-tmdb/build --domain https://react-movie-db.surge.sh",
     "test": "rescripts test",
     "test:verbose": "yarn test --verbose",
     "test:no-watch": "yarn test --no-watch",
