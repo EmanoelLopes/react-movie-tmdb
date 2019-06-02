@@ -35,6 +35,13 @@ In the project directory, you can run:
 Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
+[!!!] Make sure you create an `.env` file with the respective keys
+```
+NODE_PATH=src/
+REACT_APP_MOVIE_DB_API='https://api.themoviedb.org/3/'
+REACT_APP_MOVIE_DB_API_KEY='[YOUR_KEY_API_HERE]'
+```
+
 The page will reload if you make edits.<br>
 You will also see any lint errors in the console.
 
