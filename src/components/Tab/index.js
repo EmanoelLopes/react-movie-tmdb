@@ -6,7 +6,6 @@ const Tab = ({ index, isActive, content }) => {
   return (
     <StyledTab
       key={index}
-      role="tab"
       className={`tab-content ${(isActive) ? 'tab-active' : ''}`}>
       {content}
     </StyledTab>

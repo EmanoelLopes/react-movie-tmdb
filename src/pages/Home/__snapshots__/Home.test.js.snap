@@ -762,7 +762,6 @@ exports[`<Home /> should match snapshot 1`] = `
                       <styled.section
                         className="tab-content tab-active"
                         key="0"
-                        role="tab"
                       >
                         <StyledComponent
                           className="tab-content tab-active"
@@ -809,11 +808,9 @@ exports[`<Home /> should match snapshot 1`] = `
                             }
                           }
                           forwardedRef={null}
-                          role="tab"
                         >
                           <section
                             className="tab-content tab-active c5"
-                            role="tab"
                           >
                             <Connect(MoviesContainer)
                               type="/movie/popular"
@@ -967,7 +964,6 @@ exports[`<Home /> should match snapshot 1`] = `
                       <styled.section
                         className="tab-content "
                         key="1"
-                        role="tab"
                       >
                         <StyledComponent
                           className="tab-content "
@@ -1014,11 +1010,9 @@ exports[`<Home /> should match snapshot 1`] = `
                             }
                           }
                           forwardedRef={null}
-                          role="tab"
                         >
                           <section
                             className="tab-content  c5"
-                            role="tab"
                           >
                             <Connect(TVSeriesContainer)
                               type="/tv/popular"
