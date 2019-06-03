@@ -17,7 +17,9 @@ const TabPane = props => {
       index={index}
       onClick={onClick}
       className={`tab-pane ${(isActive) ? 'tab-active' : ''}`}>
-      <H1>{label} {icon}</H1>
+      <H1>
+        <span className="label">{label}</span> {icon}
+      </H1>
     </StyledTabPane>
   );
 };

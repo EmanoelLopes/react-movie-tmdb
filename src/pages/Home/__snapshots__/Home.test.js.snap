@@ -82,16 +82,25 @@ exports[`<Home /> should match snapshot 1`] = `
 }
 
 .c2 {
+  background-color: #fff;
+  border-bottom: 5px solid #fff;
   cursor: pointer;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  margin: 15px 0;
+  text-align: center;
   width: 50%;
 }
 
 .c2.tab-active {
   color: #01d277;
+  border-bottom: 5px solid #01d277;
+}
+
+.c2 .label {
+  display: none;
 }
 
 .c6 {
@@ -139,6 +148,12 @@ exports[`<Home /> should match snapshot 1`] = `
 @media (min-width:62em) {
   .c1 {
     max-width: 1280px;
+  }
+}
+
+@media (min-width:36em) {
+  .c2 .label {
+    display: initial;
   }
 }
 
@@ -315,14 +330,43 @@ exports[`<Home /> should match snapshot 1`] = `
                                 "lastClassName": "c2",
                                 "rules": Array [
                                   "
+  background-color: ",
+                                  "#fff",
+                                  ";
+  border-bottom: 5px solid ",
+                                  "#fff",
+                                  ";
   cursor: pointer;
   display: flex;
+  margin: 15px 0; 
+  text-align: center;
   width: 50%;
 
   &.tab-active {
     color: ",
                                   "#01d277",
                                   ";
+    border-bottom: 5px solid ",
+                                  "#01d277",
+                                  ";
+  }
+
+  .label {
+    display: none;
+
+    ",
+                                  "
+    @media (min-width: ",
+                                  "36",
+                                  "em) {
+      ",
+                                  "
+      display: initial;
+    ",
+                                  "
+    }
+  ",
+                                  "
   }
 ",
                                 ],
@@ -379,7 +423,11 @@ exports[`<Home /> should match snapshot 1`] = `
                                 <h1
                                   className="c3"
                                 >
-                                  Popular movies
+                                  <span
+                                    className="label"
+                                  >
+                                    Popular movies
+                                  </span>
                                    
                                   <FontAwesomeIcon
                                     border={false}
@@ -492,14 +540,43 @@ exports[`<Home /> should match snapshot 1`] = `
                                 "lastClassName": "c2",
                                 "rules": Array [
                                   "
+  background-color: ",
+                                  "#fff",
+                                  ";
+  border-bottom: 5px solid ",
+                                  "#fff",
+                                  ";
   cursor: pointer;
   display: flex;
+  margin: 15px 0; 
+  text-align: center;
   width: 50%;
 
   &.tab-active {
     color: ",
                                   "#01d277",
                                   ";
+    border-bottom: 5px solid ",
+                                  "#01d277",
+                                  ";
+  }
+
+  .label {
+    display: none;
+
+    ",
+                                  "
+    @media (min-width: ",
+                                  "36",
+                                  "em) {
+      ",
+                                  "
+      display: initial;
+    ",
+                                  "
+    }
+  ",
+                                  "
   }
 ",
                                 ],
@@ -556,7 +633,11 @@ exports[`<Home /> should match snapshot 1`] = `
                                 <h1
                                   className="c3"
                                 >
-                                  Popular TV series
+                                  <span
+                                    className="label"
+                                  >
+                                    Popular TV series
+                                  </span>
                                    
                                   <FontAwesomeIcon
                                     border={false}

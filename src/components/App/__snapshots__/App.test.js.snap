@@ -82,16 +82,25 @@ exports[`<App /> should match snapshot 1`] = `
 }
 
 .c4 {
+  background-color: #fff;
+  border-bottom: 5px solid #fff;
   cursor: pointer;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  margin: 15px 0;
+  text-align: center;
   width: 50%;
 }
 
 .c4.tab-active {
   color: #01d277;
+  border-bottom: 5px solid #01d277;
+}
+
+.c4 .label {
+  display: none;
 }
 
 .c8 {
@@ -209,6 +218,12 @@ exports[`<App /> should match snapshot 1`] = `
 @media (min-width:62em) {
   .c3 {
     max-width: 1280px;
+  }
+}
+
+@media (min-width:36em) {
+  .c4 .label {
+    display: initial;
   }
 }
 
@@ -899,14 +914,43 @@ exports[`<App /> should match snapshot 1`] = `
                                                         "lastClassName": "c4",
                                                         "rules": Array [
                                                           "
+  background-color: ",
+                                                          "#fff",
+                                                          ";
+  border-bottom: 5px solid ",
+                                                          "#fff",
+                                                          ";
   cursor: pointer;
   display: flex;
+  margin: 15px 0; 
+  text-align: center;
   width: 50%;
 
   &.tab-active {
     color: ",
                                                           "#01d277",
                                                           ";
+    border-bottom: 5px solid ",
+                                                          "#01d277",
+                                                          ";
+  }
+
+  .label {
+    display: none;
+
+    ",
+                                                          "
+    @media (min-width: ",
+                                                          "36",
+                                                          "em) {
+      ",
+                                                          "
+      display: initial;
+    ",
+                                                          "
+    }
+  ",
+                                                          "
   }
 ",
                                                         ],
@@ -963,7 +1007,11 @@ exports[`<App /> should match snapshot 1`] = `
                                                         <h1
                                                           className="c5"
                                                         >
-                                                          Popular movies
+                                                          <span
+                                                            className="label"
+                                                          >
+                                                            Popular movies
+                                                          </span>
                                                            
                                                           <FontAwesomeIcon
                                                             border={false}
@@ -1076,14 +1124,43 @@ exports[`<App /> should match snapshot 1`] = `
                                                         "lastClassName": "c4",
                                                         "rules": Array [
                                                           "
+  background-color: ",
+                                                          "#fff",
+                                                          ";
+  border-bottom: 5px solid ",
+                                                          "#fff",
+                                                          ";
   cursor: pointer;
   display: flex;
+  margin: 15px 0; 
+  text-align: center;
   width: 50%;
 
   &.tab-active {
     color: ",
                                                           "#01d277",
                                                           ";
+    border-bottom: 5px solid ",
+                                                          "#01d277",
+                                                          ";
+  }
+
+  .label {
+    display: none;
+
+    ",
+                                                          "
+    @media (min-width: ",
+                                                          "36",
+                                                          "em) {
+      ",
+                                                          "
+      display: initial;
+    ",
+                                                          "
+    }
+  ",
+                                                          "
   }
 ",
                                                         ],
@@ -1140,7 +1217,11 @@ exports[`<App /> should match snapshot 1`] = `
                                                         <h1
                                                           className="c5"
                                                         >
-                                                          Popular TV series
+                                                          <span
+                                                            className="label"
+                                                          >
+                                                            Popular TV series
+                                                          </span>
                                                            
                                                           <FontAwesomeIcon
                                                             border={false}
