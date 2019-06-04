@@ -749,7 +749,7 @@ exports[`<Home /> should match snapshot 1`] = `
                   <div
                     className="c4"
                   >
-                    <Tab
+                    <TabContent
                       content={
                         <Connect(MoviesContainer)
                           type="/movie/popular"
@@ -950,8 +950,8 @@ exports[`<Home /> should match snapshot 1`] = `
                           </section>
                         </StyledComponent>
                       </styled.section>
-                    </Tab>
-                    <Tab
+                    </TabContent>
+                    <TabContent
                       content={
                         <Connect(TVSeriesContainer)
                           type="/tv/popular"
@@ -1152,7 +1152,7 @@ exports[`<Home /> should match snapshot 1`] = `
                           </section>
                         </StyledComponent>
                       </styled.section>
-                    </Tab>
+                    </TabContent>
                   </div>
                 </StyledComponent>
               </styled.div>

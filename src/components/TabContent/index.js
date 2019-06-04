@@ -2,7 +2,7 @@ import React from 'react';
 import { number, bool, node } from 'prop-types';
 import { StyledTab } from './styles';
 
-const Tab = ({ index, isActive, content }) => {
+const TabContent = ({ index, isActive, content }) => {
   return (
     <StyledTab
       key={index}
@@ -12,10 +12,10 @@ const Tab = ({ index, isActive, content }) => {
   );
 };
 
-Tab.propTypes = {
+TabContent.propTypes = {
   index: number.isRequired,
   isActive: bool.isRequired,
   content: node.isRequired,
 };
 
-export default Tab;
+export default TabContent;

@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TabContent /> should match snapshot 1`] = `
+.c0 {
+  position: absolute;
+  visibility: hidden;
+}
+
+.c0.tab-active {
+  -webkit-animation: eMLfYp 1s;
+  animation: eMLfYp 1s;
+  position: relative;
+  visibility: visible;
+}
+
+<TabContent
+  content="<div></div>"
+  index={0}
+  isActive={true}
+>
+  <styled.section
+    className="tab-content tab-active"
+    key="0"
+  >
+    <StyledComponent
+      className="tab-content tab-active"
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-ifAKCX",
+            "isStatic": true,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  position: absolute;
+  visibility: hidden;
+
+  &.tab-active {
+    animation: ",
+              Keyframes {
+                "id": "sc-keyframes-eMLfYp",
+                "inject": [Function],
+                "name": "eMLfYp",
+                "rules": Array [
+                  "@-webkit-keyframes eMLfYp{from{opacity:0;}to{opacity:1;}}",
+                  "@keyframes eMLfYp{from{opacity:0;}to{opacity:1;}}",
+                ],
+                "toString": [Function],
+              },
+              " 1s;
+    position: relative;
+    visibility: visible;
+  }
+",
+            ],
+          },
+          "displayName": "styled.section",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-ifAKCX",
+          "target": "section",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+    >
+      <section
+        className="tab-content tab-active c0"
+      >
+        &lt;div&gt;&lt;/div&gt;
+      </section>
+    </StyledComponent>
+  </styled.section>
+</TabContent>
+`;

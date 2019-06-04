@@ -6,7 +6,7 @@ import {
   HeroSectionContainer,
 } from 'containers';
 import useTabs from 'hooks/useTabs';
-import Tab from 'components/Tab';
+import TabContent from 'components/TabContent';
 import TabPane from 'components/TabPane';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTv, faFilm } from '@fortawesome/free-solid-svg-icons';
@@ -50,7 +50,7 @@ const HomeContainer = () => {
         <Container>
           {contents.map(({ component }, index) => {
             return (
-              <Tab
+              <TabContent
                 key={index}
                 index={index}
                 isActive={activeTab === index}
