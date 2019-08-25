@@ -1,4 +1,10 @@
-import styled, { css, createGlobalStyle } from 'styled-components';
+import 
+  styled,
+  {
+    css,
+    createGlobalStyle,
+    keyframes
+  } from 'styled-components';
 import reset from 'styled-reset';
 
 export const colors = {
@@ -132,16 +138,15 @@ export const GlobalStyle = createGlobalStyle`
       color: red;
     }
   }
+`;
 
-  /* CSS Transition Group */
-  .fade-enter {
+export const FadeIn = keyframes`
+  from {
     opacity: 0;
-    z-index: 1;
   }
 
-  .fade-enter.fade-enter-active {
+  to {
     opacity: 1;
-    transition: opacity 250ms ease-in;
   }
 `;
 
@@ -166,11 +171,17 @@ export const Container = styled.div`
   flex: 1;
   flex-direction: column;
   padding: 0 15px;
+  position: relative;
   width: 100%;
 
   ${media.desktop`
     max-width: ${sizes.largeDesktop}px;
   `}
+`;
+
+export const TabContainer = styled(Container)`
+  flex-direction: row;
+  justify-content: space-between;
 `;
 
 

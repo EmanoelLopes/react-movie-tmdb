@@ -58,7 +58,7 @@ exports[`<CastCard /> should match snapshot 1`] = `
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-bxivhb",
+            "componentId": "sc-ifAKCX",
             "isStatic": true,
             "lastClassName": "c0",
             "rules": Array [
@@ -108,7 +108,7 @@ exports[`<CastCard /> should match snapshot 1`] = `
           "displayName": "styled.div",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-bxivhb",
+          "styledComponentId": "sc-ifAKCX",
           "target": "div",
           "toString": [Function],
           "warnTooManyClasses": [Function],

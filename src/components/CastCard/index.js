@@ -1,7 +1,7 @@
 import React from 'react';
 import { number, string } from 'prop-types';
 import { images } from 'utils/styled';
-import { CastContainer } from './styles';
+import { StyledCast } from './styles';
 
 const CastCard = props => {
   const {
@@ -12,7 +12,7 @@ const CastCard = props => {
   } = props;
 
   return (
-    <CastContainer key={id}>
+    <StyledCast key={id}>
       <img
         src={(profile)
             ? `${images.path}${images.profile}${profile}`
@@ -22,7 +22,7 @@ const CastCard = props => {
       />
       <h4>{name}<br />{character}</h4>
       <p></p>
-    </CastContainer>
+    </StyledCast>
   );
 };
 

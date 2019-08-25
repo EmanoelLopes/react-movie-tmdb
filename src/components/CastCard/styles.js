@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { media, colors } from 'utils/styled';
 
-export const CastContainer = styled.div`
+export const StyledCast = styled.div`
   background-color: rgba(0,0,0,.7);
   border: 1px solid ${colors.mainColor};
   display: flex;

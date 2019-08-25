@@ -3,7 +3,7 @@ import { colors, media, images } from 'utils/styled';
 
 const { path, poster, placeholder } = images;
 
-export const CardFeatured = styled.div`
+export const StyledCard = styled.div`
   background-color: ${colors.white};
   background-image: url(
     ${props => (props.backdrop)

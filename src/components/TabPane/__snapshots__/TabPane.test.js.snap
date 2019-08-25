@@ -1,0 +1,169 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TabPane /> should match snapshot 1`] = `
+.c1 {
+  font-size: 32px;
+  margin: 25px 0;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.c0 {
+  background-color: #fff;
+  border-bottom: 5px solid #fff;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 15px 0;
+  text-align: center;
+  width: 50%;
+}
+
+.c0.tab-active {
+  color: #01d277;
+  border-bottom: 5px solid #01d277;
+}
+
+.c0 .label {
+  display: none;
+}
+
+@media (min-width:36em) {
+  .c0 .label {
+    display: initial;
+  }
+}
+
+<TabPane
+  icon=""
+  index={0}
+  isActive={true}
+  label="Label"
+  onClick={[Function]}
+>
+  <styled.div
+    className="tab-pane tab-active"
+    index={0}
+    onClick={[Function]}
+  >
+    <StyledComponent
+      className="tab-pane tab-active"
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-ifAKCX",
+            "isStatic": true,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  background-color: ",
+              "#fff",
+              ";
+  border-bottom: 5px solid ",
+              "#fff",
+              ";
+  cursor: pointer;
+  display: flex;
+  margin: 15px 0; 
+  text-align: center;
+  width: 50%;
+
+  &.tab-active {
+    color: ",
+              "#01d277",
+              ";
+    border-bottom: 5px solid ",
+              "#01d277",
+              ";
+  }
+
+  .label {
+    display: none;
+
+    ",
+              "
+    @media (min-width: ",
+              "36",
+              "em) {
+      ",
+              "
+      display: initial;
+    ",
+              "
+    }
+  ",
+              "
+  }
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-ifAKCX",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      index={0}
+      onClick={[Function]}
+    >
+      <div
+        className="tab-pane tab-active c0"
+        onClick={[Function]}
+      >
+        <styled.h1>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bdVaJa",
+                  "isStatic": true,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "
+  font-size: 32px;
+  margin: 25px 0;
+  width: 100%;
+  text-transform: uppercase;
+",
+                  ],
+                },
+                "displayName": "styled.h1",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bdVaJa",
+                "target": "h1",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <h1
+              className="c1"
+            >
+              <span
+                className="label"
+              >
+                Label
+              </span>
+               
+            </h1>
+          </StyledComponent>
+        </styled.h1>
+      </div>
+    </StyledComponent>
+  </styled.div>
+</TabPane>
+`;

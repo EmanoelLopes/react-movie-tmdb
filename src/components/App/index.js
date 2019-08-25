@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import Routes from 'routes';
 import { GlobalStyle } from 'utils/styled';
@@ -12,19 +12,19 @@ locale.init();
 
 function App() {
   return (
-    <React.Fragment>
+    <Fragment>
       <GlobalStyle />
       <BrowserRouter>
-        <React.Fragment>
+        <Fragment>
           <Header />
           <Subheader />
           <Main>
             <Routes />
           </Main>
           <Footer />
-        </React.Fragment>
+        </Fragment>
       </BrowserRouter>
-    </React.Fragment>
+    </Fragment>
   );
 }
 
