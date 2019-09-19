@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { App } from 'components/App';
 import Root from 'components/Root';
-import locale from 'lang';
+import locale from './lang';
 import * as serviceWorker from './serviceWorker';
 
 const ROOT = document.getElementById('root');
