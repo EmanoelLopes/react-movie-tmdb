@@ -1,9 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { node } from 'prop-types';
-import { withRouter } from 'react-router-dom';
-import withSrollToTop from 'hoc/withScrollToTop';
+function Main ({ children = {} }) {
+  useEffect(() => {
+    let unmounted = true;
 
-function WrappedMain ({ children }) {
+    if (!unmounted) {
+      window.scrollTo(0, 0);
+    }
+
+    return () => unmounted = false;
+  }, []);
+
   return (
     <main className="rm-main">
       {children}
@@ -11,14 +18,8 @@ function WrappedMain ({ children }) {
   );
 }
  
-WrappedMain.propTypes = {
+Main.propTypes = {
   children: node,
 };
-
-WrappedMain.defaultProps = {
-  children: {}
-};
-
-const Main = withRouter(withSrollToTop(WrappedMain));
 
 export default Main;
